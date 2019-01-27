@@ -364,6 +364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heat: 0
+  wandRange: 10
 --- !u!124 &124101550725831626
 Behaviour:
   m_ObjectHideFlags: 1
