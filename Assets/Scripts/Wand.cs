@@ -6,6 +6,7 @@ public class Wand : MonoBehaviour {
 
     public float heat;
     public float wandRange;
+    public Wandable wandable;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +20,17 @@ public class Wand : MonoBehaviour {
         if (Physics.Raycast(ray, out hit, wandRange, LayerMask.NameToLayer("Wandable")))
         {
             print("Hit wandable.");
+            print(hit.collider.name);
+            wandable = hit.collider.gameObject.GetComponent<Wandable>();
+            wandable.OnAniming();
         }
-	}
+        else
+        {
+            if (wandable != null)
+            {
+                wandable.OffAniming();
+                wandable = null;
+            }
+        }
+    }
 }
