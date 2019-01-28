@@ -5,6 +5,10 @@ using UnityEngine;
 [RequireComponent(typeof(Renderer))]
 public class Wandable : MonoBehaviour {
 
+    public float maxHeat;
+    public float minHeat;
+    public float containingHeat;
+
     private Renderer _renderer;
     private float _animingTime;
 
@@ -22,7 +26,8 @@ public class Wandable : MonoBehaviour {
     public void OnAniming ()
     {
         _animingTime += Time.deltaTime;
-        _renderer.material.color = Color.Lerp(Color.white, Color.yellow, Mathf.Sin(2 * Mathf.PI * _animingTime));
+        Color targetColor = Color.Lerp(Color.cyan, Color.yellow, (containingHeat-minHeat) / (maxHeat - minHeat));
+        _renderer.material.color = Color.Lerp(Color.white, targetColor, Mathf.Sin(2 * Mathf.PI * _animingTime));
     }
 
     public void OffAniming ()

@@ -336,6 +336,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8c393e2486a5204f97484432d1b490c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHeat: 100
+  minHeat: 0
+  containingHeat: 0
 --- !u!1 &627877526
 GameObject:
   m_ObjectHideFlags: 0
@@ -14070,7 +14073,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!64 &1485876395
+--- !u!114 &1485876396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1485876393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c393e2486a5204f97484432d1b490c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHeat: 0
+  minHeat: 0
+  containingHeat: 0
+--- !u!64 &1485876398
 MeshCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -14084,17 +14101,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300004, guid: 6c2909834c368524fa68d5c1989a7e7b, type: 3}
---- !u!114 &1485876396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1485876393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8c393e2486a5204f97484432d1b490c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1602591002
 GameObject:
   m_ObjectHideFlags: 0
