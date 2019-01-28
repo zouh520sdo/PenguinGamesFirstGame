@@ -285,7 +285,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 950bd21dfa75514489ddaa3738a33a5b, type: 2}
+  - {fileID: 2100000, guid: ef7c793d431b17b418f2f8565b729fd0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -319,7 +319,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 323550289}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.966831, y: 0.46, z: -4.933612}
+  m_LocalPosition: {x: -6.966831, y: 1.98, z: -4.933612}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -13976,6 +13976,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2300006, guid: 6c2909834c368524fa68d5c1989a7e7b, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6c2909834c368524fa68d5c1989a7e7b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -14019,7 +14023,7 @@ Prefab:
     - target: {fileID: 2300006, guid: 6c2909834c368524fa68d5c1989a7e7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 210ea41a2053ce44dbccbb72c4684f6e, type: 2}
+      objectReference: {fileID: 2100000, guid: ef7c793d431b17b418f2f8565b729fd0, type: 2}
     - target: {fileID: 100008, guid: 6c2909834c368524fa68d5c1989a7e7b, type: 3}
       propertyPath: m_Name
       value: MaterialTestCube
@@ -14048,6 +14052,14 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300004, guid: 6c2909834c368524fa68d5c1989a7e7b, type: 3}
+    - target: {fileID: 2300006, guid: 6c2909834c368524fa68d5c1989a7e7b, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 210ea41a2053ce44dbccbb72c4684f6e, type: 2}
+    - target: {fileID: 2300006, guid: 6c2909834c368524fa68d5c1989a7e7b, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 210ea41a2053ce44dbccbb72c4684f6e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6c2909834c368524fa68d5c1989a7e7b, type: 3}
   m_IsPrefabParent: 0
