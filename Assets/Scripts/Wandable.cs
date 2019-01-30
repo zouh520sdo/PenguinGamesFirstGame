@@ -15,25 +15,42 @@ public class Wandable : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        _renderer = GetComponent<Renderer>();
-        _animingTime = 0;
+        OnStart();
     }
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
-
-    public void OnAiming ()
-    {
-        _animingTime += Time.deltaTime;
-        Color targetColor = Color.Lerp(Color.cyan, Color.yellow, (containingHeat-minHeat) / (maxHeat - minHeat));
-        _renderer.material.color = Color.Lerp(Color.white, targetColor, Mathf.Sin(2 * Mathf.PI * _animingTime));
+        OnUpdate();
     }
 
-    public void OffAiming ()
+    void Awake()
     {
-        _renderer.material.color = Color.white;
+        OnAwake();
+    }
+
+    protected virtual void OnStart()
+    {
+        _renderer = GetComponent<Renderer>();
+        _animingTime = 0;
+    }
+
+    protected virtual void OnUpdate()
+    {
+
+    }
+
+    protected virtual void OnAwake()
+    {
+
+    }
+
+    public virtual void OnAiming ()
+    {
+        _animingTime += Time.deltaTime;
+    }
+
+    public virtual void OffAiming ()
+    {
         _animingTime = 0;
     }
 
