@@ -368,8 +368,8 @@ MonoBehaviour:
   maxHeat: 500
   wandRange: 10
   wandable: {fileID: 0}
-  absorbRatio: 10
-  releaseRatio: 10
+  absorbRatio: 0.4
+  releaseRatio: 0.4
 --- !u!124 &124101550725831626
 Behaviour:
   m_ObjectHideFlags: 1

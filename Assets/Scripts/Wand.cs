@@ -12,10 +12,12 @@ public class Wand : MonoBehaviour {
     public float absorbRatio;
     public float releaseRatio;
 
+    private float holdingTime;
+
     // Use this for initialization
     void Start () {
-		
-	}
+        holdingTime = 0;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -43,14 +45,19 @@ public class Wand : MonoBehaviour {
             {
                 // Absorb
                 print("Absorb");
+                holdingTime += (Time.deltaTime);
                 absorbFrom(wandable);
             }
-
-            if (Input.GetButton("Fire2"))
+            else if (Input.GetButton("Fire2"))
             {
                 // Release
                 print("Release");
+                holdingTime += (Time.deltaTime);
                 releaseTo(wandable);
+            }
+            else
+            {
+                holdingTime = 0;
             }
 
         }
@@ -64,7 +71,7 @@ public class Wand : MonoBehaviour {
     {
         if (w)
         {
-            heat = Mathf.Min(maxHeat, heat + w.heatLose(absorbRatio * Time.deltaTime, maxHeat - heat));
+            heat = Mathf.Min(maxHeat, heat + w.heatLose(absorbRatio * holdingTime, maxHeat - heat));
         }
     }
 
@@ -72,7 +79,7 @@ public class Wand : MonoBehaviour {
     {
         if (w)
         {
-            heat = Mathf.Max(minHeat, heat - w.heatGain(releaseRatio * Time.deltaTime, heat - minHeat));
+            heat = Mathf.Max(minHeat, heat - w.heatGain(releaseRatio * holdingTime, heat - minHeat));
         }
     }
 }
