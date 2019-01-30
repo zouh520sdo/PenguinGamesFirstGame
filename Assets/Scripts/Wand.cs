@@ -26,13 +26,15 @@ public class Wand : MonoBehaviour {
         {
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, wandRange, LayerMask.NameToLayer("Wandable")))
+            int layerMask = 1 << LayerMask.NameToLayer("Wandable");
+            if (Physics.Raycast(ray, out hit, wandRange, layerMask))
             {
                 wandable = hit.collider.gameObject.GetComponent<Wandable>();
                 wandable.OnAiming();
             }
             else
             {
+                holdingTime = 0;
                 if (wandable != null)
                 {
                     wandable.OffAiming();
@@ -44,15 +46,21 @@ public class Wand : MonoBehaviour {
             if (Input.GetButton("Fire1"))
             {
                 // Absorb
-                print("Absorb");
-                holdingTime += (Time.deltaTime);
+                if (wandable)
+                {
+                    print("Absorb");
+                    holdingTime += (Time.deltaTime);
+                }
                 absorbFrom(wandable);
             }
             else if (Input.GetButton("Fire2"))
             {
                 // Release
-                print("Release");
-                holdingTime += (Time.deltaTime);
+                if (wandable)
+                {
+                    print("Release");
+                    holdingTime += (Time.deltaTime);
+                }
                 releaseTo(wandable);
             }
             else

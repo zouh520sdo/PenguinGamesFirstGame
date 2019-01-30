@@ -31,6 +31,8 @@ public class Wandable : MonoBehaviour {
     protected virtual void OnStart()
     {
         _renderer = GetComponent<Renderer>();
+        gameObject.layer = LayerMask.NameToLayer("Wandable");
+        tag = "Wandable";
         _animingTime = 0;
     }
 
