@@ -69,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1519528244956958}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -8.27, y: 1.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4240393553388840}
@@ -363,8 +363,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59694ddba77b3a64db985ad75764e41b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heat: 0
+  heat: 250
+  minHeat: 0
+  maxHeat: 500
   wandRange: 10
+  wandable: {fileID: 0}
+  absorbRatio: 10
+  releaseRatio: 10
 --- !u!124 &124101550725831626
 Behaviour:
   m_ObjectHideFlags: 1

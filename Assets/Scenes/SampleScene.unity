@@ -285,6 +285,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
+  - {fileID: 2100000, guid: 950bd21dfa75514489ddaa3738a33a5b, type: 2}
   - {fileID: 2100000, guid: ef7c793d431b17b418f2f8565b729fd0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -339,6 +340,7 @@ MonoBehaviour:
   maxHeat: 100
   minHeat: 0
   containingHeat: 0
+  volume: 0
 --- !u!1 &627877526
 GameObject:
   m_ObjectHideFlags: 0
@@ -13978,7 +13980,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 2300006, guid: 6c2909834c368524fa68d5c1989a7e7b, type: 3}
       propertyPath: m_Materials.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6c2909834c368524fa68d5c1989a7e7b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14023,7 +14025,7 @@ Prefab:
     - target: {fileID: 2300006, guid: 6c2909834c368524fa68d5c1989a7e7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: ef7c793d431b17b418f2f8565b729fd0, type: 2}
+      objectReference: {fileID: 2100000, guid: 210ea41a2053ce44dbccbb72c4684f6e, type: 2}
     - target: {fileID: 100008, guid: 6c2909834c368524fa68d5c1989a7e7b, type: 3}
       propertyPath: m_Name
       value: MaterialTestCube
@@ -14085,20 +14087,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1485876396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1485876393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8c393e2486a5204f97484432d1b490c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHeat: 0
-  minHeat: 0
-  containingHeat: 0
 --- !u!64 &1485876398
 MeshCollider:
   m_ObjectHideFlags: 0
