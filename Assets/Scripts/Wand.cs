@@ -16,6 +16,7 @@ public class Wand : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        tag = "Player";
         holdingTime = 0;
     }
 	
@@ -90,4 +91,5 @@ public class Wand : MonoBehaviour {
             heat = Mathf.Max(minHeat, heat - w.heatGain(releaseRatio * holdingTime, heat - minHeat));
         }
     }
+
 }
