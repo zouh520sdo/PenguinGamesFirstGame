@@ -373,6 +373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextPlatforms:
   - {fileID: 1908046942}
+  hidePlatforms: []
   showWhenStart: 0
   showWhenExit: 1
   fadeInDuration: 1.25
@@ -4914,6 +4915,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextPlatforms: []
+  hidePlatforms:
+  - {fileID: 810835895}
   showWhenStart: 0
   showWhenExit: 1
   fadeInDuration: 1.25
@@ -5017,6 +5020,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextPlatforms:
   - {fileID: 1090423318}
+  hidePlatforms:
+  - {fileID: 996271895}
   showWhenStart: 0
   showWhenExit: 1
   fadeInDuration: 1.25
@@ -5138,6 +5143,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextPlatforms:
   - {fileID: 810835895}
+  hidePlatforms:
+  - {fileID: 1908046942}
   showWhenStart: 0
   showWhenExit: 1
   fadeInDuration: 1.25
@@ -5242,6 +5249,8 @@ MonoBehaviour:
   nextPlatforms:
   - {fileID: 1722334896}
   - {fileID: 873101432}
+  hidePlatforms:
+  - {fileID: 463243081}
   showWhenStart: 0
   showWhenExit: 1
   fadeInDuration: 1.25
@@ -5363,6 +5372,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextPlatforms:
   - {fileID: 635949983}
+  hidePlatforms:
+  - {fileID: 873101432}
   showWhenStart: 0
   showWhenExit: 1
   fadeInDuration: 1.25
@@ -5441,6 +5452,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114773686978266100, guid: 321a8d629206c354cbd9420414db3435,
+        type: 2}
+      propertyPath: hidePlatforms.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4014918826112882, guid: 321a8d629206c354cbd9420414db3435, type: 2}
       propertyPath: m_LocalPosition.x
       value: 10.06
@@ -5478,6 +5494,31 @@ Prefab:
       propertyPath: nextPlatforms.Array.data[0]
       value: 
       objectReference: {fileID: 463243081}
+    - target: {fileID: 114773686978266100, guid: 321a8d629206c354cbd9420414db3435,
+        type: 2}
+      propertyPath: hidePlatforms.Array.data[0]
+      value: 
+      objectReference: {fileID: 635949983}
+    - target: {fileID: 114773686978266100, guid: 321a8d629206c354cbd9420414db3435,
+        type: 2}
+      propertyPath: hidePlatforms.Array.data[1]
+      value: 
+      objectReference: {fileID: 1306644977}
+    - target: {fileID: 114773686978266100, guid: 321a8d629206c354cbd9420414db3435,
+        type: 2}
+      propertyPath: hidePlatforms.Array.data[2]
+      value: 
+      objectReference: {fileID: 1722334896}
+    - target: {fileID: 114773686978266100, guid: 321a8d629206c354cbd9420414db3435,
+        type: 2}
+      propertyPath: hidePlatforms.Array.data[3]
+      value: 
+      objectReference: {fileID: 1090423318}
+    - target: {fileID: 114773686978266100, guid: 321a8d629206c354cbd9420414db3435,
+        type: 2}
+      propertyPath: hidePlatforms.Array.data[4]
+      value: 
+      objectReference: {fileID: 873101432}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 321a8d629206c354cbd9420414db3435, type: 2}
   m_IsPrefabParent: 0
@@ -5512,6 +5553,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextPlatforms: []
+  hidePlatforms:
+  - {fileID: 996271895}
   showWhenStart: 0
   showWhenExit: 1
   fadeInDuration: 1.25
@@ -6000,6 +6043,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextPlatforms:
   - {fileID: 1306644977}
+  hidePlatforms:
+  - {fileID: 1908046942}
   showWhenStart: 0
   showWhenExit: 1
   fadeInDuration: 1.25
@@ -6171,6 +6216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextPlatforms:
   - {fileID: 996271895}
+  hidePlatforms: []
   showWhenStart: 0
   showWhenExit: 1
   fadeInDuration: 1.25

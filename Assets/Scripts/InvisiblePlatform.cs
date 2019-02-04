@@ -7,8 +7,8 @@ using UnityEngine;
 public class InvisiblePlatform : MonoBehaviour {
 
     public List<GameObject> nextPlatforms;
+    public List<GameObject> hidePlatforms;
     public bool showWhenStart;
-    public bool showWhenExit;
 
     public float fadeInDuration;
     public float fadeOutDuration;
@@ -32,6 +32,11 @@ public class InvisiblePlatform : MonoBehaviour {
             {
                 StartCoroutine(showPlatform(platform));
             }
+
+            foreach (GameObject platform in hidePlatforms)
+            {
+                StartCoroutine(hidePlatform(platform));
+            }
         }
     }
 
@@ -39,7 +44,7 @@ public class InvisiblePlatform : MonoBehaviour {
     {
         if (collider.tag == "Player")
         {
-            StartCoroutine(hidePlatform(gameObject));
+            
         }
     }
 
@@ -66,6 +71,7 @@ public class InvisiblePlatform : MonoBehaviour {
             yield return null;
         }
 
-        platform.SetActive(invPlatform.showWhenExit);
+        //platform.SetActive(invPlatform.showWhenExit);
+        platform.SetActive(false);
     }
 }
