@@ -9,47 +9,47 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1787896549758568}
+  m_RootGameObject: {fileID: 1722767836525218}
   m_IsPrefabParent: 1
---- !u!1 &1787896549758568
+--- !u!1 &1722767836525218
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4014918826112882}
-  - component: {fileID: 33780042531497516}
-  - component: {fileID: 23807848954404658}
-  - component: {fileID: 65854264274417642}
-  - component: {fileID: 114633480583446102}
-  - component: {fileID: 114773686978266100}
+  - component: {fileID: 4853135468516640}
+  - component: {fileID: 33076144284383196}
+  - component: {fileID: 23648339613561168}
+  - component: {fileID: 65520196187672530}
+  - component: {fileID: 114882602433545434}
+  - component: {fileID: 114234695938119900}
   m_Layer: 0
-  m_Name: InvisiblePlatform1
+  m_Name: InvisiblePlatform1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4014918826112882
+--- !u!4 &4853135468516640
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1787896549758568}
+  m_GameObject: {fileID: 1722767836525218}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.06, y: 0.83367085, z: -9.757433}
+  m_LocalPosition: {x: 21.06, y: 2.28, z: -2.74}
   m_LocalScale: {x: 4, y: 0.25, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23807848954404658
+--- !u!23 &23648339613561168
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1787896549758568}
+  m_GameObject: {fileID: 1722767836525218}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -79,61 +79,56 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33780042531497516
+--- !u!33 &33076144284383196
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1787896549758568}
+  m_GameObject: {fileID: 1722767836525218}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65854264274417642
+--- !u!65 &65520196187672530
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1787896549758568}
+  m_GameObject: {fileID: 1722767836525218}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114633480583446102
+--- !u!114 &114234695938119900
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1787896549758568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c19f3e134862e74dbc98cb514a82ef5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabName: InvisiblePlatform1
-  id: 
-  idParent: 
-  dontSave: 0
-  componentSaveMode: 3
-  componentTypesToSave: []
---- !u!114 &114773686978266100
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1787896549758568}
+  m_GameObject: {fileID: 1722767836525218}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 996caf7732e560b40afa4c2f998f1555, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextPlatforms:
-  - {fileID: 0}
+  nextPlatforms: []
   hidePlatforms:
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  showWhenStart: 1
+  showWhenStart: 0
   fadeInDuration: 1.25
   fadeOutDuration: 2
+--- !u!114 &114882602433545434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1722767836525218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c19f3e134862e74dbc98cb514a82ef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabName: InvisiblePlatform1 (6)
+  id: 
+  idParent: 
+  dontSave: 0
+  componentSaveMode: 0
+  componentTypesToSave: []

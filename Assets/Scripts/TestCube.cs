@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TestCube : Wandable {
 
+
     public override void OnAiming()
     {
         base.OnAiming();

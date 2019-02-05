@@ -1,27 +1,42 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 [RequireComponent(typeof(Collider))]
+
+[Serializable]
+public class InvisibleData
+{
+    public bool isVisible;
+}
 
 public class InvisiblePlatform : MonoBehaviour {
 
     public List<GameObject> nextPlatforms;
     public List<GameObject> hidePlatforms;
-    public bool showWhenStart;
+    public InvisibleData invisibleData;
 
     public float fadeInDuration;
     public float fadeOutDuration;
 
 	// Use this for initialization
 	void Start () {
-        gameObject.SetActive(showWhenStart);
+        SetActive(invisibleData.isVisible);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
+
+    public void SetActive(bool enabled)
+    {
+        invisibleData.isVisible = enabled;
+        GetComponent<Renderer>().enabled = enabled;
+        GetComponent<Collider>().enabled = enabled;
+    }
+
 
     void OnTriggerEnter(Collider collider)
     {
@@ -48,6 +63,18 @@ public class InvisiblePlatform : MonoBehaviour {
         }
     }
 
+    void OnSave()
+    {
+        print(name + " is saving.");
+        JSONSaveLoad.WriteJSON(name, JsonUtility.ToJson(invisibleData));
+    }
+
+    void OnLoad()
+    {
+        print(name + " is loading.");
+        invisibleData = JsonUtility.FromJson<InvisibleData>(JSONSaveLoad.LoadJSON(name));
+    }
+
     IEnumerator showPlatform(GameObject platform)
     {
         float timestamp = Time.time;
@@ -58,7 +85,7 @@ public class InvisiblePlatform : MonoBehaviour {
             yield return null;
         }
 
-        platform.SetActive(true);
+        invPlatform.SetActive(true);
     }
 
     IEnumerator hidePlatform(GameObject platform)
@@ -72,6 +99,6 @@ public class InvisiblePlatform : MonoBehaviour {
         }
 
         //platform.SetActive(invPlatform.showWhenExit);
-        platform.SetActive(false);
+        invPlatform.SetActive(false);
     }
 }
