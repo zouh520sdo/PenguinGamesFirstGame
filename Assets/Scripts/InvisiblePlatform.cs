@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-[RequireComponent(typeof(Collider))]
 
 [Serializable]
 public class InvisibleData
@@ -11,6 +10,7 @@ public class InvisibleData
     public bool isVisible;
 }
 
+[RequireComponent(typeof(Collider))]
 public class InvisiblePlatform : MonoBehaviour {
 
     public List<GameObject> nextPlatforms;
@@ -66,13 +66,13 @@ public class InvisiblePlatform : MonoBehaviour {
     void OnSave()
     {
         print(name + " is saving.");
-        JSONSaveLoad.WriteJSON(name, JsonUtility.ToJson(invisibleData));
+        JSONSaveLoad.WriteJSON(name, invisibleData);
     }
 
     void OnLoad()
     {
         print(name + " is loading.");
-        invisibleData = JsonUtility.FromJson<InvisibleData>(JSONSaveLoad.LoadJSON(name));
+        invisibleData = JSONSaveLoad.LoadJSON<InvisibleData>(name);
     }
 
     IEnumerator showPlatform(GameObject platform)

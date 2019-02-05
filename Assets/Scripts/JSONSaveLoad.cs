@@ -3,24 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
+
 public class JSONSaveLoad
 {
 
-    public static void WriteJSON(string jsonName, string content)
+    public static void WriteJSON<GeneticType>(string jsonName, GeneticType content)
     {
-        string dataPath = Path.Combine(Application.persistentDataPath, jsonName+".txt");
+        string dataPath = Path.Combine(Application.persistentDataPath, jsonName + ".txt");
         using (StreamWriter streamWriter = File.CreateText(dataPath))
         {
-            streamWriter.Write(content);
+            string jsonContent = JsonUtility.ToJson(content);
+            streamWriter.Write(jsonContent);
         }
     }
 
-    public static string LoadJSON(string jsonName)
+    public static GeneticType LoadJSON<GeneticType>(string jsonName)
     {
         string dataPath = Path.Combine(Application.persistentDataPath, jsonName + ".txt");
         using (StreamReader streamReader = File.OpenText(dataPath))
         {
-            return streamReader.ReadToEnd();
+            string jsonString = streamReader.ReadToEnd();
+            return JsonUtility.FromJson<GeneticType>(jsonString);
         }
     }
 }
