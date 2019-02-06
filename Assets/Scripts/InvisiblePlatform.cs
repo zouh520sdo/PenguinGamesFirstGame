@@ -65,13 +65,11 @@ public class InvisiblePlatform : MonoBehaviour {
 
     void OnSave()
     {
-        print(name + " is saving.");
         JSONSaveLoad.WriteJSON(name, invisibleData);
     }
 
     void OnLoad()
     {
-        print(name + " is loading.");
         invisibleData = JSONSaveLoad.LoadJSON<InvisibleData>(name);
     }
 

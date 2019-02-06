@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 65151882449777718}
   - component: {fileID: 114690132663573214}
   - component: {fileID: 114129167954450566}
+  - component: {fileID: 135945267869317406}
   m_Layer: 0
   m_Name: Wood
   m_TagString: Untagged
@@ -119,7 +120,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1639032241865962}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.55, z: 0}
+  m_LocalPosition: {x: 0, y: 3.52, z: 0}
   m_LocalScale: {x: 1, y: 6.0889835, z: 3.5241501}
   m_Children:
   - {fileID: 4224925858890110}
@@ -269,6 +270,7 @@ MonoBehaviour:
   containingHeat: 0
   volume: 1
   fire: {fileID: 198645298683083924}
+  isOnFire: 0
 --- !u!114 &114782612015403928
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -281,6 +283,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplier: 1
+--- !u!135 &135945267869317406
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1241922635245614}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 4.11, z: 0}
 --- !u!198 &198645298683083924
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -493,7 +507,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.2
+      scalar: 2.03
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -13680,7 +13694,7 @@ ParticleSystemRenderer:
   m_RenderMode: 3
   m_SortMode: 1
   m_MinParticleSize: 0
-  m_MaxParticleSize: 0.5
+  m_MaxParticleSize: 2
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2

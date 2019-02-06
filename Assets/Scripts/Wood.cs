@@ -5,6 +5,7 @@ using UnityEngine;
 public class Wood : Wandable {
 
     public ParticleSystem fire;
+    public bool isOnFire;
 
 
     // Subject to change
@@ -30,11 +31,13 @@ public class Wood : Wandable {
         {
             ParticleSystem.EmissionModule emission =  fire.emission;
             emission.rateOverTime = 3;
+            isOnFire = true;
         }
         else
         {
             ParticleSystem.EmissionModule emission = fire.emission;
             emission.rateOverTime = 0;
+            isOnFire = false;
         }
     }
 
