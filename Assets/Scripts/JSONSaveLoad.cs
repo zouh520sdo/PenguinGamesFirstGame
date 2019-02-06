@@ -4,6 +4,12 @@ using UnityEngine;
 using System.IO;
 
 
+[System.Serializable]
+public class InvisibleData
+{
+    public bool isVisible;
+}
+
 public class JSONSaveLoad
 {
 

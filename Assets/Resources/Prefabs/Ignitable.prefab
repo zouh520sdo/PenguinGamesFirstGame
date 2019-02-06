@@ -298,10 +298,12 @@ MonoBehaviour:
   volume: 1
   isOnFire: 0
   fire: {fileID: 198722226453740496}
-  canBurnOut: 0
-  burnOutDuration: 0
+  canBurnOut: 1
+  burnOutDuration: 10
   fireSources: []
   otherFireSources: []
+  invisibleData:
+    isVisible: 1
 --- !u!135 &135410569041750576
 SphereCollider:
   m_ObjectHideFlags: 1

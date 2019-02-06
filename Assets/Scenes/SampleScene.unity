@@ -5795,6 +5795,16 @@ Prefab:
       propertyPath: m_Name
       value: Ignitable (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114727816195717774, guid: 0c1784ec7abaf6842b5d1f6103c3c7a5,
+        type: 2}
+      propertyPath: canBurnOut
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114727816195717774, guid: 0c1784ec7abaf6842b5d1f6103c3c7a5,
+        type: 2}
+      propertyPath: burnOutDuration
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c1784ec7abaf6842b5d1f6103c3c7a5, type: 2}
   m_IsPrefabParent: 0

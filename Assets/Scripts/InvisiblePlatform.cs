@@ -4,12 +4,6 @@ using UnityEngine;
 using System;
 
 
-[Serializable]
-public class InvisibleData
-{
-    public bool isVisible;
-}
-
 [RequireComponent(typeof(Collider))]
 public class InvisiblePlatform : MonoBehaviour {
 

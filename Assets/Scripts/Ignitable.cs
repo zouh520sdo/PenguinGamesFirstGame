@@ -17,15 +17,17 @@ public class Ignitable : MonoBehaviour {
     public List<Wood> fireSources;
     public List<Ignitable> otherFireSources;
 
+    public InvisibleData invisibleData;
+
     protected float rate;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    // Use this for initialization
+    void Start () {
+        SetActive(invisibleData.isVisible);
+    }
+
+    // Update is called once per frame
+    void Update () {
 
         float v = volume == 0 ? 1 : volume;
         if (!isOnFire)
@@ -61,6 +63,10 @@ public class Ignitable : MonoBehaviour {
             ParticleSystem.EmissionModule emission = fire.emission;
             emission.rateOverTime = 3;
             isOnFire = true;
+            if (canBurnOut)
+            {
+                StartCoroutine(OnBurnOut());
+            }
         }
         else
         {
@@ -69,6 +75,15 @@ public class Ignitable : MonoBehaviour {
             isOnFire = false;
         }
 
+    }
+
+    public void SetActive(bool enabled)
+    {
+        invisibleData.isVisible = enabled;
+        GetComponent<Renderer>().enabled = enabled;
+        GetComponent<Collider>().enabled = enabled;
+        GetComponent<Rigidbody>().isKinematic = !enabled;
+        fire.gameObject.SetActive(enabled);
     }
 
     IEnumerator OnBurnOut ()
@@ -80,6 +95,17 @@ public class Ignitable : MonoBehaviour {
         }
 
         // disable mesh and fire particle
+        SetActive(false);
+    }
+
+    void OnSave()
+    {
+        JSONSaveLoad.WriteJSON(name, invisibleData);
+    }
+
+    void OnLoad()
+    {
+        invisibleData = JSONSaveLoad.LoadJSON<InvisibleData>(name);
     }
 
     void OnTriggerEnter(Collider other)
