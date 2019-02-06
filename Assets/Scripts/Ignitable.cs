@@ -65,7 +65,15 @@ public class Ignitable : MonoBehaviour {
             isOnFire = true;
             if (canBurnOut)
             {
-                StartCoroutine(OnBurnOut());
+                if (burnOutDuration > 0)
+                {
+                    burnOutDuration -= Time.deltaTime;
+                }
+                else
+                {
+                    // disable mesh and fire particle
+                    SetActive(false);
+                }
             }
         }
         else
@@ -86,18 +94,6 @@ public class Ignitable : MonoBehaviour {
         fire.gameObject.SetActive(enabled);
     }
 
-    IEnumerator OnBurnOut ()
-    {
-        float timestamp = Time.time;
-        while (Time.time - timestamp < burnOutDuration)
-        {
-            yield return null;
-        }
-
-        // disable mesh and fire particle
-        SetActive(false);
-    }
-
     void OnSave()
     {
         JSONSaveLoad.WriteJSON(name, invisibleData);
@@ -115,7 +111,10 @@ public class Ignitable : MonoBehaviour {
         {
             lock (fireSources)
             {
-                fireSources.Add(wood);
+                if (!fireSources.Contains(wood))
+                {
+                    fireSources.Add(wood);
+                }
             }
         }
 
@@ -124,7 +123,10 @@ public class Ignitable : MonoBehaviour {
         {
             lock (otherFireSources)
             {
-                otherFireSources.Add(ignitable);
+                if (!otherFireSources.Contains(ignitable))
+                {
+                    otherFireSources.Add(ignitable);
+                }
             }
         }
     }
