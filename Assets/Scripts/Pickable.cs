@@ -8,7 +8,7 @@ public class Pickable : MonoBehaviour {
     public Wand picker;
     public float distanceRatio;
 
-    protected Rigidbody rigidbody;
+    protected Rigidbody rigid;
 
 	// Use this for initialization
 	void Start () {
@@ -17,7 +17,7 @@ public class Pickable : MonoBehaviour {
             gameObject.layer = LayerMask.NameToLayer("Pickable");
         }
         isPickedUp = false;
-        rigidbody = GetComponent<Rigidbody>();
+        rigid = GetComponent<Rigidbody>();
     }
 	
 	// Update is called once per frame
@@ -32,7 +32,7 @@ public class Pickable : MonoBehaviour {
     public void Pick(Wand p)
     {
         picker = p;
-        if (rigidbody) rigidbody.isKinematic = true;
+        if (rigid) rigid.isKinematic = true;
         isPickedUp = true;
 
         distanceRatio = Vector3.Distance(transform.position, Camera.main.transform.position) / picker.wandRange;
@@ -41,7 +41,7 @@ public class Pickable : MonoBehaviour {
     public void Drop(Wand p)
     {
         picker = null;
-        if (rigidbody) rigidbody.isKinematic = false;
+        if (rigid) rigid.isKinematic = false;
         isPickedUp = false;
     }
 }
