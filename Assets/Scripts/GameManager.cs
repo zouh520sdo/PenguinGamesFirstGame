@@ -3,14 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour {
-   
+
+	public SaveLoadUtility slu;
+
     // Use this for initialization
     void Start () {
-		
-	}
+        if (slu == null)
+        {
+            slu = GetComponent<SaveLoadUtility>();
+            if (slu == null)
+            {
+                Debug.Log("[SaveLoadMenu] Start(): Warning! SaveLoadUtility not assigned!");
+            }
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        //The classic hotkeys for quicksaving and quickloading
+        if (Input.GetKeyDown(KeyCode.F5))
+        {
+            slu.SaveGame(slu.quickSaveName);//Use this for quicksaving, which is basically just using a constant savegame name.
+        }
+
+        if (Input.GetKeyDown(KeyCode.F9))
+        {
+            slu.LoadGame(slu.quickSaveName);//Use this for quickloading, which is basically just using a constant savegame name.
+
+        }
+    }
 }

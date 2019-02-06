@@ -9,6 +9,7 @@ public class Wand : MonoBehaviour {
     public float maxHeat;
     public float wandRange;
     public Wandable wandable;
+    public Pickable pickable;
     public float absorbRatio;
     public float releaseRatio;
 
@@ -23,15 +24,74 @@ public class Wand : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKey(KeyCode.E))
+        if (pickable)
+        {
+            if (Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown("Fire1"))
+            {
+                pickable.Drop(this);
+                pickable = null;
+            }
+        }
+        else
         {
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
             RaycastHit hit;
-            int layerMask = 1 << LayerMask.NameToLayer("Wandable");
+            int wandableLayer = 1 << LayerMask.NameToLayer("Wandable");
+            int pickableLayer = 1 << LayerMask.NameToLayer("Pickable");
+            int layerMask = wandableLayer | pickableLayer;
             if (Physics.Raycast(ray, out hit, wandRange, layerMask))
             {
-                wandable = hit.collider.gameObject.GetComponent<Wandable>();
-                wandable.OnAiming();
+                if (Input.GetKey(KeyCode.E))
+                {
+                    wandable = hit.collider.gameObject.GetComponent<Wandable>();
+                    if (wandable)
+                    {
+                        wandable.OnAiming();
+                        // 
+                        if (Input.GetButton("Fire1"))
+                        {
+                            // Absorb
+                            if (wandable)
+                            {
+                                print("Absorb");
+                                holdingTime += (Time.deltaTime);
+                            }
+                            absorbFrom(wandable);
+                        }
+                        else if (Input.GetButton("Fire2"))
+                        {
+                            // Release
+                            if (wandable)
+                            {
+                                print("Release");
+                                holdingTime += (Time.deltaTime);
+                            }
+                            releaseTo(wandable);
+                        }
+                        else
+                        {
+                            holdingTime = 0;
+                        }
+                    }
+                    else
+                    {
+                        holdingTime = 0;
+                    }
+                }
+                else
+                {
+                    if (!pickable)
+                    {
+                        if (Input.GetButtonDown("Fire1"))
+                        {
+                            pickable = hit.collider.GetComponent<Pickable>();
+                            if (pickable)
+                            {
+                                pickable.Pick(this);
+                            }
+                        }
+                    }
+                }
             }
             else
             {
@@ -42,33 +102,6 @@ public class Wand : MonoBehaviour {
                     wandable = null;
                 }
             }
-
-            // 
-            if (Input.GetButton("Fire1"))
-            {
-                // Absorb
-                if (wandable)
-                {
-                    print("Absorb");
-                    holdingTime += (Time.deltaTime);
-                }
-                absorbFrom(wandable);
-            }
-            else if (Input.GetButton("Fire2"))
-            {
-                // Release
-                if (wandable)
-                {
-                    print("Release");
-                    holdingTime += (Time.deltaTime);
-                }
-                releaseTo(wandable);
-            }
-            else
-            {
-                holdingTime = 0;
-            }
-
         }
     }
 

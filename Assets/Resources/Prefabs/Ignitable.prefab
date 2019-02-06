@@ -80,6 +80,7 @@ GameObject:
   - component: {fileID: 114727816195717774}
   - component: {fileID: 114617238889315184}
   - component: {fileID: 135410569041750576}
+  - component: {fileID: 114697623399897118}
   m_Layer: 0
   m_Name: Ignitable
   m_TagString: Untagged
@@ -281,6 +282,17 @@ MonoBehaviour:
   dontSave: 0
   componentSaveMode: 3
   componentTypesToSave: []
+--- !u!114 &114697623399897118
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1831471055450172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f6aad856ca4e044d82502210aed3327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114727816195717774
 MonoBehaviour:
   m_ObjectHideFlags: 1

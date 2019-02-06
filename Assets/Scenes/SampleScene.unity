@@ -323,6 +323,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 23
       objectReference: {fileID: 0}
+    - target: {fileID: 54913751013605270, guid: 0c1784ec7abaf6842b5d1f6103c3c7a5,
+        type: 2}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c1784ec7abaf6842b5d1f6103c3c7a5, type: 2}
   m_IsPrefabParent: 0
@@ -451,22 +456,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1952921884143618, guid: 127c48b93a8d5c4439c5919f22a30c00,
     type: 2}
   m_PrefabInternal: {fileID: 1959106719}
---- !u!114 &500844735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 500844734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de399cdfa0967b6439621d08629692d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slu: {fileID: 0}
-  showMenu: 0
-  showSave: 0
-  showLoad: 0
-  saveGames: []
 --- !u!114 &500844736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5804,6 +5793,11 @@ Prefab:
         type: 2}
       propertyPath: burnOutDuration
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54913751013605270, guid: 0c1784ec7abaf6842b5d1f6103c3c7a5,
+        type: 2}
+      propertyPath: m_Mass
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c1784ec7abaf6842b5d1f6103c3c7a5, type: 2}
