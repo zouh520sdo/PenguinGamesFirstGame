@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 82548543537948298}
   - component: {fileID: 114212457807376820}
   - component: {fileID: 136986570098906722}
-  - component: {fileID: 114627534037069828}
+  - component: {fileID: 114432833520218592}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -247,9 +247,10 @@ MonoBehaviour:
   maxHeat: 500
   wandRange: 10
   wandable: {fileID: 0}
+  pickable: {fileID: 0}
   absorbRatio: 0.4
   releaseRatio: 0.4
---- !u!114 &114627534037069828
+--- !u!114 &114432833520218592
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -264,8 +265,9 @@ MonoBehaviour:
   id: 
   idParent: 
   dontSave: 0
-  componentSaveMode: 0
-  componentTypesToSave: []
+  componentSaveMode: 4
+  componentTypesToSave:
+  - Wand
 --- !u!114 &114891503857854534
 MonoBehaviour:
   m_ObjectHideFlags: 1

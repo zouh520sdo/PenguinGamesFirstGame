@@ -29,6 +29,16 @@ public class Pickable : MonoBehaviour {
         }
 	}
 
+    // Receive message from ignitable
+    void OnInactive ()
+    {
+        if (picker)
+        {
+            picker.pickable = null;
+            Drop(picker);
+        }
+    }
+
     public void Pick(Wand p)
     {
         picker = p;

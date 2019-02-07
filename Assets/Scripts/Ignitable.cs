@@ -92,6 +92,16 @@ public class Ignitable : MonoBehaviour {
         GetComponent<Collider>().enabled = enabled;
         GetComponent<Rigidbody>().isKinematic = !enabled;
         fire.gameObject.SetActive(enabled);
+
+        // Send message to any compnoments that need to be notified with the activition of this ignitable object
+        if (enabled)
+        {
+            gameObject.SendMessage("OnActive", SendMessageOptions.DontRequireReceiver);
+        }
+        else
+        {
+            gameObject.SendMessage("OnInactive", SendMessageOptions.DontRequireReceiver);
+        }
     }
 
     void OnSave()

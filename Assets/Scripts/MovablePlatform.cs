@@ -19,15 +19,6 @@ public class MovablePlatform : MonoBehaviour {
         transform.position = pos;
 	}
 
-    void OnLoad()
-    {
-        if (player)
-        {
-            player.transform.parent = null;
-            player = null;
-        }
-    }
-
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")

@@ -53,7 +53,6 @@ public class Wand : MonoBehaviour {
                             // Absorb
                             if (wandable)
                             {
-                                print("Absorb");
                                 holdingTime += (Time.deltaTime);
                             }
                             absorbFrom(wandable);
@@ -63,7 +62,6 @@ public class Wand : MonoBehaviour {
                             // Release
                             if (wandable)
                             {
-                                print("Release");
                                 holdingTime += (Time.deltaTime);
                             }
                             releaseTo(wandable);
