@@ -5,6 +5,7 @@ using UnityEngine;
 public class MovablePlatform : MonoBehaviour {
 
     protected float xPos;
+    protected GameObject player;
 
 	// Use this for initialization
 	void Start () {
@@ -18,10 +19,20 @@ public class MovablePlatform : MonoBehaviour {
         transform.position = pos;
 	}
 
+    void OnLoad()
+    {
+        if (player)
+        {
+            player.transform.parent = null;
+            player = null;
+        }
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
+            player = other.gameObject;
             other.transform.parent = transform;
         }
     }
@@ -30,6 +41,7 @@ public class MovablePlatform : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
+            player = null;
             other.transform.parent = null;
         }
     }
