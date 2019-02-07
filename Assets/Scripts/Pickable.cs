@@ -9,6 +9,7 @@ public class Pickable : MonoBehaviour {
     public float distanceRatio;
 
     protected Rigidbody rigid;
+    protected Vector3 targetPosition;
 
 	// Use this for initialization
 	void Start () {
@@ -24,8 +25,9 @@ public class Pickable : MonoBehaviour {
 	void Update () {
 		if (isPickedUp)
         {
-            distanceRatio = Mathf.Min(1, Mathf.Max(0, distanceRatio + Input.GetAxis("Mouse ScrollWheel")));
-            transform.position = Camera.main.transform.position + distanceRatio * picker.wandRange * Camera.main.transform.forward;
+            distanceRatio = Mathf.Min(1f, Mathf.Max(0.2f, distanceRatio + Input.GetAxis("Mouse ScrollWheel")));
+            targetPosition = Camera.main.transform.position + distanceRatio * picker.wandRange * Camera.main.transform.forward;
+            transform.position = Vector3.Lerp(transform.position, targetPosition, 10f * Time.deltaTime);
         }
 	}
 
