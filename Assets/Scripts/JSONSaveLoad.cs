@@ -5,7 +5,7 @@ using System.IO;
 
 
 [System.Serializable]
-public class InvisibleData
+public struct InvisibleData
 {
     public bool isVisible;
 }

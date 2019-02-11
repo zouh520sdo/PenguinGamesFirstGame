@@ -14,10 +14,24 @@ public class InvisiblePlatform : MonoBehaviour {
     public float fadeInDuration;
     public float fadeOutDuration;
 
+
+    // Date for resetting
+    protected InvisibleData originalInvisibleData;
+    protected Vector3 originalPos;
+
+
+    public void OnReset()
+    {
+        invisibleData = originalInvisibleData;
+        originalPos = transform.position;
+    }
+
 	// Use this for initialization
 	void Start () {
         SetActive(invisibleData.isVisible);
-	}
+        originalInvisibleData.isVisible = invisibleData.isVisible;
+        transform.position = originalPos;
+    }
 	
 	// Update is called once per frame
 	void Update () {

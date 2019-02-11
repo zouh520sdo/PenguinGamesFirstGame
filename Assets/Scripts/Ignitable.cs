@@ -21,9 +21,22 @@ public class Ignitable : MonoBehaviour {
 
     protected float rate;
 
+    // Data for resetting
+    protected float originalContainingHeat;
+    protected float originalBurnOutDuration;
+    protected Vector3 originalPos;
+
+    public void OnReset()
+    {
+        containingHeat = originalContainingHeat;
+        burnOutDuration = originalBurnOutDuration;
+    }
+
     // Use this for initialization
     void Start () {
         SetActive(invisibleData.isVisible);
+        originalBurnOutDuration = burnOutDuration;
+        originalContainingHeat = containingHeat;
     }
 
     // Update is called once per frame

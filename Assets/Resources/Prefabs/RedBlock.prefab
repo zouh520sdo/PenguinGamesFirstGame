@@ -9,49 +9,49 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1892752476786468}
+  m_RootGameObject: {fileID: 1059459301673650}
   m_IsPrefabParent: 1
---- !u!1 &1892752476786468
+--- !u!1 &1059459301673650
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4015851942288060}
-  - component: {fileID: 114933378990911046}
-  - component: {fileID: 23989145369739058}
-  - component: {fileID: 33322893580507952}
-  - component: {fileID: 65128652406639600}
-  - component: {fileID: 114652912982100654}
-  - component: {fileID: 54239736190844324}
-  - component: {fileID: 114232837313706822}
+  - component: {fileID: 4645449991365578}
+  - component: {fileID: 33769462448488018}
+  - component: {fileID: 23298405973517804}
+  - component: {fileID: 65795835550484414}
+  - component: {fileID: 114360248424523770}
+  - component: {fileID: 114678856083075642}
+  - component: {fileID: 54356422591156136}
+  - component: {fileID: 114521309858087842}
   m_Layer: 0
-  m_Name: MagicMatrix
+  m_Name: RedBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4015851942288060
+--- !u!4 &4645449991365578
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1892752476786468}
+  m_GameObject: {fileID: 1059459301673650}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.85, y: 0.04, z: 6.93}
-  m_LocalScale: {x: 2, y: 0.12, z: 2}
+  m_LocalPosition: {x: 0, y: 1.51, z: 11.72}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23989145369739058
+--- !u!23 &23298405973517804
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1892752476786468}
+  m_GameObject: {fileID: 1059459301673650}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -81,19 +81,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33322893580507952
+--- !u!33 &33769462448488018
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1892752476786468}
+  m_GameObject: {fileID: 1059459301673650}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &54239736190844324
+--- !u!54 &54356422591156136
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1892752476786468}
+  m_GameObject: {fileID: 1059459301673650}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -103,60 +103,57 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65128652406639600
+--- !u!65 &65795835550484414
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1892752476786468}
+  m_GameObject: {fileID: 1059459301673650}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114232837313706822
+--- !u!114 &114360248424523770
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1892752476786468}
+  m_GameObject: {fileID: 1059459301673650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ab33e629dc453e44bef17522064fc63, type: 3}
+  m_Script: {fileID: 11500000, guid: f931ab21f27764f44b5506c8c1aff8be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggees:
-  - {fileID: 0}
-  - {fileID: 0}
---- !u!114 &114652912982100654
+--- !u!114 &114521309858087842
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1892752476786468}
+  m_GameObject: {fileID: 1059459301673650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f6aad856ca4e044d82502210aed3327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPickedUp: 0
+  picker: {fileID: 0}
+  distanceRatio: 0
+--- !u!114 &114678856083075642
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1059459301673650}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c19f3e134862e74dbc98cb514a82ef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabName: MagicMatrix
+  prefabName: RedBlock
   id: 
   idParent: 
   dontSave: 0
   componentSaveMode: 3
   componentTypesToSave: []
---- !u!114 &114933378990911046
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1892752476786468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e04b89a95b04de64296d2d8653ea6f5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggees:
-  - {fileID: 0}
-  - {fileID: 0}

@@ -7,9 +7,18 @@ public class MovablePlatform : MonoBehaviour {
     protected float xPos;
     protected GameObject player;
 
+    protected Vector3 originalPos;
+
+    public void OnReset()
+    {
+        transform.position = originalPos;
+    }
+
 	// Use this for initialization
 	void Start () {
         xPos = transform.position.x;
+
+        originalPos = transform.position;
 	}
 	
 	// Update is called once per frame
