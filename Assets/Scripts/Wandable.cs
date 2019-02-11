@@ -13,6 +13,9 @@ public class Wandable : MonoBehaviour {
     protected Renderer _renderer;
     protected float _animingTime;
 
+    // Date for resetting
+    protected float originalContainingHeat;
+
 	// Use this for initialization
 	void Start () {
         OnStart();
@@ -28,12 +31,19 @@ public class Wandable : MonoBehaviour {
         OnAwake();
     }
 
+    public virtual void OnReset()
+    {
+        containingHeat = originalContainingHeat;
+        _animingTime = 0;
+    }
+
     protected virtual void OnStart()
     {
         _renderer = GetComponent<Renderer>();
         gameObject.layer = LayerMask.NameToLayer("Wandable");
         tag = "Wandable";
         _animingTime = 0;
+        originalContainingHeat = containingHeat;
     }
 
     protected virtual void OnUpdate()

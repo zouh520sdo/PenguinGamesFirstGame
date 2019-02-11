@@ -9,6 +9,14 @@ public class BlueFenceT : Triggee {
 
     protected Vector3 targetPos;
 
+    // Data for resetting
+    protected Vector3 originalPos;
+
+    public void OnReset()
+    {
+        transform.position = originalPos;
+    }
+
     public override void Activate()
     {
         base.Activate();
@@ -28,6 +36,7 @@ public class BlueFenceT : Triggee {
         base.Start();
         // Inactive when start
         Deactivate();
+        originalPos = transform.position;
     }
 
     public override void Update()

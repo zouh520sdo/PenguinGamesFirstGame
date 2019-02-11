@@ -7,7 +7,6 @@ public class Wood : Wandable {
     public ParticleSystem fire;
     public bool isOnFire;
 
-
     // Subject to change
     public override void OnAiming()
     {

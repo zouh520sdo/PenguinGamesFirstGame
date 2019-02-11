@@ -15,15 +15,33 @@ public class Wand : MonoBehaviour {
 
     private float holdingTime;
 
+    // Data that needs to reset
+    protected float originalHeat;
+    protected Vector3 originalPos;
+
+    public void OnReset()
+    {
+        heat = originalHeat;
+        transform.position = originalPos;
+    }
+
     // Use this for initialization
     void Start () {
         tag = "Player";
         holdingTime = 0;
+        originalHeat = heat;
+        originalPos = transform.position;
+        wandable = null;
+        if (pickable)
+        {
+            pickable.Drop(this);
+            pickable = null;
+        }
+
     }
 	
 	// Update is called once per frame
 	void Update () {
-
         if (pickable)
         {
             if (Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown("Fire1"))

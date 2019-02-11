@@ -13,7 +13,7 @@ public class Triggee : MonoBehaviour {
 
     // Use this for initialization
     public virtual void Start () {
-        print(name + " On Start");
+        
 	}
 
     // Update is called once per frame
