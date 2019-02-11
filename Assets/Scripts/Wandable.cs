@@ -15,6 +15,7 @@ public class Wandable : MonoBehaviour {
 
     // Date for resetting
     protected float originalContainingHeat;
+    protected Vector3 originalPos;
 
 	// Use this for initialization
 	void Start () {
@@ -34,6 +35,7 @@ public class Wandable : MonoBehaviour {
     public virtual void OnReset()
     {
         containingHeat = originalContainingHeat;
+        transform.position = originalPos;
         _animingTime = 0;
     }
 
@@ -44,6 +46,7 @@ public class Wandable : MonoBehaviour {
         tag = "Wandable";
         _animingTime = 0;
         originalContainingHeat = containingHeat;
+        originalPos = transform.position;
     }
 
     protected virtual void OnUpdate()

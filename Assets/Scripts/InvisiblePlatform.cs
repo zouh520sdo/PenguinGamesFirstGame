@@ -23,14 +23,15 @@ public class InvisiblePlatform : MonoBehaviour {
     public void OnReset()
     {
         invisibleData = originalInvisibleData;
-        originalPos = transform.position;
+        SetActive(invisibleData.isVisible);
+        transform.position = originalPos;
     }
 
 	// Use this for initialization
 	void Start () {
         SetActive(invisibleData.isVisible);
         originalInvisibleData.isVisible = invisibleData.isVisible;
-        transform.position = originalPos;
+        originalPos = transform.position;
     }
 	
 	// Update is called once per frame

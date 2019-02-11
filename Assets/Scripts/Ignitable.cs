@@ -24,12 +24,16 @@ public class Ignitable : MonoBehaviour {
     // Data for resetting
     protected float originalContainingHeat;
     protected float originalBurnOutDuration;
+    protected InvisibleData originalInvisiableData;
     protected Vector3 originalPos;
 
     public void OnReset()
     {
         containingHeat = originalContainingHeat;
         burnOutDuration = originalBurnOutDuration;
+        transform.position = originalPos;
+        invisibleData = originalInvisiableData;
+        SetActive(invisibleData.isVisible);
     }
 
     // Use this for initialization
@@ -37,6 +41,8 @@ public class Ignitable : MonoBehaviour {
         SetActive(invisibleData.isVisible);
         originalBurnOutDuration = burnOutDuration;
         originalContainingHeat = containingHeat;
+        originalPos = transform.position;
+        originalInvisiableData = invisibleData;
     }
 
     // Update is called once per frame

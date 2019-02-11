@@ -6,6 +6,14 @@ public class Trigger : MonoBehaviour {
 
     public List<Triggee> triggees;
 
+    // Data for resetting
+    protected Vector3 originalPos;
+
+    public virtual void OnReset()
+    {
+        transform.position = originalPos;
+    }
+
     public virtual void Awake()
     {
 
@@ -13,7 +21,7 @@ public class Trigger : MonoBehaviour {
 
 	// Use this for initialization
 	public virtual void Start () {
-		
+        originalPos = transform.position;
 	}
 
     // Update is called once per frame

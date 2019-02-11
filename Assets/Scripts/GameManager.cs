@@ -6,6 +6,11 @@ public class GameManager : MonoBehaviour {
 
 	public SaveLoadUtility slu;
 
+
+    private void Awake()
+    {
+        tag = "GameManager";
+    }
     // Use this for initialization
     void Start () {
         if (slu == null)
@@ -23,13 +28,22 @@ public class GameManager : MonoBehaviour {
         //The classic hotkeys for quicksaving and quickloading
         if (Input.GetKeyDown(KeyCode.F5))
         {
-            slu.SaveGame(slu.quickSaveName);//Use this for quicksaving, which is basically just using a constant savegame name.
+            SaveGame();
         }
 
         if (Input.GetKeyDown(KeyCode.F9))
         {
-            slu.LoadGame(slu.quickSaveName);//Use this for quickloading, which is basically just using a constant savegame name.
-
+            LoadGame();
         }
+    }
+
+    public void SaveGame()
+    {
+        slu.SaveGame(slu.quickSaveName);//Use this for quicksaving, which is basically just using a constant savegame name.
+    }
+
+    public void LoadGame()
+    {
+        slu.LoadGame(slu.quickSaveName);//Use this for quickloading, which is basically just using a constant savegame name.
     }
 }

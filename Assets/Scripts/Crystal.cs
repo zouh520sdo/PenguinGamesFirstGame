@@ -2,19 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Crystal : MonoBehaviour {
+public class Crystal : Pickable {
 
+    public GameManager gameManager;
     public List<ObjectIdentifier> resettingObjects;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public override void Start()
+    {
+        base.Start();
+        if (!gameManager)
+        {
+            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        }
+    }
+
+    public override void Pick(Wand p)
+    {
+        base.Pick(p);
+        print("Hit " + name);
+        Drop(p);
+        ResetObjects(); // Reset related objects in corresponding area
+        gameManager.SaveGame();  // Save games
+    }
+
+    public override void Drop(Wand p)
+    {
+        base.Drop(p);
+        p.pickable = null;
+    }
 
     public void ResetObjects ()
     {

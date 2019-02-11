@@ -11,8 +11,13 @@ public class Pickable : MonoBehaviour {
     protected Rigidbody rigid;
     protected Vector3 targetPosition;
 
+    public virtual void Awake()
+    {
+
+    }
+
 	// Use this for initialization
-	void Start () {
+	public virtual void Start () {
         if (gameObject.layer != LayerMask.NameToLayer("Wandable"))
         {
             gameObject.layer = LayerMask.NameToLayer("Pickable");
@@ -22,7 +27,7 @@ public class Pickable : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	public virtual void Update () {
 		if (isPickedUp)
         {
             distanceRatio = Mathf.Min(1f, Mathf.Max(0.2f, distanceRatio + Input.GetAxis("Mouse ScrollWheel")));
@@ -41,7 +46,7 @@ public class Pickable : MonoBehaviour {
         }
     }
 
-    public void Pick(Wand p)
+    public virtual void Pick(Wand p)
     {
         picker = p;
         if (rigid) rigid.isKinematic = true;
@@ -50,7 +55,7 @@ public class Pickable : MonoBehaviour {
         distanceRatio = Vector3.Distance(transform.position, Camera.main.transform.position) / picker.wandRange;
     }
 
-    public void Drop(Wand p)
+    public virtual void Drop(Wand p)
     {
         picker = null;
         if (rigid) rigid.isKinematic = false;
