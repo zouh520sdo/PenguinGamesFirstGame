@@ -30,8 +30,7 @@ public class Pickable : MonoBehaviour {
 	public virtual void Update () {
 		if (isPickedUp)
         {
-            // changed max distance to 1.3f by francys on 2.11
-            distanceRatio = Mathf.Min(1.3f, Mathf.Max(0.2f, distanceRatio + Input.GetAxis("Mouse ScrollWheel")));
+            distanceRatio = Mathf.Min(1f, Mathf.Max(0.2f, distanceRatio + Input.GetAxis("Mouse ScrollWheel")));
             targetPosition = Camera.main.transform.position + distanceRatio * picker.wandRange * Camera.main.transform.forward;
             transform.position = Vector3.Lerp(transform.position, targetPosition, 10f * Time.deltaTime);
         }
