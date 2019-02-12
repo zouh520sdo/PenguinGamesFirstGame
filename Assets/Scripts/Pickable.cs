@@ -30,7 +30,7 @@ public class Pickable : MonoBehaviour {
 	public virtual void Update () {
 		if (isPickedUp)
         {
-            distanceRatio = Mathf.Min(1f, Mathf.Max(0.2f, distanceRatio + Input.GetAxis("Mouse ScrollWheel")));
+            distanceRatio = Mathf.Min(1f, Mathf.Max(0.08f, distanceRatio + Input.GetAxis("Mouse ScrollWheel")));
             targetPosition = Camera.main.transform.position + distanceRatio * picker.wandRange * Camera.main.transform.forward;
             transform.position = Vector3.Lerp(transform.position, targetPosition, 10f * Time.deltaTime);
         }
