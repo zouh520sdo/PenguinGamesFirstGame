@@ -1,0 +1,156 @@
+fileFormatVersion: 2
+guid: 9723911408653ae428b6f6c19f76ca50
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: polySurface14_polySurface13_polySurface11_polySurface8_pPlane3
+    100002: //RootNode
+    100004: group5_pasted__pasted__pPlane1_polySurface4
+    100006: group5_pasted__pasted__pPlane1_polySurface5
+    100008: pasted__pPlane5
+    100010: polySurface11_polySurface8_pPlane3_polySurface14_polySurface13
+    100012: polySurface12_polySurface11_polySurface8_pPlane3
+    100014: polySurface3_group5_pasted__pasted__pPlane1
+    100016: polySurface7
+    100018: pPlane3_polySurface15_polySurface9
+    100020: pPlane3_polySurface9_polySurface16
+    100022: wall:group5_pasted__pasted__pPlane1_wall:polySurface6_wall:polySurface1
+    400000: polySurface14_polySurface13_polySurface11_polySurface8_pPlane3
+    400002: //RootNode
+    400004: group5_pasted__pasted__pPlane1_polySurface4
+    400006: group5_pasted__pasted__pPlane1_polySurface5
+    400008: pasted__pPlane5
+    400010: polySurface11_polySurface8_pPlane3_polySurface14_polySurface13
+    400012: polySurface12_polySurface11_polySurface8_pPlane3
+    400014: polySurface3_group5_pasted__pasted__pPlane1
+    400016: polySurface7
+    400018: pPlane3_polySurface15_polySurface9
+    400020: pPlane3_polySurface9_polySurface16
+    400022: wall:group5_pasted__pasted__pPlane1_wall:polySurface6_wall:polySurface1
+    2100000: polySurface14_polySurface13_polySurface11_polySurface8_pPlane3Mat
+    2100002: group5_pasted__pasted__pPlane1_polySurface4Mat
+    2100004: group5_pasted__pasted__pPlane1_polySurface5Mat
+    2100006: pasted__pPlane5Mat
+    2100008: polySurface11_polySurface8_pPlane3_polySurface14_polySurface13Mat
+    2100010: polySurface12_polySurface11_polySurface8_pPlane3Mat
+    2100012: polySurface3_group5_pasted__pasted__pPlane1Mat
+    2100014: polySurface7Mat
+    2100016: pPlane3_polySurface15_polySurface9Mat
+    2100018: pPlane3_polySurface9_polySurface16Mat
+    2100020: wall_group5_pasted__pasted__pPlane1_wall_polySurface6_wall_polySurface1Mat
+    2300000: polySurface14_polySurface13_polySurface11_polySurface8_pPlane3
+    2300002: group5_pasted__pasted__pPlane1_polySurface4
+    2300004: group5_pasted__pasted__pPlane1_polySurface5
+    2300006: pasted__pPlane5
+    2300008: polySurface11_polySurface8_pPlane3_polySurface14_polySurface13
+    2300010: polySurface12_polySurface11_polySurface8_pPlane3
+    2300012: polySurface3_group5_pasted__pasted__pPlane1
+    2300014: polySurface7
+    2300016: pPlane3_polySurface15_polySurface9
+    2300018: pPlane3_polySurface9_polySurface16
+    2300020: wall:group5_pasted__pasted__pPlane1_wall:polySurface6_wall:polySurface1
+    3300000: polySurface14_polySurface13_polySurface11_polySurface8_pPlane3
+    3300002: group5_pasted__pasted__pPlane1_polySurface4
+    3300004: group5_pasted__pasted__pPlane1_polySurface5
+    3300006: pasted__pPlane5
+    3300008: polySurface11_polySurface8_pPlane3_polySurface14_polySurface13
+    3300010: polySurface12_polySurface11_polySurface8_pPlane3
+    3300012: polySurface3_group5_pasted__pasted__pPlane1
+    3300014: polySurface7
+    3300016: pPlane3_polySurface15_polySurface9
+    3300018: pPlane3_polySurface9_polySurface16
+    3300020: wall:group5_pasted__pasted__pPlane1_wall:polySurface6_wall:polySurface1
+    4300000: polySurface14_polySurface13_polySurface11_polySurface8_pPlane3
+    4300002: group5_pasted__pasted__pPlane1_polySurface4
+    4300004: group5_pasted__pasted__pPlane1_polySurface5
+    4300006: pasted__pPlane5
+    4300008: polySurface11_polySurface8_pPlane3_polySurface14_polySurface13
+    4300010: polySurface12_polySurface11_polySurface8_pPlane3
+    4300012: polySurface3_group5_pasted__pasted__pPlane1
+    4300014: polySurface7
+    4300016: pPlane3_polySurface15_polySurface9
+    4300018: pPlane3_polySurface9_polySurface16
+    4300020: wall:group5_pasted__pasted__pPlane1_wall:polySurface6_wall:polySurface1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
