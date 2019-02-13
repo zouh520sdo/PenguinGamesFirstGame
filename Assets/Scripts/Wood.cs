@@ -25,8 +25,6 @@ public class Wood : Wandable {
     {
         base.OnUpdate();
 
-        print("Wood " + originalPos);
-
         float v = volume == 0 ? 1 : volume;
         if (containingHeat / v >= 100)
         {
