@@ -12,6 +12,9 @@ public class Crystal : Pickable {
     public float fadeOutDuration;
     public float fadeInDuration;
 
+    protected float rotateSpeed;
+    protected Vector3 originalPos;
+
     public override void Start()
     {
         base.Start();
@@ -19,6 +22,17 @@ public class Crystal : Pickable {
         {
             gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         }
+
+        rotateSpeed = 60f;
+        originalPos = transform.position;
+    }
+
+    public override void Update()
+    {
+        base.Update();
+
+        transform.RotateAround(transform.position, Vector3.up, rotateSpeed * Time.deltaTime);
+        transform.position = originalPos + new Vector3(0, 0.3f * Mathf.Sin( 3f * Time.time), 0);
     }
 
     public override void Pick(Wand p)
