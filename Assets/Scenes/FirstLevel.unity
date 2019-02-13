@@ -2522,7 +2522,8 @@ Prefab:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 54913751013605270, guid: 0c1784ec7abaf6842b5d1f6103c3c7a5, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 0c1784ec7abaf6842b5d1f6103c3c7a5, type: 2}
   m_IsPrefabAsset: 0
 --- !u!114 &467046875 stripped
@@ -3649,7 +3650,8 @@ Prefab:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 54913751013605270, guid: 0c1784ec7abaf6842b5d1f6103c3c7a5, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 0c1784ec7abaf6842b5d1f6103c3c7a5, type: 2}
   m_IsPrefabAsset: 0
 --- !u!114 &691166143 stripped
@@ -9727,7 +9729,8 @@ Prefab:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 54913751013605270, guid: 0c1784ec7abaf6842b5d1f6103c3c7a5, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 0c1784ec7abaf6842b5d1f6103c3c7a5, type: 2}
   m_IsPrefabAsset: 0
 --- !u!114 &1779341148 stripped

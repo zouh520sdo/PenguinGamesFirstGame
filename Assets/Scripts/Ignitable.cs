@@ -109,7 +109,9 @@ public class Ignitable : MonoBehaviour {
         invisibleData.isVisible = enabled;
         GetComponent<Renderer>().enabled = enabled;
         GetComponent<Collider>().enabled = enabled;
-        GetComponent<Rigidbody>().isKinematic = !enabled;
+        if (GetComponent<Rigidbody>()) {
+            GetComponent<Rigidbody>().isKinematic = !enabled;
+        }
         fire.gameObject.SetActive(enabled);
 
         // Send message to any compnoments that need to be notified with the activition of this ignitable object
