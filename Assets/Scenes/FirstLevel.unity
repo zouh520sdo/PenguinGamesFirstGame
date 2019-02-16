@@ -3753,16 +3753,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 758165316}
     m_Modifications:
-    - target: {fileID: 114933378990911046, guid: a557228fabb2d8741941a927e7162ff6,
-        type: 2}
-      propertyPath: triggees.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114232837313706822, guid: a557228fabb2d8741941a927e7162ff6,
-        type: 2}
-      propertyPath: triggees.Array.size
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 4015851942288060, guid: a557228fabb2d8741941a927e7162ff6, type: 2}
       propertyPath: m_LocalPosition.x
       value: -26.95
@@ -3795,26 +3785,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 114933378990911046, guid: a557228fabb2d8741941a927e7162ff6,
-        type: 2}
-      propertyPath: triggees.Array.data[0]
-      value: 
-      objectReference: {fileID: 431584386}
-    - target: {fileID: 114933378990911046, guid: a557228fabb2d8741941a927e7162ff6,
-        type: 2}
-      propertyPath: triggees.Array.data[1]
-      value: 
-      objectReference: {fileID: 713949442}
-    - target: {fileID: 114933378990911046, guid: a557228fabb2d8741941a927e7162ff6,
-        type: 2}
-      propertyPath: triggees.Array.data[3]
-      value: 
-      objectReference: {fileID: 284944600}
-    - target: {fileID: 114933378990911046, guid: a557228fabb2d8741941a927e7162ff6,
-        type: 2}
-      propertyPath: triggees.Array.data[2]
-      value: 
-      objectReference: {fileID: 1445950141}
     - target: {fileID: 114232837313706822, guid: a557228fabb2d8741941a927e7162ff6,
         type: 2}
       propertyPath: triggees.Array.data[0]
@@ -3827,36 +3797,15 @@ Prefab:
       objectReference: {fileID: 713949442}
     - target: {fileID: 114232837313706822, guid: a557228fabb2d8741941a927e7162ff6,
         type: 2}
-      propertyPath: triggees.Array.data[3]
-      value: 
-      objectReference: {fileID: 284944600}
-    - target: {fileID: 114232837313706822, guid: a557228fabb2d8741941a927e7162ff6,
-        type: 2}
       propertyPath: triggees.Array.data[2]
       value: 
       objectReference: {fileID: 1445950141}
-    - target: {fileID: 54239736190844324, guid: a557228fabb2d8741941a927e7162ff6,
+    - target: {fileID: 114232837313706822, guid: a557228fabb2d8741941a927e7162ff6,
         type: 2}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 54239736190844324, guid: a557228fabb2d8741941a927e7162ff6,
-        type: 2}
-      propertyPath: m_Mass
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 23989145369739058, guid: a557228fabb2d8741941a927e7162ff6,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: triggees.Array.data[3]
       value: 
-      objectReference: {fileID: 2100000, guid: d608f5adbb24b4c1abbd5dc12abafa6f, type: 2}
-    - target: {fileID: 54239736190844324, guid: a557228fabb2d8741941a927e7162ff6,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114933378990911046, guid: a557228fabb2d8741941a927e7162ff6, type: 2}
+      objectReference: {fileID: 284944600}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a557228fabb2d8741941a927e7162ff6, type: 2}
   m_IsPrefabAsset: 0
 --- !u!114 &694734558 stripped
@@ -9783,11 +9732,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 758165316}
     m_Modifications:
-    - target: {fileID: 114220805803075304, guid: 35a63febf2e3cd54ab879291cee5b0da,
-        type: 2}
-      propertyPath: resettingObjects.Array.size
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 4406229493897528, guid: 35a63febf2e3cd54ab879291cee5b0da, type: 2}
       propertyPath: m_LocalPosition.x
       value: -44.86
