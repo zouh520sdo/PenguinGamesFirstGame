@@ -9165,11 +9165,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 758165316}
     m_Modifications:
-    - target: {fileID: 114220805803075304, guid: 35a63febf2e3cd54ab879291cee5b0da,
-        type: 2}
-      propertyPath: resettingObjects.Array.size
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 4406229493897528, guid: 35a63febf2e3cd54ab879291cee5b0da, type: 2}
       propertyPath: m_LocalPosition.x
       value: -44.86

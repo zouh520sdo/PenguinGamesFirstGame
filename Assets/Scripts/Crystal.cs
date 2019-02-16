@@ -12,6 +12,11 @@ public class Crystal : Pickable {
     public float fadeOutDuration;
     public float fadeInDuration;
 
+    public bool isFullCharged;
+    public float chargedHeight;
+    public float unchargedHeight;
+    protected Vector3 targetPos;
+
     protected float rotateSpeed;
     protected Vector3 originalPos;
 
@@ -24,15 +29,35 @@ public class Crystal : Pickable {
         }
 
         rotateSpeed = 60f;
-        originalPos = transform.position;
+        originalPos = transform.localPosition;
+        targetPos = transform.localPosition;
     }
 
     public override void Update()
     {
         base.Update();
 
-        transform.RotateAround(transform.position, Vector3.up, rotateSpeed * Time.deltaTime);
-        transform.position = originalPos + new Vector3(0, 0.3f * Mathf.Sin( 3f * Time.time), 0);
+        if (isFullCharged)
+        {
+            targetPos.y = chargedHeight;
+            Vector3 target = targetPos + new Vector3(0, 0.5f * Mathf.Sin(3f * Time.time), 0);
+            transform.localPosition = Vector3.Lerp(transform.localPosition, target, 3f * Time.deltaTime);
+            transform.RotateAround(transform.position, Vector3.up, rotateSpeed * Time.deltaTime);
+        }
+        else
+        {
+            targetPos.y = unchargedHeight;
+
+            if (Vector3.Distance(transform.localPosition, targetPos) > 0.01f)
+            {
+                transform.localPosition = Vector3.Lerp(transform.localPosition, targetPos, 3f * Time.deltaTime);
+                transform.RotateAround(transform.position, Vector3.up, (transform.localPosition.y - unchargedHeight) / (chargedHeight - unchargedHeight) * rotateSpeed * Time.deltaTime);
+            }
+            else
+            {
+                transform.localPosition = targetPos;
+            }
+        }
     }
 
     public override void Pick(Wand p)
