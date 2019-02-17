@@ -15055,13 +15055,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 114642091618833238, guid: 127c48b93a8d5c4439c5919f22a30c00,
-        type: 2}
-      propertyPath: debugController.unpackComponent
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114829330759337538, guid: 127c48b93a8d5c4439c5919f22a30c00, type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 127c48b93a8d5c4439c5919f22a30c00, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1996578964

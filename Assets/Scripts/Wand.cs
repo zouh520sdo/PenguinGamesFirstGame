@@ -17,12 +17,24 @@ public class Wand : MonoBehaviour {
     private float holdingTime;
 
     // Data that needs to reset
-    protected float originalHeat;
-    protected Vector3 originalPos;
+    [HideInInspector]public float originalHeat;
+    [HideInInspector]public Vector3 originalPos;
 
     public void OnReset()
     {
         heat = originalHeat;
+        print("Player reset " + originalPos);
+        transform.position = originalPos;
+    }
+
+    void OnSave()
+    {
+        JSONSaveLoad.WriteJSON(name, originalPos);
+    }
+
+    void OnLoad()
+    {
+        originalPos = JSONSaveLoad.LoadJSON<Vector3>(name);
         transform.position = originalPos;
     }
 
@@ -32,6 +44,7 @@ public class Wand : MonoBehaviour {
         holdingTime = 0;
         originalHeat = heat;
         originalPos = transform.position;
+        print("Player start " + originalPos);
         wandable = null;
         if (pickable)
         {
