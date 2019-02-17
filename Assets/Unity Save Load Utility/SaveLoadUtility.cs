@@ -1078,10 +1078,9 @@ public class SaveLoadUtility : MonoBehaviour {
 		//Unpack the component
 		object obj = go.GetComponent(obc.componentName) as object;
 		SetValues(ref obj, obc.fields);
-	}
+    }
 
 	private void SetValues(ref object baseInstance, Dictionary<string,object> baseDict) {
-
 		Type baseInstanceType = baseInstance.GetType();
 
 		if(debugController.setValuesType) {

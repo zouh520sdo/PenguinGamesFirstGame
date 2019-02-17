@@ -12,6 +12,7 @@ public class Wand : MonoBehaviour {
     public Pickable pickable;
     public float absorbRatio;
     public float releaseRatio;
+    public DistanceIndicator distanceIndicator;
 
     private float holdingTime;
 
@@ -38,12 +39,22 @@ public class Wand : MonoBehaviour {
             pickable = null;
         }
 
+        if (!distanceIndicator)
+        {
+            GameObject indicatorObj = GameObject.Find("DistanceIndicator");
+            if (indicatorObj)
+            {
+                distanceIndicator = indicatorObj.GetComponent<DistanceIndicator>();
+            }
+        }
+
     }
 	
 	// Update is called once per frame
 	void Update () {
         if (pickable)
         {
+            distanceIndicator.transform.position = pickable.transform.position;
             if (Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown("Fire1"))
             {
                 pickable.Drop(this);

@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 224445227960305376}
   - component: {fileID: 222415388332387412}
   - component: {fileID: 114041840821158078}
+  - component: {fileID: 114700064657345450}
   m_Layer: 5
   m_Name: BlackScreen
   m_TagString: Untagged
@@ -151,6 +152,17 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114700064657345450
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1573537319196126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e46273fc06c47d94599f05044d604991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114788919067920474
 MonoBehaviour:
   m_ObjectHideFlags: 1
