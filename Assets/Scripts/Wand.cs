@@ -23,7 +23,6 @@ public class Wand : MonoBehaviour {
     public void OnReset()
     {
         heat = originalHeat;
-        print("Player reset " + originalPos);
         transform.position = originalPos;
     }
 
