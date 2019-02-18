@@ -12,16 +12,29 @@ public class Wand : MonoBehaviour {
     public Pickable pickable;
     public float absorbRatio;
     public float releaseRatio;
+    public DistanceIndicator distanceIndicator;
 
     private float holdingTime;
 
     // Data that needs to reset
-    protected float originalHeat;
-    protected Vector3 originalPos;
+    [HideInInspector]public float originalHeat;
+    [HideInInspector]public Vector3 originalPos;
 
     public void OnReset()
     {
         heat = originalHeat;
+        print("Player reset " + originalPos);
+        transform.position = originalPos;
+    }
+
+    void OnSave()
+    {
+        JSONSaveLoad.WriteJSON(name, originalPos);
+    }
+
+    void OnLoad()
+    {
+        originalPos = JSONSaveLoad.LoadJSON<Vector3>(name);
         transform.position = originalPos;
     }
 
@@ -38,12 +51,22 @@ public class Wand : MonoBehaviour {
             pickable = null;
         }
 
+        if (!distanceIndicator)
+        {
+            GameObject indicatorObj = GameObject.Find("DistanceIndicator");
+            if (indicatorObj)
+            {
+                distanceIndicator = indicatorObj.GetComponent<DistanceIndicator>();
+            }
+        }
+
     }
 	
 	// Update is called once per frame
 	void Update () {
         if (pickable)
         {
+            distanceIndicator.transform.position = pickable.transform.position;
             if (Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown("Fire1"))
             {
                 pickable.Drop(this);

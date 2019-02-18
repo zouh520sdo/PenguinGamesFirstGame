@@ -2,15 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Renderer))]
 public class Wandable : MonoBehaviour {
 
     public float maxHeat;
     public float minHeat;
     public float containingHeat;
     public float volume;
-
-    protected Renderer _renderer;
+    public Renderer myRenderer;
     protected float _animingTime;
 
     // Date for resetting
@@ -41,7 +39,10 @@ public class Wandable : MonoBehaviour {
 
     protected virtual void OnStart()
     {
-        _renderer = GetComponent<Renderer>();
+        if (!myRenderer)
+        {
+            myRenderer = GetComponent<Renderer>();
+        }
         gameObject.layer = LayerMask.NameToLayer("Wandable");
         tag = "Wandable";
         _animingTime = 0;

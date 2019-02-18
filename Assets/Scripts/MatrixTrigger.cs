@@ -8,7 +8,8 @@ public class MatrixTrigger : Trigger {
     public Material blueMaterial;
     public Material redMaterial;
 
-    protected Material originalMat;
+    [HideInInspector]
+    public Material originalMat;
 
     public override void Start()
     {

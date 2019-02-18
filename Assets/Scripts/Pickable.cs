@@ -49,6 +49,7 @@ public class Pickable : MonoBehaviour {
     public virtual void Pick(Wand p)
     {
         picker = p;
+        p.distanceIndicator.invisibleData.isVisible = true;
         if (rigid) rigid.isKinematic = true;
         isPickedUp = true;
 
@@ -58,6 +59,7 @@ public class Pickable : MonoBehaviour {
     public virtual void Drop(Wand p)
     {
         picker = null;
+        p.distanceIndicator.invisibleData.isVisible = false;
         if (rigid) rigid.isKinematic = false;
         isPickedUp = false;
     }
