@@ -1272,15 +1272,15 @@ Transform:
   - {fileID: 219918992}
   - {fileID: 2065436205}
   - {fileID: 523327082}
-  - {fileID: 1076099320}
   - {fileID: 440595412}
   - {fileID: 1656847263}
   - {fileID: 914555316}
-  - {fileID: 1437888055}
+  - {fileID: 1076099320}
   - {fileID: 1073172531}
   - {fileID: 2097201019}
   - {fileID: 1353996460}
   - {fileID: 1174553224}
+  - {fileID: 1437888055}
   - {fileID: 833035077}
   - {fileID: 938714633}
   - {fileID: 1293188634}
@@ -1288,28 +1288,28 @@ Transform:
   - {fileID: 1704007721}
   - {fileID: 2101633495}
   - {fileID: 1933857023}
-  - {fileID: 1312804941}
   - {fileID: 856746991}
+  - {fileID: 1312804941}
   - {fileID: 240510936}
   - {fileID: 1205225710}
   - {fileID: 89657851}
   - {fileID: 624152027}
   - {fileID: 1489248681}
   - {fileID: 1368178076}
-  - {fileID: 2021228332}
-  - {fileID: 1026089734}
   - {fileID: 942077270}
   - {fileID: 1415338404}
+  - {fileID: 2021228332}
+  - {fileID: 1026089734}
   - {fileID: 1995702486}
   - {fileID: 240021873}
-  - {fileID: 401358207}
   - {fileID: 269018040}
-  - {fileID: 232477351}
-  - {fileID: 174863061}
-  - {fileID: 326489707}
-  - {fileID: 438837037}
-  - {fileID: 2139154051}
+  - {fileID: 401358207}
   - {fileID: 1883730327}
+  - {fileID: 174863061}
+  - {fileID: 438837037}
+  - {fileID: 232477351}
+  - {fileID: 2139154051}
+  - {fileID: 326489707}
   - {fileID: 1730693462}
   - {fileID: 1844828772}
   - {fileID: 2082106253}
@@ -14181,22 +14181,6 @@ Prefab:
       propertyPath: holder
       value: 
       objectReference: {fileID: 304706454}
-    - target: {fileID: 1155639201737850, guid: 4b6fe96011c1e0e46ba35676f48b1c32, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4351619162128108, guid: 4b6fe96011c1e0e46ba35676f48b1c32, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4351619162128108, guid: 4b6fe96011c1e0e46ba35676f48b1c32, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4351619162128108, guid: 4b6fe96011c1e0e46ba35676f48b1c32, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b6fe96011c1e0e46ba35676f48b1c32, type: 2}
   m_IsPrefabAsset: 0
