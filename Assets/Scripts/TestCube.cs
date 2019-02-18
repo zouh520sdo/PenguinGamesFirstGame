@@ -9,13 +9,13 @@ public class TestCube : Wandable {
     {
         base.OnAiming();
         Color targetColor = Color.Lerp(Color.cyan, Color.red, (containingHeat - minHeat) / (maxHeat - minHeat));
-        _renderer.material.color = Color.Lerp(Color.white, targetColor, Mathf.Sin(2 * Mathf.PI * _animingTime));
+        myRenderer.material.color = Color.Lerp(Color.white, targetColor, Mathf.Sin(2 * Mathf.PI * _animingTime));
     }
 
     public override void OffAiming()
     {
         base.OffAiming();
-        _renderer.material.color = Color.white;
+        myRenderer.material.color = Color.white;
     }
 
 }

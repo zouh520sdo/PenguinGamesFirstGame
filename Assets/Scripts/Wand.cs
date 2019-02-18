@@ -44,7 +44,6 @@ public class Wand : MonoBehaviour {
         holdingTime = 0;
         originalHeat = heat;
         originalPos = transform.position;
-        print("Player start " + originalPos);
         wandable = null;
         if (pickable)
         {
