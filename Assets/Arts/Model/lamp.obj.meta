@@ -5,12 +5,24 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: pasted__pTorus3
+    100004: polySurface15_pasted__pTorus3
+    100006: polySurface33
     400000: //RootNode
     400002: pasted__pTorus3
+    400004: polySurface15_pasted__pTorus3
+    400006: polySurface33
     2100000: pasted__pTorus3Mat
+    2100002: polySurface15_pasted__pTorus3Mat
+    2100004: polySurface33Mat
     2300000: pasted__pTorus3
+    2300002: polySurface15_pasted__pTorus3
+    2300004: polySurface33
     3300000: pasted__pTorus3
+    3300002: polySurface15_pasted__pTorus3
+    3300004: polySurface33
     4300000: pasted__pTorus3
+    4300002: polySurface15_pasted__pTorus3
+    4300004: polySurface33
   externalObjects: {}
   materials:
     importMaterials: 1
