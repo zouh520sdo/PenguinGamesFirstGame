@@ -63,7 +63,7 @@ public class Pickable : MonoBehaviour {
         p.distanceIndicator.invisibleData.isVisible = true;
         if (rigid)
         {
-            rigid.isKinematic = false;
+            rigid.isKinematic = true;
             rigid.useGravity = false;
             rigid.constraints = RigidbodyConstraints.FreezeRotation;
         }
