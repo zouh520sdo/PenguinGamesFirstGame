@@ -7,6 +7,8 @@ public class Wood : Wandable {
     public ParticleSystem fire;
     public bool isOnFire;
 
+    public AudioSource OnFire;
+
     // Subject to change
     public override void OnAiming()
     {
@@ -24,6 +26,7 @@ public class Wood : Wandable {
     protected override void OnStart()
     {
         base.OnStart();
+        OnFire = GetComponent<AudioSource>();
     }
 
     protected override void OnUpdate()
@@ -36,12 +39,18 @@ public class Wood : Wandable {
             ParticleSystem.EmissionModule emission =  fire.emission;
             emission.rateOverTime = 3;
             isOnFire = true;
+            if (!OnFire.isPlaying)
+            {
+                OnFire.Play();
+            }
         }
         else
         {
             ParticleSystem.EmissionModule emission = fire.emission;
             emission.rateOverTime = 0;
             isOnFire = false;
+            OnFire.Stop();
         }
+
     }
 }
