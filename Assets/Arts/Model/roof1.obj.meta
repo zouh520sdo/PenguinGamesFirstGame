@@ -71,6 +71,7 @@ ModelImporter:
     4300016: pPlane3_polySurface15_polySurface9
     4300018: pPlane3_polySurface9_polySurface16
     4300020: wall:group5_pasted__pasted__pPlane1_wall:polySurface6_wall:polySurface1
+    6400000: polySurface14_polySurface13_polySurface11_polySurface8_pPlane3
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -104,7 +105,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
