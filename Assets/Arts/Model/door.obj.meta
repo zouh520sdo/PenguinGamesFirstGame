@@ -4,85 +4,35 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: pasted__pasted__pCube1_pasted__group3_group4
-    100004: pasted__pasted__pCylinder1_pasted__group_group1
-    100006: pasted__pCylinder1_group
-    100008: pasted__pPlatonic1_group2
-    100010: pCube2
-    100012: pCube3
-    100014: pCube4
-    100016: pCylinder1
-    100018: pHelix3_polySurface9
-    100020: polySurface6
-    100022: polySurface8_pHelix3
-    100024: pPlatonic1
-    100026: pTorus1
+    100002: polySurface14
+    100004: polySurface17
+    100006: polySurface20
+    100008: polySurface24
     400000: //RootNode
-    400002: pasted__pasted__pCube1_pasted__group3_group4
-    400004: pasted__pasted__pCylinder1_pasted__group_group1
-    400006: pasted__pCylinder1_group
-    400008: pasted__pPlatonic1_group2
-    400010: pCube2
-    400012: pCube3
-    400014: pCube4
-    400016: pCylinder1
-    400018: pHelix3_polySurface9
-    400020: polySurface6
-    400022: polySurface8_pHelix3
-    400024: pPlatonic1
-    400026: pTorus1
-    2100000: pasted__pasted__pCube1_pasted__group3_group4Mat
-    2100002: pasted__pasted__pCylinder1_pasted__group_group1Mat
-    2100004: pasted__pCylinder1_groupMat
-    2100006: pasted__pPlatonic1_group2Mat
-    2100008: pCube2Mat
-    2100010: pCube3Mat
-    2100012: pCube4Mat
-    2100014: pCylinder1Mat
-    2100016: pHelix3_polySurface9Mat
-    2100018: polySurface6Mat
-    2100020: polySurface8_pHelix3Mat
-    2100022: pPlatonic1Mat
-    2100024: pTorus1Mat
-    2300000: pasted__pasted__pCube1_pasted__group3_group4
-    2300002: pasted__pasted__pCylinder1_pasted__group_group1
-    2300004: pasted__pCylinder1_group
-    2300006: pasted__pPlatonic1_group2
-    2300008: pCube2
-    2300010: pCube3
-    2300012: pCube4
-    2300014: pCylinder1
-    2300016: pHelix3_polySurface9
-    2300018: polySurface6
-    2300020: polySurface8_pHelix3
-    2300022: pPlatonic1
-    2300024: pTorus1
-    3300000: pasted__pasted__pCube1_pasted__group3_group4
-    3300002: pasted__pasted__pCylinder1_pasted__group_group1
-    3300004: pasted__pCylinder1_group
-    3300006: pasted__pPlatonic1_group2
-    3300008: pCube2
-    3300010: pCube3
-    3300012: pCube4
-    3300014: pCylinder1
-    3300016: pHelix3_polySurface9
-    3300018: polySurface6
-    3300020: polySurface8_pHelix3
-    3300022: pPlatonic1
-    3300024: pTorus1
-    4300000: pasted__pasted__pCube1_pasted__group3_group4
-    4300002: pasted__pasted__pCylinder1_pasted__group_group1
-    4300004: pasted__pCylinder1_group
-    4300006: pasted__pPlatonic1_group2
-    4300008: pCube2
-    4300010: pCube3
-    4300012: pCube4
-    4300014: pCylinder1
-    4300016: pHelix3_polySurface9
-    4300018: polySurface6
-    4300020: polySurface8_pHelix3
-    4300022: pPlatonic1
-    4300024: pTorus1
+    400002: polySurface14
+    400004: polySurface17
+    400006: polySurface20
+    400008: polySurface24
+    2100000: polySurface14Mat
+    2100002: polySurface17Mat
+    2100004: polySurface20Mat
+    2100006: polySurface24Mat
+    2300000: polySurface14
+    2300002: polySurface17
+    2300004: polySurface20
+    2300006: polySurface24
+    3300000: polySurface14
+    3300002: polySurface17
+    3300004: polySurface20
+    3300006: polySurface24
+    4300000: polySurface14
+    4300002: polySurface17
+    4300004: polySurface20
+    4300006: polySurface24
+    6400000: polySurface14
+    6400002: polySurface17
+    6400004: polySurface20
+    6400006: polySurface24
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -116,7 +66,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
