@@ -11,10 +11,14 @@ public class MatrixTrigger : Trigger {
     [HideInInspector]
     public Material originalMat;
 
+    public AudioSource OnMatrix;
+
     public override void Start()
     {
         base.Start();
         originalMat = GetComponent<Renderer>().material;
+
+        OnMatrix = GetComponent<AudioSource>();
     }
 
     public override void OnReset()
@@ -41,6 +45,7 @@ public class MatrixTrigger : Trigger {
         if (collision.collider.GetComponent<RedBlock>())
         { 
             activateTriggees();
+            OnMatrix.Play();
         }
     }
 
