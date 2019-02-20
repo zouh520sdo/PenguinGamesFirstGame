@@ -31,19 +31,16 @@ public class Pickable : MonoBehaviour {
 		if (isPickedUp)
         {
             distanceRatio = Mathf.Min(1f, Mathf.Max(0.08f, distanceRatio + 0.5f * Input.GetAxis("Mouse ScrollWheel")));
-            targetPosition = Camera.main.transform.position + distanceRatio * picker.wandRange * Camera.main.transform.forward;
 
-            if (false)
+            Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
+            RaycastHit hit;
+            int boundaryLayer = 1 << LayerMask.NameToLayer("Boundary");
+            if (Physics.Raycast(ray, out hit, distanceRatio * picker.wandRange, boundaryLayer))
             {
-                Vector3 diff = targetPosition - transform.position;
-                Vector3 revVel = rigid.velocity;
-                Vector3 damp = -revVel.normalized * rigid.velocity.sqrMagnitude * 5f;
-                rigid.AddForce(diff * 100f + damp, ForceMode.Acceleration);
+                distanceRatio = hit.distance / picker.wandRange;
             }
-            else
-            {
-                transform.position = Vector3.Lerp(transform.position, targetPosition, 10f * Time.deltaTime);
-            }
+            targetPosition = Camera.main.transform.position + distanceRatio * picker.wandRange * Camera.main.transform.forward;
+            transform.position = Vector3.Lerp(transform.position, targetPosition, 10f * Time.deltaTime);
         }
 	}
 
@@ -65,7 +62,6 @@ public class Pickable : MonoBehaviour {
         {
             rigid.isKinematic = true;
             rigid.useGravity = false;
-            rigid.constraints = RigidbodyConstraints.FreezeRotation;
         }
         isPickedUp = true;
 
@@ -80,7 +76,6 @@ public class Pickable : MonoBehaviour {
         {
             rigid.isKinematic = false;
             rigid.useGravity = true;
-            rigid.constraints = RigidbodyConstraints.None;
         }
         isPickedUp = false;
     }
