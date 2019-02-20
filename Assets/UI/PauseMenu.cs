@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class PauseMenu : MonoBehaviour {
 
@@ -8,10 +9,12 @@ public class PauseMenu : MonoBehaviour {
 
     [SerializeField] private bool isPaused;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    private FirstPersonController fpc;
+
+    // Use this for initialization
+    void Start () {
+        fpc = GameObject.FindGameObjectWithTag("Player").GetComponent<FirstPersonController>();
+    }
 	
 	// Update is called once per frame
 	private void Update () {
@@ -36,6 +39,9 @@ public class PauseMenu : MonoBehaviour {
         Time.timeScale = 0;
         AudioListener.pause = true;
         PauseMenuUI.SetActive(true);
+
+        fpc.GetMouseLook().SetCursorLock(false);
+        fpc.enabled = false;
     }
 
     public void DeactivateMenu()
@@ -44,5 +50,9 @@ public class PauseMenu : MonoBehaviour {
         AudioListener.pause = false;
         PauseMenuUI.SetActive(false);
         isPaused = false;
+
+        fpc.enabled = true;
+        fpc.GetMouseLook().SetCursorLock(true);
+
     }
 }
