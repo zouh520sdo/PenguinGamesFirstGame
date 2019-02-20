@@ -27,7 +27,7 @@ public class Ignitable : MonoBehaviour {
     protected InvisibleData originalInvisiableData;
     protected Vector3 originalPos;
 
-    public void OnReset()
+    public virtual void OnReset()
     {
         containingHeat = originalContainingHeat;
         burnOutDuration = originalBurnOutDuration;
@@ -37,7 +37,7 @@ public class Ignitable : MonoBehaviour {
     }
 
     // Use this for initialization
-    void Start () {
+    public virtual void Start () {
         SetActive(invisibleData.isVisible);
         originalBurnOutDuration = burnOutDuration;
         originalContainingHeat = containingHeat;
@@ -46,7 +46,7 @@ public class Ignitable : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
+    public virtual void Update () {
 
         float v = volume == 0 ? 1 : volume;
         if (!isOnFire)
@@ -104,15 +104,24 @@ public class Ignitable : MonoBehaviour {
 
     }
 
-    public void SetActive(bool enabled)
+    public virtual void SetActive(bool enabled)
     {
         invisibleData.isVisible = enabled;
-        GetComponent<Renderer>().enabled = enabled;
-        GetComponent<Collider>().enabled = enabled;
+        if (GetComponent<Renderer>())
+        {
+            GetComponent<Renderer>().enabled = enabled;
+        }
+        if (GetComponent<Collider>()) {
+            GetComponent<Collider>().enabled = enabled;
+        }
         if (GetComponent<Rigidbody>()) {
             GetComponent<Rigidbody>().isKinematic = !enabled;
         }
-        fire.gameObject.SetActive(enabled);
+
+        if (fire)
+        {
+            fire.gameObject.SetActive(enabled);
+        }
 
         // Send message to any compnoments that need to be notified with the activition of this ignitable object
         if (enabled)
