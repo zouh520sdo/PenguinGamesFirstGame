@@ -33,7 +33,7 @@ public class Pickable : MonoBehaviour {
             distanceRatio = Mathf.Min(1f, Mathf.Max(0.08f, distanceRatio + 0.5f * Input.GetAxis("Mouse ScrollWheel")));
             targetPosition = Camera.main.transform.position + distanceRatio * picker.wandRange * Camera.main.transform.forward;
 
-            if (rigid)
+            if (false)
             {
                 Vector3 diff = targetPosition - transform.position;
                 Vector3 revVel = rigid.velocity;
