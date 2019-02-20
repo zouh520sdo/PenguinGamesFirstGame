@@ -16,7 +16,11 @@ public class LampIgnitable : Ignitable {
 
     public override void OnReset()
     {
-        base.OnReset();
+        containingHeat = originalContainingHeat;
+        burnOutDuration = originalBurnOutDuration;
+        transform.position = originalPos;
+        invisibleData = originalInvisiableData;
+        SetActive(invisibleData.isVisible);
         myLight.enabled = originalLight;
     }
 
@@ -26,6 +30,19 @@ public class LampIgnitable : Ignitable {
         if (GetComponent<Rigidbody>())
         {
             GetComponent<Rigidbody>().isKinematic = !enabled;
+        }
+
+        if (myLight)
+        {
+            myLight.enabled = enabled;
+            if (enabled)
+            {
+                containingHeat = maxHeat;
+            }
+            else
+            {
+                containingHeat = 0f;
+            }
         }
 
         // Send message to any compnoments that need to be notified with the activition of this ignitable object
@@ -46,7 +63,7 @@ public class LampIgnitable : Ignitable {
         if (!isOnFire)
         {
             // Calculate rate based on fire sources
-            rate = -10;
+            rate = 0f;
             lock (fireSources)
             {
                 foreach (Wood wood in fireSources)
