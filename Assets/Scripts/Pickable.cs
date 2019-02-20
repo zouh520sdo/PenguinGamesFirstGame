@@ -32,7 +32,18 @@ public class Pickable : MonoBehaviour {
         {
             distanceRatio = Mathf.Min(1f, Mathf.Max(0.08f, distanceRatio + 0.5f * Input.GetAxis("Mouse ScrollWheel")));
             targetPosition = Camera.main.transform.position + distanceRatio * picker.wandRange * Camera.main.transform.forward;
-            transform.position = Vector3.Lerp(transform.position, targetPosition, 10f * Time.deltaTime);
+
+            if (false)
+            {
+                Vector3 diff = targetPosition - transform.position;
+                Vector3 revVel = rigid.velocity;
+                Vector3 damp = -revVel.normalized * rigid.velocity.sqrMagnitude * 5f;
+                rigid.AddForce(diff * 100f + damp, ForceMode.Acceleration);
+            }
+            else
+            {
+                transform.position = Vector3.Lerp(transform.position, targetPosition, 10f * Time.deltaTime);
+            }
         }
 	}
 
@@ -50,7 +61,12 @@ public class Pickable : MonoBehaviour {
     {
         picker = p;
         p.distanceIndicator.invisibleData.isVisible = true;
-        if (rigid) rigid.isKinematic = true;
+        if (rigid)
+        {
+            rigid.isKinematic = true;
+            rigid.useGravity = false;
+            rigid.constraints = RigidbodyConstraints.FreezeRotation;
+        }
         isPickedUp = true;
 
         distanceRatio = Vector3.Distance(transform.position, Camera.main.transform.position) / picker.wandRange;
@@ -60,7 +76,12 @@ public class Pickable : MonoBehaviour {
     {
         picker = null;
         p.distanceIndicator.invisibleData.isVisible = false;
-        if (rigid) rigid.isKinematic = false;
+        if (rigid)
+        {
+            rigid.isKinematic = false;
+            rigid.useGravity = true;
+            rigid.constraints = RigidbodyConstraints.None;
+        }
         isPickedUp = false;
     }
 }

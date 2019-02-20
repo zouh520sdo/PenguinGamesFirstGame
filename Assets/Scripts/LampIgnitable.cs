@@ -7,11 +7,15 @@ public class LampIgnitable : Ignitable {
     public Light myLight;
 
     protected bool originalLight;
+    protected float randomDelay;
+    protected float randomFrec;
 
     public override void Start()
     {
         base.Start();
         originalLight = myLight.enabled;
+        randomDelay = 0.5f * Random.value;
+        randomFrec = Random.Range(2f, 4f);
     }
 
     public override void OnReset()
@@ -110,6 +114,8 @@ public class LampIgnitable : Ignitable {
             myLight.enabled = false;
             isOnFire = false;
         }
+
+        myLight.intensity = 2.71f + 0.075f * Mathf.Sin(randomFrec*Mathf.PI*Time.time + randomDelay);
 
     }
 }
