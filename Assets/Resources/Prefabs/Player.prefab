@@ -255,6 +255,8 @@ MonoBehaviour:
   absorbRatio: 0.4
   releaseRatio: 0.4
   distanceIndicator: {fileID: 0}
+  originalHeat: 0
+  originalPos: {x: 0, y: 0, z: 0}
 --- !u!114 &114432833520218592
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -296,7 +298,7 @@ MonoBehaviour:
     YSensitivity: 2
     clampVerticalRotation: 1
     MinimumX: -90
-    MaximumX: 90
+    MaximumX: 45
     smooth: 0
     smoothTime: 5
     lockCursor: 1
