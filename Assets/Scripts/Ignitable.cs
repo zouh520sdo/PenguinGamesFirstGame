@@ -11,6 +11,7 @@ public class Ignitable : MonoBehaviour {
 
     public bool isOnFire;
     public ParticleSystem fire;
+    public List<GameObject> hidingChildren;
     public bool canBurnOut;
     public float burnOutDuration;
 
@@ -107,6 +108,10 @@ public class Ignitable : MonoBehaviour {
     public virtual void SetActive(bool enabled)
     {
         invisibleData.isVisible = enabled;
+        foreach (GameObject child in hidingChildren)
+        {
+            child.SetActive(enabled);
+        }
         if (GetComponent<Renderer>())
         {
             GetComponent<Renderer>().enabled = enabled;
