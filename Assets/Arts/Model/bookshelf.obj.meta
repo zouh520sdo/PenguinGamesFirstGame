@@ -5,12 +5,19 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: polySurface74
+    100004: polySurface114
     400000: //RootNode
     400002: polySurface74
+    400004: polySurface114
     2100000: polySurface74Mat
+    2100002: polySurface114Mat
     2300000: polySurface74
+    2300002: polySurface114
     3300000: polySurface74
+    3300002: polySurface114
     4300000: polySurface74
+    4300002: polySurface114
+    6400000: polySurface114
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -44,7 +51,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
