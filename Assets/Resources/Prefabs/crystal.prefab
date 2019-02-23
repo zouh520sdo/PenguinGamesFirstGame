@@ -366,6 +366,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   fadeOutDuration: 2
   fadeInDuration: 2
   isFullCharged: 1
