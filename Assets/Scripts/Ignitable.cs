@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Ignitable : MonoBehaviour {
 
+    public bool isBook;
+
     public float containingHeat;
     public float maxHeat;
     public float minHeat;
@@ -119,8 +121,13 @@ public class Ignitable : MonoBehaviour {
         if (GetComponent<Collider>()) {
             GetComponent<Collider>().enabled = enabled;
         }
-        if (GetComponent<Rigidbody>()) {
-            GetComponent<Rigidbody>().isKinematic = !enabled;
+
+        if (!isBook)
+        {
+            if (GetComponent<Rigidbody>())
+            {
+                GetComponent<Rigidbody>().isKinematic = !enabled;
+            }
         }
 
         if (fire)
