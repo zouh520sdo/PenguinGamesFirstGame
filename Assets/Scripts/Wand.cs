@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Wand : MonoBehaviour {
 
@@ -19,6 +20,18 @@ public class Wand : MonoBehaviour {
     // Data that needs to reset
     [HideInInspector]public float originalHeat;
     [HideInInspector]public Vector3 originalPos;
+
+    //FOR MARKER
+    public Sprite Normal;
+    public Sprite CanInreract;
+    public Sprite CanAOrB;
+    public Sprite CanNotAOrB;
+    public Sprite Aing;
+    public Sprite Ring;
+    public Sprite Picking;
+
+    public Image Marker;
+
 
     public void OnReset()
     {
@@ -58,7 +71,7 @@ public class Wand : MonoBehaviour {
                 distanceIndicator = indicatorObj.GetComponent<DistanceIndicator>();
             }
         }
-
+        Marker.sprite = Normal;
     }
 	
 	// Update is called once per frame
@@ -66,10 +79,12 @@ public class Wand : MonoBehaviour {
         if (pickable)
         {
             distanceIndicator.transform.position = pickable.transform.position;
+            Marker.sprite = Picking;
             if (Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown("Fire1"))
             {
                 pickable.Drop(this);
                 pickable = null;
+                Marker.sprite = Normal;
             }
         }
         else
@@ -81,11 +96,13 @@ public class Wand : MonoBehaviour {
             int layerMask = wandableLayer | pickableLayer;
             if (Physics.Raycast(ray, out hit, wandRange, layerMask))
             {
+                Marker.sprite = CanInreract;
                 if (Input.GetKey(KeyCode.E))
                 {
                     wandable = hit.collider.gameObject.GetComponent<Wandable>();
                     if (wandable)
                     {
+                        Marker.sprite = CanAOrB;
                         wandable.OnAiming();
                         // 
                         if (Input.GetButton("Fire1"))
@@ -96,6 +113,7 @@ public class Wand : MonoBehaviour {
                                 holdingTime += (Time.deltaTime);
                             }
                             absorbFrom(wandable);
+                            Marker.sprite = Aing;
                         }
                         else if (Input.GetButton("Fire2"))
                         {
@@ -105,6 +123,7 @@ public class Wand : MonoBehaviour {
                                 holdingTime += (Time.deltaTime);
                             }
                             releaseTo(wandable);
+                            Marker.sprite = Ring;
                         }
                         else
                         {
@@ -113,6 +132,7 @@ public class Wand : MonoBehaviour {
                     }
                     else
                     {
+                        Marker.sprite = CanNotAOrB;
                         holdingTime = 0;
                     }
                 }
@@ -133,6 +153,7 @@ public class Wand : MonoBehaviour {
             }
             else
             {
+                Marker.sprite = Normal ;
                 holdingTime = 0;
                 if (wandable != null)
                 {
