@@ -91,7 +91,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: d608f5adbb24b4c1abbd5dc12abafa6f, type: 2}
+  - {fileID: 2100000, guid: aa4004ff6ef4f334d84738f201f236aa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -254,7 +254,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  blueMaterial: {fileID: 2100000, guid: d608f5adbb24b4c1abbd5dc12abafa6f, type: 2}
+  blueMaterial: {fileID: 2100000, guid: aa4004ff6ef4f334d84738f201f236aa, type: 2}
   redMaterial: {fileID: 2100000, guid: 8355a3bbe3f05e641858527cb7c52c56, type: 2}
   originalMat: {fileID: 0}
   OnMatrix: {fileID: 0}
