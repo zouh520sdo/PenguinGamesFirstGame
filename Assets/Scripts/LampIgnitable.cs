@@ -117,5 +117,6 @@ public class LampIgnitable : Ignitable {
 
         myLight.intensity = 2.71f + 0.075f * Mathf.Sin(randomFrec*Mathf.PI*Time.time + randomDelay);
 
+        transform.position = originalPos + new Vector3(0f, 0.5f * Mathf.Sin(3f * Time.time + 20f * randomDelay), 0f);
     }
 }
