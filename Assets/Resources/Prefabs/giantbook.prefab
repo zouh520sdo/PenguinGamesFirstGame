@@ -149,7 +149,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1180179937101840}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.16, y: -1.17, z: 2.16}
+  m_LocalPosition: {x: 14.69, y: -1.17, z: 1.8000002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4464841220052260}
@@ -321,6 +321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 466e78909670fc340bd731045c82bcd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBook: 0
   containingHeat: 0
   maxHeat: 50
   minHeat: 0
@@ -13737,7 +13738,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_RenderMode: 3
   m_SortMode: 1
   m_MinParticleSize: 0

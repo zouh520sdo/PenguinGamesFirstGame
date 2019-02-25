@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3410,15 +3410,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
-    - target: {fileID: 1055331776500366, guid: ff70504c0ec66994e916c06b90db9365, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114721910131930734, guid: ff70504c0ec66994e916c06b90db9365,
-        type: 2}
-      propertyPath: invisibleData.isVisible
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff70504c0ec66994e916c06b90db9365, type: 2}
   m_IsPrefabAsset: 0
@@ -5201,15 +5192,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
-    - target: {fileID: 1529803429988120, guid: e475c528179c25a46bc96e5a4ab3fa84, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114433939097060878, guid: e475c528179c25a46bc96e5a4ab3fa84,
-        type: 2}
-      propertyPath: invisibleData.isVisible
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e475c528179c25a46bc96e5a4ab3fa84, type: 2}
   m_IsPrefabAsset: 0
@@ -6243,11 +6225,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 23
       objectReference: {fileID: 0}
-    - target: {fileID: 114133668462107758, guid: dc821d2d08ecf95428c97faa752023ca,
-        type: 2}
-      propertyPath: OnFire
-      value: 
-      objectReference: {fileID: 805520387}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc821d2d08ecf95428c97faa752023ca, type: 2}
   m_IsPrefabAsset: 0
@@ -6345,115 +6322,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46273fc06c47d94599f05044d604991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &805520385 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1772144992896356, guid: dc821d2d08ecf95428c97faa752023ca,
-    type: 2}
-  m_PrefabInternal: {fileID: 778730352}
---- !u!82 &805520387
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 805520385}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f333dc814c2e1304b95fe2363c4094b4, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 0.19
-  MaxDistance: 5.66
-  Pan2D: 0
-  rolloffMode: 2
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0.02610923
-      value: 1.0049095
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.53007686
-      value: 0.24573919
-      inSlope: -1.4501588
-      outSlope: -1.4501588
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: -0.14732139
-      outSlope: -0.14732139
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.24633439
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &807404622 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 26d83eaea8bc70b45b022f19e1bba1e2,
@@ -6663,6 +6531,7 @@ GameObject:
   - component: {fileID: 854273791}
   - component: {fileID: 854273790}
   - component: {fileID: 854273789}
+  - component: {fileID: 854273792}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -6739,6 +6608,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 854273787}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &854273792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 854273787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e46273fc06c47d94599f05044d604991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &855168369
 Prefab:
   m_ObjectHideFlags: 0
@@ -11631,15 +11511,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 17
       objectReference: {fileID: 0}
-    - target: {fileID: 1865455450235924, guid: 2cd4dfd7db44e47458ed4a2cb44dc333, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114026710801013536, guid: 2cd4dfd7db44e47458ed4a2cb44dc333,
-        type: 2}
-      propertyPath: invisibleData.isVisible
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cd4dfd7db44e47458ed4a2cb44dc333, type: 2}
   m_IsPrefabAsset: 0
@@ -12831,15 +12702,6 @@ Prefab:
     - target: {fileID: 4420551182452014, guid: ab2d1a2c5fe58174aab323dc2301b0b4, type: 2}
       propertyPath: m_RootOrder
       value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297567004678504, guid: ab2d1a2c5fe58174aab323dc2301b0b4, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114949785452555758, guid: ab2d1a2c5fe58174aab323dc2301b0b4,
-        type: 2}
-      propertyPath: invisibleData.isVisible
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab2d1a2c5fe58174aab323dc2301b0b4, type: 2}
@@ -14344,11 +14206,6 @@ Prefab:
     - target: {fileID: 4406229493897528, guid: 35a63febf2e3cd54ab879291cee5b0da, type: 2}
       propertyPath: m_RootOrder
       value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114220805803075304, guid: 35a63febf2e3cd54ab879291cee5b0da,
-        type: 2}
-      propertyPath: blackScreen
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114220805803075304, guid: 35a63febf2e3cd54ab879291cee5b0da,
         type: 2}
@@ -16563,15 +16420,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 1180155999457046, guid: 0cd2499d11a5f104fb44af14d5a274dc, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114714526063756314, guid: 0cd2499d11a5f104fb44af14d5a274dc,
-        type: 2}
-      propertyPath: invisibleData.isVisible
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cd2499d11a5f104fb44af14d5a274dc, type: 2}
   m_IsPrefabAsset: 0
@@ -17051,20 +16899,6 @@ Prefab:
     - target: {fileID: 4029364461461958, guid: a969190388fce8c47910b2cd91bc73ac, type: 2}
       propertyPath: m_RootOrder
       value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 108534108061866234, guid: a969190388fce8c47910b2cd91bc73ac,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114803988670682318, guid: a969190388fce8c47910b2cd91bc73ac,
-        type: 2}
-      propertyPath: invisibleData.isVisible
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1393339919010808, guid: a969190388fce8c47910b2cd91bc73ac, type: 2}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a969190388fce8c47910b2cd91bc73ac, type: 2}

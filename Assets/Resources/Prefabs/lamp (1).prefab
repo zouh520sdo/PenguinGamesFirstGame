@@ -125,7 +125,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1297567004678504}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.91, y: 3.84, z: 10.49}
+  m_LocalPosition: {x: 17.94, y: 3.84, z: 8.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4067463997686750}
@@ -283,18 +283,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6d42e871afadc499e160e4d5b6cf1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBook: 0
   containingHeat: 0
   maxHeat: 10
   minHeat: 0
   volume: 0
   isOnFire: 0
   fire: {fileID: 0}
+  hidingChildren: []
   canBurnOut: 0
   burnOutDuration: 0
   fireSources: []
   otherFireSources: []
   invisibleData:
-    isVisible: 0
+    isVisible: 1
   myLight: {fileID: 108917930751216922}
 --- !u!136 &136367610097406648
 CapsuleCollider:

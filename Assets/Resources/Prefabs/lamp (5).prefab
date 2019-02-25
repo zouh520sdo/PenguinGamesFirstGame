@@ -266,18 +266,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6d42e871afadc499e160e4d5b6cf1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBook: 0
   containingHeat: 0
   maxHeat: 10
   minHeat: 0
   volume: 0
   isOnFire: 0
   fire: {fileID: 0}
+  hidingChildren: []
   canBurnOut: 0
   burnOutDuration: 0
   fireSources: []
   otherFireSources: []
   invisibleData:
-    isVisible: 0
+    isVisible: 1
   myLight: {fileID: 108135546942084938}
 --- !u!114 &114268506373372942
 MonoBehaviour:
