@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11534,6 +11534,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 23
       objectReference: {fileID: 0}
+    - target: {fileID: 82945484495462872, guid: dc821d2d08ecf95428c97faa752023ca,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4d48cfb1f865eec43b90c9b58525470c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc821d2d08ecf95428c97faa752023ca, type: 2}
   m_IsPrefabAsset: 0
@@ -15613,6 +15618,11 @@ Prefab:
       propertyPath: holder
       value: 
       objectReference: {fileID: 304706454}
+    - target: {fileID: 82422437905899992, guid: 4b6fe96011c1e0e46ba35676f48b1c32,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4d48cfb1f865eec43b90c9b58525470c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b6fe96011c1e0e46ba35676f48b1c32, type: 2}
   m_IsPrefabAsset: 0
@@ -18191,7 +18201,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f333dc814c2e1304b95fe2363c4094b4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4d48cfb1f865eec43b90c9b58525470c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
