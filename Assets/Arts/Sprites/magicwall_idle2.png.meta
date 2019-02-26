@@ -119,13 +119,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1092de8084830b41b4fd16ac3954305
+      spriteID: 73f0440d973939f4ea8e9dfc886b4a0a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magicwall_idle2_5
+      name: magicwall_idle2_1
       rect:
         serializedVersion: 2
         x: 2000
@@ -139,47 +139,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2add6ca2835cf1a498e8ca394d8b16e6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magicwall_idle2_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2400
-        width: 2000
-        height: 800
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 34bf461e2d14deb4781047cb432060c4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magicwall_idle2_6
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 2400
-        width: 2000
-        height: 800
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98eaa867dfdcc5d4dabf88c7f9cba8fa
+      spriteID: d6a8c50a138717d468c5d591295343bf
       vertices: []
       indices: 
       edges: []
@@ -189,6 +149,46 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+        y: 2400
+        width: 2000
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb4f61d361de9f45b48cdd7ab78209e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicwall_idle2_3
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2400
+        width: 2000
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970461c265307664c865bb78774b5f3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicwall_idle2_4
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 1600
         width: 2000
         height: 800
@@ -199,13 +199,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80a7c0fe3a7dfd640b7f5692324e6888
+      spriteID: 62b5f5c86a261c94686b27d66439c66a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magicwall_idle2_7
+      name: magicwall_idle2_5
       rect:
         serializedVersion: 2
         x: 2000
@@ -219,13 +219,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 918b308f7c7a1824e84833067136a05d
+      spriteID: b39fb79aa1cf9fe4f846015c51bc4194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magicwall_idle2_3
+      name: magicwall_idle2_6
       rect:
         serializedVersion: 2
         x: 0
@@ -239,13 +239,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbca1a6f87815704286fdcc2edf62361
+      spriteID: 79bc8ce0dac1c6d47b8476832b12f6d4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magicwall_idle2_8
+      name: magicwall_idle2_7
       rect:
         serializedVersion: 2
         x: 2000
@@ -259,13 +259,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09f358dc8c0fec44686177627e61ae38
+      spriteID: 7ccda73cf2ac43448be6601f882d73b7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magicwall_idle2_4
+      name: magicwall_idle2_8
       rect:
         serializedVersion: 2
         x: 0
@@ -279,7 +279,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f9b44cdd0770a74fb3ab7594f4cb465
+      spriteID: 0f3777efb23e5c54e9d0582717833ecb
       vertices: []
       indices: 
       edges: []
@@ -299,7 +299,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97302770fd843394885c22e218757abb
+      spriteID: bb5231c1565ef0d429285d7b9c919b1e
       vertices: []
       indices: 
       edges: []
