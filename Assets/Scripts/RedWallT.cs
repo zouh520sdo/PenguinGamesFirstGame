@@ -7,6 +7,9 @@ public class RedWallT : Triggee {
     public List<Renderer> allRenderers;
     public List<Collider> allColliders;
 
+    public AudioSource WallAppear;
+    public AudioSource WallDis;
+
     public virtual void SetActive(bool active)
     {
         isActive = active;
@@ -38,17 +41,22 @@ public class RedWallT : Triggee {
         allRenderers = new List<Renderer>(gameObject.GetComponentsInChildren<Renderer>());
         allColliders = new List<Collider>(gameObject.GetComponentsInChildren<Collider>());
 
+        WallAppear = GetComponent<AudioSource>();
+        WallDis = GetComponent<AudioSource>();
+
         SetActive(isActive);
     }
 
     public override void Activate()
     {
+        WallAppear.Play();
         base.Activate();
         StartCoroutine(FadeOut());
     }
 
     public override void Deactivate()
     {
+        WallDis.Play();
         base.Deactivate();
         StartCoroutine(FadeIn());
     }

@@ -7,6 +7,9 @@ public class BlueWallT : Triggee
     public List<Renderer> allRenderers;
     public List<Collider> allColliders;
 
+    public AudioSource WallAppear;
+    public AudioSource WallDis;
+
     public virtual void SetActive(bool active)
     {
         isActive = active;
@@ -39,16 +42,21 @@ public class BlueWallT : Triggee
         allColliders = new List<Collider>(gameObject.GetComponentsInChildren<Collider>());
 
         SetActive(isActive);
+
+        WallAppear = GetComponent<AudioSource>();
+        WallDis = GetComponent<AudioSource>();
     }
 
     public override void Activate()
     {
+        WallAppear.Play();
         base.Activate();
         StartCoroutine(FadeIn());
     }
 
     public override void Deactivate()
     {
+        WallDis.Play();
         base.Deactivate();
         StartCoroutine(FadeOut());
     }
