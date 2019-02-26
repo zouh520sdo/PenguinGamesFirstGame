@@ -225,7 +225,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: ef3e31d8bfb49b94c8c704c117ec99a8, type: 3}
+  - {fileID: 2100000, guid: 454c75462ee1862418aaf16854e0b8a4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -260,7 +260,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100002, guid: ef3e31d8bfb49b94c8c704c117ec99a8, type: 3}
+  - {fileID: 2100000, guid: 8d4ef6b2dabbe8449a318e8ba31c79b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -467,6 +467,7 @@ MonoBehaviour:
   absorbRatio: 0.4
   releaseRatio: 0.4
   distanceIndicator: {fileID: 0}
+  handAnimator: {fileID: 95521358119643030}
   originalHeat: 0
   originalPos: {x: 0, y: 0, z: 0}
   Normal: {fileID: 21300000, guid: da86f5aafdef29848befd13cca5b2fd7, type: 3}

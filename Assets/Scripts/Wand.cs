@@ -14,6 +14,7 @@ public class Wand : MonoBehaviour {
     public float absorbRatio;
     public float releaseRatio;
     public DistanceIndicator distanceIndicator;
+    public Animator handAnimator;
 
     private float holdingTime;
 
