@@ -6441,8 +6441,8 @@ Transform:
   - {fileID: 1211561022}
   - {fileID: 1687072034}
   - {fileID: 2091567461}
-  - {fileID: 646152524}
   - {fileID: 1247540866}
+  - {fileID: 646152524}
   m_Father: {fileID: 398293483}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10934,7 +10934,7 @@ Transform:
   - {fileID: 1034332132}
   - {fileID: 597169885}
   m_Father: {fileID: 758165316}
-  m_RootOrder: 35
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1247540867
 MonoBehaviour:
