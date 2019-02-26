@@ -80,7 +80,14 @@ public class Wand : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.E))
         {
+            handAnimator.ResetTrigger("Hide");
             handAnimator.SetTrigger("Show");
+        }
+
+        if (Input.GetKeyUp(KeyCode.E))
+        {
+            handAnimator.ResetTrigger("Show");
+            handAnimator.SetTrigger("Hide");
         }
 
         if (pickable)
@@ -89,6 +96,10 @@ public class Wand : MonoBehaviour {
             Marker.sprite = Picking;
             if (Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown("Fire1"))
             {
+                handAnimator.SetBool("IsCasting", false);
+                handAnimator.ResetTrigger("Show");
+                handAnimator.SetTrigger("Hide");
+
                 pickable.Drop(this);
                 pickable = null;
                 Marker.sprite = Normal;
@@ -96,6 +107,7 @@ public class Wand : MonoBehaviour {
         }
         else
         {
+
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
             RaycastHit hit;
             int wandableLayer = 1 << LayerMask.NameToLayer("Wandable");
@@ -115,6 +127,7 @@ public class Wand : MonoBehaviour {
                         if (Input.GetButton("Fire1"))
                         {
                             // Absorb
+                            handAnimator.SetBool("IsCasting", true);
                             if (wandable)
                             {
                                 holdingTime += (Time.deltaTime);
@@ -125,6 +138,7 @@ public class Wand : MonoBehaviour {
                         else if (Input.GetButton("Fire2"))
                         {
                             // Release
+                            handAnimator.SetBool("IsCasting", true);
                             if (wandable)
                             {
                                 holdingTime += (Time.deltaTime);
@@ -134,6 +148,7 @@ public class Wand : MonoBehaviour {
                         }
                         else
                         {
+                            handAnimator.SetBool("IsCasting", false);
                             holdingTime = 0;
                         }
                     }
@@ -152,6 +167,9 @@ public class Wand : MonoBehaviour {
                             pickable = hit.collider.GetComponent<Pickable>();
                             if (pickable)
                             {
+                                handAnimator.ResetTrigger("Hide");
+                                handAnimator.SetTrigger("Show");
+                                handAnimator.SetBool("IsCasting", true);
                                 pickable.Pick(this);
                             }
                         }
