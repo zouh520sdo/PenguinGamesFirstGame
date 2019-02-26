@@ -8,10 +8,13 @@ public class BooksGroup : MonoBehaviour {
 
     public AudioSource OnFire;
 
+    public bool hasBookOnFire;
+
     void Start()
     {
         children = gameObject.GetComponentsInChildren<ObjectIdentifier>();
         OnFire = GetComponent<AudioSource>();
+        hasBookOnFire = false;
     }
 
     void Update()
@@ -21,16 +24,27 @@ public class BooksGroup : MonoBehaviour {
             Ignitable book = child.GetComponent<Ignitable>();
             if (book && book.isOnFire)
             {
-                if(!OnFire.isPlaying)
-                {
-                    //Debug.Log("play");
-                    OnFire.Play();
-                }
+                hasBookOnFire = true;
+                break;
+               
             }
             else //if(book && !book.isOnFire)
             {
-                OnFire.Stop();
+                hasBookOnFire = false;
             }
+        }
+
+        if (hasBookOnFire)
+        {
+            if (!OnFire.isPlaying)
+            {
+                //Debug.Log("play");
+                OnFire.Play();
+            }
+        }
+        else
+        {
+            OnFire.Stop();
         }
     }
 
