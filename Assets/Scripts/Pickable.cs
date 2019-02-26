@@ -37,7 +37,7 @@ public class Pickable : MonoBehaviour {
             int boundaryLayer = 1 << LayerMask.NameToLayer("Boundary");
             if (Physics.Raycast(ray, out hit, distanceRatio * picker.wandRange, boundaryLayer))
             {
-                distanceRatio = hit.distance / picker.wandRange;
+                distanceRatio = hit.distance / picker.wandRange - 0.03f;
             }
             targetPosition = Camera.main.transform.position + distanceRatio * picker.wandRange * Camera.main.transform.forward;
             transform.position = Vector3.Lerp(transform.position, targetPosition, 10f * Time.deltaTime);
