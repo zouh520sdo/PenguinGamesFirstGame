@@ -10,12 +10,16 @@ ModelImporter:
     400002: pasted__pCube5_polySurface10
     400004: polySurface11_pasted__pCube5
     2100000: initialShadingGroup
+    2100002: pasted__pCube5_polySurface10Mat
+    2100004: polySurface11_pasted__pCube5Mat
     2300000: pasted__pCube5_polySurface10
     2300002: polySurface11_pasted__pCube5
     3300000: pasted__pCube5_polySurface10
     3300002: polySurface11_pasted__pCube5
     4300000: pasted__pCube5_polySurface10
     4300002: polySurface11_pasted__pCube5
+    6400000: pasted__pCube5_polySurface10
+    6400002: polySurface11_pasted__pCube5
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -49,7 +53,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
