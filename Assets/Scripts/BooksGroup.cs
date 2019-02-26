@@ -23,8 +23,13 @@ public class BooksGroup : MonoBehaviour {
             {
                 if(!OnFire.isPlaying)
                 {
+                    //Debug.Log("play");
                     OnFire.Play();
                 }
+            }
+            else //if(book && !book.isOnFire)
+            {
+                OnFire.Stop();
             }
         }
     }
