@@ -23,8 +23,9 @@ public class PlayFireSound : MonoBehaviour {
                 OnFire.Play();
             }
         }
-        else if(!CanFire.activeSelf)
+        else if(!isOnfire)
         {
+            //Debug.Log("false");
             OnFire.Stop();
         }
 		

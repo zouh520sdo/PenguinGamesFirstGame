@@ -144,6 +144,7 @@ public class Ignitable : MonoBehaviour {
         {
             gameObject.SendMessage("OnInactive", SendMessageOptions.DontRequireReceiver);
         }
+        isOnFire = false;
     }
 
     void OnSave()
