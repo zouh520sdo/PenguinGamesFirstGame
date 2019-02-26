@@ -77,6 +77,12 @@ public class Wand : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            handAnimator.SetTrigger("Show");
+        }
+
         if (pickable)
         {
             distanceIndicator.transform.position = pickable.transform.position;
