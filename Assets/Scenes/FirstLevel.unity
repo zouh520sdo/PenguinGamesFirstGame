@@ -13162,6 +13162,16 @@ Prefab:
       propertyPath: Marker
       value: 
       objectReference: {fileID: 486360174}
+    - target: {fileID: 23017213487602656, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 454c75462ee1862418aaf16854e0b8a4, type: 2}
+    - target: {fileID: 23761319012909008, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8d4ef6b2dabbe8449a318e8ba31c79b6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
   m_IsPrefabAsset: 0
