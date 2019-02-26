@@ -58,9 +58,9 @@ GameObject:
   - component: {fileID: 114891503857854534}
   - component: {fileID: 54129694072600646}
   - component: {fileID: 82548543537948298}
-  - component: {fileID: 114212457807376820}
   - component: {fileID: 136986570098906722}
   - component: {fileID: 114432833520218592}
+  - component: {fileID: 114724560050559394}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -162,8 +162,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1939030980026376}
   m_LocalRotation: {x: -0.1326932, y: -0.13842547, z: -0.018718813, w: 0.9812647}
-  m_LocalPosition: {x: 0.624, y: -0.736, z: 1.27}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.602, y: -0.57378, z: 1.067}
+  m_LocalScale: {x: 0.69, y: 0.69, z: 0.69}
   m_Children:
   - {fileID: 4700031958578816}
   - {fileID: 4565053940131028}
@@ -429,7 +429,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114212457807376820
+--- !u!114 &114432833520218592
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1499582044198586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c19f3e134862e74dbc98cb514a82ef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabName: Player
+  id: 
+  idParent: 
+  dontSave: 0
+  componentSaveMode: 4
+  componentTypesToSave:
+  - Wand
+--- !u!114 &114724560050559394
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -451,24 +469,14 @@ MonoBehaviour:
   distanceIndicator: {fileID: 0}
   originalHeat: 0
   originalPos: {x: 0, y: 0, z: 0}
---- !u!114 &114432833520218592
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1499582044198586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c19f3e134862e74dbc98cb514a82ef5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabName: Player
-  id: 
-  idParent: 
-  dontSave: 0
-  componentSaveMode: 4
-  componentTypesToSave:
-  - Wand
+  Normal: {fileID: 21300000, guid: da86f5aafdef29848befd13cca5b2fd7, type: 3}
+  CanInreract: {fileID: 21300000, guid: 513771f3aa964bf4985572a0d16ee19e, type: 3}
+  CanAOrB: {fileID: 21300000, guid: ffa7afc1397bd4748ad8092918f395ca, type: 3}
+  CanNotAOrB: {fileID: 21300000, guid: 8e7165b7eeaeaa646a753ce837837eef, type: 3}
+  Aing: {fileID: 21300000, guid: f8634c853ff66d74580bf3060c0c626c, type: 3}
+  Ring: {fileID: 21300000, guid: 93d322fc90d3b5b469e4c28f4e10e309, type: 3}
+  Picking: {fileID: 21300000, guid: e565ef5c5a3ae1a4c964bb7153479dec, type: 3}
+  Marker: {fileID: 0}
 --- !u!114 &114891503857854534
 MonoBehaviour:
   m_ObjectHideFlags: 1
