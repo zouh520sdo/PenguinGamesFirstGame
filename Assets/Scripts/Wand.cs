@@ -56,9 +56,13 @@ public class Wand : MonoBehaviour {
         transform.position = originalPos;
     }
 
+    private void Awake()
+    {
+        tag = "Player";
+    }
+
     // Use this for initialization
     void Start () {
-        tag = "Player";
         holdingTime = 0;
         originalHeat = heat;
         originalPos = transform.position;
