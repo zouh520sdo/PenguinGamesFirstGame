@@ -13667,6 +13667,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114037392819008030, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
+      propertyPath: Marker
+      value: 
+      objectReference: {fileID: 486360174}
     - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
         type: 2}
       propertyPath: distanceIndicator
@@ -13677,16 +13682,6 @@ Prefab:
       propertyPath: Marker
       value: 
       objectReference: {fileID: 486360174}
-    - target: {fileID: 114037392819008030, guid: 0771f8c58755eb2489de7c50035fc6ea,
-        type: 2}
-      propertyPath: Marker
-      value: 
-      objectReference: {fileID: 486360174}
-    - target: {fileID: 82435458275467636, guid: 0771f8c58755eb2489de7c50035fc6ea,
-        type: 2}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 95ab548249ce78543979517f2c82c80f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
   m_IsPrefabAsset: 0

@@ -15,6 +15,7 @@ public class Wand : MonoBehaviour {
     public float releaseRatio;
     public DistanceIndicator distanceIndicator;
     public Animator handAnimator;
+    public ParticleSystem wandEffect;
 
     private float holdingTime;
 
@@ -38,6 +39,10 @@ public class Wand : MonoBehaviour {
     {
         heat = originalHeat;
         transform.position = originalPos;
+
+        handAnimator.ResetTrigger("Show");
+        handAnimator.SetTrigger("Hide");
+        wandEffect.gameObject.SetActive(false);
     }
 
     void OnSave()
@@ -73,10 +78,11 @@ public class Wand : MonoBehaviour {
             }
         }
         Marker.sprite = Normal;
+        wandEffect.gameObject.SetActive(false);
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
 
         if (Input.GetKey(KeyCode.E))
         {
@@ -99,6 +105,7 @@ public class Wand : MonoBehaviour {
                 handAnimator.SetBool("IsCasting", false);
                 handAnimator.ResetTrigger("Show");
                 handAnimator.SetTrigger("Hide");
+                wandEffect.gameObject.SetActive(false);
 
                 pickable.Drop(this);
                 pickable = null;
@@ -128,6 +135,8 @@ public class Wand : MonoBehaviour {
                         {
                             // Absorb
                             handAnimator.SetBool("IsCasting", true);
+                            wandEffect.gameObject.SetActive(true);
+
                             if (wandable)
                             {
                                 holdingTime += (Time.deltaTime);
@@ -139,6 +148,8 @@ public class Wand : MonoBehaviour {
                         {
                             // Release
                             handAnimator.SetBool("IsCasting", true);
+                            wandEffect.gameObject.SetActive(true);
+
                             if (wandable)
                             {
                                 holdingTime += (Time.deltaTime);
@@ -149,6 +160,8 @@ public class Wand : MonoBehaviour {
                         else
                         {
                             handAnimator.SetBool("IsCasting", false);
+                            wandEffect.gameObject.SetActive(false);
+
                             holdingTime = 0;
                         }
                     }
@@ -170,6 +183,8 @@ public class Wand : MonoBehaviour {
                                 handAnimator.ResetTrigger("Hide");
                                 handAnimator.SetTrigger("Show");
                                 handAnimator.SetBool("IsCasting", true);
+                                wandEffect.gameObject.SetActive(true);
+
                                 pickable.Pick(this);
                             }
                         }
