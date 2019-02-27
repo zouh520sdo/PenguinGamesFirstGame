@@ -612,6 +612,8 @@ MonoBehaviour:
   fire: {fileID: 198274754789535982}
   hidingChildren:
   - {fileID: 1741944219884274}
+  - {fileID: 1182752385188286}
+  - {fileID: 1005352885687710}
   canBurnOut: 1
   burnOutDuration: 7.5
   fireSources: []
