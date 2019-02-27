@@ -5,7 +5,9 @@ using UnityEngine;
 public class LampIgnitable : Ignitable {
 
     public Light myLight;
+    public float groudHeight;
 
+    protected Vector3 targetPos;
     protected bool originalLight;
     protected float randomDelay;
     protected float randomFrec;
@@ -115,8 +117,18 @@ public class LampIgnitable : Ignitable {
             isOnFire = false;
         }
 
-        myLight.intensity = 2.71f + 0.075f * Mathf.Sin(randomFrec*Mathf.PI*Time.time + randomDelay);
+        if (isOnFire)
+        {
+            myLight.intensity = 2.71f + 0.075f * Mathf.Sin(randomFrec * Mathf.PI * Time.time + randomDelay);
+            targetPos = originalPos + new Vector3(0f, 1f * Mathf.Sin(3f * Time.time + 20f * randomDelay), 0f);
+        }
+        else
+        {
+            myLight.enabled = false;
+            targetPos = transform.position;
+            targetPos.y = groudHeight;
+        }
 
-        transform.position = originalPos + new Vector3(0f, 0.5f * Mathf.Sin(3f * Time.time + 20f * randomDelay), 0f);
+        transform.position = Vector3.Lerp(transform.position, targetPos, 1.5f * Time.deltaTime);
     }
 }
