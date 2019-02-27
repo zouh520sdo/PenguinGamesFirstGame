@@ -122,7 +122,14 @@ public class Wand : MonoBehaviour {
             int layerMask = wandableLayer | pickableLayer;
             if (Physics.Raycast(ray, out hit, wandRange, layerMask))
             {
-                Marker.sprite = CanInreract;
+                if (hit.collider.gameObject.GetComponent<Wandable>() || hit.collider.gameObject.GetComponent<Pickable>())
+                {
+                    Marker.sprite = CanInreract;
+                }
+                else
+                {
+                    Marker.sprite = Normal;
+                }
                 if (Input.GetKey(KeyCode.E))
                 {
                     wandable = hit.collider.gameObject.GetComponent<Wandable>();

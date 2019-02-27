@@ -633,7 +633,7 @@ MonoBehaviour:
   heat: 250
   minHeat: 0
   maxHeat: 500
-  wandRange: 30
+  wandRange: 20
   wandable: {fileID: 0}
   pickable: {fileID: 0}
   absorbRatio: 0.4

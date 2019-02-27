@@ -575,6 +575,14 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9a7fd38e85d42b94386f61154e8a9e42, type: 2}
+    - target: {fileID: 100000, guid: 3b685495f35cd824c8ebe42ae5f07a92, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 3b685495f35cd824c8ebe42ae5f07a92, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b685495f35cd824c8ebe42ae5f07a92, type: 3}
   m_IsPrefabAsset: 0
@@ -7399,6 +7407,14 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9a7fd38e85d42b94386f61154e8a9e42, type: 2}
+    - target: {fileID: 100000, guid: 3b685495f35cd824c8ebe42ae5f07a92, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 3b685495f35cd824c8ebe42ae5f07a92, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b685495f35cd824c8ebe42ae5f07a92, type: 3}
   m_IsPrefabAsset: 0
@@ -13667,17 +13683,17 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114037392819008030, guid: 0771f8c58755eb2489de7c50035fc6ea,
-        type: 2}
-      propertyPath: Marker
-      value: 
-      objectReference: {fileID: 486360174}
     - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
         type: 2}
       propertyPath: distanceIndicator
       value: 
       objectReference: {fileID: 1906124337}
     - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
+      propertyPath: Marker
+      value: 
+      objectReference: {fileID: 486360174}
+    - target: {fileID: 114037392819008030, guid: 0771f8c58755eb2489de7c50035fc6ea,
         type: 2}
       propertyPath: Marker
       value: 
@@ -18014,6 +18030,14 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9a7fd38e85d42b94386f61154e8a9e42, type: 2}
+    - target: {fileID: 100000, guid: 3b685495f35cd824c8ebe42ae5f07a92, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 3b685495f35cd824c8ebe42ae5f07a92, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b685495f35cd824c8ebe42ae5f07a92, type: 3}
   m_IsPrefabAsset: 0
