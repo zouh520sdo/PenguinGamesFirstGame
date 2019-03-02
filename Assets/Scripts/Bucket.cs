@@ -5,6 +5,20 @@ using UnityEngine;
 public class Bucket : Pickable {
 
     public float floatingHeight;
+    public bool hasWater;
+
+    protected bool originalHasWater;
+
+    public override void Start()
+    {
+        base.Start();
+        originalHasWater = hasWater;
+    }
+
+    public void OnReset()
+    {
+        hasWater = originalHasWater;
+    }
 
     public override void Update()
     {
