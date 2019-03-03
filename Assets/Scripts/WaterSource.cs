@@ -19,7 +19,7 @@ public class WaterSource : MonoBehaviour {
         Bucket bucket = other.GetComponent<Bucket>();
         if (bucket)
         {
-            bucket.hasWater = true;
+            bucket.SetWaterActive(true);
         }
     }
 

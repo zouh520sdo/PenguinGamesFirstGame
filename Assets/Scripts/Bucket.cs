@@ -7,17 +7,26 @@ public class Bucket : Pickable {
     public float floatingHeight;
     public bool hasWater;
 
+    public GameObject Water;
+
     protected bool originalHasWater;
 
     public override void Start()
     {
         base.Start();
         originalHasWater = hasWater;
+        SetWaterActive(hasWater);
     }
 
     public void OnReset()
     {
         hasWater = originalHasWater;
+    }
+
+    public void SetWaterActive(bool active)
+    {
+        hasWater = active;
+        Water.SetActive(active);
     }
 
     public override void Update()
