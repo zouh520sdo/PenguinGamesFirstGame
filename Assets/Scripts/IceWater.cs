@@ -9,6 +9,8 @@ public class IceWater : Wandable {
     protected float scaleRatio, targetScaleRatio;
     public Renderer water;
 
+    public Bucket bucket;
+
     protected override void OnStart()
     {
         base.OnStart();
@@ -36,6 +38,11 @@ public class IceWater : Wandable {
         if (scaleRatio == 1f)
         {
             water.enabled = false;
+            ice.enabled = true;
+        }
+        else
+        {
+            ice.enabled = false;
         }
 
         if (scaleRatio > targetScaleRatio)
@@ -49,7 +56,14 @@ public class IceWater : Wandable {
         }
 
         ice.transform.localScale = originalIceScale * scaleRatio;
+
+        if (_animingTime > 0f)
+        {
+            bucket.isWanding = true;
+        }
+        else
+        {
+            bucket.isWanding = false;
+        }
     }
-
-
 }

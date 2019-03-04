@@ -8,8 +8,9 @@ public class Pickable : MonoBehaviour {
     public Wand picker;
     public float distanceRatio;
 
-    protected Rigidbody rigid;
+    public Rigidbody rigid;
     protected Vector3 targetPosition;
+    protected bool originalIsPickedUp;
 
     public virtual void Awake()
     {
@@ -22,8 +23,13 @@ public class Pickable : MonoBehaviour {
         {
             gameObject.layer = LayerMask.NameToLayer("Pickable");
         }
-        isPickedUp = false;
+        originalIsPickedUp = isPickedUp;
         rigid = GetComponent<Rigidbody>();
+    }
+
+    public virtual void OnReset()
+    {
+        isPickedUp = originalIsPickedUp;
     }
 	
 	// Update is called once per frame

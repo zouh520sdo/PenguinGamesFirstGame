@@ -134,6 +134,13 @@ public class Wand : MonoBehaviour {
                 {
                     Marker.sprite = Normal;
                 }
+
+                if (wandable && wandable != hit.collider.gameObject.GetComponent<Wandable>())
+                {
+                    wandable.OffAiming();
+                    wandable = null;
+                }
+
                 if (Input.GetKey(KeyCode.E))
                 {
                     wandable = hit.collider.gameObject.GetComponent<Wandable>();
@@ -200,11 +207,17 @@ public class Wand : MonoBehaviour {
                             }
                         }
                     }
+
+                    if (wandable != null)
+                    {
+                        wandable.OffAiming();
+                        wandable = null;
+                    }
                 }
             }
             else
             {
-                Marker.sprite = Normal ;
+                Marker.sprite = Normal;
                 holdingTime = 0;
                 if (wandable != null)
                 {
