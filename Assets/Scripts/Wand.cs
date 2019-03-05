@@ -196,7 +196,7 @@ public class Wand : MonoBehaviour {
                         if (Input.GetButtonDown("Fire1"))
                         {
                             pickable = hit.collider.GetComponent<Pickable>();
-                            if (pickable)
+                            if (pickable && pickable.isPickable)
                             {
                                 handAnimator.ResetTrigger("Hide");
                                 handAnimator.SetTrigger("Show");
@@ -204,6 +204,10 @@ public class Wand : MonoBehaviour {
                                 wandEffect.gameObject.SetActive(true);
 
                                 pickable.Pick(this);
+                            }
+                            else
+                            {
+                                pickable = null;
                             }
                         }
                     }

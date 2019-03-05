@@ -6,7 +6,7 @@ public class IceWater : Wandable {
 
     public Renderer ice;
     protected Vector3 originalIceScale;
-    protected float scaleRatio, targetScaleRatio;
+    public float scaleRatio, targetScaleRatio;
     public Renderer water;
 
     public Bucket bucket;
@@ -15,6 +15,13 @@ public class IceWater : Wandable {
     {
         base.OnStart();
         originalIceScale = ice.transform.localScale;
+    }
+
+    public void ResetOnIcePicked()
+    {
+        containingHeat = originalContainingHeat;
+        ice.transform.localScale = Vector3.zero;
+        GetComponent<IcePickable>().isPickable = false;
     }
 
     protected override void OnUpdate()

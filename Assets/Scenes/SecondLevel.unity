@@ -668,6 +668,7 @@ MonoBehaviour:
   picker: {fileID: 0}
   distanceRatio: 0
   rigid: {fileID: 0}
+  bucket: {fileID: 160251625}
   icePrefab: {fileID: 0}
 --- !u!4 &934820921 stripped
 Transform:

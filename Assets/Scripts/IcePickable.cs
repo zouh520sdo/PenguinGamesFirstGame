@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class IcePickable : Pickable {
 
+    public Bucket bucket;
     public GameObject icePrefab;
 
     public override void Start()
@@ -19,12 +20,27 @@ public class IcePickable : Pickable {
         }
     }
 
+    public override void Update()
+    {
+        base.Update();
+        if (GetComponent<IceWater>().scaleRatio == 1f)
+        {
+            isPickable = true;
+        }
+        else
+        {
+            isPickable = false;
+        }
+    }
+
     public override void Pick(Wand p)
     {
-        GameObject newIce = Instantiate(icePrefab, null);
-        newIce.transform.position = transform.position;
-        newIce.transform.rotation = transform.rotation;
-        newIce.transform.localScale = transform.lossyScale;
+        GameObject newIce = Instantiate(icePrefab, gameObject.transform);
+        newIce.transform.SetParent(null);
+        bucket.ResetOnIcePicked();
+        //newIce.transform.position = transform.position;
+        //newIce.transform.rotation = transform.rotation;
+        //newIce.transform.localScale = transform.lossyScale;
         Pickable newIcePickable = newIce.GetComponent<Pickable>();
         newIcePickable.picker = p;
         p.distanceIndicator.invisibleData.isVisible = true;

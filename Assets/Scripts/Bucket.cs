@@ -19,9 +19,19 @@ public class Bucket : Pickable {
         SetWaterActive(hasWater);
     }
 
-    public void OnReset()
+    public override void OnReset()
     {
+        base.OnReset();
         hasWater = originalHasWater;
+        Water.SendMessage("OnReset", SendMessageOptions.DontRequireReceiver);
+        SetWaterActive(hasWater);
+    }
+
+    public void ResetOnIcePicked()
+    {
+        hasWater = false;
+        Water.GetComponent<IceWater>().ResetOnIcePicked();
+        SetWaterActive(hasWater);
     }
 
     public void SetWaterActive(bool active)

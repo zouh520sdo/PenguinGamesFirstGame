@@ -7,6 +7,7 @@ public class Pickable : MonoBehaviour {
     public bool isPickedUp;
     public Wand picker;
     public float distanceRatio;
+    public bool isPickable = true;
 
     public Rigidbody rigid;
     protected Vector3 targetPosition;
