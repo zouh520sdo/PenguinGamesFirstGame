@@ -37,6 +37,7 @@ public class IcePickable : Pickable {
     {
         GameObject newIce = Instantiate(icePrefab, gameObject.transform);
         newIce.transform.SetParent(null);
+        bucket.iceCubes.Add(newIce);
         bucket.ResetOnIcePicked();
         //newIce.transform.position = transform.position;
         //newIce.transform.rotation = transform.rotation;

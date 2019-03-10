@@ -10,6 +10,8 @@ public class Bucket : Pickable {
     public GameObject Water;
     public bool isWanding;
 
+    public List<GameObject> iceCubes;
+
     protected bool originalHasWater;
 
     public override void Start()
@@ -25,6 +27,11 @@ public class Bucket : Pickable {
         hasWater = originalHasWater;
         Water.SendMessage("OnReset", SendMessageOptions.DontRequireReceiver);
         SetWaterActive(hasWater);
+        foreach (GameObject go in iceCubes)
+        {
+            Destroy(go);
+        }
+        iceCubes.Clear();
     }
 
     public void ResetOnIcePicked()

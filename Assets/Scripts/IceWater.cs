@@ -10,11 +10,17 @@ public class IceWater : Wandable {
     public Renderer water;
 
     public Bucket bucket;
-
+        
     protected override void OnStart()
     {
         base.OnStart();
         originalIceScale = ice.transform.localScale;
+    }
+
+    public override void OnReset()
+    {
+        containingHeat = originalContainingHeat;
+        _animingTime = 0;
     }
 
     public void ResetOnIcePicked()
