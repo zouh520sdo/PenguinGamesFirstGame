@@ -12,6 +12,7 @@ public class Pickable : MonoBehaviour {
     public Rigidbody rigid;
     protected Vector3 targetPosition;
     protected bool originalIsPickedUp;
+    protected bool originalIsPickable;
 
     public virtual void Awake()
     {
@@ -25,12 +26,14 @@ public class Pickable : MonoBehaviour {
             gameObject.layer = LayerMask.NameToLayer("Pickable");
         }
         originalIsPickedUp = isPickedUp;
+        originalIsPickable = isPickable;
         rigid = GetComponent<Rigidbody>();
     }
 
     public virtual void OnReset()
     {
         isPickedUp = originalIsPickedUp;
+        isPickable = originalIsPickable;
     }
 	
 	// Update is called once per frame
