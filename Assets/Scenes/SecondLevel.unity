@@ -200,6 +200,7 @@ MonoBehaviour:
   isPickedUp: 0
   picker: {fileID: 0}
   distanceRatio: 0
+  isPickable: 1
   rigid: {fileID: 0}
   floatingHeight: -10.1
   hasWater: 0
@@ -325,6 +326,48 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 127c48b93a8d5c4439c5919f22a30c00, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &620806498
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4087930312178396, guid: e94b611212e13d641812e46bb7c4add1, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -13.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087930312178396, guid: e94b611212e13d641812e46bb7c4add1, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -11.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087930312178396, guid: e94b611212e13d641812e46bb7c4add1, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -32.41932
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087930312178396, guid: e94b611212e13d641812e46bb7c4add1, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087930312178396, guid: e94b611212e13d641812e46bb7c4add1, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087930312178396, guid: e94b611212e13d641812e46bb7c4add1, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087930312178396, guid: e94b611212e13d641812e46bb7c4add1, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087930312178396, guid: e94b611212e13d641812e46bb7c4add1, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e94b611212e13d641812e46bb7c4add1, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &689593164
 Prefab:
@@ -470,6 +513,7 @@ MonoBehaviour:
   isPickedUp: 0
   picker: {fileID: 0}
   distanceRatio: 0
+  isPickable: 1
   rigid: {fileID: 0}
 --- !u!23 &918001718
 MeshRenderer:
@@ -651,6 +695,8 @@ MonoBehaviour:
   volume: 0
   myRenderer: {fileID: 0}
   ice: {fileID: 918001718}
+  scaleRatio: 0
+  targetScaleRatio: 0
   water: {fileID: 934820923}
   bucket: {fileID: 160251625}
 --- !u!114 &934820920
@@ -667,6 +713,7 @@ MonoBehaviour:
   isPickedUp: 0
   picker: {fileID: 0}
   distanceRatio: 0
+  isPickable: 1
   rigid: {fileID: 0}
   bucket: {fileID: 160251625}
   icePrefab: {fileID: 0}

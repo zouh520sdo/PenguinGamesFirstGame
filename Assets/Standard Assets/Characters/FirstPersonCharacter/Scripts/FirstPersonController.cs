@@ -28,6 +28,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
+        private float m_JumpSpeedBonus;
         private Camera m_Camera;
         private bool m_Jump;
         private float m_YRotation;
@@ -60,6 +61,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+            m_JumpSpeedBonus = 0f;
         }
 
 
@@ -120,7 +122,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
                 if (m_Jump)
                 {
-                    m_MoveDir.y = m_JumpSpeed;
+                    m_MoveDir.y = m_JumpSpeed + m_JumpSpeedBonus;
+                    m_JumpSpeedBonus = 0f;
                     PlayJumpSound();
                     m_Jump = false;
                     m_Jumping = true;
@@ -136,6 +139,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
             UpdateCameraPosition(speed);
 
             m_MouseLook.UpdateCursorLock();
+        }
+
+        public void ImpulseJump(float bonusSpeed)
+        {
+            if (!m_Jump)
+            {
+                m_Jump = true;
+                m_JumpSpeedBonus = bonusSpeed;
+            }
         }
 
 
