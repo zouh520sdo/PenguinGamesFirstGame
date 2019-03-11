@@ -34,6 +34,8 @@ public class Wand : MonoBehaviour {
 
     public Image Marker;
 
+    public Text dialogue;
+
 
     public void OnReset()
     {
@@ -59,6 +61,10 @@ public class Wand : MonoBehaviour {
     private void Awake()
     {
         tag = "Player";
+        if (!dialogue)
+        {
+            print("Dialogue text needs to be assigned.");
+        }
     }
 
     // Use this for initialization

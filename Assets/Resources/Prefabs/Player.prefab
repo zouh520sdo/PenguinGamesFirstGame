@@ -651,6 +651,7 @@ MonoBehaviour:
   Ring: {fileID: 21300000, guid: 93d322fc90d3b5b469e4c28f4e10e309, type: 3}
   Picking: {fileID: 21300000, guid: e565ef5c5a3ae1a4c964bb7153479dec, type: 3}
   Marker: {fileID: 0}
+  dialogue: {fileID: 0}
 --- !u!114 &114891503857854534
 MonoBehaviour:
   m_ObjectHideFlags: 1
