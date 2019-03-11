@@ -13,18 +13,21 @@ public class Bucket : Pickable {
     public List<GameObject> iceCubes;
 
     protected bool originalHasWater;
+    protected Vector3 originalPos;
 
     public override void Start()
     {
         base.Start();
         originalHasWater = hasWater;
         SetWaterActive(hasWater);
+        originalPos = transform.position;
     }
 
     public override void OnReset()
     {
         base.OnReset();
         hasWater = originalHasWater;
+        transform.position = originalPos;
         Water.SendMessage("OnReset", SendMessageOptions.DontRequireReceiver);
         SetWaterActive(hasWater);
         foreach (GameObject go in iceCubes)
