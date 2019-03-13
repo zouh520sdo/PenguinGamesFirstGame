@@ -65,6 +65,10 @@ public class Wand : MonoBehaviour {
         {
             print("Dialogue text needs to be assigned.");
         }
+        else
+        {
+            dialogue.enabled = false;
+        }
     }
 
     // Use this for initialization
