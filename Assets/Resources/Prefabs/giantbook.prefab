@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 64665052498310420}
   - component: {fileID: 82152364555923056}
   - component: {fileID: 114583402494154270}
+  - component: {fileID: 114457232943598064}
   m_Layer: 0
   m_Name: giantbook
   m_TagString: Untagged
@@ -592,6 +593,18 @@ MonoBehaviour:
   dontSave: 0
   componentSaveMode: 3
   componentTypesToSave: []
+--- !u!114 &114457232943598064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1180179937101840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f48d29f40ee32d4fb8d54ece491cb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: Burn Me!
 --- !u!114 &114467371875222760
 MonoBehaviour:
   m_ObjectHideFlags: 1

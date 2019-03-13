@@ -68,6 +68,7 @@ public class Wand : MonoBehaviour {
         else
         {
             dialogue.enabled = false;
+            dialogue.text = "";
         }
     }
 
@@ -131,6 +132,21 @@ public class Wand : MonoBehaviour {
 
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
             RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, wandRange))
+            {
+                Note description = hit.collider.gameObject.GetComponent<Note>();
+                if (description)
+                {
+                    dialogue.enabled = true;
+                    dialogue.text = description.note;
+                }
+                else
+                {
+                    dialogue.text = "";
+                    dialogue.enabled = false;
+                }
+            }
+
             int wandableLayer = 1 << LayerMask.NameToLayer("Wandable");
             int pickableLayer = 1 << LayerMask.NameToLayer("Pickable");
             int layerMask = wandableLayer | pickableLayer;

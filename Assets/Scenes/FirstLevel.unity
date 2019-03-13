@@ -3128,6 +3128,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46273fc06c47d94599f05044d604991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &332520973 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114920363334476172, guid: fe370290a88187b45b1bbe35ba008cdb,
+    type: 2}
+  m_PrefabInternal: {fileID: 104538697}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &347434395
 Prefab:
   m_ObjectHideFlags: 0
@@ -13698,6 +13704,11 @@ Prefab:
       propertyPath: Marker
       value: 
       objectReference: {fileID: 486360174}
+    - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 332520973}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
   m_IsPrefabAsset: 0
