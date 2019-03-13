@@ -9,30 +9,41 @@ public class LampIgnitable : Ignitable {
 
     protected Vector3 targetPos;
     protected bool originalLight;
+    protected bool isLightingUp;
     protected float randomDelay;
     protected float randomFrec;
+    protected float lightOnIntensity;
+    protected float lightOffIntensity;
+    protected float targetIntensity;
 
     public override void Start()
     {
         base.Start();
-        originalLight = myLight.enabled;
+        //originalLight = myLight.enabled;
         randomDelay = 0.5f * Random.value;
         randomFrec = Random.Range(2f, 4f);
+        lightOnIntensity = 2.71f;
+        lightOffIntensity = 0f;
+        isLightingUp = false;
     }
 
     public override void OnReset()
     {
+        isLightingUp = false;
         containingHeat = originalContainingHeat;
         burnOutDuration = originalBurnOutDuration;
         transform.position = originalPos;
         invisibleData = originalInvisiableData;
         SetActive(invisibleData.isVisible);
-        myLight.enabled = originalLight;
+
+
+        //myLight.enabled = originalLight;
     }
 
     public override void SetActive(bool enabled)
     {
         invisibleData.isVisible = enabled;
+        isOnFire = enabled;
         if (GetComponent<Rigidbody>())
         {
             GetComponent<Rigidbody>().isKinematic = !enabled;
@@ -40,14 +51,16 @@ public class LampIgnitable : Ignitable {
 
         if (myLight)
         {
-            myLight.enabled = enabled;
+            //myLight.enabled = enabled;
             if (enabled)
             {
                 containingHeat = maxHeat;
+                myLight.intensity = lightOnIntensity;
             }
             else
             {
                 containingHeat = 0f;
+                myLight.intensity = lightOffIntensity;
             }
         }
 
@@ -94,10 +107,14 @@ public class LampIgnitable : Ignitable {
             containingHeat = Mathf.Max(minHeat, Mathf.Min(maxHeat, containingHeat + rate / v * Time.deltaTime));
         }
 
+
+
         if (containingHeat >= maxHeat)
         {
-            myLight.enabled = true;
-            isOnFire = true;
+            //myLight.enabled = true;
+            //isOnFire = true;
+            isLightingUp = true;
+            targetIntensity = lightOnIntensity;
             if (canBurnOut)
             {
                 if (burnOutDuration > 0)
@@ -113,9 +130,19 @@ public class LampIgnitable : Ignitable {
         }
         else
         {
-            myLight.enabled = false;
+            //myLight.enabled = false;
+            targetIntensity = lightOffIntensity;
             isOnFire = false;
         }
+
+        myLight.intensity = Mathf.Lerp(myLight.intensity, targetIntensity, 1.5f * Time.deltaTime);
+        if (isLightingUp && lightOnIntensity - myLight.intensity < 0.05f)
+        {
+            isOnFire = true;
+            isLightingUp = false;
+            myLight.intensity = lightOnIntensity;
+        }
+
 
         if (isOnFire)
         {
@@ -124,11 +151,11 @@ public class LampIgnitable : Ignitable {
         }
         else
         {
-            myLight.enabled = false;
+            //myLight.enabled = false;
             targetPos = transform.position;
             targetPos.y = groudHeight;
         }
 
-        transform.position = Vector3.Lerp(transform.position, targetPos, 1.5f * Time.deltaTime);
+        transform.position = Vector3.Lerp(transform.position, targetPos, 0.5f * Time.deltaTime);
     }
 }
