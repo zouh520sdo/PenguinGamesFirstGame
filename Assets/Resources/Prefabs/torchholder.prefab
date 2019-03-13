@@ -53,14 +53,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1985476640132958}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -41.438, y: -0.49, z: -0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalRotation: {x: -0, y: -0.7071069, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -14.194003, y: -0.737, z: -18.844002}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 4808985699861966}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
 --- !u!4 &4808985699861966
 Transform:
   m_ObjectHideFlags: 1
@@ -89,7 +89,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 136f54ab8815aa244b6a854745fe85c7, type: 3}
+  - {fileID: 2100000, guid: 7550215eb49c35d46895a566c19a8b8f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   torchOnHolder: {fileID: 0}
-  holderPos: {x: -41.465, y: -0.931, z: -0.167}
+  holderPos: {x: -14.32, y: -1.595, z: -18.796}
   holderRot: {x: 0, y: 90, z: 0}
 --- !u!114 &114324095832003522
 MonoBehaviour:
