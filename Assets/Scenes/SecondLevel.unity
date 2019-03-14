@@ -294,6 +294,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 1a7c170fa2e72ec489f11372c75120fb,
     type: 3}
   m_PrefabInternal: {fileID: 141042656}
+--- !u!114 &157404980 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114534996256240860, guid: 9d335bf909cb46645b623eb2ea963798,
+    type: 2}
+  m_PrefabInternal: {fileID: 559245582}
+  m_Script: {fileID: 11500000, guid: 0c19f3e134862e74dbc98cb514a82ef5, type: 3}
 --- !u!1001 &160251622
 Prefab:
   m_ObjectHideFlags: 0
@@ -1352,7 +1358,7 @@ Prefab:
     - target: {fileID: 114220805803075304, guid: 35a63febf2e3cd54ab879291cee5b0da,
         type: 2}
       propertyPath: resettingObjects.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4406229493897528, guid: 35a63febf2e3cd54ab879291cee5b0da, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1400,7 +1406,12 @@ Prefab:
         type: 2}
       propertyPath: resettingObjects.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 157404980}
+    - target: {fileID: 114220805803075304, guid: 35a63febf2e3cd54ab879291cee5b0da,
+        type: 2}
+      propertyPath: resettingObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 765080829}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35a63febf2e3cd54ab879291cee5b0da, type: 2}
   m_IsPrefabAsset: 0
@@ -1722,6 +1733,12 @@ Transform:
   m_Father: {fileID: 1286883057}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &765080829 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114120392427566306, guid: d307c1fef1c8f824681b19346014b9b0,
+    type: 2}
+  m_PrefabInternal: {fileID: 251919817}
+  m_Script: {fileID: 11500000, guid: 0c19f3e134862e74dbc98cb514a82ef5, type: 3}
 --- !u!1001 &774357541
 Prefab:
   m_ObjectHideFlags: 0
