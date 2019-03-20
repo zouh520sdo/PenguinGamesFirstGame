@@ -25,8 +25,9 @@ public class JigsawPeice : MonoBehaviour {
     private void OnTriggerStay(Collider other)
     {
         JigsawHolder jigsawHolder = other.GetComponent<JigsawHolder>();
+        Pickable myPickable = GetComponent<Pickable>();
 
-        if (jigsawHolder && jigsawHolder.type == type && !jigsawHolder.isPlaced) // Need to be same type
+        if (myPickable && !myPickable.isPickedUp && jigsawHolder && jigsawHolder.type == type && !jigsawHolder.isPlaced) // Need to be same type
         {
             float dis = Vector3.Distance(transform.position, other.transform.position);
             print(name + " " + jigsawHolder.name + "    " + dis);
@@ -36,6 +37,7 @@ public class JigsawPeice : MonoBehaviour {
                 transform.position = other.transform.position;
                 transform.rotation = other.transform.rotation;
                 Destroy(GetComponent<Pickable>());
+                Destroy(GetComponent<Rigidbody>());
                 jigsawHolder.isPlaced = true;
             }
         }
