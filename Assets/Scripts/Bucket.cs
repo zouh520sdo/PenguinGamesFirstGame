@@ -15,13 +15,14 @@ public class Bucket : Pickable {
     protected bool originalHasWater;
     protected Vector3 originalPos;
 
-    public override void Start()
+    public override void Awake()
     {
-        base.Start();
+        base.Awake();
         originalHasWater = hasWater;
         SetWaterActive(hasWater);
         originalPos = transform.position;
     }
+
 
     public override void OnReset()
     {
