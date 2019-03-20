@@ -10,6 +10,7 @@ public enum JigsawType {
 public class JigsawPeice : MonoBehaviour {
 
     public JigsawType type;
+    public float threshold;
 
 	// Use this for initialization
 	void Start () {
@@ -21,5 +22,23 @@ public class JigsawPeice : MonoBehaviour {
 		
 	}
 
+    private void OnTriggerStay(Collider other)
+    {
+        JigsawHolder jigsawHolder = other.GetComponent<JigsawHolder>();
+
+        if (jigsawHolder && jigsawHolder.type == type && !jigsawHolder.isPlaced) // Need to be same type
+        {
+            float dis = Vector3.Distance(transform.position, other.transform.position);
+            print(name + " " + jigsawHolder.name + "    " + dis);
+            if (dis <= threshold)
+            {
+                // Lock this peice to the holder
+                transform.position = other.transform.position;
+                transform.rotation = other.transform.rotation;
+                Destroy(GetComponent<Pickable>());
+                jigsawHolder.isPlaced = true;
+            }
+        }
+    }
 
 }
