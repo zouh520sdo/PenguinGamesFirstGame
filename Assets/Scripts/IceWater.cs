@@ -5,6 +5,7 @@ using UnityEngine;
 public class IceWater : Wandable {
 
     public Renderer ice;
+    public bool isIce;
     protected Vector3 originalIceScale;
     public float scaleRatio, targetScaleRatio;
     public Renderer water;
@@ -40,6 +41,7 @@ public class IceWater : Wandable {
         {
             //ice.enabled = true;
             targetScaleRatio = 1f;
+            //isIce = true;
         }
         else
         {

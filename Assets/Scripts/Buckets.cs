@@ -2,12 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Buckets : MonoBehaviour {
+public class Buckets : Trigger {
 
+    public bool isActive;
     public List<Bucket> buckets;
 
-    public void OnReset()
+    public GameObject cagesObject;
+    public List<Cage> cages;
+    public List<IceWater> waters;
+
+    public override void OnReset()
     {
+        base.OnReset();
         foreach (Bucket b in buckets)
         {
            // b.enabled = true;
@@ -16,8 +22,9 @@ public class Buckets : MonoBehaviour {
         }
     }
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    public override void Start () {
+        base.Start();
 		if (buckets.Count == 0)
         {
             buckets.AddRange(GetComponentsInChildren<Bucket>());
@@ -26,11 +33,43 @@ public class Buckets : MonoBehaviour {
         foreach (Bucket b in buckets)
         {
             b.enabled = false;
+            waters.Add(b.GetComponentInChildren<IceWater>());
+        }
+
+        cages = new List<Cage>(cagesObject.GetComponentsInChildren<Cage>());
+
+        foreach (Cage c in cages)
+        {
+            if (!c.isActive)
+            {
+                c.gameObject.SetActive(false);
+            }
         }
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    public override void Update()
+    {
+        base.Update();
+
+        if (!isActive)
+        {
+            for (int i=0; i < waters.Count; i++)
+            {
+                if (waters[i].ice.enabled == cages[i].isActive)
+                {
+                    isActive = true;
+                }
+                else
+                {
+                    isActive = false;
+                    break;
+                }
+            }
+
+            if (isActive)
+            {
+                activateTriggees();
+            }
+        }
+    }
 }
