@@ -13,6 +13,7 @@ public class DoorInDoor : Triggee {
     public override void OnReset()
     {
         base.OnReset();
+        Deactivate();
         isOpen = originalIsOpen;
     }
 

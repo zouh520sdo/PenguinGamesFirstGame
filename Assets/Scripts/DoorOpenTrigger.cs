@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class DoorOpenTrigger : Trigger {
 
-
+    private void OnTriggerEnter(Collider other)
+    {
+        activateTriggees();
+    }
 }
