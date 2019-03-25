@@ -14911,6 +14911,66 @@ Prefab:
       propertyPath: cagesObject
       value: 
       objectReference: {fileID: 998109345}
+    - target: {fileID: 114865304635812578, guid: d16d7dfb545641e43ba7689f6109e1a8,
+        type: 2}
+      propertyPath: maxHeat
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114197672092164264, guid: d16d7dfb545641e43ba7689f6109e1a8,
+        type: 2}
+      propertyPath: maxHeat
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114263321504438792, guid: d16d7dfb545641e43ba7689f6109e1a8,
+        type: 2}
+      propertyPath: maxHeat
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114397247220279638, guid: d16d7dfb545641e43ba7689f6109e1a8,
+        type: 2}
+      propertyPath: maxHeat
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114977854583825508, guid: d16d7dfb545641e43ba7689f6109e1a8,
+        type: 2}
+      propertyPath: maxHeat
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114043092843391868, guid: d16d7dfb545641e43ba7689f6109e1a8,
+        type: 2}
+      propertyPath: maxHeat
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114734994816600926, guid: d16d7dfb545641e43ba7689f6109e1a8,
+        type: 2}
+      propertyPath: maxHeat
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114575491854042874, guid: d16d7dfb545641e43ba7689f6109e1a8,
+        type: 2}
+      propertyPath: maxHeat
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114383153947088204, guid: d16d7dfb545641e43ba7689f6109e1a8,
+        type: 2}
+      propertyPath: maxHeat
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114903784010125094, guid: d16d7dfb545641e43ba7689f6109e1a8,
+        type: 2}
+      propertyPath: maxHeat
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114536157957685882, guid: d16d7dfb545641e43ba7689f6109e1a8,
+        type: 2}
+      propertyPath: maxHeat
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114420363434657478, guid: d16d7dfb545641e43ba7689f6109e1a8,
+        type: 2}
+      propertyPath: maxHeat
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d16d7dfb545641e43ba7689f6109e1a8, type: 2}
   m_IsPrefabAsset: 0
