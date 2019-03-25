@@ -11,9 +11,12 @@ public class Buckets : Trigger {
     public List<Cage> cages;
     public List<IceWater> waters;
 
+    protected bool originalIsActive;
+
     public override void OnReset()
     {
         base.OnReset();
+        isActive = originalIsActive;
         foreach (Bucket b in buckets)
         {
            // b.enabled = true;
@@ -25,7 +28,10 @@ public class Buckets : Trigger {
     // Use this for initialization
     public override void Start () {
         base.Start();
-		if (buckets.Count == 0)
+
+        originalIsActive = isActive;
+
+        if (buckets.Count == 0)
         {
             buckets.AddRange(GetComponentsInChildren<Bucket>());
         }
