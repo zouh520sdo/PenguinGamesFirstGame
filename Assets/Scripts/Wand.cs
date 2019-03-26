@@ -146,6 +146,11 @@ public class Wand : MonoBehaviour {
                     dialogue.enabled = false;
                 }
             }
+            else
+            {
+                dialogue.text = "";
+                dialogue.enabled = false;
+            }
 
             int wandableLayer = 1 << LayerMask.NameToLayer("Wandable");
             int pickableLayer = 1 << LayerMask.NameToLayer("Pickable");
