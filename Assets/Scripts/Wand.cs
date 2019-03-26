@@ -34,10 +34,11 @@ public class Wand : MonoBehaviour {
 
     public Image Marker;
 
+    // For dialogue 
     public GameObject dialogueObj;
-    public Image dialoguePanel;
-    public Text dialogue;
-
+    protected Image dialoguePanel;
+    protected Text dialogue;
+    public Note note;
 
     public void OnReset()
     {
@@ -135,30 +136,56 @@ public class Wand : MonoBehaviour {
         }
         else
         {
-
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, wandRange))
+            // For interaction with dialogue
+            if (note)
             {
-                Note description = hit.collider.gameObject.GetComponent<Note>();
-                if (description)
+                if (Input.GetButtonDown("Fire1"))
                 {
-                    dialoguePanel.gameObject.SetActive(true);
-                    dialogue.enabled = true;
-                    dialogue.text = description.note;
-                }
-                else
-                {
-                    dialoguePanel.gameObject.SetActive(false);
-                    dialogue.text = "";
-                    dialogue.enabled = false;
+                    string next = note.nextLine();
+                    if (next.Equals(""))
+                    {
+                        note = null;
+                        dialogue.enabled = false;
+                        dialoguePanel.gameObject.SetActive(false);
+                    }
+                    else
+                    {
+                        dialogue.text = next;
+                    }
                 }
             }
             else
             {
-                dialogue.text = "";
-                dialogue.enabled = false;
-                dialoguePanel.gameObject.SetActive(false);
+                if (Physics.Raycast(ray, out hit, wandRange))
+                {
+                    Note description = hit.collider.gameObject.GetComponent<Note>();
+                    if (description)
+                    {
+                        dialoguePanel.gameObject.SetActive(true);
+                        dialogue.enabled = true;
+                        dialogue.text = description.note;
+
+                        if (Input.GetButtonDown("Fire1") && description.paragraph.Count != 0)
+                        {
+                            note = description;
+                            dialogue.text = note.nextLine();
+                        }
+                    }
+                    else
+                    {
+                        dialoguePanel.gameObject.SetActive(false);
+                        dialogue.text = "";
+                        dialogue.enabled = false;
+                    }
+                }
+                else
+                {
+                    dialogue.text = "";
+                    dialogue.enabled = false;
+                    dialoguePanel.gameObject.SetActive(false);
+                }
             }
 
             int wandableLayer = 1 << LayerMask.NameToLayer("Wandable");
