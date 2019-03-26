@@ -30,7 +30,6 @@ public class JigsawPeice : MonoBehaviour {
         if (myPickable && !myPickable.isPickedUp && jigsawHolder && jigsawHolder.type == type && !jigsawHolder.isPlaced) // Need to be same type
         {
             float dis = Vector3.Distance(transform.position, other.transform.position);
-            print(name + " " + jigsawHolder.name + "    " + dis);
             if (dis <= threshold)
             {
                 // Lock this peice to the holder

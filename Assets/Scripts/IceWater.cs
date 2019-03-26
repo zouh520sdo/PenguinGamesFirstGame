@@ -5,16 +5,20 @@ using UnityEngine;
 public class IceWater : Wandable {
 
     public Renderer ice;
+    public bool isIce;
     protected Vector3 originalIceScale;
     public float scaleRatio, targetScaleRatio;
     public Renderer water;
 
     public Bucket bucket;
+
+    protected IcePickable icePickable;
         
     protected override void OnStart()
     {
         base.OnStart();
         originalIceScale = ice.transform.localScale;
+        icePickable = GetComponent<IcePickable>();
     }
 
     public override void OnReset()
@@ -27,7 +31,10 @@ public class IceWater : Wandable {
     {
         containingHeat = originalContainingHeat;
         ice.transform.localScale = Vector3.zero;
-        GetComponent<IcePickable>().isPickable = false;
+        if (icePickable)
+        {
+            icePickable.isPickable = false;
+        }
     }
 
     protected override void OnUpdate()
@@ -40,6 +47,7 @@ public class IceWater : Wandable {
         {
             //ice.enabled = true;
             targetScaleRatio = 1f;
+            //isIce = true;
         }
         else
         {
