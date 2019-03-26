@@ -35,8 +35,8 @@ public class Wand : MonoBehaviour {
     public Image Marker;
 
     public GameObject dialogueObj;
-    public Image dialoguePanel;
-    public Text dialogue;
+    protected Image dialoguePanel;
+    protected Text dialogue;
 
 
     public void OnReset()
