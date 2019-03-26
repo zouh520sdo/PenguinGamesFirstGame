@@ -35,8 +35,8 @@ public class Wand : MonoBehaviour {
     public Image Marker;
 
     public GameObject dialogueObj;
-    protected Image dialoguePanel;
-    protected Text dialogue;
+    public Image dialoguePanel;
+    public Text dialogue;
 
 
     public void OnReset()
@@ -72,7 +72,8 @@ public class Wand : MonoBehaviour {
             dialogue = dialogueObj.GetComponentInChildren<Text>();
             dialoguePanel = dialogueObj.GetComponentInChildren<Image>();
             dialogue.enabled = false;
-            dialoguePanel.enabled = false;
+            //dialoguePanel.enabled = false;
+            dialoguePanel.gameObject.SetActive(false);
             dialogue.text = "";
         }
     }
@@ -142,13 +143,13 @@ public class Wand : MonoBehaviour {
                 Note description = hit.collider.gameObject.GetComponent<Note>();
                 if (description)
                 {
-                    dialoguePanel.enabled = true;
+                    dialoguePanel.gameObject.SetActive(true);
                     dialogue.enabled = true;
                     dialogue.text = description.note;
                 }
                 else
                 {
-                    dialoguePanel.enabled = false;
+                    dialoguePanel.gameObject.SetActive(false);
                     dialogue.text = "";
                     dialogue.enabled = false;
                 }
@@ -157,6 +158,7 @@ public class Wand : MonoBehaviour {
             {
                 dialogue.text = "";
                 dialogue.enabled = false;
+                dialoguePanel.gameObject.SetActive(false);
             }
 
             int wandableLayer = 1 << LayerMask.NameToLayer("Wandable");
