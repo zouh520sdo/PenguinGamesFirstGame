@@ -161,7 +161,7 @@ public class Wand : MonoBehaviour {
                 if (Physics.Raycast(ray, out hit, wandRange))
                 {
                     Note description = hit.collider.gameObject.GetComponent<Note>();
-                    if (description)
+                    if (description && !description.getIsFinished())
                     {
                         dialoguePanel.gameObject.SetActive(true);
                         dialogue.enabled = true;
