@@ -6,11 +6,20 @@ public class Note : MonoBehaviour {
 
     public string note;
     public List<string> paragraph;
+    protected bool finished;
     protected int paragraphIndex;
+    protected bool originalFinished;
+
+
+    public void OnReset()
+    {
+        finished = originalFinished;
+    }
 
 	// Use this for initialization
 	void Start () {
         paragraphIndex = -1;
+        originalFinished = finished;
     }
 	
 	// Update is called once per frame
@@ -23,6 +32,7 @@ public class Note : MonoBehaviour {
         if (paragraphIndex >= paragraph.Count-1)
         {
             paragraphIndex = -1;
+            finished = true;
             return "";
         }
         else
@@ -30,5 +40,10 @@ public class Note : MonoBehaviour {
             paragraphIndex++;
             return paragraph[paragraphIndex];
         }
+    }
+
+    public bool getIsFinished()
+    {
+        return finished;
     }
 }
