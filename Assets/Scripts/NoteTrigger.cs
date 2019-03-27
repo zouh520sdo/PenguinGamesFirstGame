@@ -13,6 +13,7 @@ public class NoteTrigger : Trigger {
     {
         base.OnReset();
         isActive = originalIsActive;
+        deactivateTriggees();
     }
 
     public override void Start()
