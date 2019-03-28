@@ -80,7 +80,10 @@ public class Crystal : Pickable {
     {
         foreach (ObjectIdentifier ob in resettingObjects)
         {
-            ob.SendMessage("OnReset", SendMessageOptions.DontRequireReceiver);
+            if (ob)
+            {
+                ob.SendMessage("OnReset", SendMessageOptions.DontRequireReceiver);
+            }
         }
     }
 
