@@ -70,14 +70,18 @@ public class GuoPot : Wandable {
     private void OnTriggerEnter(Collider other)
     {
         Medicine medicine = other.GetComponent<Medicine>();
-        if (medicine.goodHeatLow <= containingHeat && medicine.goodHeatHigh >= containingHeat)
+        if (medicine)
         {
-            medicine.isInGoodCondition = true;
+            print(medicine);
+            if (medicine.goodHeatLow <= containingHeat && medicine.goodHeatHigh >= containingHeat)
+            {
+                medicine.isInGoodCondition = true;
+            }
+            else
+            {
+                medicine.isInGoodCondition = false;
+            }
+            medicines.Add(medicine);
         }
-        else
-        {
-            medicine.isInGoodCondition = false;
-        }
-        medicines.Add(medicine);
     }
 }
