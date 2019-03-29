@@ -367,6 +367,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
@@ -379,7 +387,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: c90ef90ffaaa1a0438e78e2c3f6608a4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 58.75
+      value: 56.8
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: c90ef90ffaaa1a0438e78e2c3f6608a4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -464,6 +472,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -652,6 +668,14 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -707,6 +731,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh2 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
@@ -1600,6 +1632,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
@@ -1722,6 +1762,18 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 0.97076
       objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -1818,6 +1870,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh2 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
@@ -2747,7 +2807,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: c90ef90ffaaa1a0438e78e2c3f6608a4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.4817
+      value: 3.29
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: c90ef90ffaaa1a0438e78e2c3f6608a4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2953,7 +3013,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: c90ef90ffaaa1a0438e78e2c3f6608a4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -59.2
+      value: -57.25
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: c90ef90ffaaa1a0438e78e2c3f6608a4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3046,6 +3106,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh2 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
@@ -3630,11 +3698,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: b4d70a58d3ee8224ebcfe75080459baf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.44
+      value: -3.6100001
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b4d70a58d3ee8224ebcfe75080459baf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.89
+      value: 16.83
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b4d70a58d3ee8224ebcfe75080459baf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4964,6 +5032,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -5756,6 +5832,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
@@ -5806,6 +5890,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh2 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
@@ -5856,6 +5948,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh2 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
@@ -6285,6 +6385,14 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 0.97076
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -6621,6 +6729,14 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -6982,7 +7098,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: c90ef90ffaaa1a0438e78e2c3f6608a4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.47
+      value: -3.53
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: c90ef90ffaaa1a0438e78e2c3f6608a4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6990,7 +7106,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: c90ef90ffaaa1a0438e78e2c3f6608a4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -35.75
+      value: -35.83
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: c90ef90ffaaa1a0438e78e2c3f6608a4, type: 3}
       propertyPath: m_LocalRotation.x
@@ -7121,6 +7237,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh2 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
@@ -7171,6 +7295,14 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -7506,6 +7638,14 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -7731,6 +7871,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh2 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
@@ -8057,6 +8205,14 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 0.97076
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -8107,6 +8263,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
@@ -8398,11 +8562,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: c90ef90ffaaa1a0438e78e2c3f6608a4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.4817
+      value: 3.41
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: c90ef90ffaaa1a0438e78e2c3f6608a4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.91
+      value: 16.85
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: c90ef90ffaaa1a0438e78e2c3f6608a4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9471,6 +9635,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
@@ -9599,6 +9771,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -10210,6 +10390,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh2 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
@@ -10555,6 +10743,14 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 0.97076
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -10986,7 +11182,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: b4d70a58d3ee8224ebcfe75080459baf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.4946003
+      value: 3.4829004
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b4d70a58d3ee8224ebcfe75080459baf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11129,6 +11325,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -11394,6 +11598,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
@@ -12813,6 +13025,14 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -13913,6 +14133,14 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 0.97076
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -15042,7 +15270,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: b4d70a58d3ee8224ebcfe75080459baf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -60.97
+      value: -57.14
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b4d70a58d3ee8224ebcfe75080459baf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15131,6 +15359,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -15317,6 +15553,14 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 0.97076
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -15744,6 +15988,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh2 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
@@ -15799,6 +16051,14 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -15970,6 +16230,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -16151,6 +16419,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh2 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
@@ -16949,6 +17225,14 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 0.97076
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -17515,6 +17799,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
@@ -17984,7 +18276,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: c90ef90ffaaa1a0438e78e2c3f6608a4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.47
+      value: -3.59
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: c90ef90ffaaa1a0438e78e2c3f6608a4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18080,6 +18372,14 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 0.97076
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -18367,6 +18667,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
@@ -18525,7 +18833,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: b4d70a58d3ee8224ebcfe75080459baf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 60.98
+      value: 57.03
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b4d70a58d3ee8224ebcfe75080459baf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18703,6 +19011,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -18764,6 +19080,14 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -18844,7 +19168,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: b4d70a58d3ee8224ebcfe75080459baf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.4946003
+      value: 3.53
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b4d70a58d3ee8224ebcfe75080459baf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18852,7 +19176,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b4d70a58d3ee8224ebcfe75080459baf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -35.79
+      value: -35.870003
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b4d70a58d3ee8224ebcfe75080459baf, type: 3}
       propertyPath: m_LocalRotation.x
@@ -19072,6 +19396,14 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 0.97076
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -20005,6 +20337,14 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
@@ -20727,7 +21067,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: b4d70a58d3ee8224ebcfe75080459baf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.44
+      value: -3.7400002
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b4d70a58d3ee8224ebcfe75080459baf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -21454,6 +21794,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
@@ -21689,6 +22037,14 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 0.97076
       objectReference: {fileID: 0}
+    - target: {fileID: 2300010, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6beb0805b78b02e4cb917ff5e110eaa6, type: 2}
+    - target: {fileID: 2300008, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be62529da1d99e4ab4acb1b5b62de9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbed67403eb10264ca414b15ad2b30a2, type: 3}
   m_IsPrefabAsset: 0
@@ -22953,6 +23309,14 @@ Prefab:
       propertyPath: m_Name
       value: roofgh2 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a64e75027e1814e86a2ee9e58163fb, type: 2}
+    - target: {fileID: 2300000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95e85b05ba3e5214e89d09073295f3fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
