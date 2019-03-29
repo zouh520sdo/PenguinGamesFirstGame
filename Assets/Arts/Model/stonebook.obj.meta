@@ -5,13 +5,20 @@ ModelImporter:
   fileIDToRecycleName:
     100000: pCube8
     100002: //RootNode
+    100004: stonebook:pCube8
     400000: pCube8
     400002: //RootNode
+    400004: stonebook:pCube8
     2100000: pCube8Mat
+    2100002: stonebook_pCube8Mat
     2300000: pCube8
+    2300002: stonebook:pCube8
     3300000: pCube8
+    3300002: stonebook:pCube8
     4300000: pCube8
+    4300002: stonebook:pCube8
     6400000: pCube8
+    6400002: stonebook:pCube8
   externalObjects: {}
   materials:
     importMaterials: 1
