@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 114709450988288848}
   - component: {fileID: 136791257920319828}
   - component: {fileID: 114643794865720330}
+  - component: {fileID: 114927267387728366}
   m_Layer: 4
   m_Name: Water
   m_TagString: Untagged
@@ -243,6 +244,22 @@ MonoBehaviour:
   refractLayers:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114927267387728366
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1733970296846420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07fd344d91f9cd944bf27ba538019d42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  medicines:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  producedMedicinePrefab: {fileID: 0}
 --- !u!114 &114988415973655790
 MonoBehaviour:
   m_ObjectHideFlags: 1

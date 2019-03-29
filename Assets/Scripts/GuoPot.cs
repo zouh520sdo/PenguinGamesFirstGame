@@ -7,12 +7,21 @@ public class GuoPot : Wandable {
     public List<Medicine> medicines;
     public GameObject junkMedicinePrefab;
     protected List<Recipe> recipes;
-    protected List<GameObject> producedMedicines;
+    public List<GameObject> producedMedicines;
 
     protected override void OnStart()
     {
         base.OnStart();
         recipes = new List<Recipe>(GetComponents<Recipe>());
+    }
+
+    protected override void OnUpdate()
+    {
+        base.OnUpdate();
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            stir();
+        }
     }
 
     public override void OnReset()
@@ -37,6 +46,11 @@ public class GuoPot : Wandable {
             int i = 0;
             for (; i<medicines.Count; i++)
             {
+                if (i >= r.medicines.Count)
+                {
+                    i = -1;
+                    break;
+                }
                 if (!medicines[i].isInGoodCondition || r.medicines[i].type != medicines[i].type)
                 {
                     break;
@@ -45,9 +59,9 @@ public class GuoPot : Wandable {
 
             if (r.medicines.Count == i)
             {
-
-                // Produce corresponding medicine
                 CleanAllMedicines();
+                // Produce corresponding medicine
+                producedMedicines.Add(Instantiate(r.producedMedicinePrefab, transform.position, Quaternion.identity));
                 return;
             }
         }
@@ -85,6 +99,20 @@ public class GuoPot : Wandable {
             if (pickable)
             {
                 pickable.isPickable = false;
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        Medicine medicine = other.GetComponent<Medicine>();
+        if (medicine)
+        {
+            Pickable pickable = other.GetComponent<Pickable>();
+            medicines.Remove(medicine);
+            if (pickable)
+            {
+                pickable.isPickable = true;
             }
         }
     }
