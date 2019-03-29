@@ -215,9 +215,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e6146f3a45b46546a8d4f9dca6917aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHeat: 0
+  maxHeat: 500
   minHeat: 0
-  containingHeat: 0
+  containingHeat: 50
   volume: 0
   myRenderer: {fileID: 0}
   medicines: []

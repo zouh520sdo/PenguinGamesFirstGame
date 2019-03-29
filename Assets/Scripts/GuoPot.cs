@@ -72,7 +72,7 @@ public class GuoPot : Wandable {
         Medicine medicine = other.GetComponent<Medicine>();
         if (medicine)
         {
-            print(medicine);
+            Pickable pickable = other.GetComponent<Pickable>();
             if (medicine.goodHeatLow <= containingHeat && medicine.goodHeatHigh >= containingHeat)
             {
                 medicine.isInGoodCondition = true;
@@ -82,6 +82,10 @@ public class GuoPot : Wandable {
                 medicine.isInGoodCondition = false;
             }
             medicines.Add(medicine);
+            if (pickable)
+            {
+                pickable.isPickable = false;
+            }
         }
     }
 }
