@@ -6,17 +6,29 @@ ModelImporter:
     100000: pCube11
     100002: pCube9
     100004: //RootNode
+    100006: polySurface18_pCube22
+    100008: polySurface20
     400000: pCube11
     400002: pCube9
     400004: //RootNode
+    400006: polySurface18_pCube22
+    400008: polySurface20
     2100000: pCube11Mat
     2100002: pCube9Mat
+    2100004: polySurface18_pCube22Mat
+    2100006: polySurface20Mat
     2300000: pCube11
     2300002: pCube9
+    2300004: polySurface18_pCube22
+    2300006: polySurface20
     3300000: pCube11
     3300002: pCube9
+    3300004: polySurface18_pCube22
+    3300006: polySurface20
     4300000: pCube11
     4300002: pCube9
+    4300004: polySurface18_pCube22
+    4300006: polySurface20
   externalObjects: {}
   materials:
     importMaterials: 1
