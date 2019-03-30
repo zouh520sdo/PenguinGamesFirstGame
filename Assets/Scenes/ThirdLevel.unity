@@ -2811,6 +2811,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 424407427}
   m_Script: {fileID: 11500000, guid: 6b74ef945ccfd5a4588b3662d3aa9f29, type: 3}
+--- !u!82 &424407429 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 82049190920178978, guid: b84d1a48bf3accc45af7744bedc0e09a,
+    type: 2}
+  m_PrefabInternal: {fileID: 424407427}
 --- !u!1001 &425928263
 Prefab:
   m_ObjectHideFlags: 0
@@ -9066,7 +9071,8 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: -0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114822778228222842, guid: df8fade6dba1be04185a8d6b8754deb9, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: df8fade6dba1be04185a8d6b8754deb9, type: 2}
   m_IsPrefabAsset: 0
 --- !u!114 &1203268902 stripped
@@ -9080,6 +9086,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4971512461734696, guid: df8fade6dba1be04185a8d6b8754deb9,
     type: 2}
   m_PrefabInternal: {fileID: 1203268901}
+--- !u!1 &1203268904 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1674249237238502, guid: df8fade6dba1be04185a8d6b8754deb9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1203268901}
+--- !u!114 &1203268905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1203268904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b74ef945ccfd5a4588b3662d3aa9f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  allRenderers: []
+  allColliders: []
+  WallAppear: {fileID: 424407429}
+  WallDis: {fileID: 424407429}
 --- !u!1 &1205003454 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 7b3293ff8e51e2d48a266db42ea1301b,
