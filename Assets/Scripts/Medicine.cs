@@ -17,10 +17,20 @@ public class Medicine : MonoBehaviour {
     public float goodHeatLow;
     public float goodHeatHigh;
 
+    protected MedicineType originalType;
+    protected bool originalIsInGood;
+
 	// Use this for initialization
 	void Start () {
-		
+        originalType = type;
+        originalIsInGood = isInGoodCondition;
 	}
+
+    public void OnReset()
+    {
+        type = originalType;
+        isInGoodCondition = originalIsInGood;
+    }
 	
 	// Update is called once per frame
 	void Update () {

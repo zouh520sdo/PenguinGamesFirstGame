@@ -9990,11 +9990,11 @@ Prefab:
       propertyPath: medicines.Array.data[2]
       value: 
       objectReference: {fileID: 386931999}
-    - target: {fileID: 114927267387728366, guid: 8d7deef96eb693441a0aa7135df1842e,
+    - target: {fileID: 114643794865720330, guid: 8d7deef96eb693441a0aa7135df1842e,
         type: 2}
-      propertyPath: producedMedicinePrefab
+      propertyPath: junkMedicinePrefab
       value: 
-      objectReference: {fileID: 1699195387633538, guid: c1b1fd7e36684174cbba99e56072230d,
+      objectReference: {fileID: 1155639201737850, guid: 4b6fe96011c1e0e46ba35676f48b1c32,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d7deef96eb693441a0aa7135df1842e, type: 2}

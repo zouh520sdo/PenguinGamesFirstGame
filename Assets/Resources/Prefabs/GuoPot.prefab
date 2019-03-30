@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 114643794865720330}
   - component: {fileID: 114927267387728366}
   m_Layer: 4
-  m_Name: Water
+  m_Name: GuoWater
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -223,6 +223,7 @@ MonoBehaviour:
   myRenderer: {fileID: 0}
   medicines: []
   junkMedicinePrefab: {fileID: 0}
+  producedMedicines: []
 --- !u!114 &114709450988288848
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -259,7 +260,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  producedMedicinePrefab: {fileID: 0}
+  producedMedicinePrefab: {fileID: 1699195387633538, guid: c1b1fd7e36684174cbba99e56072230d,
+    type: 2}
 --- !u!114 &114988415973655790
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -61,7 +61,21 @@ public class GuoPot : Wandable {
             {
                 CleanAllMedicines();
                 // Produce corresponding medicine
-                producedMedicines.Add(Instantiate(r.producedMedicinePrefab, transform.position, Quaternion.identity));
+                GameObject tempMedicine = Instantiate(r.producedMedicinePrefab, transform.position, Quaternion.identity);
+                producedMedicines.Add(tempMedicine);
+
+                Rigidbody rigidMed = tempMedicine.GetComponent<Rigidbody>();
+                if (rigidMed)
+                {
+                    Vector3 offVec = Vector3.zero;
+                    offVec.x = Random.Range(-5f, 5f);
+                    offVec.z = Mathf.Sqrt(25f - offVec.x * offVec.x);
+                    if (Random.Range(0f, 1f) < 0.5f)
+                    {
+                        offVec.z *= -1;
+                    }
+                    rigidMed.AddForce(Vector3.up * 8f + offVec, ForceMode.Impulse);
+                }
                 return;
             }
         }
@@ -71,6 +85,18 @@ public class GuoPot : Wandable {
         if (junkMedicinePrefab)
         { 
             GameObject temp = Instantiate(junkMedicinePrefab);
+            Rigidbody rigidMed = temp.GetComponent<Rigidbody>();
+            if (rigidMed)
+            {
+                Vector3 offVec = Vector3.zero;
+                offVec.x = Random.Range(-5f, 5f);
+                offVec.z = Mathf.Sqrt(25f - offVec.x * offVec.x);
+                if (Random.Range(0f, 1f) < 0.5f)
+                {
+                    offVec.z *= -1;
+                }
+                rigidMed.AddForce(Vector3.up * 8f + offVec, ForceMode.Impulse);
+            }
             producedMedicines.Add(temp);
         }
     }
