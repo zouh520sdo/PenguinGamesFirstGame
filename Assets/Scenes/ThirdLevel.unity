@@ -13155,7 +13155,7 @@ Prefab:
         type: 2}
       propertyPath: resettingObjects.Array.data[10]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 607086080}
     - target: {fileID: 114220805803075304, guid: 35a63febf2e3cd54ab879291cee5b0da,
         type: 2}
       propertyPath: resettingObjects.Array.data[11]

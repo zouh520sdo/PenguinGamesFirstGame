@@ -19,17 +19,20 @@ public class Medicine : MonoBehaviour {
 
     protected MedicineType originalType;
     protected bool originalIsInGood;
+    protected Vector3 originalPos;
 
 	// Use this for initialization
 	void Start () {
         originalType = type;
         originalIsInGood = isInGoodCondition;
+        originalPos = transform.position;
 	}
 
     public void OnReset()
     {
         type = originalType;
         isInGoodCondition = originalIsInGood;
+        transform.position = originalPos;
     }
 	
 	// Update is called once per frame
