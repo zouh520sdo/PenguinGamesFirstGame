@@ -167,7 +167,7 @@ public class Wand : MonoBehaviour {
                         dialogue.enabled = true;
                         dialogue.text = description.note;
 
-                        if (Input.GetButtonDown("Fire1") && description.paragraph.Count != 0)
+                        if (Input.GetButtonDown("Fire1") && description.canStartParagraph && description.paragraph.Count != 0)
                         {
                             note = description;
                             dialogue.text = note.nextLine();
@@ -328,4 +328,10 @@ public class Wand : MonoBehaviour {
         }
     }
 
+    public void SetDialogueText(string content)
+    {
+        dialoguePanel.gameObject.SetActive(true);
+        dialogue.enabled = true;
+        dialogue.text = content;
+    }
 }

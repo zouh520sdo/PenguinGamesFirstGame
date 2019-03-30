@@ -20,12 +20,14 @@ public class Medicine : MonoBehaviour {
     protected MedicineType originalType;
     protected bool originalIsInGood;
     protected Vector3 originalPos;
+    protected Quaternion originalRot;
 
 	// Use this for initialization
 	void Start () {
         originalType = type;
         originalIsInGood = isInGoodCondition;
         originalPos = transform.position;
+        originalRot = transform.rotation;
 	}
 
     public void OnReset()
@@ -33,6 +35,7 @@ public class Medicine : MonoBehaviour {
         type = originalType;
         isInGoodCondition = originalIsInGood;
         transform.position = originalPos;
+        transform.rotation = originalRot;
     }
 	
 	// Update is called once per frame

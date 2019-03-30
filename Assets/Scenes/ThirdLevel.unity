@@ -4257,6 +4257,7 @@ MonoBehaviour:
   - '"I, Adam Brown, solemnly swear,'
   - '"that till the end of my life,'
   - '"I will not harm any mage legally protected by Great Souhait Union. "'
+  canStartParagraph: 1
 --- !u!1 &609268553
 GameObject:
   m_ObjectHideFlags: 0
@@ -4995,6 +4996,7 @@ Transform:
   - {fileID: 833210158}
   - {fileID: 621040974}
   - {fileID: 969906629}
+  - {fileID: 971306575}
   m_Father: {fileID: 398293483}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6751,6 +6753,17 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b3293ff8e51e2d48a266db42ea1301b, type: 3}
   m_IsPrefabAsset: 0
+--- !u!4 &971306575 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4140940869719430, guid: cbc05ba97f83bc14d97e5acf505ed41e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1925860789}
+--- !u!114 &971306580 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114168130402336844, guid: cbc05ba97f83bc14d97e5acf505ed41e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1925860789}
+  m_Script: {fileID: 11500000, guid: 0c19f3e134862e74dbc98cb514a82ef5, type: 3}
 --- !u!1 &977664915 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 9723911408653ae428b6f6c19f76ca50,
@@ -13202,7 +13215,7 @@ Prefab:
         type: 2}
       propertyPath: resettingObjects.Array.data[14]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 971306580}
     - target: {fileID: 114220805803075304, guid: 35a63febf2e3cd54ab879291cee5b0da,
         type: 2}
       propertyPath: resettingObjects.Array.data[15]
@@ -14984,6 +14997,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46273fc06c47d94599f05044d604991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1925860789
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 758165316}
+    m_Modifications:
+    - target: {fileID: 4140940869719430, guid: cbc05ba97f83bc14d97e5acf505ed41e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -21.330473
+      objectReference: {fileID: 0}
+    - target: {fileID: 4140940869719430, guid: cbc05ba97f83bc14d97e5acf505ed41e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4140940869719430, guid: cbc05ba97f83bc14d97e5acf505ed41e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1.425
+      objectReference: {fileID: 0}
+    - target: {fileID: 4140940869719430, guid: cbc05ba97f83bc14d97e5acf505ed41e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4140940869719430, guid: cbc05ba97f83bc14d97e5acf505ed41e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4140940869719430, guid: cbc05ba97f83bc14d97e5acf505ed41e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4140940869719430, guid: cbc05ba97f83bc14d97e5acf505ed41e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4140940869719430, guid: cbc05ba97f83bc14d97e5acf505ed41e, type: 2}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962017109312072, guid: cbc05ba97f83bc14d97e5acf505ed41e,
+        type: 2}
+      propertyPath: triggees.Array.data[0]
+      value: 
+      objectReference: {fileID: 1203268905}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cbc05ba97f83bc14d97e5acf505ed41e, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &1933757239
 Prefab:
   m_ObjectHideFlags: 0
