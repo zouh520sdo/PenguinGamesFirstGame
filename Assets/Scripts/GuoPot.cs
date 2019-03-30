@@ -84,7 +84,7 @@ public class GuoPot : Wandable {
         CleanAllMedicines();
         if (junkMedicinePrefab)
         { 
-            GameObject temp = Instantiate(junkMedicinePrefab);
+            GameObject temp = Instantiate(junkMedicinePrefab, transform.position, Quaternion.identity);
             Rigidbody rigidMed = temp.GetComponent<Rigidbody>();
             if (rigidMed)
             {

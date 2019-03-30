@@ -4695,6 +4695,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 26d83eaea8bc70b45b022f19e1bba1e2,
     type: 3}
   m_PrefabInternal: {fileID: 1248146405}
+--- !u!1 &587488968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1654661526417256, guid: fe370290a88187b45b1bbe35ba008cdb,
+    type: 2}
+  m_PrefabInternal: {fileID: 104538697}
 --- !u!1001 &595085723
 Prefab:
   m_ObjectHideFlags: 0
@@ -13152,6 +13157,11 @@ Prefab:
       propertyPath: dialogue
       value: 
       objectReference: {fileID: 332520973}
+    - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
+      propertyPath: dialogueObj
+      value: 
+      objectReference: {fileID: 587488968}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
   m_IsPrefabAsset: 0
