@@ -188,6 +188,15 @@ public class Wand : MonoBehaviour {
                 }
             }
 
+            if (Physics.Raycast(ray, out hit, wandRange))
+            {
+                Spoon spoon = hit.collider.gameObject.GetComponent<Spoon>();
+                if (spoon && Input.GetButtonDown("Fire1"))
+                {
+                    spoon.pot.stir();
+                }
+            }
+
             int wandableLayer = 1 << LayerMask.NameToLayer("Wandable");
             int pickableLayer = 1 << LayerMask.NameToLayer("Pickable");
             int layerMask = wandableLayer | pickableLayer;
