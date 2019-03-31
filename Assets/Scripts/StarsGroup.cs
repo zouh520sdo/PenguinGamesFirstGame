@@ -2,16 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Platforms : Triggee {
-
-    public override void OnReset()
-    {
-        base.OnReset();
-        foreach (Transform child in transform)
-        {
-            child.gameObject.SendMessage("OnReset", SendMessageOptions.DontRequireReceiver);
-        }
-    }
+public class StarsGroup : Triggee {
 
     public override void Activate()
     {

@@ -21,6 +21,14 @@ public class NoteTrigger : Trigger {
         base.Start();
         note = GetComponent<Note>();
         originalIsActive = isActive;
+        if (isActive)
+        {
+            activateTriggees();
+        }
+        else
+        {
+            deactivateTriggees();
+        }
     }
 
     public override void Update()
