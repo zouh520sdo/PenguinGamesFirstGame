@@ -223,12 +223,12 @@ Prefab:
     - target: {fileID: 114742578519826472, guid: b10a190b198a61a4f919db4cb8ba9303,
         type: 2}
       propertyPath: goodHeatLow
-      value: 0
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 114742578519826472, guid: b10a190b198a61a4f919db4cb8ba9303,
         type: 2}
       propertyPath: goodHeatHigh
-      value: 50
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 1820697428642228, guid: b10a190b198a61a4f919db4cb8ba9303, type: 2}
       propertyPath: m_Name
@@ -2706,11 +2706,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 12
       objectReference: {fileID: 0}
-    - target: {fileID: 114266447494524170, guid: 69b7527d5c05ad745bdd1de657b23ba4,
-        type: 2}
-      propertyPath: goodHeatHigh
-      value: 50
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69b7527d5c05ad745bdd1de657b23ba4, type: 2}
   m_IsPrefabAsset: 0
@@ -3656,21 +3651,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 13
       objectReference: {fileID: 0}
-    - target: {fileID: 114742578519826472, guid: b10a190b198a61a4f919db4cb8ba9303,
-        type: 2}
-      propertyPath: goodHeatLow
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114742578519826472, guid: b10a190b198a61a4f919db4cb8ba9303,
-        type: 2}
-      propertyPath: goodHeatHigh
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 23510437605827682, guid: b10a190b198a61a4f919db4cb8ba9303,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ac31c05a43f49cb41b1fd17a4d820493, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b10a190b198a61a4f919db4cb8ba9303, type: 2}
   m_IsPrefabAsset: 0
@@ -4014,12 +3994,12 @@ Prefab:
     - target: {fileID: 114742578519826472, guid: b10a190b198a61a4f919db4cb8ba9303,
         type: 2}
       propertyPath: goodHeatLow
-      value: 0
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 114742578519826472, guid: b10a190b198a61a4f919db4cb8ba9303,
         type: 2}
       propertyPath: goodHeatHigh
-      value: 50
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 1820697428642228, guid: b10a190b198a61a4f919db4cb8ba9303, type: 2}
       propertyPath: m_Name
@@ -4475,11 +4455,16 @@ Prefab:
     - target: {fileID: 114979490053564644, guid: e0b86a7ccec44904cbf83cace00307ba,
         type: 2}
       propertyPath: goodHeatHigh
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1002304349090974, guid: e0b86a7ccec44904cbf83cace00307ba, type: 2}
       propertyPath: m_Name
       value: bottle2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114979490053564644, guid: e0b86a7ccec44904cbf83cace00307ba,
+        type: 2}
+      propertyPath: goodHeatLow
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0b86a7ccec44904cbf83cace00307ba, type: 2}
@@ -4654,7 +4639,7 @@ Prefab:
     - target: {fileID: 114266447494524170, guid: 69b7527d5c05ad745bdd1de657b23ba4,
         type: 2}
       propertyPath: goodHeatHigh
-      value: 50
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1372467193570716, guid: 69b7527d5c05ad745bdd1de657b23ba4, type: 2}
       propertyPath: m_Name
@@ -4665,6 +4650,11 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 899f495186ccb0944bd73526ec1bd86f, type: 2}
+    - target: {fileID: 114266447494524170, guid: 69b7527d5c05ad745bdd1de657b23ba4,
+        type: 2}
+      propertyPath: goodHeatLow
+      value: 210
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69b7527d5c05ad745bdd1de657b23ba4, type: 2}
   m_IsPrefabAsset: 0
@@ -5964,11 +5954,16 @@ Prefab:
     - target: {fileID: 114266447494524170, guid: 69b7527d5c05ad745bdd1de657b23ba4,
         type: 2}
       propertyPath: goodHeatHigh
-      value: 50
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1372467193570716, guid: 69b7527d5c05ad745bdd1de657b23ba4, type: 2}
       propertyPath: m_Name
       value: bottle3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114266447494524170, guid: 69b7527d5c05ad745bdd1de657b23ba4,
+        type: 2}
+      propertyPath: goodHeatLow
+      value: 210
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69b7527d5c05ad745bdd1de657b23ba4, type: 2}
@@ -9478,11 +9473,16 @@ Prefab:
     - target: {fileID: 114979490053564644, guid: e0b86a7ccec44904cbf83cace00307ba,
         type: 2}
       propertyPath: goodHeatHigh
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1002304349090974, guid: e0b86a7ccec44904cbf83cace00307ba, type: 2}
       propertyPath: m_Name
       value: bottle2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114979490053564644, guid: e0b86a7ccec44904cbf83cace00307ba,
+        type: 2}
+      propertyPath: goodHeatLow
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0b86a7ccec44904cbf83cace00307ba, type: 2}
@@ -10904,7 +10904,7 @@ Prefab:
     - target: {fileID: 114979490053564644, guid: e0b86a7ccec44904cbf83cace00307ba,
         type: 2}
       propertyPath: goodHeatHigh
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1002304349090974, guid: e0b86a7ccec44904cbf83cace00307ba, type: 2}
       propertyPath: m_Name
@@ -10915,6 +10915,11 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 50402f46543f182469ab2f9a08f77256, type: 2}
+    - target: {fileID: 114979490053564644, guid: e0b86a7ccec44904cbf83cace00307ba,
+        type: 2}
+      propertyPath: goodHeatLow
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0b86a7ccec44904cbf83cace00307ba, type: 2}
   m_IsPrefabAsset: 0
@@ -12585,11 +12590,16 @@ Prefab:
     - target: {fileID: 114266447494524170, guid: 69b7527d5c05ad745bdd1de657b23ba4,
         type: 2}
       propertyPath: goodHeatHigh
-      value: 50
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1372467193570716, guid: 69b7527d5c05ad745bdd1de657b23ba4, type: 2}
       propertyPath: m_Name
       value: bottle3 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114266447494524170, guid: 69b7527d5c05ad745bdd1de657b23ba4,
+        type: 2}
+      propertyPath: goodHeatLow
+      value: 210
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69b7527d5c05ad745bdd1de657b23ba4, type: 2}
@@ -14005,7 +14015,7 @@ Prefab:
     - target: {fileID: 114979490053564644, guid: e0b86a7ccec44904cbf83cace00307ba,
         type: 2}
       propertyPath: goodHeatHigh
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1002304349090974, guid: e0b86a7ccec44904cbf83cace00307ba, type: 2}
       propertyPath: m_Name
@@ -14016,6 +14026,11 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 50402f46543f182469ab2f9a08f77256, type: 2}
+    - target: {fileID: 114979490053564644, guid: e0b86a7ccec44904cbf83cace00307ba,
+        type: 2}
+      propertyPath: goodHeatLow
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0b86a7ccec44904cbf83cace00307ba, type: 2}
   m_IsPrefabAsset: 0
@@ -15123,6 +15138,11 @@ Prefab:
       propertyPath: dialogueObj
       value: 
       objectReference: {fileID: 2135838749}
+    - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
+      propertyPath: heat
+      value: 210
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
   m_IsPrefabAsset: 0
@@ -15963,12 +15983,12 @@ Prefab:
     - target: {fileID: 114742578519826472, guid: b10a190b198a61a4f919db4cb8ba9303,
         type: 2}
       propertyPath: goodHeatLow
-      value: 0
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 114742578519826472, guid: b10a190b198a61a4f919db4cb8ba9303,
         type: 2}
       propertyPath: goodHeatHigh
-      value: 50
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 1820697428642228, guid: b10a190b198a61a4f919db4cb8ba9303, type: 2}
       propertyPath: m_Name
@@ -17380,7 +17400,7 @@ Prefab:
     - target: {fileID: 114266447494524170, guid: 69b7527d5c05ad745bdd1de657b23ba4,
         type: 2}
       propertyPath: goodHeatHigh
-      value: 50
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1372467193570716, guid: 69b7527d5c05ad745bdd1de657b23ba4, type: 2}
       propertyPath: m_Name
@@ -17391,6 +17411,11 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 899f495186ccb0944bd73526ec1bd86f, type: 2}
+    - target: {fileID: 114266447494524170, guid: 69b7527d5c05ad745bdd1de657b23ba4,
+        type: 2}
+      propertyPath: goodHeatLow
+      value: 210
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69b7527d5c05ad745bdd1de657b23ba4, type: 2}
   m_IsPrefabAsset: 0
@@ -17570,7 +17595,7 @@ Prefab:
     - target: {fileID: 114979490053564644, guid: e0b86a7ccec44904cbf83cace00307ba,
         type: 2}
       propertyPath: goodHeatHigh
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1002304349090974, guid: e0b86a7ccec44904cbf83cace00307ba, type: 2}
       propertyPath: m_Name
@@ -17581,6 +17606,11 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 50402f46543f182469ab2f9a08f77256, type: 2}
+    - target: {fileID: 114979490053564644, guid: e0b86a7ccec44904cbf83cace00307ba,
+        type: 2}
+      propertyPath: goodHeatLow
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0b86a7ccec44904cbf83cace00307ba, type: 2}
   m_IsPrefabAsset: 0
@@ -18942,11 +18972,16 @@ Prefab:
     - target: {fileID: 114979490053564644, guid: e0b86a7ccec44904cbf83cace00307ba,
         type: 2}
       propertyPath: goodHeatHigh
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1002304349090974, guid: e0b86a7ccec44904cbf83cace00307ba, type: 2}
       propertyPath: m_Name
       value: bottle2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114979490053564644, guid: e0b86a7ccec44904cbf83cace00307ba,
+        type: 2}
+      propertyPath: goodHeatLow
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0b86a7ccec44904cbf83cace00307ba, type: 2}
@@ -20154,16 +20189,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 114979490053564644, guid: e0b86a7ccec44904cbf83cace00307ba,
-        type: 2}
-      propertyPath: goodHeatHigh
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 23122604748960464, guid: e0b86a7ccec44904cbf83cace00307ba,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 50402f46543f182469ab2f9a08f77256, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0b86a7ccec44904cbf83cace00307ba, type: 2}
   m_IsPrefabAsset: 0
@@ -20370,12 +20395,12 @@ Prefab:
     - target: {fileID: 114742578519826472, guid: b10a190b198a61a4f919db4cb8ba9303,
         type: 2}
       propertyPath: goodHeatLow
-      value: 0
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 114742578519826472, guid: b10a190b198a61a4f919db4cb8ba9303,
         type: 2}
       propertyPath: goodHeatHigh
-      value: 50
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 1820697428642228, guid: b10a190b198a61a4f919db4cb8ba9303, type: 2}
       propertyPath: m_Name
