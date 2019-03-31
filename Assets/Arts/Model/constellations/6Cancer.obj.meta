@@ -1,52 +1,52 @@
 fileFormatVersion: 2
-guid: 49a3a1a925ef10f499c37e8d6235354d
+guid: de3b5355e31b64f40baef6f4fd20629f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: polySurface288_polySurface362
-    100004: polySurface288_polySurface365
-    100006: polySurface288_polySurface366
-    100008: polySurface288_polySurface396
-    100010: polySurface288_polySurface397
-    100012: polySurface288_polySurface405
-    100014: polySurface364_polySurface288
+    100002: polySurface405_polySurface526
+    100004: polySurface405_polySurface527
+    100006: polySurface405_polySurface528
+    100008: polySurface405_polySurface529
+    100010: polySurface405_polySurface530
+    100012: polySurface405_polySurface531
+    100014: polySurface525_polySurface405
     400000: //RootNode
-    400002: polySurface288_polySurface362
-    400004: polySurface288_polySurface365
-    400006: polySurface288_polySurface366
-    400008: polySurface288_polySurface396
-    400010: polySurface288_polySurface397
-    400012: polySurface288_polySurface405
-    400014: polySurface364_polySurface288
-    2100000: polySurface288_polySurface362Mat
-    2100002: polySurface288_polySurface365Mat
-    2100004: polySurface288_polySurface366Mat
-    2100006: polySurface288_polySurface396Mat
-    2100008: polySurface288_polySurface397Mat
-    2100010: polySurface288_polySurface405Mat
-    2100012: polySurface364_polySurface288Mat
-    2300000: polySurface288_polySurface362
-    2300002: polySurface288_polySurface365
-    2300004: polySurface288_polySurface366
-    2300006: polySurface288_polySurface396
-    2300008: polySurface288_polySurface397
-    2300010: polySurface288_polySurface405
-    2300012: polySurface364_polySurface288
-    3300000: polySurface288_polySurface362
-    3300002: polySurface288_polySurface365
-    3300004: polySurface288_polySurface366
-    3300006: polySurface288_polySurface396
-    3300008: polySurface288_polySurface397
-    3300010: polySurface288_polySurface405
-    3300012: polySurface364_polySurface288
-    4300000: polySurface288_polySurface362
-    4300002: polySurface288_polySurface365
-    4300004: polySurface288_polySurface366
-    4300006: polySurface288_polySurface396
-    4300008: polySurface288_polySurface397
-    4300010: polySurface288_polySurface405
-    4300012: polySurface364_polySurface288
+    400002: polySurface405_polySurface526
+    400004: polySurface405_polySurface527
+    400006: polySurface405_polySurface528
+    400008: polySurface405_polySurface529
+    400010: polySurface405_polySurface530
+    400012: polySurface405_polySurface531
+    400014: polySurface525_polySurface405
+    2100000: polySurface405_polySurface526Mat
+    2100002: polySurface405_polySurface527Mat
+    2100004: polySurface405_polySurface528Mat
+    2100006: polySurface405_polySurface529Mat
+    2100008: polySurface405_polySurface530Mat
+    2100010: polySurface405_polySurface531Mat
+    2100012: polySurface525_polySurface405Mat
+    2300000: polySurface405_polySurface526
+    2300002: polySurface405_polySurface527
+    2300004: polySurface405_polySurface528
+    2300006: polySurface405_polySurface529
+    2300008: polySurface405_polySurface530
+    2300010: polySurface405_polySurface531
+    2300012: polySurface525_polySurface405
+    3300000: polySurface405_polySurface526
+    3300002: polySurface405_polySurface527
+    3300004: polySurface405_polySurface528
+    3300006: polySurface405_polySurface529
+    3300008: polySurface405_polySurface530
+    3300010: polySurface405_polySurface531
+    3300012: polySurface525_polySurface405
+    4300000: polySurface405_polySurface526
+    4300002: polySurface405_polySurface527
+    4300004: polySurface405_polySurface528
+    4300006: polySurface405_polySurface529
+    4300008: polySurface405_polySurface530
+    4300010: polySurface405_polySurface531
+    4300012: polySurface525_polySurface405
   externalObjects: {}
   materials:
     importMaterials: 1

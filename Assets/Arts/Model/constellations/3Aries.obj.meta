@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: 28e7f8e8da75c7a4c821c02dfe05276e
+guid: 10ca2db2af232de489ca84fd3935da61
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: polySurface288_polySurface352
-    100004: polySurface288_polySurface408
-    100006: polySurface288_polySurface417
-    100008: polySurface348_polySurface288
+    100002: polySurface417_polySurface493
+    100004: polySurface417_polySurface494
+    100006: polySurface417_polySurface495
+    100008: polySurface496_polySurface417
     400000: //RootNode
-    400002: polySurface288_polySurface352
-    400004: polySurface288_polySurface408
-    400006: polySurface288_polySurface417
-    400008: polySurface348_polySurface288
-    2100000: polySurface288_polySurface352Mat
-    2100002: polySurface288_polySurface408Mat
-    2100004: polySurface288_polySurface417Mat
-    2100006: polySurface348_polySurface288Mat
-    2300000: polySurface288_polySurface352
-    2300002: polySurface288_polySurface408
-    2300004: polySurface288_polySurface417
-    2300006: polySurface348_polySurface288
-    3300000: polySurface288_polySurface352
-    3300002: polySurface288_polySurface408
-    3300004: polySurface288_polySurface417
-    3300006: polySurface348_polySurface288
-    4300000: polySurface288_polySurface352
-    4300002: polySurface288_polySurface408
-    4300004: polySurface288_polySurface417
-    4300006: polySurface348_polySurface288
+    400002: polySurface417_polySurface493
+    400004: polySurface417_polySurface494
+    400006: polySurface417_polySurface495
+    400008: polySurface496_polySurface417
+    2100000: polySurface417_polySurface493Mat
+    2100002: polySurface417_polySurface494Mat
+    2100004: polySurface417_polySurface495Mat
+    2100006: polySurface496_polySurface417Mat
+    2300000: polySurface417_polySurface493
+    2300002: polySurface417_polySurface494
+    2300004: polySurface417_polySurface495
+    2300006: polySurface496_polySurface417
+    3300000: polySurface417_polySurface493
+    3300002: polySurface417_polySurface494
+    3300004: polySurface417_polySurface495
+    3300006: polySurface496_polySurface417
+    4300000: polySurface417_polySurface493
+    4300002: polySurface417_polySurface494
+    4300004: polySurface417_polySurface495
+    4300006: polySurface496_polySurface417
   externalObjects: {}
   materials:
     importMaterials: 1
