@@ -122,7 +122,7 @@ public class Wand : MonoBehaviour {
         {
             distanceIndicator.transform.position = pickable.transform.position;
             Marker.sprite = Picking;
-            if (Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown("Fire1"))
+            if (Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown("Fire1") || !pickable.isPickedUp)
             {
                 handAnimator.SetBool("IsCasting", false);
                 handAnimator.ResetTrigger("Show");
