@@ -8,6 +8,9 @@ public class GuoPot : Wandable {
     public GameObject junkMedicinePrefab;
     protected List<Recipe> recipes;
     public List<GameObject> producedMedicines;
+    public float dampingSpeed = 5f;
+    public float roomTemperature = 50f;
+    public TextMesh heatTemp;
 
     protected override void OnStart()
     {
@@ -22,6 +25,28 @@ public class GuoPot : Wandable {
         {
             stir();
         }
+
+        // Heat damping to room's heat
+        float heatDiff = containingHeat - roomTemperature;
+        float change = dampingSpeed * Time.deltaTime;
+        if (change < Mathf.Abs(heatDiff))
+        {
+            //containingHeat = Mathf.Lerp(containingHeat, roomTemperature, change);
+            if (heatDiff >= 0)
+            {
+                containingHeat -= change;
+            }
+            else
+            {
+                containingHeat += change;
+            }
+        }
+        else
+        {
+            containingHeat = roomTemperature;
+        }
+
+        heatTemp.text = ((int)containingHeat).ToString(); 
     }
 
     public override void OnReset()
