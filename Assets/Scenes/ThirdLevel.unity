@@ -8818,12 +8818,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4140940869719430, guid: cbc05ba97f83bc14d97e5acf505ed41e,
     type: 2}
   m_PrefabInternal: {fileID: 1925860789}
---- !u!114 &971306580 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114168130402336844, guid: cbc05ba97f83bc14d97e5acf505ed41e,
-    type: 2}
-  m_PrefabInternal: {fileID: 1925860789}
-  m_Script: {fileID: 11500000, guid: 0c19f3e134862e74dbc98cb514a82ef5, type: 3}
 --- !u!1 &977664915 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 9723911408653ae428b6f6c19f76ca50,
@@ -15105,6 +15099,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4987973afd0c5f24496722d583bf8f6a, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1528041992 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114634150821982830, guid: 4987973afd0c5f24496722d583bf8f6a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1528041991}
+  m_Script: {fileID: 11500000, guid: 7b8c019fda9d48c489ced185ad8b6d77, type: 3}
 --- !u!1001 &1530803940
 Prefab:
   m_ObjectHideFlags: 0
@@ -16721,7 +16721,7 @@ Prefab:
         type: 2}
       propertyPath: resettingObjects.Array.data[14]
       value: 
-      objectReference: {fileID: 971306580}
+      objectReference: {fileID: 1924914897}
     - target: {fileID: 114220805803075304, guid: 35a63febf2e3cd54ab879291cee5b0da,
         type: 2}
       propertyPath: resettingObjects.Array.data[15]
@@ -19082,6 +19082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggees:
   - {fileID: 1203268905}
+  - {fileID: 1528041992}
   desiredType: 3
   nearMedicines: []
   isActive: 0
