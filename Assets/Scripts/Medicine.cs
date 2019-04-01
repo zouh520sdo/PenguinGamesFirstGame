@@ -7,7 +7,8 @@ public enum MedicineType
     A,
     B,
     C,
-    D
+    D,
+    E
 }
 
 public class Medicine : MonoBehaviour {
