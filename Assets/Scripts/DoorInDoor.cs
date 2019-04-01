@@ -7,7 +7,7 @@ public class DoorInDoor : Triggee {
     public bool isOpen;
     public Ignitable giantBook;
 
-    protected Animator animator;
+    public Animator animator;
     protected bool originalIsOpen;
 
     public override void OnReset()
@@ -21,7 +21,10 @@ public class DoorInDoor : Triggee {
 	public override void Start () {
         base.Start();
         originalIsOpen = isOpen;
-        animator = GetComponent<Animator>();
+        if (!animator)
+        {
+            animator = GetComponent<Animator>();
+        }
     }
 
     // Update is called once per frame

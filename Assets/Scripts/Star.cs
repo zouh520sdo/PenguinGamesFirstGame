@@ -16,14 +16,19 @@ public class Star : Pickable {
     public float smallLivingDuration = 7f;
     public InvisibleData invisibleData;
     public Renderer myRenderer;
+    public bool isOnWall;
     protected float livingDuration;
     protected float originalLivingDuration;
     protected InvisibleData originalInvisibleData;
+    protected bool originalIsOnWall;
 
     public void  SetActive(InvisibleData enabled)
     {
         myRenderer.enabled = enabled.isVisible;
-        GetComponent<Collider>().enabled = enabled.isVisible;
+        if (!isOnWall)
+        {
+            GetComponent<Collider>().enabled = enabled.isVisible;
+        }
     }
 
     public override void OnReset()
@@ -31,6 +36,7 @@ public class Star : Pickable {
         base.OnReset();
         livingDuration = originalLivingDuration;
         invisibleData = originalInvisibleData;
+        isOnWall = originalIsOnWall;
         SetActive(invisibleData);
     }
 
@@ -51,6 +57,7 @@ public class Star : Pickable {
         }
         originalLivingDuration = livingDuration;
         originalInvisibleData = invisibleData;
+        originalIsOnWall = isOnWall;
         SetActive(invisibleData);
     }
 
@@ -62,13 +69,7 @@ public class Star : Pickable {
         {
             if (livingDuration <= 0)
             {
-                // Set invisible info, and hide
-                if (picker)
-                {
-                    Drop(picker);
-                }
-                invisibleData.isVisible = false;
-                SetActive(invisibleData);
+                DieOut();
             }
             else
             {
@@ -77,9 +78,33 @@ public class Star : Pickable {
         }
     }
 
+    public void DieOut()
+    {
+        livingDuration = 0;
+        // Set invisible info, and hide
+        if (picker)
+        {
+            Drop(picker);
+        }
+        invisibleData.isVisible = false;
+        SetActive(invisibleData);
+    }
+
     public override void Pick(Wand p)
     {
         base.Pick(p);
         isDyingOut = true;
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        Star otherStar = other.GetComponent<Star>();
+        Pickable otherStarP = other.GetComponent<Pickable>();
+        if (isOnWall && !invisibleData.isVisible && otherStar && !otherStar.isOnWall && !otherStarP.isPickedUp)
+        {
+            otherStar.DieOut();
+            invisibleData.isVisible = true;
+            SetActive(invisibleData);
+        }
     }
 }
