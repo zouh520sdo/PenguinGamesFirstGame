@@ -15,13 +15,14 @@ public class Star : Pickable {
     public float largeLivingDuration = 10f;
     public float smallLivingDuration = 7f;
     public InvisibleData invisibleData;
+    public Renderer myRenderer;
     protected float livingDuration;
     protected float originalLivingDuration;
     protected InvisibleData originalInvisibleData;
 
     public void  SetActive(InvisibleData enabled)
     {
-        GetComponent<Renderer>().enabled = enabled.isVisible;
+        myRenderer.enabled = enabled.isVisible;
         GetComponent<Collider>().enabled = enabled.isVisible;
     }
 
@@ -43,6 +44,10 @@ public class Star : Pickable {
         else
         {
             livingDuration = smallLivingDuration;
+        }
+        if (!myRenderer)
+        {
+            myRenderer = GetComponent<Renderer>();
         }
         originalLivingDuration = livingDuration;
         originalInvisibleData = invisibleData;
