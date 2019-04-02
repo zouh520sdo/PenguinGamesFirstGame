@@ -51,6 +51,5 @@ public class Wood : Wandable {
             isOnFire = false;
             OnFire.Stop();
         }
-
     }
 }
