@@ -8591,6 +8591,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46273fc06c47d94599f05044d604991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1013706917
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1247540866}
+    m_Modifications:
+    - target: {fileID: 4106217506386412, guid: 4b42e93043cb5504c9a27c43b2121c0d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -9.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106217506386412, guid: 4b42e93043cb5504c9a27c43b2121c0d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106217506386412, guid: 4b42e93043cb5504c9a27c43b2121c0d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -4.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106217506386412, guid: 4b42e93043cb5504c9a27c43b2121c0d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106217506386412, guid: 4b42e93043cb5504c9a27c43b2121c0d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106217506386412, guid: 4b42e93043cb5504c9a27c43b2121c0d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106217506386412, guid: 4b42e93043cb5504c9a27c43b2121c0d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106217506386412, guid: 4b42e93043cb5504c9a27c43b2121c0d, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4b42e93043cb5504c9a27c43b2121c0d, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &1015285342
 Prefab:
   m_ObjectHideFlags: 0
@@ -13924,7 +13966,7 @@ Prefab:
         type: 2}
       propertyPath: giantBook
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1610515289}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4987973afd0c5f24496722d583bf8f6a, type: 2}
   m_IsPrefabAsset: 0
@@ -14305,6 +14347,12 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: 7b3293ff8e51e2d48a266db42ea1301b, type: 3}
+--- !u!114 &1610515289 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114467371875222760, guid: 08a77b4afefd33e4e86968f9d70cd9d9,
+    type: 2}
+  m_PrefabInternal: {fileID: 2068943661}
+  m_Script: {fileID: 11500000, guid: 466e78909670fc340bd731045c82bcd9, type: 3}
 --- !u!1001 &1610882332
 Prefab:
   m_ObjectHideFlags: 0

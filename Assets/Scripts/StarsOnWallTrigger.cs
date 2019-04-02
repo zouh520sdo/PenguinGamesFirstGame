@@ -13,6 +13,7 @@ public class StarsOnWallTrigger : Trigger {
         base.Start();
         constellations.AddRange(GetComponentsInChildren<Constellation>());
         originalIsActive = isActive;
+        deactivateTriggees();
     }
 
     public override void OnReset()
