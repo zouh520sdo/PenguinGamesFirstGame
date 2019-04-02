@@ -11,6 +11,7 @@ ModelImporter:
     2300000: pasted__pCylinder4_group
     3300000: pasted__pCylinder4_group
     4300000: pasted__pCylinder4_group
+    6400000: pasted__pCylinder4_group
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -44,7 +45,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
