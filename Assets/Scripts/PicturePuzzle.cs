@@ -93,6 +93,9 @@ public class PicturePuzzle : MonoBehaviour {
 
             pictures[0].isHandsUp = (pictures[1].isRed && correctAnswer == Answer.Red);
             pictures[1].isHandsUp = (pictures[0].isRed && correctAnswer == Answer.Red);
+
+            pictures[0].SetNote();
+            pictures[1].SetNote();
         }
     }
 }

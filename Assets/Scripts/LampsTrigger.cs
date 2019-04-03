@@ -14,6 +14,14 @@ public class LampsTrigger : Trigger {
         base.OnReset();
         isActive = origianlIsActive;
         deactivateTriggees();
+        foreach (LampIgnitable lamp in lampsToLight)
+        {
+            lamp.SendMessage("OnReset");
+        }
+        foreach (LampIgnitable lamp in lampsToUnlit)
+        {
+            lamp.SendMessage("OnReset");
+        }
     }
 
     public override void Start()
