@@ -5203,6 +5203,11 @@ Prefab:
       propertyPath: Marker
       value: 
       objectReference: {fileID: 1853769897}
+    - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
+      propertyPath: heatText
+      value: 
+      objectReference: {fileID: 1853769899}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
   m_IsPrefabAsset: 0
@@ -26812,6 +26817,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1654661526417256, guid: fe370290a88187b45b1bbe35ba008cdb,
     type: 2}
   m_PrefabInternal: {fileID: 1853769896}
+--- !u!114 &1853769899 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114467824315005118, guid: fe370290a88187b45b1bbe35ba008cdb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1853769896}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1868858226
 Prefab:
   m_ObjectHideFlags: 0

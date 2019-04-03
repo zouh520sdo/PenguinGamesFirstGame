@@ -861,6 +861,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe370290a88187b45b1bbe35ba008cdb, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &104538698 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114467824315005118, guid: fe370290a88187b45b1bbe35ba008cdb,
+    type: 2}
+  m_PrefabInternal: {fileID: 104538697}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &111589537
 Prefab:
   m_ObjectHideFlags: 0
@@ -4800,6 +4806,7 @@ MonoBehaviour:
   - '"that till the end of my life,'
   - '"I will not harm any mage legally protected by Great Souhait Union. "'
   canStartParagraph: 1
+  canRepeat: 0
 --- !u!1 &609268553
 GameObject:
   m_ObjectHideFlags: 0
@@ -5950,6 +5957,7 @@ MonoBehaviour:
   - \*Applause*/
   - Come on! Let's invite Mr. Frog to taste it!
   canStartParagraph: 1
+  canRepeat: 0
 --- !u!65 &764359503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13809,6 +13817,11 @@ Prefab:
       propertyPath: heat
       value: 210
       objectReference: {fileID: 0}
+    - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
+      propertyPath: heatText
+      value: 
+      objectReference: {fileID: 104538698}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
   m_IsPrefabAsset: 0
@@ -17306,6 +17319,7 @@ MonoBehaviour:
   - '...'
   - Go ahead.
   canStartParagraph: 0
+  canRepeat: 0
 --- !u!114 &1924914897
 MonoBehaviour:
   m_ObjectHideFlags: 0
