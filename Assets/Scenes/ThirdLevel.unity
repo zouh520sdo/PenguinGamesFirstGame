@@ -5957,7 +5957,7 @@ MonoBehaviour:
   - \*Applause*/
   - Come on! Let's invite Mr. Frog to taste it!
   canStartParagraph: 1
-  canRepeat: 0
+  canRepeat: 1
 --- !u!65 &764359503
 BoxCollider:
   m_ObjectHideFlags: 0
