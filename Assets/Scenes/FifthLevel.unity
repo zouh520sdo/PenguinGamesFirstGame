@@ -41660,109 +41660,67 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1539447297}
     m_Modifications:
-    - target: {fileID: 114579417585116958, guid: a557228fabb2d8741941a927e7162ff6,
-        type: 2}
-      propertyPath: triggees.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4365519532533304, guid: a557228fabb2d8741941a927e7162ff6, type: 2}
+    - target: {fileID: 4333210608211762, guid: 93d217fc4f1f72c4994ef493d0fe344e, type: 2}
       propertyPath: m_LocalPosition.x
       value: -1.7
       objectReference: {fileID: 0}
-    - target: {fileID: 4365519532533304, guid: a557228fabb2d8741941a927e7162ff6, type: 2}
+    - target: {fileID: 4333210608211762, guid: 93d217fc4f1f72c4994ef493d0fe344e, type: 2}
       propertyPath: m_LocalPosition.y
       value: -4.222
       objectReference: {fileID: 0}
-    - target: {fileID: 4365519532533304, guid: a557228fabb2d8741941a927e7162ff6, type: 2}
+    - target: {fileID: 4333210608211762, guid: 93d217fc4f1f72c4994ef493d0fe344e, type: 2}
       propertyPath: m_LocalPosition.z
       value: -61.99
       objectReference: {fileID: 0}
-    - target: {fileID: 4365519532533304, guid: a557228fabb2d8741941a927e7162ff6, type: 2}
+    - target: {fileID: 4333210608211762, guid: 93d217fc4f1f72c4994ef493d0fe344e, type: 2}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4365519532533304, guid: a557228fabb2d8741941a927e7162ff6, type: 2}
+    - target: {fileID: 4333210608211762, guid: 93d217fc4f1f72c4994ef493d0fe344e, type: 2}
       propertyPath: m_LocalRotation.y
       value: -0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 4365519532533304, guid: a557228fabb2d8741941a927e7162ff6, type: 2}
+    - target: {fileID: 4333210608211762, guid: 93d217fc4f1f72c4994ef493d0fe344e, type: 2}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4365519532533304, guid: a557228fabb2d8741941a927e7162ff6, type: 2}
+    - target: {fileID: 4333210608211762, guid: 93d217fc4f1f72c4994ef493d0fe344e, type: 2}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 4365519532533304, guid: a557228fabb2d8741941a927e7162ff6, type: 2}
+    - target: {fileID: 4333210608211762, guid: 93d217fc4f1f72c4994ef493d0fe344e, type: 2}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 114579417585116958, guid: a557228fabb2d8741941a927e7162ff6,
+    - target: {fileID: 114362975362960856, guid: 93d217fc4f1f72c4994ef493d0fe344e,
         type: 2}
       propertyPath: triggees.Array.data[0]
       value: 
-      objectReference: {fileID: 1926676301}
-    - target: {fileID: 114579417585116958, guid: a557228fabb2d8741941a927e7162ff6,
+      objectReference: {fileID: 162615376}
+    - target: {fileID: 114362975362960856, guid: 93d217fc4f1f72c4994ef493d0fe344e,
         type: 2}
-      propertyPath: triggees.Array.data[1]
+      propertyPath: puzzle
       value: 
-      objectReference: {fileID: 93664940}
-    - target: {fileID: 114579417585116958, guid: a557228fabb2d8741941a927e7162ff6,
+      objectReference: {fileID: 1429253770}
+    - target: {fileID: 114362975362960856, guid: 93d217fc4f1f72c4994ef493d0fe344e,
         type: 2}
-      propertyPath: triggees.Array.data[2]
+      propertyPath: crystal
       value: 
-      objectReference: {fileID: 93664940}
-    - target: {fileID: 82022355802082910, guid: a557228fabb2d8741941a927e7162ff6,
-        type: 2}
-      propertyPath: m_Volume
-      value: 0.195
-      objectReference: {fileID: 0}
-    - target: {fileID: 4365519532533304, guid: a557228fabb2d8741941a927e7162ff6, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4365519532533304, guid: a557228fabb2d8741941a927e7162ff6, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1030686873228008, guid: a557228fabb2d8741941a927e7162ff6, type: 2}
-      propertyPath: m_Name
-      value: PuzzleSlectionPlane
-      objectReference: {fileID: 0}
-    - target: {fileID: 23501442790229358, guid: a557228fabb2d8741941a927e7162ff6,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f55889aa992d8cf46b2f7202c0ebdd39, type: 2}
-    m_RemovedComponents:
-    - {fileID: 114579417585116958, guid: a557228fabb2d8741941a927e7162ff6, type: 2}
-  m_SourcePrefab: {fileID: 100100000, guid: a557228fabb2d8741941a927e7162ff6, type: 2}
+      objectReference: {fileID: 455766221}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 93d217fc4f1f72c4994ef493d0fe344e, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &910327754 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 4365519532533304, guid: a557228fabb2d8741941a927e7162ff6,
+  m_CorrespondingSourceObject: {fileID: 4333210608211762, guid: 93d217fc4f1f72c4994ef493d0fe344e,
     type: 2}
   m_PrefabInternal: {fileID: 910327753}
---- !u!1 &910327755 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1030686873228008, guid: a557228fabb2d8741941a927e7162ff6,
-    type: 2}
-  m_PrefabInternal: {fileID: 910327753}
---- !u!114 &910327756
+--- !u!114 &910327757 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 910327755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5f938c1c13b94540bce356e13b765e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggees:
-  - {fileID: 162615376}
-  puzzle: {fileID: 1429253770}
-  crystal: {fileID: 455766221}
+  m_CorrespondingSourceObject: {fileID: 114701091362331674, guid: 93d217fc4f1f72c4994ef493d0fe344e,
+    type: 2}
+  m_PrefabInternal: {fileID: 910327753}
+  m_Script: {fileID: 11500000, guid: 0c19f3e134862e74dbc98cb514a82ef5, type: 3}
 --- !u!1001 &920808593
 Prefab:
   m_ObjectHideFlags: 0
@@ -46073,6 +46031,8 @@ Prefab:
       objectReference: {fileID: 2100000, guid: f55889aa992d8cf46b2f7202c0ebdd39, type: 2}
     m_RemovedComponents:
     - {fileID: 114579417585116958, guid: a557228fabb2d8741941a927e7162ff6, type: 2}
+    - {fileID: 114662104893249928, guid: a557228fabb2d8741941a927e7162ff6, type: 2}
+    - {fileID: 114092528937815216, guid: a557228fabb2d8741941a927e7162ff6, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: a557228fabb2d8741941a927e7162ff6, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &1052570383 stripped
@@ -46100,6 +46060,12 @@ MonoBehaviour:
   - {fileID: 1511711534}
   puzzle: {fileID: 839374115}
   crystal: {fileID: 455766221}
+--- !u!114 &1052570386 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114643486527951508, guid: a557228fabb2d8741941a927e7162ff6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1052570382}
+  m_Script: {fileID: 11500000, guid: 0c19f3e134862e74dbc98cb514a82ef5, type: 3}
 --- !u!1001 &1053253546
 Prefab:
   m_ObjectHideFlags: 0
@@ -69458,7 +69424,7 @@ Prefab:
         type: 2}
       propertyPath: resettingObjects.Array.data[13]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 910327757}
     - target: {fileID: 114220805803075304, guid: 35a63febf2e3cd54ab879291cee5b0da,
         type: 2}
       propertyPath: resettingObjects.Array.data[14]
@@ -69468,7 +69434,7 @@ Prefab:
         type: 2}
       propertyPath: resettingObjects.Array.data[15]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1052570386}
     - target: {fileID: 114220805803075304, guid: 35a63febf2e3cd54ab879291cee5b0da,
         type: 2}
       propertyPath: resettingObjects.Array.data[16]

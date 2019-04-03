@@ -16,6 +16,7 @@ public class PicturePuzzleTrigger : Trigger {
         {
             puzzle.SendMessage("OnReset");
         }
+        deactivateTriggees();
     }
 
     private void OnCollisionEnter(Collision collision)
