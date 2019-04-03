@@ -17,6 +17,10 @@ public class Star : Pickable {
     public InvisibleData invisibleData;
     public Renderer myRenderer;
     public bool isOnWall;
+    public ParticleSystem shiningEffect;
+    public float maxShiningSize = 10f;
+    public float minShiningSize = 0f;
+    protected float maxLivingDuration;
     protected float livingDuration;
     protected float originalLivingDuration;
     protected InvisibleData originalInvisibleData;
@@ -29,6 +33,10 @@ public class Star : Pickable {
         {
             GetComponent<Collider>().enabled = enabled.isVisible;
         }
+        if (shiningEffect)
+        {
+            shiningEffect.gameObject.SetActive(enabled.isVisible);
+        }
     }
 
     public override void OnReset()
@@ -38,6 +46,11 @@ public class Star : Pickable {
         invisibleData = originalInvisibleData;
         isOnWall = originalIsOnWall;
         SetActive(invisibleData);
+        if (shiningEffect)
+        {
+            ParticleSystem.MainModule main = shiningEffect.main;
+            main.startSize = maxShiningSize;
+        }
     }
 
     public override void Start()
@@ -46,19 +59,31 @@ public class Star : Pickable {
         if (type == StarType.Large)
         {
             livingDuration = largeLivingDuration;
+            maxLivingDuration = largeLivingDuration;
         }
         else
         {
             livingDuration = smallLivingDuration;
+            maxLivingDuration = smallLivingDuration;
         }
         if (!myRenderer)
         {
             myRenderer = GetComponent<Renderer>();
         }
+        if (!shiningEffect)
+        {
+            shiningEffect = GetComponentInChildren<ParticleSystem>();
+        }
         originalLivingDuration = livingDuration;
         originalInvisibleData = invisibleData;
         originalIsOnWall = isOnWall;
         SetActive(invisibleData);
+
+        if (shiningEffect)
+        {
+            ParticleSystem.MainModule main = shiningEffect.main;
+            main.startSize = maxShiningSize;
+        }
     }
 
     public override void Update()
@@ -73,7 +98,12 @@ public class Star : Pickable {
             }
             else
             {
-                livingDuration -= Time.deltaTime;
+                livingDuration = Mathf.Max(0, livingDuration - Time.deltaTime);
+                if (shiningEffect)
+                {
+                    ParticleSystem.MainModule main = shiningEffect.main;
+                    main.startSize = (livingDuration / maxLivingDuration) * (maxShiningSize - minShiningSize) + minShiningSize;
+                }
             }
         }
     }
