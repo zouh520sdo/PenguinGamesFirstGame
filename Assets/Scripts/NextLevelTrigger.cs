@@ -12,10 +12,7 @@ public class NextLevelTrigger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown(KeyCode.N))
-        {
-            SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings);
-        }
+		
     }
 
     private void OnTriggerEnter(Collider other)

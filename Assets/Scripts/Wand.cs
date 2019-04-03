@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Wand : MonoBehaviour {
 
@@ -314,6 +315,11 @@ public class Wand : MonoBehaviour {
         {
             heatText.text = ((int)heat).ToString();
             heatText.color = Color.Lerp(Color.blue, Color.red, (heat - minHeat) / (maxHeat - minHeat));
+        }
+
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings);
         }
     }
 
