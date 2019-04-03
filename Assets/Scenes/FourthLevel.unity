@@ -652,7 +652,7 @@ ParticleSystem:
   m_GameObject: {fileID: 262000600}
   serializedVersion: 5
   lengthInSec: 5
-  simulationSpeed: 5
+  simulationSpeed: 15
   stopAction: 0
   looping: 1
   prewarm: 0
@@ -5548,7 +5548,7 @@ ParticleSystem:
   m_GameObject: {fileID: 428541782}
   serializedVersion: 5
   lengthInSec: 5
-  simulationSpeed: 5
+  simulationSpeed: 15
   stopAction: 0
   looping: 1
   prewarm: 0
@@ -12661,7 +12661,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1040183800}
   serializedVersion: 5
   lengthInSec: 5
-  simulationSpeed: 5
+  simulationSpeed: 15
   stopAction: 0
   looping: 1
   prewarm: 0
@@ -17418,7 +17418,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1173485459}
   serializedVersion: 5
   lengthInSec: 5
-  simulationSpeed: 5
+  simulationSpeed: 15
   stopAction: 0
   looping: 1
   prewarm: 0
@@ -22251,7 +22251,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1287187737}
   serializedVersion: 5
   lengthInSec: 5
-  simulationSpeed: 5
+  simulationSpeed: 15
   stopAction: 0
   looping: 1
   prewarm: 0
@@ -26875,7 +26875,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1294966754}
   serializedVersion: 5
   lengthInSec: 5
-  simulationSpeed: 5
+  simulationSpeed: 15
   stopAction: 0
   looping: 1
   prewarm: 0
@@ -31665,21 +31665,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 4167363540972326, guid: 28dd6e26396c29b4db1b176ddfacfcf2, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4167363540972326, guid: 28dd6e26396c29b4db1b176ddfacfcf2, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4167363540972326, guid: 28dd6e26396c29b4db1b176ddfacfcf2, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4167363540972326, guid: 28dd6e26396c29b4db1b176ddfacfcf2, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+    - target: {fileID: 198955956499941012, guid: 28dd6e26396c29b4db1b176ddfacfcf2,
+        type: 2}
+      propertyPath: simulationSpeed
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28dd6e26396c29b4db1b176ddfacfcf2, type: 2}
@@ -31991,7 +31980,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1512893764}
   serializedVersion: 5
   lengthInSec: 5
-  simulationSpeed: 5
+  simulationSpeed: 15
   stopAction: 0
   looping: 1
   prewarm: 0
@@ -36615,7 +36604,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1533025433}
   serializedVersion: 5
   lengthInSec: 5
-  simulationSpeed: 5
+  simulationSpeed: 15
   stopAction: 0
   looping: 1
   prewarm: 0
@@ -41441,7 +41430,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1766579685}
   serializedVersion: 5
   lengthInSec: 5
-  simulationSpeed: 5
+  simulationSpeed: 15
   stopAction: 0
   looping: 1
   prewarm: 0
@@ -46065,7 +46054,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1792656169}
   serializedVersion: 5
   lengthInSec: 5
-  simulationSpeed: 5
+  simulationSpeed: 15
   stopAction: 0
   looping: 1
   prewarm: 0
@@ -50689,7 +50678,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1814250519}
   serializedVersion: 5
   lengthInSec: 5
-  simulationSpeed: 5
+  simulationSpeed: 15
   stopAction: 0
   looping: 1
   prewarm: 0

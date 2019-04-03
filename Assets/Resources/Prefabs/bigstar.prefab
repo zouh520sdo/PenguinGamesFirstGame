@@ -75,7 +75,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4210094341195928}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4210094341195928
 Transform:
   m_ObjectHideFlags: 1
@@ -208,7 +208,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1366549963806008}
   serializedVersion: 5
   lengthInSec: 5
-  simulationSpeed: 5
+  simulationSpeed: 15
   stopAction: 0
   looping: 1
   prewarm: 0
