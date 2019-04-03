@@ -156,6 +156,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.14
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4314273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 4314270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f48d29f40ee32d4fb8d54ece491cb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: Small Star
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 1
 --- !u!1 &15141036
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,6 +591,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.14
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &284835496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 284835493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f48d29f40ee32d4fb8d54ece491cb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: Small Star
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 1
 --- !u!1001 &297954034
 Prefab:
   m_ObjectHideFlags: 0
@@ -1703,6 +1733,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.14
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &734700638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 734700635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f48d29f40ee32d4fb8d54ece491cb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: Small Star
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 1
 --- !u!1 &758275920
 GameObject:
   m_ObjectHideFlags: 0
@@ -2628,6 +2673,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.27
   m_Center: {x: -0.0000004991889, y: 0, z: 0}
+--- !u!114 &840922124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 840922121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f48d29f40ee32d4fb8d54ece491cb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: Big Star
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 1
 --- !u!1001 &883652345
 Prefab:
   m_ObjectHideFlags: 0
@@ -3189,6 +3249,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.27
   m_Center: {x: -0.0000004991889, y: 0, z: 0}
+--- !u!114 &1014280987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1014280984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f48d29f40ee32d4fb8d54ece491cb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: Big Star
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 1
 --- !u!1 &1026402343
 GameObject:
   m_ObjectHideFlags: 0
@@ -3543,6 +3618,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.27
   m_Center: {x: -0.0000004991889, y: 0, z: 0}
+--- !u!114 &1236754080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1236754077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f48d29f40ee32d4fb8d54ece491cb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: Big Star
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 1
 --- !u!1001 &1306014222
 Prefab:
   m_ObjectHideFlags: 0
@@ -4011,6 +4101,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.14
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1484409474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1484409471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f48d29f40ee32d4fb8d54ece491cb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: Small Star
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 1
 --- !u!1 &1633932649
 GameObject:
   m_ObjectHideFlags: 0
@@ -4127,6 +4232,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.14
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1738062839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1738062836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f48d29f40ee32d4fb8d54ece491cb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: Small Star
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 1
 --- !u!1001 &1746737673
 Prefab:
   m_ObjectHideFlags: 0
@@ -4195,6 +4315,26 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2300000, guid: 5b0f4e70d957e6546b8d36623afd05f0,
     type: 3}
   m_PrefabInternal: {fileID: 1746737673}
+--- !u!1 &1859203377 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1536416381875746, guid: 95ed171652a8a96429dbca506339ae31,
+    type: 2}
+  m_PrefabInternal: {fileID: 717403292}
+--- !u!114 &1859203378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1859203377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f48d29f40ee32d4fb8d54ece491cb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: Small Star
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 1
 --- !u!114 &1870516638 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114707046657100298, guid: 622ee52cb7d1f5d4ab08791669f6c72c,
@@ -4242,6 +4382,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.14
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1922102474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1922102471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f48d29f40ee32d4fb8d54ece491cb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: Small Star
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 1
 --- !u!1 &1958711764
 GameObject:
   m_ObjectHideFlags: 0
@@ -4607,6 +4762,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 105, z: 0}
+--- !u!1 &2052250349 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1257662557871522, guid: 28dd6e26396c29b4db1b176ddfacfcf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1373262670}
+--- !u!114 &2052250350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2052250349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f48d29f40ee32d4fb8d54ece491cb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: Big Star
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 1
 --- !u!114 &2052316070 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114041840821158078, guid: fe370290a88187b45b1bbe35ba008cdb,
@@ -4654,6 +4829,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.27
   m_Center: {x: -0.0000004991889, y: 0, z: 0}
+--- !u!114 &2055918866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2055918863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f48d29f40ee32d4fb8d54ece491cb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: Big Star
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 1
 --- !u!1001 &2064108434
 Prefab:
   m_ObjectHideFlags: 0
