@@ -42,7 +42,8 @@ public class InvisiblePlatform : MonoBehaviour {
     public void SetActive(bool enabled)
     {
         invisibleData.isVisible = enabled;
-        GetComponent<Renderer>().enabled = enabled;
+        GetComponentInChildren<SpriteRenderer>().enabled = enabled;
+        //GetComponent<Renderer>().enabled = enabled;
         GetComponent<Collider>().enabled = enabled;
     }
 
