@@ -7,16 +7,19 @@ public class Note : MonoBehaviour {
     public string note;
     public List<string> paragraph;
     public bool canStartParagraph = true;
+    public bool canRepeat;
     protected bool finished;
     protected int paragraphIndex;
     protected bool originalFinished;
     protected bool originalCanParagraph;
+    protected bool originalCanRepeat;
 
 
     public void OnReset()
     {
         finished = originalFinished;
         canStartParagraph = originalCanParagraph;
+        canRepeat = originalCanRepeat;
     }
 
 	// Use this for initialization
@@ -24,6 +27,7 @@ public class Note : MonoBehaviour {
         paragraphIndex = -1;
         originalFinished = finished;
         originalCanParagraph = canStartParagraph;
+        originalCanRepeat = canRepeat;
     }
 	
 	// Update is called once per frame

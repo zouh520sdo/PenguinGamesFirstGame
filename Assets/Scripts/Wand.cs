@@ -23,6 +23,9 @@ public class Wand : MonoBehaviour {
     [HideInInspector]public float originalHeat;
     [HideInInspector]public Vector3 originalPos;
 
+    // For heat UI
+    public Text heatText;
+
     //FOR MARKER
     public Sprite Normal;
     public Sprite CanInreract;
@@ -161,7 +164,7 @@ public class Wand : MonoBehaviour {
                 if (Physics.Raycast(ray, out hit, wandRange))
                 {
                     Note description = hit.collider.gameObject.GetComponent<Note>();
-                    if (description && !description.getIsFinished())
+                    if (description && (!description.getIsFinished() || description.canRepeat))
                     {
                         dialoguePanel.gameObject.SetActive(true);
                         dialogue.enabled = true;
@@ -306,6 +309,12 @@ public class Wand : MonoBehaviour {
                 }
             }
         }
+
+        if (heatText)
+        {
+            heatText.text = ((int)heat).ToString();
+            heatText.color = Color.Lerp(Color.blue, Color.red, (heat - minHeat) / (maxHeat - minHeat));
+        }
     }
 
     /// <summary>
@@ -333,5 +342,14 @@ public class Wand : MonoBehaviour {
         dialoguePanel.gameObject.SetActive(true);
         dialogue.enabled = true;
         dialogue.text = content;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        ChangePlayerResetPosition CPRP = other.GetComponent<ChangePlayerResetPosition>();
+        if (CPRP)
+        {
+            originalPos = CPRP.resettingPos;
+        }
     }
 }
