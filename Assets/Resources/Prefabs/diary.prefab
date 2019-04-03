@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1236840092431830}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -14.74, y: -8.2861, z: -20}
+  m_LocalPosition: {x: 0.51, y: -3.85, z: -4.32}
   m_LocalScale: {x: 0.45373, y: 0.45373, z: 0.45373}
   m_Children:
   - {fileID: 4494186258879102}
@@ -179,4 +179,4 @@ MonoBehaviour:
   rigid: {fileID: 0}
   holder: {fileID: 0}
   holdersInRange: []
-  holderRot: {x: 90, y: 0, z: 0}
+  holderRot: {x: 0, y: 0, z: 0}
