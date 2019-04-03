@@ -8,6 +8,9 @@ public class Constellation : MonoBehaviour {
     protected bool originalIsComplete;
     public List<Star> missingStars;
 
+    public List<Collider> starColliders;
+    public List<ParticleSystem> shinineParticleSystems;
+
     public void OnReset()
     {
         isComplete = originalIsComplete;
@@ -15,11 +18,16 @@ public class Constellation : MonoBehaviour {
         {
             star.gameObject.SendMessage("OnReset", SendMessageOptions.DontRequireReceiver);
         }
+
+        SetShiningEffect(isComplete);
     }
 
 	// Use this for initialization
 	void Start () {
         missingStars.AddRange(GetComponentsInChildren<Star>());
+
+        starColliders.AddRange(GetComponentsInChildren<Collider>());
+        shinineParticleSystems.AddRange(GetComponentsInChildren<ParticleSystem>());
 
         if (missingStars.Count == 0)
         {
@@ -31,7 +39,7 @@ public class Constellation : MonoBehaviour {
         }
 
         originalIsComplete = isComplete;
-
+        SetShiningEffect(isComplete);
     }
 	
 	// Update is called once per frame
@@ -46,6 +54,19 @@ public class Constellation : MonoBehaviour {
                     break;
                 }
             }
+
+            if (isComplete)
+            {
+                SetShiningEffect(isComplete);
+            }
         }
 	}
+
+    public void SetShiningEffect(bool enabled)
+    {
+        foreach (ParticleSystem p in shinineParticleSystems)
+        {
+            p.gameObject.SetActive(enabled);
+        }
+    }
 }
