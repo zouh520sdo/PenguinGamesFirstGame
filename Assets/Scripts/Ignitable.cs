@@ -112,7 +112,10 @@ public class Ignitable : MonoBehaviour {
         invisibleData.isVisible = enabled;
         foreach (GameObject child in hidingChildren)
         {
-            child.SetActive(enabled);
+            if (child)
+            {
+                child.SetActive(enabled);
+            }
         }
         if (GetComponent<Renderer>())
         {
