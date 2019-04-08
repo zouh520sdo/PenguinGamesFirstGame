@@ -50,7 +50,6 @@ public class InvisiblePlatform : MonoBehaviour {
 
     void OnTriggerEnter(Collider collider)
     {
-        print("Colliding " + collider.tag);
         if (collider.tag == "Player")
         {
             foreach (GameObject platform in nextPlatforms)
