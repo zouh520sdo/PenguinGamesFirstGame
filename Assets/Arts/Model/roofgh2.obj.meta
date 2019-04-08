@@ -17,6 +17,8 @@ ModelImporter:
     3300002: polySurface12_pCube7
     4300000: pCube7_polySurface13
     4300002: polySurface12_pCube7
+    6400000: pCube7_polySurface13
+    6400002: polySurface12_pCube7
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -50,7 +52,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
