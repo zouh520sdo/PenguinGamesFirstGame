@@ -7,18 +7,26 @@ public class HidingDoorTriggee : Triggee {
     public override void Activate()
     {
         base.Activate();
-        foreach (Transform child in transform)
+        foreach (Renderer childRenderer in GetComponentsInChildren<Renderer>())
         {
-            child.gameObject.SetActive(true);
+            childRenderer.enabled = true;
+        }
+        foreach (Collider childCollider in GetComponentsInChildren<Collider>())
+        {
+            childCollider.enabled = true;
         }
     }
 
     public override void Deactivate()
     {
         base.Deactivate();
-        foreach (Transform child in transform)
+        foreach (Renderer childRenderer in GetComponentsInChildren<Renderer>())
         {
-            child.gameObject.SetActive(false);
+            childRenderer.enabled = false;
+        }
+        foreach (Collider childCollider in GetComponentsInChildren<Collider>())
+        {
+            childCollider.enabled = false;
         }
     }
 }
