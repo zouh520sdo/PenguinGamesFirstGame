@@ -5,11 +5,29 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 
 	public SaveLoadUtility slu;
+    public OpeningEveNote openingNote;
+    public EndingEveNote endingNote;
+    public Wand wand;
 
 
     private void Awake()
     {
         tag = "GameManager";
+
+        if (!openingNote)
+        {
+            openingNote = GetComponent<OpeningEveNote>();
+        }
+
+        if (!endingNote)
+        {
+            endingNote = GetComponent<EndingEveNote>();
+        }
+
+        if (!wand)
+        {
+            wand = GameObject.FindGameObjectWithTag("Player").GetComponent<Wand>();
+        }
     }
     // Use this for initialization
     void Start () {
@@ -45,5 +63,17 @@ public class GameManager : MonoBehaviour {
     public void LoadGame()
     {
         slu.LoadGame(slu.quickSaveName);//Use this for quickloading, which is basically just using a constant savegame name.
+    }
+
+    public void StartOpeningNote()
+    {
+        wand.note = openingNote;
+        wand.SetDialogueText(openingNote.nextLine());
+    }
+
+    public void StartEndingNote()
+    {
+        wand.note = endingNote;
+        wand.SetDialogueText(endingNote.nextLine());
     }
 }

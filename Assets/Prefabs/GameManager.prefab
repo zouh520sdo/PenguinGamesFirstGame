@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4021257107186714}
   - component: {fileID: 114295243833776946}
   - component: {fileID: 114302992764920112}
+  - component: {fileID: 114812443276694646}
+  - component: {fileID: 114796822880526602}
   - component: {fileID: 114642091618833238}
   m_Layer: 0
   m_Name: GameManager
@@ -106,3 +108,33 @@ MonoBehaviour:
     setValuesField: 0
     readFieldType: 0
     readFromDict: 0
+--- !u!114 &114796822880526602
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1952921884143618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbcc63b78f608a45bd7d488324fe969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: 
+  paragraph: []
+  canStartParagraph: 1
+  canRepeat: 0
+--- !u!114 &114812443276694646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1952921884143618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c1e22dede8829448b5c2a2e04fde24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: 
+  paragraph: []
+  canStartParagraph: 1
+  canRepeat: 0

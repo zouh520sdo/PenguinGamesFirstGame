@@ -6,8 +6,10 @@ using UnityEngine.UI;
 
 public class NextLevelTrigger : MonoBehaviour {
 
+    public bool isActive;
     public GameObject loadingScreenPanel;
     public int loadingLvlIndex;
+    public GameManager gameManager;
     protected Slider loadingSlider;
     protected AsyncOperation async;
 
@@ -16,6 +18,9 @@ public class NextLevelTrigger : MonoBehaviour {
         loadingSlider = loadingScreenPanel.transform.Find("LoadingSlider").GetComponent<Slider>();
         loadingScreenPanel.SetActive(true);
 
+        // Find game manager
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
         async = SceneManager.LoadSceneAsync(loadingLvlIndex);
         async.allowSceneActivation = false;
         StartCoroutine(ShowingLoadScreen());
@@ -23,7 +28,14 @@ public class NextLevelTrigger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (isActive)
+        {
+            if (gameManager.endingNote.getIsFinished())
+            {
+                isActive = false;
+                StartCoroutine(LoadingNextLevel(loadingLvlIndex));
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -33,7 +45,8 @@ public class NextLevelTrigger : MonoBehaviour {
             if (loadingScreenPanel)
             {
                 //loadingScreenPanel.SetActive(true);
-                StartCoroutine(LoadingNextLevel(loadingLvlIndex));
+                gameManager.StartEndingNote();
+                isActive = true;
             }
             else
             {
@@ -51,6 +64,7 @@ public class NextLevelTrigger : MonoBehaviour {
         }
         loadingSlider.value = loadingSlider.maxValue;
         loadingScreenPanel.SetActive(false);
+        gameManager.StartOpeningNote();
     }
 
     IEnumerator LoadingNextLevel (int lvl)

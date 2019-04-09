@@ -15,27 +15,27 @@ public class Note : MonoBehaviour {
     protected bool originalCanRepeat;
 
 
-    public void OnReset()
+    public virtual void OnReset()
     {
         finished = originalFinished;
         canStartParagraph = originalCanParagraph;
         canRepeat = originalCanRepeat;
     }
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    public virtual void Start () {
         paragraphIndex = -1;
         originalFinished = finished;
         originalCanParagraph = canStartParagraph;
         originalCanRepeat = canRepeat;
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    public virtual void Update () {
 		
 	}
 
-    public string nextLine()
+    public virtual string nextLine()
     {
         if (paragraphIndex >= paragraph.Count-1)
         {
@@ -50,7 +50,7 @@ public class Note : MonoBehaviour {
         }
     }
 
-    public bool getIsFinished()
+    public virtual bool getIsFinished()
     {
         return finished;
     }
