@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class Wand : MonoBehaviour {
 
@@ -43,6 +44,7 @@ public class Wand : MonoBehaviour {
     protected Image dialoguePanel;
     protected Text dialogue;
     public Note note;
+    public FirstPersonController fpc;
 
     // For debug
     public NextLevelTrigger NLT;
@@ -113,6 +115,11 @@ public class Wand : MonoBehaviour {
         {
             NLT = GameObject.FindGameObjectWithTag("NextLevel").GetComponent<NextLevelTrigger>();
         }
+
+        if (!fpc)
+        {
+            fpc = GetComponent<FirstPersonController>();
+        }
     }
 
     // Update is called once per frame
@@ -161,6 +168,7 @@ public class Wand : MonoBehaviour {
                         note = null;
                         dialogue.enabled = false;
                         dialoguePanel.gameObject.SetActive(false);
+                        fpc.enabled = true;
                     }
                     else
                     {
@@ -181,6 +189,7 @@ public class Wand : MonoBehaviour {
 
                         if (Input.GetButtonDown("Fire1") && description.canStartParagraph && description.paragraph.Count != 0)
                         {
+                            fpc.enabled = false;
                             note = description;
                             dialogue.text = note.nextLine();
                         }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class GameManager : MonoBehaviour {
 
@@ -8,6 +9,7 @@ public class GameManager : MonoBehaviour {
     public OpeningEveNote openingNote;
     public EndingEveNote endingNote;
     public Wand wand;
+    public FirstPersonController fpc;
 
 
     private void Awake()
@@ -39,6 +41,10 @@ public class GameManager : MonoBehaviour {
         {
             wand = GameObject.FindGameObjectWithTag("Player").GetComponent<Wand>();
         }
+        if (!fpc)
+        {
+            fpc = GameObject.FindGameObjectWithTag("Player").GetComponent<FirstPersonController>();
+        }
     }
 	
 	// Update is called once per frame
@@ -69,6 +75,7 @@ public class GameManager : MonoBehaviour {
     {
         if (wand.note != openingNote)
         {
+            fpc.enabled = false;
             wand.note = openingNote;
             wand.SetDialogueText(openingNote.nextLine());
         }
@@ -78,6 +85,7 @@ public class GameManager : MonoBehaviour {
     {
         if (wand.note != endingNote)
         {
+            fpc.enabled = false;
             wand.note = endingNote;
             wand.SetDialogueText(endingNote.nextLine());
         }

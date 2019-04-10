@@ -43,6 +43,7 @@ public class FrogPicture : Trigger {
                 Pickable pickable = m.GetComponent<Pickable>();
                 if (!pickable.isPickedUp && m.type == desiredType)
                 {
+                    wand.fpc.enabled = false;
                     isActive = true;
                     wand.note = frogNote;
                     wand.SetDialogueText(frogNote.nextLine());
