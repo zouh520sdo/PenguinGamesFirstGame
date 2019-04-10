@@ -25,6 +25,11 @@ public class GameManager : MonoBehaviour {
         {
             endingNote = GetComponent<EndingEveNote>();
         }
+
+        if (!fpc)
+        {
+            fpc = GameObject.FindGameObjectWithTag("Player").GetComponent<FirstPersonController>();
+        }
     }
     // Use this for initialization
     void Start () {
@@ -40,10 +45,6 @@ public class GameManager : MonoBehaviour {
         if (!wand)
         {
             wand = GameObject.FindGameObjectWithTag("Player").GetComponent<Wand>();
-        }
-        if (!fpc)
-        {
-            fpc = GameObject.FindGameObjectWithTag("Player").GetComponent<FirstPersonController>();
         }
     }
 	

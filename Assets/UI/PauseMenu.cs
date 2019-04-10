@@ -10,10 +10,20 @@ public class PauseMenu : MonoBehaviour {
     [SerializeField] private bool isPaused;
 
     private FirstPersonController fpc;
+    private Wand wand;
 
     // Use this for initialization
     void Start () {
         fpc = GameObject.FindGameObjectWithTag("Player").GetComponent<FirstPersonController>();
+        wand = GameObject.FindGameObjectWithTag("Player").GetComponent<Wand>();
+        if (isPaused)
+        {
+            ActivateMenu();
+        }
+        else
+        {
+            DeactivateMenu();
+        }
     }
 	
 	// Update is called once per frame
@@ -21,16 +31,14 @@ public class PauseMenu : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             isPaused = !isPaused;
-        }
-
-        if (isPaused)
-        {
-            ActivateMenu();
-        }
-
-        else
-        {
-            DeactivateMenu();
+            if (isPaused)
+            {
+                ActivateMenu();
+            }
+            else
+            {
+                DeactivateMenu();
+            }
         }
 	}
 
@@ -54,5 +62,10 @@ public class PauseMenu : MonoBehaviour {
         fpc.enabled = true;
         fpc.GetMouseLook().SetCursorLock(true);
 
+
+        if (wand.note)
+        {
+            fpc.enabled = false;
+        }
     }
 }
