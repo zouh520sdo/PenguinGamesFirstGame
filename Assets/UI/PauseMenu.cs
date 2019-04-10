@@ -50,6 +50,7 @@ public class PauseMenu : MonoBehaviour {
 
         fpc.GetMouseLook().SetCursorLock(false);
         fpc.enabled = false;
+        wand.isPaused = true;
     }
 
     public void DeactivateMenu()
@@ -67,5 +68,6 @@ public class PauseMenu : MonoBehaviour {
         {
             fpc.enabled = false;
         }
+        wand.isPaused = false;
     }
 }

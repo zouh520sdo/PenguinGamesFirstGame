@@ -7,6 +7,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class Wand : MonoBehaviour {
 
+    public bool isPaused;
     public float heat;
     public float minHeat;
     public float maxHeat;
@@ -160,7 +161,7 @@ public class Wand : MonoBehaviour {
             // For interaction with dialogue
             if (note)
             {
-                if (Input.GetButtonDown("Fire1"))
+                if (Input.GetButtonDown("Fire1") && !isPaused)
                 {
                     string next = note.nextLine();
                     if (next.Equals(""))
