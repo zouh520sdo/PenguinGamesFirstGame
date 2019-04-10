@@ -24313,6 +24313,10 @@ Prefab:
       propertyPath: loadingLvlIndex
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1944386082701492, guid: 4b42e93043cb5504c9a27c43b2121c0d, type: 2}
+      propertyPath: m_TagString
+      value: NextLevel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b42e93043cb5504c9a27c43b2121c0d, type: 2}
   m_IsPrefabAsset: 0

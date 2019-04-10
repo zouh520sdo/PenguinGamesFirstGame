@@ -12750,7 +12750,6 @@ MonoBehaviour:
   - 'Magic Object: Hitte Staff'
   canStartParagraph: 1
   canRepeat: 0
-  paragraphIndex: 0
 --- !u!65 &496492158
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24944,6 +24943,10 @@ Prefab:
         type: 2}
       propertyPath: loadingLvlIndex
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1944386082701492, guid: 4b42e93043cb5504c9a27c43b2121c0d, type: 2}
+      propertyPath: m_TagString
+      value: NextLevel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b42e93043cb5504c9a27c43b2121c0d, type: 2}
@@ -48401,7 +48404,6 @@ MonoBehaviour:
   paragraph: []
   canStartParagraph: 1
   canRepeat: 0
-  paragraphIndex: 0
 --- !u!114 &2134648981
 MonoBehaviour:
   m_ObjectHideFlags: 0

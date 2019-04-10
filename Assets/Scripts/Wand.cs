@@ -44,6 +44,9 @@ public class Wand : MonoBehaviour {
     protected Text dialogue;
     public Note note;
 
+    // For debug
+    public NextLevelTrigger NLT;
+
     public void OnReset()
     {
         heat = originalHeat;
@@ -105,6 +108,11 @@ public class Wand : MonoBehaviour {
         }
         Marker.sprite = Normal;
         wandEffect.gameObject.SetActive(false);
+
+        if (!NLT)
+        {
+            NLT = GameObject.FindGameObjectWithTag("NextLevel").GetComponent<NextLevelTrigger>();
+        }
     }
 
     // Update is called once per frame
@@ -319,7 +327,17 @@ public class Wand : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.N))
         {
-            SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings);
+
+            if (NLT && NLT.loadingScreenPanel)
+            {
+                //loadingScreenPanel.SetActive(true);
+                NLT.gameManager.StartEndingNote();
+                NLT.isActive = true;
+            }
+            else
+            {
+                SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings);
+            }
         }
     }
 
