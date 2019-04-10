@@ -44455,7 +44455,7 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -44514,6 +44514,7 @@ Prefab:
         type: 2}
       propertyPath: paragraph.Array.data[3]
       value: Upon your entrance, you will be eternally protected by the Association
+        and will have the power to use magic with your own magic object.
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -44539,12 +44540,20 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[4]
-      value: and will have the power to use magic with your own magic object.
+      value: 'As stipulated by law, all newcomers to Great Souhait Union are required
+        to take Ability Test before entrance to be fully aware of the basic principles
+        and prove their capabilities of magic. '
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[4]
       value: "It\u2019s all for the future of Great Souhait Union... "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.data[5]
+      value: There will be four covenants -- Loyalty, Peace, Sincerity and Love. These
+        covenants will be finished through your test progress.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 127c48b93a8d5c4439c5919f22a30c00, type: 2}
