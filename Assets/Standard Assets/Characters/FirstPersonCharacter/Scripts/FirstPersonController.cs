@@ -141,6 +141,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_MouseLook.UpdateCursorLock();
         }
 
+        public void UpdateCursorLock()
+        {
+            m_MouseLook.UpdateCursorLock();
+        }
+
         public void ImpulseJump(float bonusSpeed)
         {
             if (!m_Jump)

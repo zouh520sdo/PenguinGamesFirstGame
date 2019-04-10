@@ -69,5 +69,6 @@ public class PauseMenu : MonoBehaviour {
             fpc.enabled = false;
         }
         wand.isPaused = false;
+        fpc.UpdateCursorLock();
     }
 }
