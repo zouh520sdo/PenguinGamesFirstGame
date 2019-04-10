@@ -12750,6 +12750,7 @@ MonoBehaviour:
   - 'Magic Object: Hitte Staff'
   canStartParagraph: 1
   canRepeat: 0
+  paragraphIndex: 0
 --- !u!65 &496492158
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44451,6 +44452,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4021257107186714, guid: 127c48b93a8d5c4439c5919f22a30c00, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -44482,6 +44493,58 @@ Prefab:
     - target: {fileID: 4021257107186714, guid: 127c48b93a8d5c4439c5919f22a30c00, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.data[0]
+      value: Welcome to Great Souhait Union.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.data[1]
+      value: We have read through your application files and approved your qualifications
+        being part of us.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.data[2]
+      value: Great Souhait Union is the greatest magic union in the world.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.data[3]
+      value: Upon your entrance, you will be eternally protected by the Association
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.data[0]
+      value: "Very good. Now you\u2019ve passed your first test.  a few more test
+        rooms."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.data[1]
+      value: "Yet - as you may know - we\u2019ve prepared"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.data[2]
+      value: Just for you, examinee Adam Brown.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.data[3]
+      value: We are looking forward to your performance in the next room.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.data[4]
+      value: and will have the power to use magic with your own magic object.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.data[4]
+      value: "It\u2019s all for the future of Great Souhait Union... "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 127c48b93a8d5c4439c5919f22a30c00, type: 2}
@@ -48329,6 +48392,7 @@ MonoBehaviour:
   paragraph: []
   canStartParagraph: 1
   canRepeat: 0
+  paragraphIndex: 0
 --- !u!114 &2134648981
 MonoBehaviour:
   m_ObjectHideFlags: 0

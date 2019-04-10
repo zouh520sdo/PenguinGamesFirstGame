@@ -67,13 +67,19 @@ public class GameManager : MonoBehaviour {
 
     public void StartOpeningNote()
     {
-        wand.note = openingNote;
-        wand.SetDialogueText(openingNote.nextLine());
+        if (wand.note != openingNote)
+        {
+            wand.note = openingNote;
+            wand.SetDialogueText(openingNote.nextLine());
+        }
     }
 
     public void StartEndingNote()
     {
-        wand.note = endingNote;
-        wand.SetDialogueText(endingNote.nextLine());
+        if (wand.note != endingNote)
+        {
+            wand.note = endingNote;
+            wand.SetDialogueText(endingNote.nextLine());
+        }
     }
 }

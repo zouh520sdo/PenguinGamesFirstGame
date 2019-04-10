@@ -9,7 +9,7 @@ public class Note : MonoBehaviour {
     public bool canStartParagraph = true;
     public bool canRepeat;
     protected bool finished;
-    protected int paragraphIndex;
+    public int paragraphIndex;
     protected bool originalFinished;
     protected bool originalCanParagraph;
     protected bool originalCanRepeat;
