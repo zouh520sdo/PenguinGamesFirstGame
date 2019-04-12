@@ -19,6 +19,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4091864963300368}
+  - component: {fileID: 54585277937435648}
+  - component: {fileID: 65622489227328504}
+  - component: {fileID: 114523920534497484}
+  - component: {fileID: 114899252899844972}
+  - component: {fileID: 114679525088437006}
   m_Layer: 0
   m_Name: diary
   m_TagString: Untagged
@@ -36,10 +41,6 @@ GameObject:
   - component: {fileID: 4494186258879102}
   - component: {fileID: 33217407033372378}
   - component: {fileID: 23328834755235076}
-  - component: {fileID: 54048387426610010}
-  - component: {fileID: 65642390618028304}
-  - component: {fileID: 114401165506813182}
-  - component: {fileID: 114005158557045592}
   m_Layer: 0
   m_Name: pCube1
   m_TagString: Untagged
@@ -54,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1236840092431830}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.51, y: -3.85, z: -4.32}
+  m_LocalPosition: {x: 0.51, y: 0.019, z: -6.85}
   m_LocalScale: {x: 0.45373, y: 0.45373, z: 0.45373}
   m_Children:
   - {fileID: 4494186258879102}
@@ -68,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1294245119923046}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 10.57, z: 8.49}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4091864963300368}
@@ -116,12 +117,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1294245119923046}
   m_Mesh: {fileID: 4300000, guid: 65cf563bd448b0c478fe91c0ff334e01, type: 3}
---- !u!54 &54048387426610010
+--- !u!54 &54585277937435648
 Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1294245119923046}
+  m_GameObject: {fileID: 1236840092431830}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -131,42 +132,39 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!65 &65642390618028304
+--- !u!65 &65622489227328504
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1294245119923046}
+  m_GameObject: {fileID: 1236840092431830}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.335331, y: 3.587318, z: 0.10881102}
-  m_Center: {x: 0.009687483, y: 0.018658403, z: 0.047747374}
---- !u!114 &114005158557045592
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114523920534497484
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1294245119923046}
+  m_GameObject: {fileID: 1236840092431830}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c19f3e134862e74dbc98cb514a82ef5, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a64fac7877db6b4b9bc82c6099674e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabName: hintpaper
-  id: 
-  idParent: 
-  dontSave: 0
-  componentSaveMode: 3
-  componentTypesToSave:
-  - AudioSource
---- !u!114 &114401165506813182
+  note: A Diary
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 1
+--- !u!114 &114679525088437006
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1294245119923046}
+  m_GameObject: {fileID: 1236840092431830}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85649a84d163ea84ab3db6b926a96e6b, type: 3}
@@ -180,3 +178,21 @@ MonoBehaviour:
   holder: {fileID: 0}
   holdersInRange: []
   holderRot: {x: 0, y: 0, z: 0}
+--- !u!114 &114899252899844972
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1236840092431830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c19f3e134862e74dbc98cb514a82ef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabName: diary
+  id: 
+  idParent: 
+  dontSave: 0
+  componentSaveMode: 3
+  componentTypesToSave:
+  - AudioSource
