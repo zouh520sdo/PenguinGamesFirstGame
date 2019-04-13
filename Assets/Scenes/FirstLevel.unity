@@ -34533,7 +34533,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4476881794122904, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -16.8
+      value: -18.127
       objectReference: {fileID: 0}
     - target: {fileID: 4476881794122904, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
       propertyPath: m_LocalPosition.z
@@ -44462,22 +44462,22 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.size
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: voiceOvers.Array.size
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: voiceOvers.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4021257107186714, guid: 127c48b93a8d5c4439c5919f22a30c00, type: 2}
       propertyPath: m_LocalPosition.x
@@ -44535,23 +44535,23 @@ Prefab:
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[0]
-      value: "Very good. Now you\u2019ve passed your first test.  a few more test
-        rooms."
+      value: "Very good. Now you\u2019ve passed your first test. Yet - as you may
+        know - we\u2019ve prepared a few more test rooms. "
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[1]
-      value: "Yet - as you may know - we\u2019ve prepared"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
-        type: 2}
-      propertyPath: paragraph.Array.data[2]
       value: Just for you, examinee Adam Brown.
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
-      propertyPath: paragraph.Array.data[3]
+      propertyPath: paragraph.Array.data[2]
       value: We are looking forward to your performance in the next room.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.data[3]
+      value: "It\u2019s all for the future of Great Souhait Union... "
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -44574,8 +44574,7 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[6]
-      value: There will be four covenants -- Loyalty, Peace, Sincerity and Love. These
-        covenants will be finished through your test progress.
+      value: 'There will be four covenants -- '
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -44597,6 +44596,112 @@ Prefab:
       propertyPath: voiceOvers.Array.data[3]
       value: 
       objectReference: {fileID: 8300000, guid: 00e26ecc98f0a3f4aa8b22b8b8203b34, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: cdfdae1aec6f27f47816eb1f2bab2c03, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: d8b5f94580215cf47b86a15a4dd249d9, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: ca6a78b7e9b3a924a88b78bc12fbb1b0, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7ff433bd57a8ef24fb01e5b4fac23c29, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1cfd72bcceee6bf4a9604060ad99bdfb, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[9]
+      value: 
+      objectReference: {fileID: 8300000, guid: 163d872a2574c6042aae3a555a0e7b5f, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[10]
+      value: 
+      objectReference: {fileID: 8300000, guid: c3a9c03d32757c14b89a388ca8b48990, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[11]
+      value: 
+      objectReference: {fileID: 8300000, guid: d07d3c606091715458761ed7042b897c, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[12]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1135a4b230f4e844b94434732ac496a5, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[13]
+      value: 
+      objectReference: {fileID: 8300000, guid: 163d872a2574c6042aae3a555a0e7b5f, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[14]
+      value: 
+      objectReference: {fileID: 8300000, guid: 163d872a2574c6042aae3a555a0e7b5f, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.data[7]
+      value: There will be four covenants -- Loyalty,
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.data[8]
+      value: There will be four covenants -- Loyalty, Peace,
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.data[9]
+      value: 'There will be four covenants -- Loyalty, Peace, Sincerity and Love. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.data[10]
+      value: 'These covenants will be finished through your test progress. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.data[11]
+      value: My name is Eve. I will be your personal test guide to ensure the test
+        is conducted correctly and safely.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.data[12]
+      value: "I\u2019m sure we will have a good time, examinee - Adam Brown. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: c93bd70e86d80ed4ebbca137c3ba64b8, type: 3}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: cb9350910ea7b7f499c71521ec17772f, type: 3}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6202cdc9a7bef1e4fa2560f5e1f73d2f, type: 3}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0ae28bf6abb0a5043a1a79facfb5ff25, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 127c48b93a8d5c4439c5919f22a30c00, type: 2}
   m_IsPrefabAsset: 0

@@ -75579,7 +75579,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4476881794122904, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.6
+      value: -2.389
       objectReference: {fileID: 0}
     - target: {fileID: 4476881794122904, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
       propertyPath: m_LocalPosition.z
@@ -97457,11 +97457,21 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.size
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4021257107186714, guid: 127c48b93a8d5c4439c5919f22a30c00, type: 2}
@@ -97538,6 +97548,57 @@ Prefab:
       propertyPath: paragraph.Array.data[4]
       value: "I\u2019m sure we will meet soon - Adam. "
       objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.data[3]
+      value: "Enjoy it, examinee Adam Brown. I\u2019m looking forward to your final
+        performance."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: f4d9874bc4f9f384d89de5341892be53, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: d0c88033b14a94e4fb3e74178bb98726, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 54bf05cb1183e6e4da29e129468d0c37, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 780d8e672c0714949816c27f5c39fd93, type: 3}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6e75efc93efbd7741b5e586b6088f7ad, type: 3}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: a2d5792cf0c1dba43a797dd9e59bcab3, type: 3}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: afcd9e0442f330b4c8d551d3738625c9, type: 3}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1134c0bf84fc21d47870e901f0924eee, type: 3}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2c1740c1711c07f4baa4803d79654e19, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 127c48b93a8d5c4439c5919f22a30c00, type: 2}
   m_IsPrefabAsset: 0

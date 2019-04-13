@@ -13931,11 +13931,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4476881794122904, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -42.671
+      value: -43.256
       objectReference: {fileID: 0}
     - target: {fileID: 4476881794122904, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.6
+      value: -2.411
       objectReference: {fileID: 0}
     - target: {fileID: 4476881794122904, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
       propertyPath: m_LocalPosition.z
@@ -13947,7 +13947,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4476881794122904, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4476881794122904, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
       propertyPath: m_LocalRotation.z
@@ -13955,7 +13955,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4476881794122904, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4476881794122904, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
       propertyPath: m_RootOrder
@@ -13999,6 +13999,10 @@ Prefab:
     - target: {fileID: 1499582044198586, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476881794122904, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
@@ -18175,6 +18179,16 @@ Prefab:
       propertyPath: paragraph.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4021257107186714, guid: 127c48b93a8d5c4439c5919f22a30c00, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -18251,6 +18265,31 @@ Prefab:
       value: 'If not, you can also just drop it somewhere. I will deal with it during
         your transportation. '
       objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: c85fbcbf72ee7004091f6f4e6399b004, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: eb43440f4913dd049af27f623c0f1abd, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f42d4f000c27248b5f63c3d82d3163, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6887231ae4d08474da1e62b6efd4c29b, type: 3}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: voiceOvers.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: caaa0a8d5092dee44a54fec57aefb718, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 127c48b93a8d5c4439c5919f22a30c00, type: 2}
   m_IsPrefabAsset: 0
