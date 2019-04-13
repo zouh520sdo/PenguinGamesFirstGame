@@ -10,11 +10,16 @@ public class FrogPicture : Trigger {
     public Wand wand;
     public Note frogNote;
     protected bool originalIsActive;
+    private Animator frogAnim;
 
     public override void Start()
     {
         base.Start();
         originalIsActive = isActive;
+       
+        // added for activating animation for frog --francys
+        frogAnim = GetComponentInChildren<Animator>();
+
         if (!wand)
         {
             wand = GameObject.FindGameObjectWithTag("Player").GetComponent<Wand>();
@@ -30,6 +35,9 @@ public class FrogPicture : Trigger {
         base.OnReset();
         isActive = originalIsActive;
         deactivateTriggees();
+
+        frogAnim.ResetTrigger("sleep");
+        frogAnim.ResetTrigger("openeyes");
     }
 
     public override void Update()
@@ -43,6 +51,10 @@ public class FrogPicture : Trigger {
                 Pickable pickable = m.GetComponent<Pickable>();
                 if (!pickable.isPickedUp && m.type == desiredType)
                 {
+                    // added for activating animation for frog --francys
+                    //frogAnim.SetTrigger("openeyes");
+                    StartCoroutine(openEyes());
+
                     wand.fpc.enabled = false;
                     isActive = true;
                     wand.note = frogNote;
@@ -50,6 +62,7 @@ public class FrogPicture : Trigger {
 
                     activateTriggees();
                     // May need to update dialogue
+
                     break;
                 }
             }
@@ -72,5 +85,14 @@ public class FrogPicture : Trigger {
         {
             nearMedicines.Remove(medicine);
         }
+    }
+
+    IEnumerator openEyes()
+    {
+        frogAnim.ResetTrigger("sleep");
+        frogAnim.SetTrigger("openeyes");
+        yield return new WaitForSeconds(8);
+        frogAnim.ResetTrigger("openeyes");
+        frogAnim.SetTrigger("sleep");
     }
 }
