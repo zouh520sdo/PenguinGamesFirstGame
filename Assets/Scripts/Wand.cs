@@ -186,7 +186,7 @@ public class Wand : MonoBehaviour {
                     }
                     else
                     {
-                        if (note.GetType().IsSubclassOf(typeof(Note)))
+                        if (typeof(Diary).IsAssignableFrom(note.GetType()))
                         {
                             diaryText.text = next;
                         }

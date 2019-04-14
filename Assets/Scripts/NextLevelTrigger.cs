@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class NextLevelTrigger : MonoBehaviour {
 
@@ -9,6 +10,7 @@ public class NextLevelTrigger : MonoBehaviour {
     public GameObject loadingScreenPanel;
     public int loadingLvlIndex;
     public GameManager gameManager;
+    public FirstPersonController FPC;
     protected Slider loadingSlider;
     protected AsyncOperation async;
 
@@ -19,6 +21,10 @@ public class NextLevelTrigger : MonoBehaviour {
 
         // Find game manager
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        if (!FPC)
+        {
+            FPC = GameObject.FindGameObjectWithTag("Player").GetComponent<FirstPersonController>();
+        }
 
         async = SceneManager.LoadSceneAsync(loadingLvlIndex);
         async.allowSceneActivation = false;
@@ -56,6 +62,7 @@ public class NextLevelTrigger : MonoBehaviour {
 
     IEnumerator ShowingLoadScreen ()
     {
+        FPC.enabled = false;
         while (async.progress < 0.9f)
         {
             loadingSlider.value = async.progress;
@@ -63,6 +70,7 @@ public class NextLevelTrigger : MonoBehaviour {
         }
         loadingSlider.value = loadingSlider.maxValue;
         loadingScreenPanel.SetActive(false);
+        FPC.enabled = true;
         gameManager.StartOpeningNote();
     }
 
