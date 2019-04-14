@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -29,6 +30,11 @@ public class GameManager : MonoBehaviour {
         if (!fpc)
         {
             fpc = GameObject.FindGameObjectWithTag("Player").GetComponent<FirstPersonController>();
+        }
+
+        if (SceneManager.GetActiveScene().name == "FirstLevel")
+        {
+            ResetDiaryAmount();
         }
     }
     // Use this for initialization
@@ -90,5 +96,24 @@ public class GameManager : MonoBehaviour {
             wand.note = endingNote;
             wand.SetDialogueText(endingNote.nextLine());
         }
+    }
+
+    public void ResetDiaryAmount()
+    {
+        PlayerPrefs.SetInt("DiaryAmount", 0);
+        PlayerPrefs.Save();
+    }
+
+    public void UpdateDiaryAmount()
+    {
+        int tempDiaryAmount = PlayerPrefs.GetInt("DiaryAmount");
+        tempDiaryAmount++;
+        PlayerPrefs.SetInt("DiaryAmount", tempDiaryAmount);
+        PlayerPrefs.Save();
+    }
+
+    public int GetDiaryAmount()
+    {
+        return PlayerPrefs.GetInt("DiaryAmount");
     }
 }

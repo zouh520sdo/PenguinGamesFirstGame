@@ -19,6 +19,7 @@ public class Wand : MonoBehaviour {
     public DistanceIndicator distanceIndicator;
     public Animator handAnimator;
     public ParticleSystem wandEffect;
+    public GameManager gameManager;
 
     private float holdingTime;
 
@@ -132,6 +133,12 @@ public class Wand : MonoBehaviour {
             diaryPanelObj.SetActive(false);
             diaryText.text = "";
         }
+
+        if (!gameManager)
+        {
+            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+            print(gameManager.GetDiaryAmount());
+        }
     }
 
     // Update is called once per frame
@@ -177,6 +184,11 @@ public class Wand : MonoBehaviour {
                     string next = note.nextLine();
                     if (next.Equals(""))
                     {
+                        if (typeof(Diary).IsAssignableFrom(note.GetType()))
+                        {
+                            note.gameObject.SetActive(false);
+                        }
+
                         note = null;
                         dialogue.enabled = false;
                         dialoguePanel.gameObject.SetActive(false);
@@ -188,6 +200,7 @@ public class Wand : MonoBehaviour {
                     {
                         if (typeof(Diary).IsAssignableFrom(note.GetType()))
                         {
+                            // Found diary
                             diaryText.text = next;
                         }
                         else
@@ -213,12 +226,14 @@ public class Wand : MonoBehaviour {
                             fpc.enabled = false;
                             note = description;
 
-                            if (note.GetType().IsSubclassOf(typeof(Note)))
+                            if (typeof(Diary).IsAssignableFrom(note.GetType()))
                             {
                                 dialoguePanel.gameObject.SetActive(false);
                                 dialogue.text = "";
                                 dialogue.enabled = false;
 
+                                gameManager.UpdateDiaryAmount();
+                                print(gameManager.GetDiaryAmount());
                                 diaryPanelObj.SetActive(true);
                                 diaryText.text = note.nextLine();
                             }
