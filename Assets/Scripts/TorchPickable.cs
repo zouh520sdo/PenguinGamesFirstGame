@@ -21,8 +21,9 @@ public class TorchPickable : Pickable {
         originalIsKinematic = GetComponent<Rigidbody>().isKinematic;
     }
 
-    public void OnReset()
+    public override void OnReset()
     {
+        base.OnReset();
         holder = originalHolder;
         GetComponent<Rigidbody>().isKinematic = originalIsKinematic;
     }

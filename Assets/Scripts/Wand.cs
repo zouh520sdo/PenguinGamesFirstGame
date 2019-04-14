@@ -47,6 +47,10 @@ public class Wand : MonoBehaviour {
     public Note note;
     public FirstPersonController fpc;
 
+    // For diary
+    public GameObject diaryPanelObj;
+    protected Text diaryText;
+
     // For debug
     public NextLevelTrigger NLT;
 
@@ -121,6 +125,13 @@ public class Wand : MonoBehaviour {
         {
             fpc = GetComponent<FirstPersonController>();
         }
+
+        if (diaryPanelObj)
+        {
+            diaryText = diaryPanelObj.transform.Find("DiaryText").GetComponent<Text>();
+            diaryPanelObj.SetActive(false);
+            diaryText.text = "";
+        }
     }
 
     // Update is called once per frame
@@ -169,11 +180,20 @@ public class Wand : MonoBehaviour {
                         note = null;
                         dialogue.enabled = false;
                         dialoguePanel.gameObject.SetActive(false);
+                        diaryPanelObj.SetActive(false);
+                        diaryText.text = "";
                         fpc.enabled = true;
                     }
                     else
                     {
-                        dialogue.text = next;
+                        if (note.GetType().IsSubclassOf(typeof(Note)))
+                        {
+                            diaryText.text = next;
+                        }
+                        else
+                        {
+                            dialogue.text = next;
+                        }
                     }
                 }
             }
@@ -192,7 +212,20 @@ public class Wand : MonoBehaviour {
                         {
                             fpc.enabled = false;
                             note = description;
-                            dialogue.text = note.nextLine();
+
+                            if (note.GetType().IsSubclassOf(typeof(Note)))
+                            {
+                                dialoguePanel.gameObject.SetActive(false);
+                                dialogue.text = "";
+                                dialogue.enabled = false;
+
+                                diaryPanelObj.SetActive(true);
+                                diaryText.text = note.nextLine();
+                            }
+                            else
+                            {
+                                dialogue.text = note.nextLine();
+                            }
                         }
                     }
                     else

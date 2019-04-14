@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 65622489227328504}
   - component: {fileID: 114523920534497484}
   - component: {fileID: 114899252899844972}
-  - component: {fileID: 114679525088437006}
   m_Layer: 0
   m_Name: diary
   m_TagString: Untagged
@@ -156,28 +155,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   note: A Diary
-  paragraph: []
-  canStartParagraph: 0
+  paragraph:
+  - This is the first page.  There will be more text, but I don't know what I should
+    write, but whatever, it's just a test, content does not matter right now, as long
+    as I can make sure the logic is correct, and it runs without any bugs, it would
+    be OK. You might notice there are a log of grammar error, but that's ok. I don't
+    even how many words I have already written down. I guess it's enough to stop here
+    now. OK, let's stop.
+  - This is the second page.  There will be more text, but I don't know what I should
+    write, but whatever, it's just a test, content does not matter right now, as long
+    as I can make sure the logic is correct, and it runs without any bugs, it would
+    be OK. You might notice there are a log of grammar error, but that's ok. I don't
+    even how many words I have already written down. I guess it's enough to stop here
+    now. OK, let's stop.
+  - This is the third page.  There will be more text, but I don't know what I should
+    write, but whatever, it's just a test, content does not matter right now, as long
+    as I can make sure the logic is correct, and it runs without any bugs, it would
+    be OK. You might notice there are a log of grammar error, but that's ok. I don't
+    even how many words I have already written down. I guess it's enough to stop here
+    now. OK, let's stop.
+  - This is the fourth page.  There will be more text, but I don't know what I should
+    write, but whatever, it's just a test, content does not matter right now, as long
+    as I can make sure the logic is correct, and it runs without any bugs, it would
+    be OK. You might notice there are a log of grammar error, but that's ok. I don't
+    even how many words I have already written down. I guess it's enough to stop here
+    now. OK, let's stop.
+  canStartParagraph: 1
   canRepeat: 1
---- !u!114 &114679525088437006
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1236840092431830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85649a84d163ea84ab3db6b926a96e6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPickedUp: 0
-  picker: {fileID: 0}
-  distanceRatio: 0
-  isPickable: 1
-  rigid: {fileID: 0}
-  holder: {fileID: 0}
-  holdersInRange: []
-  holderRot: {x: 0, y: 0, z: 0}
 --- !u!114 &114899252899844972
 MonoBehaviour:
   m_ObjectHideFlags: 1
