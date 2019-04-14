@@ -4,4 +4,6 @@ using UnityEngine;
 
 public class Diary : Note {
 
+    public List<string> secretParagraphs;
+
 }
