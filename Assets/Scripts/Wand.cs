@@ -138,6 +138,8 @@ public class Wand : MonoBehaviour {
         {
             gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
             print(gameManager.GetDiaryAmount());
+            print(gameManager.GetHasDua());
+            print(gameManager.GetFoundThisDiary());
         }
     }
 
@@ -184,17 +186,24 @@ public class Wand : MonoBehaviour {
                     string next = note.nextLine();
                     if (next.Equals(""))
                     {
-                        if (typeof(Diary).IsAssignableFrom(note.GetType()))
+                        if (note.isInOption)
                         {
-                            note.gameObject.SetActive(false);
-                        }
 
-                        note = null;
-                        dialogue.enabled = false;
-                        dialoguePanel.gameObject.SetActive(false);
-                        diaryPanelObj.SetActive(false);
-                        diaryText.text = "";
-                        fpc.enabled = true;
+                        }
+                        else
+                        {
+                            if (typeof(Diary).IsAssignableFrom(note.GetType()))
+                            {
+                                note.gameObject.SetActive(false);
+                            }
+
+                            note = null;
+                            dialogue.enabled = false;
+                            dialoguePanel.gameObject.SetActive(false);
+                            diaryPanelObj.SetActive(false);
+                            diaryText.text = "";
+                            fpc.enabled = true;
+                        }
                     }
                     else
                     {

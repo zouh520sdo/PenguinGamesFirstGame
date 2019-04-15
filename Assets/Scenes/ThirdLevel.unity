@@ -5882,8 +5882,8 @@ Transform:
   - {fileID: 971306575}
   - {fileID: 1924914894}
   - {fileID: 411312843}
-  - {fileID: 35981507}
   - {fileID: 1114814425}
+  - {fileID: 35981507}
   - {fileID: 650209865}
   m_Father: {fileID: 398293483}
   m_RootOrder: 1
@@ -18199,6 +18199,26 @@ Prefab:
       propertyPath: voiceOvers.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: secretParagraphs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: secretVoiceOvers.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: secretVoiceOvers.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: secretParagraphs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4021257107186714, guid: 127c48b93a8d5c4439c5919f22a30c00, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -18300,6 +18320,95 @@ Prefab:
       propertyPath: voiceOvers.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: caaa0a8d5092dee44a54fec57aefb718, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: secretParagraphs.Array.data[0]
+      value: 'Welcome to the Elixir Lab. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: secretParagraphs.Array.data[1]
+      value: 'The Elixir Lab is a department directly under the Association. Due to
+        the level of importance and operation difficulty, only mages with certain
+        magic objects can choose to work in the Elixir Lab. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: secretParagraphs.Array.data[2]
+      value: 'Hitte Staff is one of the permitted magic objects. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: secretParagraphs.Array.data[3]
+      value: 'Enjoy your experience here, examinee Adam Brown. Try not to approach
+        anything unrelated to the test. You would not like to get yourself in danger. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: secretVoiceOvers.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: c85fbcbf72ee7004091f6f4e6399b004, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: secretVoiceOvers.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: eb43440f4913dd049af27f623c0f1abd, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: secretVoiceOvers.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f42d4f000c27248b5f63c3d82d3163, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: secretVoiceOvers.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: b70567ee44965c94b8fb1162a1f86df3, type: 3}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: diaryAmountToTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: secretVoiceOvers.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: caaa0a8d5092dee44a54fec57aefb718, type: 3}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: secretVoiceOvers.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: f1d0f1d06387c82438f553443d824b63, type: 3}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: secretVoiceOvers.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: b26d103b25437d54d8d6b5cca49fcfca, type: 3}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: secretVoiceOvers.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 10de8c17db270b4468c53bbfccfad247, type: 3}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: secretParagraphs.Array.data[0]
+      value: "Spectacular. You\u2019ve proved your harmless to Great Souhait Union. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: secretParagraphs.Array.data[1]
+      value: "\u2026 Seems like you\u2019ve made a new friend. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: secretParagraphs.Array.data[2]
+      value: "You can bring it if you would like. It\u2019s not formally restricted. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: secretParagraphs.Array.data[3]
+      value: 'If not, you can also just drop it somewhere. I will deal with it during
+        your transportation. '
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 127c48b93a8d5c4439c5919f22a30c00, type: 2}
   m_IsPrefabAsset: 0

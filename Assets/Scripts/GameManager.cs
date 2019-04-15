@@ -35,6 +35,8 @@ public class GameManager : MonoBehaviour {
         if (SceneManager.GetActiveScene().name == "FirstLevel")
         {
             ResetDiaryAmount();
+            ResetHasGua();
+            ResetFoundThisDiary();
         }
     }
     // Use this for initialization
@@ -115,5 +117,35 @@ public class GameManager : MonoBehaviour {
     public int GetDiaryAmount()
     {
         return PlayerPrefs.GetInt("DiaryAmount");
+    }
+
+    public void ResetHasGua()
+    {
+        PlayerPrefs.SetInt("HasGua", 0);
+        PlayerPrefs.Save();
+    }
+    public void SetHasGua()
+    {
+        PlayerPrefs.SetInt("HasGua", 1);
+        PlayerPrefs.Save();
+    }
+    public int GetHasDua()
+    {
+        return PlayerPrefs.GetInt("HasGua");
+    }
+
+    public void ResetFoundThisDiary()
+    {
+        PlayerPrefs.SetInt("FoundThisDiary", 0);
+        PlayerPrefs.Save();
+    }
+    public void SetFoundThisDiary()
+    {
+        PlayerPrefs.SetInt("FoundThisDiary", 1);
+        PlayerPrefs.Save();
+    }
+    public int GetFoundThisDiary()
+    {
+        return PlayerPrefs.GetInt("FoundThisDiary");
     }
 }

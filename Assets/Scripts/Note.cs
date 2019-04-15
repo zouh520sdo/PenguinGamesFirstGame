@@ -2,9 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class Paragraph
+{
+    public bool noNeedCondition;
+    public int needDiaryAmount;
+    public int hasGua;
+    public int foundThisDiary;
+    public List<string> texts;
+    public List<AudioClip> audioOvers;
+    public List<DialogueOption> options;
+}
+
+[System.Serializable]
+public class DialogueOption
+{
+    public string content;
+    public Paragraph paragraph;
+}
+
 public class Note : MonoBehaviour {
 
     public string note;
+    public bool isInOption;
     public List<string> paragraph;
     public bool canStartParagraph = true;
     public bool canRepeat;
