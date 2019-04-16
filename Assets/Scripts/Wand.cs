@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityStandardAssets.Characters.FirstPerson;
+using System;
 
 public class Wand : MonoBehaviour {
 
@@ -47,6 +48,17 @@ public class Wand : MonoBehaviour {
     protected Text dialogue;
     public Note note;
     public FirstPersonController fpc;
+
+    // For dialogue selection
+    public GameObject selectionObj;
+    protected Button aButton;
+    protected Button sButton;
+    protected Button dButton;
+    protected Text aText;
+    protected Text sText;
+    protected Text dText;
+    protected MakeSelectionDelegate makeSelectHolder;
+    protected List<DialogueOption> optionsHolder;
 
     // For diary
     public GameObject diaryPanelObj;
@@ -137,10 +149,100 @@ public class Wand : MonoBehaviour {
         if (!gameManager)
         {
             gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-            print(gameManager.GetDiaryAmount());
-            print(gameManager.GetHasDua());
-            print(gameManager.GetFoundThisDiary());
+            print("Diary amount " + gameManager.GetDiaryAmount());
+            gameManager.SetHasGua();
+            print("Has gua " + gameManager.GetHasDua());
+            gameManager.SetFoundThisDiary();
+            print("Found this diary " + gameManager.GetFoundThisDiary());
         }
+
+        if (selectionObj)
+        {
+            aButton = selectionObj.transform.Find("AButton").GetComponent<Button>();
+            aText = aButton.transform.Find("Text").GetComponent<Text>();
+            sButton = selectionObj.transform.Find("SButton").GetComponent<Button>();
+            sText = sButton.transform.Find("Text").GetComponent<Text>();
+            dButton = selectionObj.transform.Find("DButton").GetComponent<Button>();
+            dText = dButton.transform.Find("Text").GetComponent<Text>();
+
+            selectionObj.SetActive(false);
+        }
+    }
+
+    public void ShowDialogueSelection(MakeSelectionDelegate onSelection, List<DialogueOption> options)
+    {
+        makeSelectHolder = onSelection;
+        optionsHolder = options;
+        selectionObj.SetActive(true);
+        fpc.GetMouseLook().SetCursorLock(false);
+        if (options.Count == 2)
+        {
+            aButton.gameObject.SetActive(true);
+            aButton.onClick.AddListener(() => MakeDialogueSelection(onSelection, 0));
+            sButton.gameObject.SetActive(false); // Hide the middle option
+            dButton.gameObject.SetActive(true);
+            dButton.onClick.AddListener(() => MakeDialogueSelection(onSelection, 1));
+
+            aText.text = options[0].content;
+            dText.text = options[1].content;
+        }
+        else if (options.Count == 3)
+        {
+            aButton.gameObject.SetActive(true);
+            aButton.onClick.AddListener(() => MakeDialogueSelection(onSelection, 0));
+            sButton.gameObject.SetActive(true);
+            sButton.onClick.AddListener(() => MakeDialogueSelection(onSelection, 1));
+            dButton.gameObject.SetActive(true);
+            dButton.onClick.AddListener(() => MakeDialogueSelection(onSelection, 2));
+
+            aText.text = options[0].content;
+            sText.text = options[1].content;
+            dText.text = options[2].content;
+        }
+    }
+
+    public void MakeDialogueSelection(MakeSelectionDelegate onSelection, int index)
+    {
+        string next = onSelection(index);
+        if (next.Equals(""))
+        {
+            if (typeof(Diary).IsAssignableFrom(note.GetType()))
+            {
+                note.gameObject.SetActive(false);
+            }
+
+            note = null;
+            dialogue.enabled = false;
+            dialoguePanel.gameObject.SetActive(false);
+            diaryPanelObj.SetActive(false);
+            diaryText.text = "";
+            fpc.enabled = true;
+        }
+        else
+        {
+            if (typeof(Diary).IsAssignableFrom(note.GetType()))
+            {
+                // Found diary
+                diaryText.text = next;
+            }
+            else
+            {
+                dialogue.text = next;
+            }
+        }
+    }
+
+
+
+    public void HideDialogueSelection()
+    {
+        makeSelectHolder = null;
+        optionsHolder = null;
+        selectionObj.SetActive(false);
+        fpc.GetMouseLook().SetCursorLock(true);
+        aButton.onClick.RemoveAllListeners();
+        sButton.onClick.RemoveAllListeners();
+        dButton.onClick.RemoveAllListeners();
     }
 
     // Update is called once per frame
@@ -156,6 +258,36 @@ public class Wand : MonoBehaviour {
         {
             handAnimator.ResetTrigger("Show");
             handAnimator.SetTrigger("Hide");
+        }
+
+        if (optionsHolder != null && optionsHolder.Count > 0)
+        {
+            if (optionsHolder.Count == 2)
+            {
+                if (Input.GetKeyDown(KeyCode.A))
+                {
+                    MakeDialogueSelection(makeSelectHolder, 0);
+                }
+                else if (Input.GetKeyDown(KeyCode.D))
+                {
+                    MakeDialogueSelection(makeSelectHolder, 1);
+                }
+            }
+            else if (optionsHolder.Count == 3)
+            {
+                if (Input.GetKeyDown(KeyCode.A))
+                {
+                    MakeDialogueSelection(makeSelectHolder, 0);
+                }
+                else if (Input.GetKeyDown(KeyCode.S))
+                {
+                    MakeDialogueSelection(makeSelectHolder, 1);
+                }
+                else if (Input.GetKeyDown(KeyCode.D))
+                {
+                    MakeDialogueSelection(makeSelectHolder, 2);
+                }
+            }
         }
 
         if (pickable)
@@ -181,29 +313,22 @@ public class Wand : MonoBehaviour {
             // For interaction with dialogue
             if (note)
             {
-                if (Input.GetButtonDown("Fire1") && !isPaused)
+                if (Input.GetButtonDown("Fire1") && !isPaused && !note.isInOption)
                 {
                     string next = note.nextLine();
                     if (next.Equals(""))
                     {
-                        if (note.isInOption)
+                        if (typeof(Diary).IsAssignableFrom(note.GetType()))
                         {
-
+                            note.gameObject.SetActive(false);
                         }
-                        else
-                        {
-                            if (typeof(Diary).IsAssignableFrom(note.GetType()))
-                            {
-                                note.gameObject.SetActive(false);
-                            }
 
-                            note = null;
-                            dialogue.enabled = false;
-                            dialoguePanel.gameObject.SetActive(false);
-                            diaryPanelObj.SetActive(false);
-                            diaryText.text = "";
-                            fpc.enabled = true;
-                        }
+                        note = null;
+                        dialogue.enabled = false;
+                        dialoguePanel.gameObject.SetActive(false);
+                        diaryPanelObj.SetActive(false);
+                        diaryText.text = "";
+                        fpc.enabled = true;
                     }
                     else
                     {

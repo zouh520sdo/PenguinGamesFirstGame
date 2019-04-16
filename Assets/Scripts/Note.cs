@@ -21,6 +21,8 @@ public class DialogueOption
     public Paragraph paragraph;
 }
 
+public delegate string MakeSelectionDelegate(int optionIndex);
+
 public class Note : MonoBehaviour {
 
     public string note;

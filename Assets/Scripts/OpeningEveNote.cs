@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class OpeningEveNote : Note {
 
     public AudioSource audioSource;
@@ -17,6 +18,7 @@ public class OpeningEveNote : Note {
     protected List<string> tempTexts;
     protected List<AudioClip> tempVoiceOvers;
     protected List<DialogueOption> tempOptions;
+    public Wand wand;
 
     public override void Start()
     {
@@ -25,9 +27,13 @@ public class OpeningEveNote : Note {
         {
             audioSource = GetComponent<AudioSource>();
         }
+        if (!wand)
+        {
+            wand = GameObject.FindGameObjectWithTag("Player").GetComponent<Wand>();
+        }
     }
 
-    public virtual void MakeSelection(int optionIndex)
+    public virtual string MakeSelection(int optionIndex)
     {
         DialogueOption d = tempOptions[optionIndex];
         tempParagraph = d.paragraph;
@@ -35,8 +41,11 @@ public class OpeningEveNote : Note {
         tempVoiceOvers = d.paragraph.audioOvers;
         tempOptions = d.paragraph.options;
         isInOption = false;
+        paragraphIndex = -1;
         // Hide selection UI
-        nextLine();
+
+        wand.HideDialogueSelection();
+        return nextLine();
     }
 
     public override string nextLine()
@@ -46,7 +55,7 @@ public class OpeningEveNote : Note {
         int foundThisDiary = PlayerPrefs.GetInt("FoundThisDiary");
         int diaryCount = PlayerPrefs.GetInt("DiaryAmount");
 
-        if (primaryParagraghs.Count > 0)
+        if (primaryParagraghs.Count > 0)  // Using primary paragraphs
         {
             if (tempParagraph == null)
             {
@@ -71,20 +80,8 @@ public class OpeningEveNote : Note {
                     audioSource.Stop();
                     audioSource.clip = null;
                 }
-
-                if (tempOptions.Count == 0) // If no options
-                {
-                    finished = true;
-
-                    return "";
-                }
-                else // if have options
-                {
-                    // Show UI options for player to selection
-                    // ....
-                    isInOption = true;
-                    return "";
-                }
+                finished = true;
+                return "";
             }
             else
             {
@@ -100,6 +97,14 @@ public class OpeningEveNote : Note {
                             audioSource.Play();
                         }
                     }
+                }
+
+                if (paragraphIndex >= tempTexts.Count - 1 && tempOptions.Count != 0) // if have options
+                {
+                    // Show UI options for player to selection
+                    // ....
+                    wand.ShowDialogueSelection(MakeSelection, tempOptions);
+                    isInOption = true;
                 }
                 return tempTexts[paragraphIndex];
             }
