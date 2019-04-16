@@ -858,6 +858,11 @@ Prefab:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114492459553682914, guid: fe370290a88187b45b1bbe35ba008cdb,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe370290a88187b45b1bbe35ba008cdb, type: 2}
   m_IsPrefabAsset: 0
@@ -875,6 +880,11 @@ GameObject:
 --- !u!1 &104538700 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1718393010386414, guid: fe370290a88187b45b1bbe35ba008cdb,
+    type: 2}
+  m_PrefabInternal: {fileID: 104538697}
+--- !u!1 &104538701 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1252578372813734, guid: fe370290a88187b45b1bbe35ba008cdb,
     type: 2}
   m_PrefabInternal: {fileID: 104538697}
 --- !u!1001 &111589537
@@ -3157,7 +3167,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3b685495f35cd824c8ebe42ae5f07a92, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3b685495f35cd824c8ebe42ae5f07a92, type: 3}
       propertyPath: m_LocalScale.x
@@ -4905,12 +4915,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   note: Covenant Stone
+  isInOption: 0
   paragraph:
   - '"I, Adam Brown, solemnly swear,'
   - '"that till the end of my life,'
   - '"I will not harm any mage legally protected by Great Souhait Union. "'
   canStartParagraph: 1
   canRepeat: 0
+  finished: 0
 --- !u!1 &609268553
 GameObject:
   m_ObjectHideFlags: 0
@@ -6049,6 +6061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   note: Scroll
+  isInOption: 0
   paragraph:
   - Let's feed the lovely, poor Mr. Frog!
   - \*Applause*/
@@ -6062,6 +6075,7 @@ MonoBehaviour:
   - Come on! Let's invite Mr. Frog to taste it!
   canStartParagraph: 1
   canRepeat: 1
+  finished: 0
 --- !u!65 &764359503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9601,6 +9615,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 758165316}
     m_Modifications:
+    - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
+        type: 2}
+      propertyPath: paragraph.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4091864963300368, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
       propertyPath: m_LocalPosition.x
       value: -29.76
@@ -9631,7 +9650,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4091864963300368, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4091864963300368, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9644,6 +9663,41 @@ Prefab:
     - target: {fileID: 4091864963300368, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
+        type: 2}
+      propertyPath: paragraph.Array.data[0]
+      value: "7/10/2256  I went to Black Cloak\u2019s lab again. He still refused
+        to teach me how to make poisons. He thought I was crazy, as crossing the border
+        was not a simple thing. And I may be killed for that. I don\u2019t "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
+        type: 2}
+      propertyPath: paragraph.Array.data[1]
+      value: "blame on him. I actually appreciate that he didn\u2019t report me for
+        holding that idea. I also understand what will come to me. But I also can\u2019t
+        stand to witness mages turned to dolls every day, or to be manipulated by
+        the Association like fools. I "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
+        type: 2}
+      propertyPath: paragraph.Array.data[2]
+      value: "stopped drinking any produced water in the market once I know they\u2019ve
+        added hallucination leaf in it. Yet the soberness makes me struggle even more.
+        I can\u2019t stay here. The Union is not a wonderland. It\u2019s a giant,
+        people-eating flytrap.  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
+        type: 2}
+      propertyPath: paragraph.Array.data[3]
+      value: "Besides, I\u2019ve known a way to escape from a book I stored at home.
+        I just need several poisons as ingredients.  7/14/2256  He wanted to see me
+        on next Thursday.  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
+        type: 2}
+      propertyPath: paragraph.Array.data[4]
+      value: "I\u2019m one step closer to the outside. Finally. "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
@@ -14014,6 +14068,11 @@ Prefab:
       propertyPath: diaryPanelObj
       value: 
       objectReference: {fileID: 104538700}
+    - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
+      propertyPath: selectionObj
+      value: 
+      objectReference: {fileID: 104538701}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
   m_IsPrefabAsset: 0
@@ -15205,6 +15264,104 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46273fc06c47d94599f05044d604991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1666202106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1666202107}
+  - component: {fileID: 1666202108}
+  m_Layer: 0
+  m_Name: Dialogue1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1666202107
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1666202106}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1924914894}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1666202108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1666202106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c1e22dede8829448b5c2a2e04fde24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: 
+  isInOption: 0
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 0
+  finished: 0
+  audioSource: {fileID: 0}
+  voiceOvers: []
+  diaryAmountToTrigger: 0
+  secretParagraphs: []
+  secretVoiceOvers: []
+  primaryParagraghs:
+  - noNeedCondition: 0
+    needDiaryAmount: 0
+    hasGua: 0
+    foundThisDiary: 1
+    texts:
+    - "\u2026?!..&^....#!!"
+    - 'Hello? Can you hear me? '
+    - (Player nods.)
+    - 'Good. '
+    - Give me that piece of paper.
+    - (Put that paper into his frame.)
+    - "\u2026 Black Cloak\u2026 "
+    - 'Who are you? How did you find this? '
+    audioOvers: []
+    options:
+    - content: Adam Brown
+      paragraph:
+        noNeedCondition: 1
+        needDiaryAmount: 0
+        hasGua: 0
+        foundThisDiary: 0
+        texts:
+        - "Adam Brown\u2026 Another familiar name. "
+        audioOvers: []
+        options: []
+    - content: Through the hints
+      paragraph:
+        noNeedCondition: 1
+        needDiaryAmount: 0
+        hasGua: 0
+        foundThisDiary: 0
+        texts:
+        - "Hints? You mean someone left this for you? That\u2019s interesting. "
+        audioOvers: []
+        options: []
+    - content: Which question first?
+      paragraph:
+        noNeedCondition: 1
+        needDiaryAmount: 0
+        hasGua: 0
+        foundThisDiary: 0
+        texts:
+        - "\u2026 Which is fine. Neither is important. "
+        audioOvers: []
+        options: []
+  wand: {fileID: 0}
 --- !u!1001 &1667764138
 Prefab:
   m_ObjectHideFlags: 0
@@ -16638,6 +16795,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46273fc06c47d94599f05044d604991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1871405403 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 05f26e2e0c08104448491004cd9c3149,
+    type: 3}
+  m_PrefabInternal: {fileID: 1924914893}
+--- !u!114 &1871405405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1871405403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 237af9b95fa045d4ca9a0f9fdae58026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggees: []
+  isActive: 0
+  note: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!1001 &1874482815
 Prefab:
   m_ObjectHideFlags: 0
@@ -17507,11 +17684,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   note: A Frog...?
+  isInOption: 0
   paragraph:
   - '...'
   - Go ahead.
   canStartParagraph: 0
   canRepeat: 0
+  finished: 0
 --- !u!114 &1924914897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19529,6 +19708,87 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46273fc06c47d94599f05044d604991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2096636313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2096636314}
+  - component: {fileID: 2096636315}
+  m_Layer: 0
+  m_Name: Dialogue3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2096636314
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096636313}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1924914894}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2096636315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096636313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c1e22dede8829448b5c2a2e04fde24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: 
+  isInOption: 0
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 0
+  finished: 0
+  audioSource: {fileID: 0}
+  voiceOvers: []
+  diaryAmountToTrigger: 0
+  secretParagraphs: []
+  secretVoiceOvers: []
+  primaryParagraghs:
+  - noNeedCondition: 1
+    needDiaryAmount: 0
+    hasGua: 0
+    foundThisDiary: 0
+    texts:
+    - Just... do me a favor. Will you?
+    audioOvers: []
+    options:
+    - content: Alright.
+      paragraph:
+        noNeedCondition: 1
+        needDiaryAmount: 0
+        hasGua: 0
+        foundThisDiary: 0
+        texts:
+        - "Thank you. Now stands still\u2026 "
+        audioOvers: []
+        options: []
+    - content: "I don\u2019t trust you."
+      paragraph:
+        noNeedCondition: 1
+        needDiaryAmount: 0
+        hasGua: 0
+        foundThisDiary: 0
+        texts:
+        - "Fine.  I don\u2019t blame you. "
+        audioOvers: []
+        options: []
+  wand: {fileID: 0}
 --- !u!1001 &2097114883
 Prefab:
   m_ObjectHideFlags: 0
@@ -20061,6 +20321,92 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46273fc06c47d94599f05044d604991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2126839224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2126839225}
+  - component: {fileID: 2126839226}
+  m_Layer: 0
+  m_Name: Dialogue2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2126839225
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2126839224}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1924914894}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2126839226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2126839224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c1e22dede8829448b5c2a2e04fde24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: 
+  isInOption: 0
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 0
+  finished: 0
+  audioSource: {fileID: 0}
+  voiceOvers: []
+  diaryAmountToTrigger: 0
+  secretParagraphs: []
+  secretVoiceOvers: []
+  primaryParagraghs:
+  - noNeedCondition: 1
+    needDiaryAmount: 0
+    hasGua: 0
+    foundThisDiary: 0
+    texts:
+    - 'Interesting. This paper has been treated with special poison. The person who
+      left this must have something to tell. '
+    - '...'
+    - "Hey. Hitte mage. Let\u2019s do a transaction."
+    - 'You bring me with you. And maybe I can show you the way out. '
+    audioOvers: []
+    options:
+    - content: Am I allowed to do this?
+      paragraph:
+        noNeedCondition: 1
+        needDiaryAmount: 0
+        hasGua: 0
+        foundThisDiary: 0
+        texts:
+        - '...  What a good baby. '
+        audioOvers: []
+        options: []
+    - content: The way out?
+      paragraph:
+        noNeedCondition: 1
+        needDiaryAmount: 0
+        hasGua: 0
+        foundThisDiary: 0
+        texts:
+        - "...  This maze is not a fun place. You can get lost and stay here forever
+          without help. And I\u2019m here definitely longer than you are. "
+        audioOvers: []
+        options: []
+  wand: {fileID: 0}
 --- !u!1 &2134445919 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 26d83eaea8bc70b45b022f19e1bba1e2,

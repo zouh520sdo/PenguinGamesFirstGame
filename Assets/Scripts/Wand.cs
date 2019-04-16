@@ -320,6 +320,8 @@ public class Wand : MonoBehaviour {
                         if (typeof(Diary).IsAssignableFrom(note.GetType()))
                         {
                             note.gameObject.SetActive(false);
+                            gameManager.SetFoundThisDiary();
+                            print("Got this level's diary " + gameManager.GetFoundThisDiary());
                         }
 
                         note = null;
@@ -365,8 +367,6 @@ public class Wand : MonoBehaviour {
                                 dialogue.text = "";
                                 dialogue.enabled = false;
 
-                                gameManager.SetFoundThisDiary();
-                                print("Got this level's diary " + gameManager.GetFoundThisDiary());
                                 gameManager.UpdateDiaryAmount();
                                 print("Got diary amount " + gameManager.GetDiaryAmount());
                                 diaryPanelObj.SetActive(true);
