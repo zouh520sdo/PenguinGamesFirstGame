@@ -80,6 +80,16 @@ public class GameManager : MonoBehaviour {
         slu.LoadGame(slu.quickSaveName);//Use this for quickloading, which is basically just using a constant savegame name.
     }
 
+    public void StartNote(Note note)
+    {
+        if (wand.note != note)
+        {
+            fpc.enabled = false;
+            wand.note = note;
+            wand.SetDialogueText(note.nextLine());
+        }
+    }
+
     public void StartOpeningNote()
     {
         if (wand.note != openingNote)

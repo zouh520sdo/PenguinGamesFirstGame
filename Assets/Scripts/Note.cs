@@ -30,7 +30,7 @@ public class Note : MonoBehaviour {
     public List<string> paragraph;
     public bool canStartParagraph = true;
     public bool canRepeat;
-    protected bool finished;
+    public bool finished;
     protected int paragraphIndex;
     protected bool originalFinished;
     protected bool originalCanParagraph;
