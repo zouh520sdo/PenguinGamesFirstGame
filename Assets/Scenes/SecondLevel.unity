@@ -4472,6 +4472,11 @@ Prefab:
       propertyPath: diaryPanelObj
       value: 
       objectReference: {fileID: 977058590}
+    - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
+      propertyPath: selectionObj
+      value: 
+      objectReference: {fileID: 1853769901}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
   m_IsPrefabAsset: 0
@@ -6350,6 +6355,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1442475524}
     m_Modifications:
+    - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
+        type: 2}
+      propertyPath: paragraph.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4091864963300368, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6403,6 +6413,39 @@ Prefab:
     - target: {fileID: 4494186258879102, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
+        type: 2}
+      propertyPath: paragraph.Array.data[0]
+      value: "4/26/2256  \tYesterday Black Cloak came again. This time Jackie and
+        Kate were executed. And then they are like everyone else - thoughtless, dispirited,
+        like dispassionate dolls.  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
+        type: 2}
+      propertyPath: paragraph.Array.data[1]
+      value: "\tI can\u2019t believe I\u2019m used to this.  \tEvery green mage must
+        be executed in certain time after they are distributed to the workplace. In
+        my case it is one week. Works in greenhouse are always the "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
+        type: 2}
+      propertyPath: paragraph.Array.data[2]
+      value: "easiest to learn.  \tBut Jackie, he was just 14. He\u2019s so young,
+        so enthusiastic... A day ago he was still talking to me about his poet dream.
+        Now the only thing in his head is to plant dragon jasmine. And plant. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
+        type: 2}
+      propertyPath: paragraph.Array.data[3]
+      value: "And plant.  \tWho determines this? Must I be a farm manager because
+        I\u2019m a hitte mage? Must green mages be doing the most basic and tedious
+        work just because they have the least powerful magic "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
+        type: 2}
+      propertyPath: paragraph.Array.data[4]
+      value: "objects?   \tIs it right? Are we on the right track? "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
@@ -23197,6 +23240,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114492459553682914, guid: fe370290a88187b45b1bbe35ba008cdb,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe370290a88187b45b1bbe35ba008cdb, type: 2}
   m_IsPrefabAsset: 0
@@ -23220,6 +23268,11 @@ MonoBehaviour:
 --- !u!1 &1853769900 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1417043913632272, guid: fe370290a88187b45b1bbe35ba008cdb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1853769896}
+--- !u!1 &1853769901 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1252578372813734, guid: fe370290a88187b45b1bbe35ba008cdb,
     type: 2}
   m_PrefabInternal: {fileID: 1853769896}
 --- !u!1001 &1868858226

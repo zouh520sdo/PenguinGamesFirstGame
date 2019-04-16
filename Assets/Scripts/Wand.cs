@@ -150,9 +150,8 @@ public class Wand : MonoBehaviour {
         {
             gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
             print("Diary amount " + gameManager.GetDiaryAmount());
-            gameManager.SetHasGua();
             print("Has gua " + gameManager.GetHasDua());
-            gameManager.SetFoundThisDiary();
+            gameManager.ResetFoundThisDiary();
             print("Found this diary " + gameManager.GetFoundThisDiary());
         }
 
@@ -366,8 +365,10 @@ public class Wand : MonoBehaviour {
                                 dialogue.text = "";
                                 dialogue.enabled = false;
 
+                                gameManager.SetFoundThisDiary();
+                                print("Got this level's diary " + gameManager.GetFoundThisDiary());
                                 gameManager.UpdateDiaryAmount();
-                                print(gameManager.GetDiaryAmount());
+                                print("Got diary amount " + gameManager.GetDiaryAmount());
                                 diaryPanelObj.SetActive(true);
                                 diaryText.text = note.nextLine();
                             }
