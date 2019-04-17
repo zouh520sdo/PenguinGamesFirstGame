@@ -15,6 +15,7 @@ public class FrogSecretTrigger : Trigger {
     public OpeningEveNote needExlixir;
     public OpeningEveNote gotExlixir;
 
+    public bool isStart;
     public Animator frogAnim;
 
 
@@ -35,7 +36,7 @@ public class FrogSecretTrigger : Trigger {
     {
         base.Update();
 
-        if (!isActive)
+        if (!isActive && isStart)
         {
             if (normalNote1.finished)
             {
@@ -48,8 +49,7 @@ public class FrogSecretTrigger : Trigger {
             if (doFavorNote.optionIndexMade == 0 && doFavorNote.finished && frogPicture.isActive)
             {
                 note = gotExlixir;
-                frogAnim.gameObject.SetActive(false);
-                gameManager.SetHasGua();
+                frogPicture.FrogFlyToWand();
             }
             if (doFavorNote.optionIndexMade == 0 && doFavorNote.finished && !frogPicture.isActive)
             {
@@ -65,14 +65,9 @@ public class FrogSecretTrigger : Trigger {
             if (!note.inThisNote) {
                 if (note == normalNote1)
                 {
-                    int foundThisDiary = PlayerPrefs.GetInt("FoundThisDiary");
-                    if (foundThisDiary != 0)
-                    {
-                        // Found this level's diary
-                        gameManager.StartNote(note);
-                        frogAnim.ResetTrigger("sleep");
-                        frogAnim.SetTrigger("openeyes");
-                    }
+                    gameManager.StartNote(note);
+                    frogAnim.ResetTrigger("sleep");
+                    frogAnim.SetTrigger("openeyes");
                 }
                 else if (note == gotExlixir || note == needExlixir)
                 {

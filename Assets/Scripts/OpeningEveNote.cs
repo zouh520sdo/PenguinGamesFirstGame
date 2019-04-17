@@ -79,7 +79,6 @@ public class OpeningEveNote : Note
                     if (p.noNeedCondition || (hasGua == p.hasGua && foundThisDiary == p.foundThisDiary && diaryCount >= p.needDiaryAmount))
                     {
                         tempParagraph = p;
-                        print(tempParagraph);
                         tempTexts = p.texts;
                         tempVoiceOvers = p.audioOvers;
                         tempOptions = p.options;

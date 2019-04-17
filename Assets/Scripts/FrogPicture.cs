@@ -13,7 +13,8 @@ public class FrogPicture : Trigger {
     private Animator frogAnim;
 
     public OpeningEveNote gotExlixirTy;
-
+    public FrogSecretTrigger secretTrigger;
+    public GameObject frogShining;
 
     public override void Start()
     {
@@ -58,22 +59,77 @@ public class FrogPicture : Trigger {
                     //frogAnim.SetTrigger("openeyes");
                     StartCoroutine(openEyes());
 
-                    wand.fpc.enabled = false;
-                    isActive = true;
-                    wand.note = frogNote;
-                    wand.SetDialogueText(frogNote.nextLine());
-
-                    if (gotExlixirTy == frogNote)
+                    int foundThisDiary = PlayerPrefs.GetInt("FoundThisDiary");
+                    if (foundThisDiary != 0)
                     {
-                        frogAnim.gameObject.SetActive(false);
-                        GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SetHasGua();
+                        if (!secretTrigger.isStart)
+                        {
+                            secretTrigger.isStart = true;
+                        }
+
+                        if (secretTrigger.isActive)
+                        {
+                            wand.fpc.enabled = false;
+                            wand.note = frogNote;
+                            wand.SetDialogueText(frogNote.nextLine());
+                            if (gotExlixirTy == frogNote)
+                            {
+                                FrogFlyToWand();
+                            }
+                        }
                     }
+                    else
+                    {
+                        wand.fpc.enabled = false;
+                        wand.note = frogNote;
+                        wand.SetDialogueText(frogNote.nextLine());
+                        if (gotExlixirTy == frogNote)
+                        {
+                            FrogFlyToWand();
+                        }
+                    }
+
+                    isActive = true;
 
                     activateTriggees();
                     // May need to update dialogue
 
                     break;
                 }
+            }
+        }
+    }
+
+    public void FrogFlyToWand()
+    {
+        frogAnim.gameObject.SetActive(false);
+        GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SetHasGua();
+        StartCoroutine(FlyingToWand());
+    }
+
+    public IEnumerator FlyingToWand()
+    {
+        wand.handAnimator.ResetTrigger("Hide");
+        wand.handAnimator.SetTrigger("Show");
+        GameObject wandInHand = wand.wandEffect.gameObject;
+        while (Vector3.Distance(frogShining.transform.position, wandInHand.transform.position) > 0.2f)
+        {
+            frogShining.transform.position = Vector3.Lerp(frogShining.transform.position, wandInHand.transform.position, 2f * Time.deltaTime);
+            yield return null;
+        }
+        frogShining.SetActive(false);
+        wand.handAnimator.ResetTrigger("Show");
+        wand.handAnimator.SetTrigger("Hide");
+    }
+
+    public void OnMouseOver()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            int foundThisDiary = PlayerPrefs.GetInt("FoundThisDiary");
+            if (foundThisDiary != 0)
+            {
+                secretTrigger.isStart = true;
             }
         }
     }
