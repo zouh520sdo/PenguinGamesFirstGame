@@ -8,6 +8,7 @@ TagManager:
   - Wandable
   - GameManager
   - NextLevel
+  - BGM
   layers:
   - Default
   - TransparentFX
