@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour {
     public EndingEveNote endingNote;
     public Wand wand;
     public FirstPersonController fpc;
+    public Diary secretDairy;
 
 
     private void Awake()
@@ -37,6 +38,17 @@ public class GameManager : MonoBehaviour {
             ResetDiaryAmount();
             ResetHasGua();
             ResetFoundThisDiary();
+        }
+
+        if (secretDairy)
+        {
+            if (GetHasDua() == 1) {
+                secretDairy.gameObject.SetActive(true);
+            }
+            else
+            {
+                secretDairy.gameObject.SetActive(false);
+            }
         }
     }
     // Use this for initialization
