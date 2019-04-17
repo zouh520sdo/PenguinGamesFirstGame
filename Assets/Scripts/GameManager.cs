@@ -93,6 +93,18 @@ public class GameManager : MonoBehaviour {
         {
             LoadGame();
         }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            UpdateDiaryAmount();
+            UpdateDiaryAmount();
+            UpdateDiaryAmount();
+            UpdateDiaryAmount();
+            UpdateDiaryAmount();
+            UpdateDiaryAmount();
+            SetFoundThisDiary();
+            SetHasGua();
+        }
     }
 
     public void SaveGame()
