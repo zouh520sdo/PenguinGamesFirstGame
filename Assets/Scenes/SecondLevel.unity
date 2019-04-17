@@ -3043,7 +3043,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1352563551460422, guid: 0771f8c58755eb2489de7c50035fc6ea,
     type: 2}
   m_PrefabInternal: {fileID: 358639481}
---- !u!114 &225092310
+--- !u!114 &225092307
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3070,11 +3070,11 @@ MonoBehaviour:
       occlusionCullingAccuracy: 2
       enableTemporalReprojection: 1
       temporalReprojectionFactor: 0.9
-      resolution: {x: 320, y: 176, z: 256}
+      resolution: {x: 160, y: 88, z: 128}
       farClipPlaneDistance: 50
-      density: 0.06
+      density: 0.05
       anisotropy: 0.5
-      color: {r: 0.25, g: 0.21105896, b: 0.13521901, a: 1}
+      color: {r: 0.25, g: 0.22208488, b: 0.18233362, a: 1}
       colorStrength: 0.03
     _computeMaximumDepthComputeShader: {fileID: 7200000, guid: a5d52c8a306e8b746ab60b306575aa3e,
       type: 3}
@@ -4536,7 +4536,13 @@ Prefab:
       propertyPath: selectionObj
       value: 
       objectReference: {fileID: 1853769901}
-    m_RemovedComponents: []
+    - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
+      propertyPath: HTUI
+      value: 
+      objectReference: {fileID: 1252415018}
+    m_RemovedComponents:
+    - {fileID: 114853682700646426, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &366528595
@@ -9198,37 +9204,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: 47a9c7ffdd987f0428e2d32aca622965,
     type: 3}
   m_PrefabInternal: {fileID: 982165731}
---- !u!84 &715723284
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 256
-  m_Height: 256
-  m_AntiAliasing: 1
-  m_DepthFormat: 0
-  m_ColorFormat: 11
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &718739545
 Prefab:
   m_ObjectHideFlags: 0
@@ -14000,7 +13975,7 @@ MonoBehaviour:
   overrideColor: 0
   overridingColor: {r: 0.9999, g: 0.9999, b: 0.9999, a: 0.9999}
   useShadow: 1
-  shadowMapRenderTexture: {fileID: 715723284}
+  shadowMapRenderTexture: {fileID: 1866189690}
   useCookie: 1
   cookieMapRenderTexture: {fileID: 0}
   enableOutOfPhaseColor: 0
@@ -21184,6 +21159,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 1a7c170fa2e72ec489f11372c75120fb,
     type: 3}
   m_PrefabInternal: {fileID: 1251194857}
+--- !u!1 &1252415018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1043355926542984, guid: fe370290a88187b45b1bbe35ba008cdb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1853769896}
 --- !u!4 &1259959930 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: b4d70a58d3ee8224ebcfe75080459baf,
@@ -28303,6 +28283,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1252578372813734, guid: fe370290a88187b45b1bbe35ba008cdb,
     type: 2}
   m_PrefabInternal: {fileID: 1853769896}
+--- !u!84 &1866189690
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 256
+  m_Height: 256
+  m_AntiAliasing: 1
+  m_DepthFormat: 0
+  m_ColorFormat: 11
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &1868858226
 Prefab:
   m_ObjectHideFlags: 0

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7508,7 +7508,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1352563551460422, guid: 0771f8c58755eb2489de7c50035fc6ea,
     type: 2}
   m_PrefabInternal: {fileID: 1536255320}
---- !u!114 &173007585
+--- !u!114 &173007581
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7539,7 +7539,7 @@ MonoBehaviour:
       farClipPlaneDistance: 50
       density: 0.05
       anisotropy: 0.5
-      color: {r: 0.15637541, g: 0.19972898, b: 0.25, a: 1}
+      color: {r: 0.18643749, g: 0.21333382, b: 0.25, a: 1}
       colorStrength: 0.03
     _computeMaximumDepthComputeShader: {fileID: 7200000, guid: a5d52c8a306e8b746ab60b306575aa3e,
       type: 3}
@@ -12805,6 +12805,7 @@ MonoBehaviour:
   - 'Magic Object: Hitte Staff'
   canStartParagraph: 1
   canRepeat: 0
+  inThisNote: 0
   finished: 0
 --- !u!65 &496492158
 BoxCollider:
@@ -34767,7 +34768,13 @@ Prefab:
       propertyPath: selectionObj
       value: 
       objectReference: {fileID: 615858550}
-    m_RemovedComponents: []
+    - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
+      propertyPath: HTUI
+      value: 
+      objectReference: {fileID: 1793911455}
+    m_RemovedComponents:
+    - {fileID: 114853682700646426, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1539025021
@@ -48306,6 +48313,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46273fc06c47d94599f05044d604991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1793911455 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1043355926542984, guid: fe370290a88187b45b1bbe35ba008cdb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1610765455}
 --- !u!1 &1794392872 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 9723911408653ae428b6f6c19f76ca50,
@@ -53317,6 +53329,7 @@ MonoBehaviour:
   paragraph: []
   canStartParagraph: 1
   canRepeat: 0
+  inThisNote: 0
   finished: 0
 --- !u!114 &2134648981
 MonoBehaviour:
