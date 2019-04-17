@@ -5,27 +5,22 @@ using UnityEngine.UI;
 
 public class ChangeText : MonoBehaviour {
 
-    //public GameObject Btn;
+    public GameObject Btn;
     //Text BtnText;
 
 	// Use this for initialization
 	void Start () {
-        GameObject.Find("Start").GetComponentInChildren<Text>().fontStyle = FontStyle.Italic;
+        Btn.GetComponentInChildren<Text>().fontStyle = FontStyle.Italic;
     }
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-    void OnMouseEnter()
+	public void isONB()
     {
-        //If your mouse hovers over the GameObject with the script attached, output this message
-        Debug.Log("Mouse is over GameObject.");
-    }
+        Btn.GetComponentInChildren<Text>().fontStyle = FontStyle.Bold;
+    } 
 
-    void OnMouseExit()
+    public void NotOnB()
     {
-        //The mouse is no longer hovering over the GameObject so output this message each frame
-        Debug.Log("Mouse is no longer on GameObject.");
+        Btn.GetComponentInChildren<Text>().fontStyle = FontStyle.Italic;
     }
+	
 }
