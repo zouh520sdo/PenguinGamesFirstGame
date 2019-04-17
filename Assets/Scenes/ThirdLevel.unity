@@ -4926,6 +4926,7 @@ MonoBehaviour:
   - '"I will not harm any mage legally protected by Great Souhait Union. "'
   canStartParagraph: 1
   canRepeat: 0
+  inThisNote: 0
   finished: 0
 --- !u!1 &609268553
 GameObject:
@@ -5592,7 +5593,7 @@ GameObject:
   - component: {fileID: 695968908}
   - component: {fileID: 695968909}
   m_Layer: 0
-  m_Name: Dialogue4
+  m_Name: Dialogue4_needElixir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5627,14 +5628,30 @@ MonoBehaviour:
   paragraph: []
   canStartParagraph: 0
   canRepeat: 0
+  inThisNote: 0
   finished: 0
   audioSource: {fileID: 0}
   voiceOvers: []
   diaryAmountToTrigger: 0
   secretParagraphs: []
   secretVoiceOvers: []
-  primaryParagraghs: []
+  primaryParagraghs:
+  - noNeedCondition: 1
+    needDiaryAmount: 0
+    hasGua: 0
+    foundThisDiary: 0
+    texts:
+    - "\u2026 *sigh* "
+    - "You need to give me that Elixir first. I can\u2019t do anything"
+    audioOvers: []
+    options: []
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
   wand: {fileID: 0}
+  optionIndexMade: 0
 --- !u!1 &696406922 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 26d83eaea8bc70b45b022f19e1bba1e2,
@@ -6133,6 +6150,7 @@ MonoBehaviour:
   - Come on! Let's invite Mr. Frog to taste it!
   canStartParagraph: 1
   canRepeat: 1
+  inThisNote: 0
   finished: 0
 --- !u!65 &764359503
 BoxCollider:
@@ -12249,6 +12267,76 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1031658265}
   m_Script: {fileID: 11500000, guid: 0c19f3e134862e74dbc98cb514a82ef5, type: 3}
+--- !u!1 &962066733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 962066734}
+  - component: {fileID: 962066735}
+  m_Layer: 0
+  m_Name: Dialogue5_gotElixir
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &962066734
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 962066733}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1924914894}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &962066735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 962066733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c1e22dede8829448b5c2a2e04fde24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: 
+  isInOption: 0
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 0
+  inThisNote: 0
+  finished: 0
+  audioSource: {fileID: 0}
+  voiceOvers: []
+  diaryAmountToTrigger: 0
+  secretParagraphs: []
+  secretVoiceOvers: []
+  primaryParagraghs:
+  - noNeedCondition: 1
+    needDiaryAmount: 0
+    hasGua: 0
+    foundThisDiary: 0
+    texts:
+    - 'Kwark. '
+    - "I\u2019m in your wand. I can see what you see. "
+    - 'We are on the same side now. Nice to meet you. Hitte mage. '
+    audioOvers: []
+    options: []
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  wand: {fileID: 0}
+  optionIndexMade: 0
 --- !u!1001 &963135271
 Prefab:
   m_ObjectHideFlags: 0
@@ -15595,7 +15683,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1224718124}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f01d29d88278f45458d99e6b5199e920, type: 3}
   m_Name: 
@@ -15604,7 +15692,7 @@ MonoBehaviour:
   overrideColor: 0
   overridingColor: {r: 0.9999, g: 0.9999, b: 0.9999, a: 0.9999}
   useShadow: 1
-  shadowMapRenderTexture: {fileID: 2015597962}
+  shadowMapRenderTexture: {fileID: 0}
   useCookie: 1
   cookieMapRenderTexture: {fileID: 0}
   enableOutOfPhaseColor: 0
@@ -17274,6 +17362,77 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2030620678}
   m_Script: {fileID: 11500000, guid: 0c19f3e134862e74dbc98cb514a82ef5, type: 3}
+--- !u!1 &1374923929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1374923930}
+  - component: {fileID: 1374923931}
+  m_Layer: 0
+  m_Name: Dialogue5_gotElixir_ty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1374923930
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1374923929}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1924914894}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1374923931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1374923929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c1e22dede8829448b5c2a2e04fde24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: 
+  isInOption: 0
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 0
+  inThisNote: 0
+  finished: 0
+  audioSource: {fileID: 0}
+  voiceOvers: []
+  diaryAmountToTrigger: 0
+  secretParagraphs: []
+  secretVoiceOvers: []
+  primaryParagraghs:
+  - noNeedCondition: 1
+    needDiaryAmount: 0
+    hasGua: 0
+    foundThisDiary: 0
+    texts:
+    - "Thank you. Now stands still\u2026 "
+    - 'Kwark. '
+    - "I\u2019m in your wand. I can see what you see. "
+    - 'We are on the same side now. Nice to meet you. Hitte mage. '
+    audioOvers: []
+    options: []
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  wand: {fileID: 0}
+  optionIndexMade: 0
 --- !u!1 &1377995158 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 26d83eaea8bc70b45b022f19e1bba1e2,
@@ -19985,6 +20144,7 @@ MonoBehaviour:
   paragraph: []
   canStartParagraph: 0
   canRepeat: 0
+  inThisNote: 0
   finished: 0
   audioSource: {fileID: 0}
   voiceOvers: []
@@ -20017,6 +20177,11 @@ MonoBehaviour:
         - "Adam Brown\u2026 Another familiar name. "
         audioOvers: []
         options: []
+        onComplete:
+          m_PersistentCalls:
+            m_Calls: []
+          m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
     - content: Through the hints
       paragraph:
         noNeedCondition: 1
@@ -20027,6 +20192,11 @@ MonoBehaviour:
         - "Hints? You mean someone left this for you? That\u2019s interesting. "
         audioOvers: []
         options: []
+        onComplete:
+          m_PersistentCalls:
+            m_Calls: []
+          m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
     - content: Which question first?
       paragraph:
         noNeedCondition: 1
@@ -20037,7 +20207,18 @@ MonoBehaviour:
         - "\u2026 Which is fine. Neither is important. "
         audioOvers: []
         options: []
+        onComplete:
+          m_PersistentCalls:
+            m_Calls: []
+          m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
   wand: {fileID: 0}
+  optionIndexMade: 0
 --- !u!1001 &1667764138
 Prefab:
   m_ObjectHideFlags: 0
@@ -21548,8 +21729,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggees: []
   isActive: 0
-  note: {fileID: 0}
+  note: {fileID: 1666202108}
   gameManager: {fileID: 0}
+  frogPicture: {fileID: 1924914899}
+  normalNote1: {fileID: 1666202108}
+  normalNote2: {fileID: 2126839226}
+  doFavorNote: {fileID: 2096636315}
+  needExlixir: {fileID: 695968909}
+  gotExlixir: {fileID: 962066735}
 --- !u!1001 &1874482815
 Prefab:
   m_ObjectHideFlags: 0
@@ -22425,6 +22612,7 @@ MonoBehaviour:
   - Go ahead.
   canStartParagraph: 0
   canRepeat: 0
+  inThisNote: 0
   finished: 0
 --- !u!114 &1924914897
 MonoBehaviour:
@@ -22474,6 +22662,7 @@ MonoBehaviour:
   isActive: 0
   wand: {fileID: 0}
   frogNote: {fileID: 0}
+  gotExlixirTy: {fileID: 1374923931}
 --- !u!4 &1924914900 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 05f26e2e0c08104448491004cd9c3149,
@@ -23521,37 +23710,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46273fc06c47d94599f05044d604991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!84 &2015597962
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 256
-  m_Height: 256
-  m_AntiAliasing: 1
-  m_DepthFormat: 0
-  m_ColorFormat: 11
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &2018880286 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: 7b3293ff8e51e2d48a266db42ea1301b,
@@ -24484,7 +24642,7 @@ GameObject:
   - component: {fileID: 2096636314}
   - component: {fileID: 2096636315}
   m_Layer: 0
-  m_Name: Dialogue3
+  m_Name: Dialogue3_dofavor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24519,6 +24677,7 @@ MonoBehaviour:
   paragraph: []
   canStartParagraph: 0
   canRepeat: 0
+  inThisNote: 0
   finished: 0
   audioSource: {fileID: 0}
   voiceOvers: []
@@ -24544,6 +24703,11 @@ MonoBehaviour:
         - "Thank you. Now stands still\u2026 "
         audioOvers: []
         options: []
+        onComplete:
+          m_PersistentCalls:
+            m_Calls: []
+          m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
     - content: "I don\u2019t trust you."
       paragraph:
         noNeedCondition: 1
@@ -24554,7 +24718,18 @@ MonoBehaviour:
         - "Fine.  I don\u2019t blame you. "
         audioOvers: []
         options: []
+        onComplete:
+          m_PersistentCalls:
+            m_Calls: []
+          m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
   wand: {fileID: 0}
+  optionIndexMade: 0
 --- !u!1001 &2097114883
 Prefab:
   m_ObjectHideFlags: 0
@@ -25132,6 +25307,7 @@ MonoBehaviour:
   paragraph: []
   canStartParagraph: 0
   canRepeat: 0
+  inThisNote: 0
   finished: 0
   audioSource: {fileID: 0}
   voiceOvers: []
@@ -25161,6 +25337,11 @@ MonoBehaviour:
         - '...  What a good baby. '
         audioOvers: []
         options: []
+        onComplete:
+          m_PersistentCalls:
+            m_Calls: []
+          m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
     - content: The way out?
       paragraph:
         noNeedCondition: 1
@@ -25172,7 +25353,18 @@ MonoBehaviour:
           without help. And I\u2019m here definitely longer than you are. "
         audioOvers: []
         options: []
+        onComplete:
+          m_PersistentCalls:
+            m_Calls: []
+          m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
   wand: {fileID: 0}
+  optionIndexMade: 0
 --- !u!1 &2134445919 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 26d83eaea8bc70b45b022f19e1bba1e2,

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [System.Serializable]
 public class Paragraph
@@ -12,6 +13,8 @@ public class Paragraph
     public List<string> texts;
     public List<AudioClip> audioOvers;
     public List<DialogueOption> options;
+    public UnityEvent onComplete;
+    
 }
 
 [System.Serializable]
@@ -31,6 +34,7 @@ public class Note : MonoBehaviour {
     public List<string> paragraph;
     public bool canStartParagraph = true;
     public bool canRepeat;
+    public bool inThisNote;
     public bool finished;
     protected int paragraphIndex;
     protected bool originalFinished;
@@ -60,6 +64,7 @@ public class Note : MonoBehaviour {
 
     public virtual string nextLine()
     {
+        inThisNote = true;
         if (paragraphIndex >= paragraph.Count-1)
         {
             paragraphIndex = -1;

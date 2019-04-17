@@ -12,6 +12,9 @@ public class FrogPicture : Trigger {
     protected bool originalIsActive;
     private Animator frogAnim;
 
+    public OpeningEveNote gotExlixirTy;
+
+
     public override void Start()
     {
         base.Start();
@@ -94,5 +97,19 @@ public class FrogPicture : Trigger {
         yield return new WaitForSeconds(8);
         frogAnim.ResetTrigger("openeyes");
         frogAnim.SetTrigger("sleep");
+    }
+
+    public IEnumerator openEyes(int waitingTime)
+    {
+        frogAnim.ResetTrigger("sleep");
+        frogAnim.SetTrigger("openeyes");
+        yield return new WaitForSeconds(waitingTime);
+        frogAnim.ResetTrigger("openeyes");
+        frogAnim.SetTrigger("sleep");
+    }
+
+    public void TriggerSecretDialogue()
+    {
+        frogNote = gotExlixirTy;
     }
 }

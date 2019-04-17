@@ -20,6 +20,8 @@ public class OpeningEveNote : Note {
     protected List<DialogueOption> tempOptions;
     public Wand wand;
 
+    public int optionIndexMade;
+
     public override void Start()
     {
         base.Start();
@@ -35,6 +37,7 @@ public class OpeningEveNote : Note {
 
     public virtual string MakeSelection(int optionIndex)
     {
+        optionIndexMade = optionIndex;
         DialogueOption d = tempOptions[optionIndex];
         tempParagraph = d.paragraph;
         tempTexts = d.paragraph.texts;
@@ -48,12 +51,22 @@ public class OpeningEveNote : Note {
         return nextLine();
     }
 
+    public void InvokeOnComplete()
+    {
+        if (tempParagraph != null && tempParagraph.onComplete != null)
+        {
+            print("Invoke on complete.");
+            tempParagraph.onComplete.Invoke();
+        }
+    }
+
     public override string nextLine()
     {
 
         int hasGua = PlayerPrefs.GetInt("HasGua");
         int foundThisDiary = PlayerPrefs.GetInt("FoundThisDiary");
         int diaryCount = PlayerPrefs.GetInt("DiaryAmount");
+        inThisNote = true;
 
         if (primaryParagraghs.Count > 0)  // Using primary paragraphs
         {
