@@ -800,31 +800,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224326265762617490, guid: fe370290a88187b45b1bbe35ba008cdb,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224326265762617490, guid: fe370290a88187b45b1bbe35ba008cdb,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.00000166893
-      objectReference: {fileID: 0}
-    - target: {fileID: 114467824315005118, guid: fe370290a88187b45b1bbe35ba008cdb,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114467824315005118, guid: fe370290a88187b45b1bbe35ba008cdb,
-        type: 2}
-      propertyPath: m_FontData.m_MinSize
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114467824315005118, guid: fe370290a88187b45b1bbe35ba008cdb,
-        type: 2}
-      propertyPath: m_FontData.m_Alignment
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe370290a88187b45b1bbe35ba008cdb, type: 2}
   m_IsPrefabAsset: 0
@@ -18907,6 +18882,11 @@ Prefab:
       objectReference: {fileID: 104538698}
     - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
         type: 2}
+      propertyPath: HTUI
+      value: 
+      objectReference: {fileID: 1785463447}
+    - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
       propertyPath: Marker
       value: 
       objectReference: {fileID: 486360174}
@@ -18930,12 +18910,6 @@ Prefab:
       propertyPath: Marker
       value: 
       objectReference: {fileID: 486360174}
-    - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
-        type: 2}
-      propertyPath: CanNotAOrB
-      value: 
-      objectReference: {fileID: 21300000, guid: 4b8ecb80187004c4b87dda422ba2fd92,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
   m_IsPrefabAsset: 0
@@ -21448,6 +21422,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46273fc06c47d94599f05044d604991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1785463447 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1043355926542984, guid: fe370290a88187b45b1bbe35ba008cdb,
+    type: 2}
+  m_PrefabInternal: {fileID: 104538697}
 --- !u!1 &1794392872 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 9723911408653ae428b6f6c19f76ca50,
