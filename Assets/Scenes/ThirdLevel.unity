@@ -22086,6 +22086,11 @@ Prefab:
       propertyPath: triggees.Array.data[1]
       value: 
       objectReference: {fileID: 1528041992}
+    - target: {fileID: 114825691408906222, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: desiredType
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed8ffc2a07a32d04b8a8301c75b85638, type: 2}
   m_IsPrefabAsset: 0
@@ -22372,7 +22377,7 @@ Prefab:
     - target: {fileID: 114720609831645058, guid: 4b42e93043cb5504c9a27c43b2121c0d,
         type: 2}
       propertyPath: loadingLvlIndex
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1944386082701492, guid: 4b42e93043cb5504c9a27c43b2121c0d, type: 2}
       propertyPath: m_TagString
