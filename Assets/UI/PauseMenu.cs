@@ -19,10 +19,12 @@ public class PauseMenu : MonoBehaviour {
         if (isPaused)
         {
             ActivateMenu();
+            GameObject.Find("DialoguePanel").SetActive(false);
         }
         else
         {
             DeactivateMenu();
+            GameObject.Find("DialoguePanel").SetActive(true);
         }
     }
 	

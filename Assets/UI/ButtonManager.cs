@@ -26,4 +26,10 @@ public class ButtonManager : MonoBehaviour {
     {
         SettingPanel.SetActive(false);
     }
+
+    public void Restart()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
+    }
 }
