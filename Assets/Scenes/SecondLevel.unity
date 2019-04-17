@@ -3038,65 +3038,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: b6b3335a3c0b56841a93d6cd6c805a83,
     type: 3}
   m_PrefabInternal: {fileID: 2038548440}
---- !u!1 &225092305 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1352563551460422, guid: 0771f8c58755eb2489de7c50035fc6ea,
-    type: 2}
-  m_PrefabInternal: {fileID: 358639481}
---- !u!114 &225092310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 225092305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdcd06815c47d30489f70df42db56a48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frustum:
-    settings:
-      enableVolumes: 1
-      enableVolumesTextureMask: 1
-      enableVolumesNoiseMask: 1
-      enableDirectionalLights: 1
-      enableDirectionalLightsShadows: 1
-      enableSpotLights: 1
-      enableSpotLightsShadows: 1
-      enablePointLights: 1
-      enablePointLightsShadows: 1
-      enableLightsCookies: 1
-      enableOcclusionCulling: 1
-      occlusionCullingAccuracy: 2
-      enableTemporalReprojection: 1
-      temporalReprojectionFactor: 0.9
-      resolution: {x: 320, y: 176, z: 256}
-      farClipPlaneDistance: 50
-      density: 0.06
-      anisotropy: 0.5
-      color: {r: 0.25, g: 0.21105896, b: 0.13521901, a: 1}
-      colorStrength: 0.03
-    _computeMaximumDepthComputeShader: {fileID: 7200000, guid: a5d52c8a306e8b746ab60b306575aa3e,
-      type: 3}
-    _processOcclusionMapShader: {fileID: 4800000, guid: b9b5b0990ea6cfa4d96c89a9c1cec3e9,
-      type: 3}
-    _computeDataComputeShader: {fileID: 7200000, guid: 971d5d94be5bebc44aa6d832c17f5e62,
-      type: 3}
-    _computeAccumulationComputeShader: {fileID: 7200000, guid: 41ac7d79af1f9614ebe54df4f30ac3e0,
-      type: 3}
-  applyAsPostProcess: 1
-  computeMaximumDepthComputeShader: {fileID: 7200000, guid: a5d52c8a306e8b746ab60b306575aa3e,
-    type: 3}
-  processOcclusionMapShader: {fileID: 4800000, guid: b9b5b0990ea6cfa4d96c89a9c1cec3e9,
-    type: 3}
-  computeDataComputeShader: {fileID: 7200000, guid: 971d5d94be5bebc44aa6d832c17f5e62,
-    type: 3}
-  computeAccumulationComputeShader: {fileID: 7200000, guid: 41ac7d79af1f9614ebe54df4f30ac3e0,
-    type: 3}
-  postProcessShader: {fileID: 4800000, guid: 50255fa344dbd814c910fdafc5692b09, type: 3}
-  blueNoiseTexturesArray: {fileID: 18700000, guid: 518b8337a0340444aa49dd0780efa9c2,
-    type: 2}
-  _hasBeenAssigned: 1
 --- !u!4 &239444218 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 1a7c170fa2e72ec489f11372c75120fb,
@@ -4497,11 +4438,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114037392819008030, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
+      propertyPath: Marker
+      value: 
+      objectReference: {fileID: 1853769897}
     - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
         type: 2}
       propertyPath: distanceIndicator
       value: 
       objectReference: {fileID: 742079309}
+    - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
+      propertyPath: heatText
+      value: 
+      objectReference: {fileID: 1853769899}
     - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
         type: 2}
       propertyPath: Marker
@@ -4512,30 +4463,16 @@ Prefab:
       propertyPath: dialogueObj
       value: 
       objectReference: {fileID: 1853769898}
-    - target: {fileID: 114037392819008030, guid: 0771f8c58755eb2489de7c50035fc6ea,
-        type: 2}
-      propertyPath: Marker
-      value: 
-      objectReference: {fileID: 1853769897}
-    - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
-        type: 2}
-      propertyPath: heatText
-      value: 
-      objectReference: {fileID: 1853769899}
-    - target: {fileID: 1499582044198586, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
-        type: 2}
-      propertyPath: diaryPanelObj
-      value: 
-      objectReference: {fileID: 977058590}
     - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
         type: 2}
       propertyPath: selectionObj
       value: 
       objectReference: {fileID: 1853769901}
+    - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
+      propertyPath: diaryPanelObj
+      value: 
+      objectReference: {fileID: 977058590}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
   m_IsPrefabAsset: 0
@@ -9198,37 +9135,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: 47a9c7ffdd987f0428e2d32aca622965,
     type: 3}
   m_PrefabInternal: {fileID: 982165731}
---- !u!84 &715723284
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 256
-  m_Height: 256
-  m_AntiAliasing: 1
-  m_DepthFormat: 0
-  m_ColorFormat: 11
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &718739545
 Prefab:
   m_ObjectHideFlags: 0
@@ -14000,7 +13906,7 @@ MonoBehaviour:
   overrideColor: 0
   overridingColor: {r: 0.9999, g: 0.9999, b: 0.9999, a: 0.9999}
   useShadow: 1
-  shadowMapRenderTexture: {fileID: 715723284}
+  shadowMapRenderTexture: {fileID: 1987025640}
   useCookie: 1
   cookieMapRenderTexture: {fileID: 0}
   enableOutOfPhaseColor: 0
@@ -28262,16 +28168,15 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114492459553682914, guid: fe370290a88187b45b1bbe35ba008cdb,
+    - target: {fileID: 224617633476247310, guid: fe370290a88187b45b1bbe35ba008cdb,
         type: 2}
-      propertyPath: m_Text
-      value: '
-
-'
+      propertyPath: m_SizeDelta.x
+      value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 1526044823194624, guid: fe370290a88187b45b1bbe35ba008cdb, type: 2}
-      propertyPath: m_IsActive
-      value: 1
+    - target: {fileID: 224617633476247310, guid: fe370290a88187b45b1bbe35ba008cdb,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe370290a88187b45b1bbe35ba008cdb, type: 2}
@@ -29970,6 +29875,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: 47a9c7ffdd987f0428e2d32aca622965,
     type: 3}
   m_PrefabInternal: {fileID: 1984601553}
+--- !u!84 &1987025640
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 256
+  m_Height: 256
+  m_AntiAliasing: 1
+  m_DepthFormat: 0
+  m_ColorFormat: 11
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &1991940162
 Prefab:
   m_ObjectHideFlags: 0
