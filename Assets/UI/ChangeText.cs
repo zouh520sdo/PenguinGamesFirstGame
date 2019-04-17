@@ -16,6 +16,7 @@ public class ChangeText : MonoBehaviour {
 	public void isONB()
     {
         Btn.GetComponentInChildren<Text>().fontStyle = FontStyle.Bold;
+        Btn.GetComponentInChildren<Text>().color = Color.white;
     } 
 
     public void NotOnB()
