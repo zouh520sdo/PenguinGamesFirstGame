@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 20930151798751822}
   - component: {fileID: 81672869185107626}
   - component: {fileID: 124084171212641266}
+  - component: {fileID: 114853682700646426}
   m_Layer: 0
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
@@ -97,7 +98,7 @@ GameObject:
   - component: {fileID: 114724560050559394}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -169,7 +170,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1499582044198586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -6.18, z: -53.59}
+  m_LocalPosition: {x: -43.43, y: -2.411, z: -11.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4392959470864310}
@@ -630,7 +631,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59694ddba77b3a64db985ad75764e41b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heat: 250
+  isPaused: 0
+  heat: 210
   minHeat: 0
   maxHeat: 500
   wandRange: 30
@@ -641,17 +643,78 @@ MonoBehaviour:
   distanceIndicator: {fileID: 0}
   handAnimator: {fileID: 95521358119643030}
   wandEffect: {fileID: 198541533734220670}
+  gameManager: {fileID: 0}
   originalHeat: 0
   originalPos: {x: 0, y: 0, z: 0}
-  Normal: {fileID: 21300000, guid: da86f5aafdef29848befd13cca5b2fd7, type: 3}
-  CanInreract: {fileID: 21300000, guid: 513771f3aa964bf4985572a0d16ee19e, type: 3}
-  CanAOrB: {fileID: 21300000, guid: ffa7afc1397bd4748ad8092918f395ca, type: 3}
-  CanNotAOrB: {fileID: 21300000, guid: 8e7165b7eeaeaa646a753ce837837eef, type: 3}
-  Aing: {fileID: 21300000, guid: f8634c853ff66d74580bf3060c0c626c, type: 3}
-  Ring: {fileID: 21300000, guid: 93d322fc90d3b5b469e4c28f4e10e309, type: 3}
-  Picking: {fileID: 21300000, guid: e565ef5c5a3ae1a4c964bb7153479dec, type: 3}
+  heatText: {fileID: 0}
+  Normal: {fileID: 21300000, guid: 3d3ef2b9070b304489a44bbad39200d7, type: 3}
+  CanInreract: {fileID: 21300000, guid: a5f181ca2a37a5e4a9ce73ca1483df6e, type: 3}
+  CanAOrB: {fileID: 21300000, guid: 3bcde25ecc2aeb4498e202bc41f77471, type: 3}
+  CanNotAOrB: {fileID: 21300000, guid: 848f529538ee6c44e93dc12ad6ece3d1, type: 3}
+  Aing: {fileID: 21300000, guid: fbe422e57d514e14b85a3f0adc1cf851, type: 3}
+  Ring: {fileID: 21300000, guid: fbe422e57d514e14b85a3f0adc1cf851, type: 3}
+  Picking: {fileID: 21300000, guid: b2ac40f2c3e4b7343a542351ea3f9047, type: 3}
   Marker: {fileID: 0}
   dialogueObj: {fileID: 0}
+  note: {fileID: 0}
+  fpc: {fileID: 0}
+  selectionObj: {fileID: 0}
+  diaryPanelObj: {fileID: 0}
+  NLT: {fileID: 0}
+--- !u!114 &114853682700646426
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1352563551460422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcd06815c47d30489f70df42db56a48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frustum:
+    settings:
+      enableVolumes: 1
+      enableVolumesTextureMask: 1
+      enableVolumesNoiseMask: 1
+      enableDirectionalLights: 1
+      enableDirectionalLightsShadows: 1
+      enableSpotLights: 1
+      enableSpotLightsShadows: 1
+      enablePointLights: 1
+      enablePointLightsShadows: 1
+      enableLightsCookies: 1
+      enableOcclusionCulling: 1
+      occlusionCullingAccuracy: 2
+      enableTemporalReprojection: 1
+      temporalReprojectionFactor: 0.9
+      resolution: {x: 160, y: 88, z: 128}
+      farClipPlaneDistance: 50
+      density: 0.06
+      anisotropy: 0.5
+      color: {r: 0.25, g: 0.1980093, b: 0.12750244, a: 1}
+      colorStrength: 0.03
+    _computeMaximumDepthComputeShader: {fileID: 7200000, guid: a5d52c8a306e8b746ab60b306575aa3e,
+      type: 3}
+    _processOcclusionMapShader: {fileID: 4800000, guid: b9b5b0990ea6cfa4d96c89a9c1cec3e9,
+      type: 3}
+    _computeDataComputeShader: {fileID: 7200000, guid: 971d5d94be5bebc44aa6d832c17f5e62,
+      type: 3}
+    _computeAccumulationComputeShader: {fileID: 7200000, guid: 41ac7d79af1f9614ebe54df4f30ac3e0,
+      type: 3}
+  applyAsPostProcess: 1
+  computeMaximumDepthComputeShader: {fileID: 7200000, guid: a5d52c8a306e8b746ab60b306575aa3e,
+    type: 3}
+  processOcclusionMapShader: {fileID: 4800000, guid: b9b5b0990ea6cfa4d96c89a9c1cec3e9,
+    type: 3}
+  computeDataComputeShader: {fileID: 7200000, guid: 971d5d94be5bebc44aa6d832c17f5e62,
+    type: 3}
+  computeAccumulationComputeShader: {fileID: 7200000, guid: 41ac7d79af1f9614ebe54df4f30ac3e0,
+    type: 3}
+  postProcessShader: {fileID: 4800000, guid: 50255fa344dbd814c910fdafc5692b09, type: 3}
+  blueNoiseTexturesArray: {fileID: 18700000, guid: 518b8337a0340444aa49dd0780efa9c2,
+    type: 2}
+  _hasBeenAssigned: 1
 --- !u!114 &114891503857854534
 MonoBehaviour:
   m_ObjectHideFlags: 1
