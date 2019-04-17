@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour {
     public GameObject secretScroll;
 
 
+    public bool noNeedToTriggerOpeningAndEnding;
+
+
     private void Awake()
     {
         tag = "GameManager";
@@ -136,7 +139,7 @@ public class GameManager : MonoBehaviour {
 
     public void StartOpeningNote()
     {
-        if (wand.note != openingNote)
+        if (wand.note != openingNote && !noNeedToTriggerOpeningAndEnding)
         {
             fpc.enabled = false;
             wand.note = openingNote;
@@ -146,7 +149,7 @@ public class GameManager : MonoBehaviour {
 
     public void StartEndingNote()
     {
-        if (wand.note != endingNote)
+        if (wand.note != endingNote && !noNeedToTriggerOpeningAndEnding)
         {
             fpc.enabled = false;
             wand.note = endingNote;
