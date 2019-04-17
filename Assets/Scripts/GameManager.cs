@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour {
     public Wand wand;
     public FirstPersonController fpc;
     public Diary secretDairy;
+    public GameObject secretScroll;
 
 
     private void Awake()
@@ -48,6 +49,18 @@ public class GameManager : MonoBehaviour {
             else
             {
                 secretDairy.gameObject.SetActive(false);
+            }
+        }
+
+        if (secretScroll)
+        {
+            if (GetHasDua() == 1)
+            {
+                secretScroll.SetActive(true);
+            }
+            else
+            {
+                secretScroll.SetActive(false);
             }
         }
     }
