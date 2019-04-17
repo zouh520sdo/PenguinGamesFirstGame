@@ -10,6 +10,7 @@ public class Paragraph
     public int needDiaryAmount;
     public int hasGua;
     public int foundThisDiary;
+    [TextArea]
     public List<string> texts;
     public List<AudioClip> audioOvers;
     public List<DialogueOption> options;
