@@ -22096,6 +22096,149 @@ Prefab:
       propertyPath: frogAnim
       value: 
       objectReference: {fileID: 1562993015}
+    - target: {fileID: 114321680052567470, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: paragraph.Array.data[0]
+      value: 'Frog:
+
+        ...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114321680052567470, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: paragraph.Array.data[1]
+      value: 'Frog:
+
+        Go ahead.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114550051165259016, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[0]
+      value: 'Frog:
+
+        ...K...kwark!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114550051165259016, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[1]
+      value: 'Frog:
+
+        Hello? Can you hear me? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114550051165259016, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[3]
+      value: 'Frog:
+
+        Good. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114550051165259016, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[4]
+      value: 'Frog:
+
+        Give me that piece of paper.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114550051165259016, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[6]
+      value: "Frog:\n\u2026 Black Cloak\u2026 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114550051165259016, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[7]
+      value: 'Frog:
+
+        Who are you? How did you find this? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114563558990503920, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[0]
+      value: 'Frog:
+
+        Interesting. This paper has been treated with special poison. The person who
+        left this must have something to tell. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114563558990503920, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[1]
+      value: 'Frog:
+
+        ...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114563558990503920, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[2]
+      value: "Frog:\nHey. Hitte mage. Let\u2019s do a transaction."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114563558990503920, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[3]
+      value: 'Frog:
+
+        You bring me with you. And maybe I can show you the way out. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114310577379991870, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[0]
+      value: 'Frog:
+
+        Just... do me a favor. Will you?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702276028284112, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[0]
+      value: "Frog:\n\u2026 *sigh* "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702276028284112, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[1]
+      value: "Frog:\nYou need to give me that Elixir first. I can\u2019t do anything"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114079425509225090, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[0]
+      value: 'Frog:
+
+        Thank you. Now stands still... '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114079425509225090, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[1]
+      value: 'Frog:
+
+        Kwark. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114079425509225090, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[2]
+      value: "Frog:\nI\u2019m in your wand. I can see what you see. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114079425509225090, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[3]
+      value: 'Frog:
+
+        We are on the same side now. Nice to meet you. Hitte mage. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114691923489197546, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[0]
+      value: 'Frog:
+
+        Kwark. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114691923489197546, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[1]
+      value: "Frog:\nI\u2019m in your wand. I can see what you see. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114691923489197546, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[2]
+      value: 'Frog:
+
+        We are on the same side now. Nice to meet you. Hitte mage. '
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed8ffc2a07a32d04b8a8301c75b85638, type: 2}
   m_IsPrefabAsset: 0
@@ -22834,19 +22977,24 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[0]
-      value: 'Welcome to the Elixir Lab. '
+      value: 'Eve:
+
+        Welcome to the Elixir Lab. '
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[1]
-      value: 'The Elixir Lab is a department directly under the Association. Due to
-        the level of importance and operation difficulty, only mages with certain
-        magic objects can choose to work in the Elixir Lab. '
+      value: 'Eve:
+
+        The Elixir Lab is a department directly under the Association. Due to the
+        level of importance and operation difficulty, only mages with certain magic
+        objects can choose to work in the Elixir Lab. '
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[0]
-      value: "Spectacular. You\u2019ve proved your harmless to Great Souhait Union."
+      value: "Eve:\nSpectacular. You\u2019ve proved your harmless to Great Souhait
+        Union."
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -22861,13 +23009,15 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[2]
-      value: 'Hitte Staff is one of the permitted magic objects. '
+      value: 'Eve:
+
+        Hitte Staff is one of the permitted magic objects. '
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[3]
-      value: "Enjoy your experience here, examinee Adam Brown. Try not to break anything\u2026
-        as anything can be something surprising here."
+      value: "Eve:\nEnjoy your experience here, examinee Adam Brown. Try not to break
+        anything\u2026 as anything can be something surprising here."
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -22903,25 +23053,33 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretParagraphs.Array.data[0]
-      value: 'Welcome to the Elixir Lab. '
+      value: 'Eve:
+
+        Welcome to the Elixir Lab. '
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretParagraphs.Array.data[1]
-      value: 'The Elixir Lab is a department directly under the Association. Due to
-        the level of importance and operation difficulty, only mages with certain
-        magic objects can choose to work in the Elixir Lab. '
+      value: 'Eve:
+
+        The Elixir Lab is a department directly under the Association. Due to the
+        level of importance and operation difficulty, only mages with certain magic
+        objects can choose to work in the Elixir Lab. '
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretParagraphs.Array.data[2]
-      value: 'Hitte Staff is one of the permitted magic objects. '
+      value: 'Eve:
+
+        Hitte Staff is one of the permitted magic objects. '
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretParagraphs.Array.data[3]
-      value: 'Enjoy your experience here, examinee Adam Brown. Try not to approach
-        anything unrelated to the test. You would not like to get yourself in danger. '
+      value: 'Eve:
+
+        Enjoy your experience here, examinee Adam Brown. Try not to approach anything
+        unrelated to the test. You would not like to get yourself in danger. '
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -22971,23 +23129,26 @@ Prefab:
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretParagraphs.Array.data[0]
-      value: "Spectacular. You\u2019ve proved your harmless to Great Souhait Union. "
+      value: "Eve:\nSpectacular. You\u2019ve proved your harmless to Great Souhait
+        Union. "
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretParagraphs.Array.data[1]
-      value: "\u2026 Seems like you\u2019ve made a new friend. "
+      value: "Eve:\n\u2026 Seems like you\u2019ve made a new friend. "
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretParagraphs.Array.data[2]
-      value: "You can bring it if you would like. It\u2019s not formally restricted. "
+      value: "Eve:\nYou can bring it if you would like. It\u2019s not formally restricted. "
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretParagraphs.Array.data[3]
-      value: 'If not, you can also just drop it somewhere. I will deal with it during
-        your transportation. '
+      value: 'Eve:
+
+        If not, you can also just drop it somewhere. I will deal with it during your
+        transportation. '
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}

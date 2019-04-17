@@ -49294,50 +49294,64 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[0]
-      value: Welcome to Great Souhait Union.
+      value: 'Secret Voice:
+
+        Welcome to Great Souhait Union.'
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[1]
-      value: We have read through your application files and approved your qualifications
-        being part of us.
+      value: 'Secret Voice:
+
+        We have read through your application files and approved your qualifications
+        being part of us.'
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[2]
-      value: Great Souhait Union is the greatest magic union in the world.
+      value: 'Secret Voice:
+
+        Great Souhait Union is the greatest magic union in the world.'
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[3]
-      value: Upon your entrance,
+      value: 'Secret Voice:
+
+        Upon your entrance,'
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[0]
-      value: "Very good. Now you\u2019ve passed your first test. Yet - as you may
-        know - we\u2019ve prepared a few more test rooms. "
+      value: "Eve:\nVery good. Now you\u2019ve passed your first test. Yet - as you
+        may know - we\u2019ve prepared a few more test rooms. "
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[1]
-      value: Just for you, examinee Adam Brown.
+      value: 'Eve:
+
+        Just for you, examinee Adam Brown.'
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[2]
-      value: We are looking forward to your performance in the next room.
+      value: 'Eve:
+
+        We are looking forward to your performance in the next room.'
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[3]
-      value: "It\u2019s all for the future of Great Souhait Union... "
+      value: "Eve:\nIt\u2019s all for the future of Great Souhait Union... "
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[4]
-      value: you will be eternally protected by the Association and will have the
-        power to use magic with your own magic object.
+      value: 'Secret Voice:
+
+        you will be eternally protected by the Association and will have the power
+        to use magic with your own magic object.'
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -49347,14 +49361,18 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[5]
-      value: 'As stipulated by law, all newcomers to Great Souhait Union are required
-        to take Ability Test before entrance to be fully aware of the basic principles
+      value: 'Secret Voice:
+
+        As stipulated by law, all newcomers to Great Souhait Union are required to
+        take Ability Test before entrance to be fully aware of the basic principles
         and prove their capabilities of magic. '
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[6]
-      value: 'There will be four covenants -- '
+      value: 'Secret Voice:
+
+        There will be four covenants -- '
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -49434,33 +49452,43 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[7]
-      value: There will be four covenants -- Loyalty,
+      value: 'Secret Voice:
+
+        There will be four covenants -- Loyalty,'
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[8]
-      value: There will be four covenants -- Loyalty, Peace,
+      value: 'Secret Voice:
+
+        There will be four covenants -- Loyalty, Peace,'
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[9]
-      value: 'There will be four covenants -- Loyalty, Peace, Sincerity and Love. '
+      value: 'Secret Voice:
+
+        There will be four covenants -- Loyalty, Peace, Sincerity and Love. '
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[10]
-      value: 'These covenants will be finished through your test progress. '
+      value: 'Secret Voice:
+
+        These covenants will be finished through your test progress. '
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[11]
-      value: My name is Eve. I will be your personal test guide to ensure the test
-        is conducted correctly and safely.
+      value: 'Eve:
+
+        My name is Eve. I will be your personal test guide to ensure the test is conducted
+        correctly and safely.'
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[12]
-      value: "I\u2019m sure we will have a good time, examinee - Adam Brown. "
+      value: "Eve:\nI\u2019m sure we will have a good time, examinee - Adam Brown. "
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}

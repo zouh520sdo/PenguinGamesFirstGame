@@ -9,6 +9,7 @@ public class OpeningEveNote : Note {
     public List<AudioClip> voiceOvers;
 
     public int diaryAmountToTrigger;
+    [TextArea]
     public List<string> secretParagraphs;
     public List<AudioClip> secretVoiceOvers;
 
