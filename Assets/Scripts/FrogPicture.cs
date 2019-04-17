@@ -63,6 +63,12 @@ public class FrogPicture : Trigger {
                     wand.note = frogNote;
                     wand.SetDialogueText(frogNote.nextLine());
 
+                    if (gotExlixirTy == frogNote)
+                    {
+                        frogAnim.gameObject.SetActive(false);
+                        GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SetHasGua();
+                    }
+
                     activateTriggees();
                     // May need to update dialogue
 
