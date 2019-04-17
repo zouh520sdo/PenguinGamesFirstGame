@@ -105,6 +105,13 @@ public class GameManager : MonoBehaviour {
             SetFoundThisDiary();
             SetHasGua();
         }
+
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            ResetDiaryAmount();
+            ResetFoundThisDiary();
+            ResetHasGua();
+        }
     }
 
     public void SaveGame()
