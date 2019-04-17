@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class OpeningEveNote : Note {
+public class OpeningEveNote : Note
+{
 
     public AudioSource audioSource;
     public List<AudioClip> voiceOvers;
@@ -78,6 +79,7 @@ public class OpeningEveNote : Note {
                     if (p.noNeedCondition || (hasGua == p.hasGua && foundThisDiary == p.foundThisDiary && diaryCount >= p.needDiaryAmount))
                     {
                         tempParagraph = p;
+                        print(tempParagraph);
                         tempTexts = p.texts;
                         tempVoiceOvers = p.audioOvers;
                         tempOptions = p.options;
@@ -85,6 +87,8 @@ public class OpeningEveNote : Note {
                     }
                 }
             }
+
+            
 
             if (paragraphIndex >= tempTexts.Count - 1)
             {

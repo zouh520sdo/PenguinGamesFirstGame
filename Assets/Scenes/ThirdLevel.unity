@@ -828,7 +828,7 @@ Prefab:
     - target: {fileID: 224733596207418584, guid: fe370290a88187b45b1bbe35ba008cdb,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224617633476247310, guid: fe370290a88187b45b1bbe35ba008cdb,
         type: 2}
@@ -865,7 +865,7 @@ Prefab:
     - target: {fileID: 224262473630662440, guid: fe370290a88187b45b1bbe35ba008cdb,
         type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 224071939179456528, guid: fe370290a88187b45b1bbe35ba008cdb,
         type: 2}
@@ -22238,6 +22238,11 @@ Prefab:
       value: 'Frog:
 
         We are on the same side now. Nice to meet you. Hitte mage. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114550051165259016, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: primaryParagraghs.Array.data[0].noNeedCondition
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed8ffc2a07a32d04b8a8301c75b85638, type: 2}
