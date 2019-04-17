@@ -45,6 +45,7 @@ public class FrogSecretTrigger : Trigger {
             if (doFavorNote.optionIndexMade == 0 && doFavorNote.finished && frogPicture.isActive)
             {
                 note = gotExlixir;
+                gameManager.SetHasGua();
             }
             if (doFavorNote.optionIndexMade == 0 && doFavorNote.finished && !frogPicture.isActive)
             {
