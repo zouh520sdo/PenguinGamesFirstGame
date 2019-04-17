@@ -30,6 +30,7 @@ public class Wand : MonoBehaviour {
 
     // For heat UI
     public Text heatText;
+    public GameObject HTUI;
 
     //FOR MARKER
     public Sprite Normal;
@@ -104,6 +105,7 @@ public class Wand : MonoBehaviour {
             dialoguePanel.gameObject.SetActive(false);
             dialogue.text = "";
         }
+        HTUI.SetActive(false);
     }
 
     // Use this for initialization
@@ -127,6 +129,7 @@ public class Wand : MonoBehaviour {
             }
         }
         Marker.sprite = Normal;
+        HTUI.SetActive(false);
         wandEffect.gameObject.SetActive(false);
 
         if (!NLT)
@@ -293,6 +296,7 @@ public class Wand : MonoBehaviour {
         {
             distanceIndicator.transform.position = pickable.transform.position;
             Marker.sprite = Picking;
+            HTUI.SetActive(false);
             if (Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown("Fire1") || !pickable.isPickedUp)
             {
                 handAnimator.SetBool("IsCasting", false);
@@ -303,6 +307,7 @@ public class Wand : MonoBehaviour {
                 pickable.Drop(this);
                 pickable = null;
                 Marker.sprite = Normal;
+                HTUI.SetActive(false);
             }
         }
         else
@@ -410,10 +415,12 @@ public class Wand : MonoBehaviour {
                 if (hit.collider.gameObject.GetComponent<Wandable>() || hit.collider.gameObject.GetComponent<Pickable>())
                 {
                     Marker.sprite = CanInreract;
+                    HTUI.SetActive(false);
                 }
                 else
                 {
                     Marker.sprite = Normal;
+                    HTUI.SetActive(false);
                 }
 
                 if (wandable && wandable != hit.collider.gameObject.GetComponent<Wandable>())
@@ -428,6 +435,7 @@ public class Wand : MonoBehaviour {
                     if (wandable)
                     {
                         Marker.sprite = CanAOrB;
+                        HTUI.SetActive(false);
                         wandable.OnAiming();
                         // 
                         if (Input.GetButton("Fire1"))
@@ -442,6 +450,7 @@ public class Wand : MonoBehaviour {
                             }
                             absorbFrom(wandable);
                             Marker.sprite = Aing;
+                            HTUI.SetActive(true);
                         }
                         else if (Input.GetButton("Fire2"))
                         {
@@ -455,6 +464,7 @@ public class Wand : MonoBehaviour {
                             }
                             releaseTo(wandable);
                             Marker.sprite = Ring;
+                            HTUI.SetActive(true);
                         }
                         else
                         {
@@ -467,6 +477,7 @@ public class Wand : MonoBehaviour {
                     else
                     {
                         Marker.sprite = CanNotAOrB;
+                        HTUI.SetActive(false);
                         holdingTime = 0;
                     }
                 }
@@ -503,6 +514,7 @@ public class Wand : MonoBehaviour {
             else
             {
                 Marker.sprite = Normal;
+                HTUI.SetActive(false);
                 holdingTime = 0;
                 if (wandable != null)
                 {
