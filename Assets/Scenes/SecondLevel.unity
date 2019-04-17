@@ -4475,7 +4475,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4476881794122904, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -32.6
+      value: -48.85
       objectReference: {fileID: 0}
     - target: {fileID: 4476881794122904, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
       propertyPath: m_LocalRotation.x
@@ -6486,35 +6486,35 @@ Prefab:
     - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
         type: 2}
       propertyPath: paragraph.Array.size
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4091864963300368, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.07
       objectReference: {fileID: 0}
     - target: {fileID: 4091864963300368, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -12.47
+      value: -10.48
       objectReference: {fileID: 0}
     - target: {fileID: 4091864963300368, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3.69
       objectReference: {fileID: 0}
     - target: {fileID: 4091864963300368, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: -0.11439845
       objectReference: {fileID: 0}
     - target: {fileID: 4091864963300368, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.664965
       objectReference: {fileID: 0}
     - target: {fileID: 4091864963300368, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.7324884
       objectReference: {fileID: 0}
     - target: {fileID: 4091864963300368, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.09052781
       objectReference: {fileID: 0}
     - target: {fileID: 4091864963300368, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
       propertyPath: m_RootOrder
@@ -6545,16 +6545,22 @@ Prefab:
     - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
         type: 2}
       propertyPath: paragraph.Array.data[0]
-      value: "4/26/2256  \tYesterday Black Cloak came again. This time Jackie and
-        Kate were executed. And then they are like everyone else - thoughtless, dispirited,
-        like dispassionate dolls.  "
+      value: "     4/26/2256  \t      \n     Yesterday Black Cloak came again. This
+        time Jackie and Kate were executed. And then they are like everyone else -
+        thoughtless, dispirited, like dispassionate dolls.\n     I can\u2019t believe
+        that I\u2019m used to this. \n     Every green mage must be executed in certain
+        time after they are distributed to the workplace. In my case it is one week.
+        Works in greenhouse are always the easiest to learn. "
       objectReference: {fileID: 0}
     - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
         type: 2}
       propertyPath: paragraph.Array.data[1]
-      value: "\tI can\u2019t believe I\u2019m used to this.  \tEvery green mage must
-        be executed in certain time after they are distributed to the workplace. In
-        my case it is one week. Works in greenhouse are always the "
+      value: "     But Jackie, he was just 14. He\u2019s so young, so enthusiastic...
+        A day ago he was still talking to me about his poet dream. Now the only thing
+        in his head is to plant dragon jasmine. And plant. And plant.\r\n     Who
+        determines this? Must I be a farm manager because I\u2019m a hitte mage? Must
+        green mages be doing the most basic and tedious work just because they have
+        the least powerful magic objects? \r"
       objectReference: {fileID: 0}
     - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
         type: 2}
@@ -6574,6 +6580,18 @@ Prefab:
         type: 2}
       propertyPath: paragraph.Array.data[4]
       value: "objects?   \tIs it right? Are we on the right track? "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091864963300368, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -95.806
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091864963300368, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 11.126999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091864963300368, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 152.188
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
@@ -13942,7 +13960,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1038056495}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f01d29d88278f45458d99e6b5199e920, type: 3}
   m_Name: 
@@ -13951,7 +13969,7 @@ MonoBehaviour:
   overrideColor: 0
   overridingColor: {r: 0.9999, g: 0.9999, b: 0.9999, a: 0.9999}
   useShadow: 1
-  shadowMapRenderTexture: {fileID: 1869753354}
+  shadowMapRenderTexture: {fileID: 0}
   useCookie: 1
   cookieMapRenderTexture: {fileID: 0}
   enableOutOfPhaseColor: 0
@@ -28016,11 +28034,13 @@ Prefab:
     - target: {fileID: 114492459553682914, guid: fe370290a88187b45b1bbe35ba008cdb,
         type: 2}
       propertyPath: m_Text
-      value: 
+      value: '
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 1526044823194624, guid: fe370290a88187b45b1bbe35ba008cdb, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe370290a88187b45b1bbe35ba008cdb, type: 2}
@@ -28123,37 +28143,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: 47a9c7ffdd987f0428e2d32aca622965,
     type: 3}
   m_PrefabInternal: {fileID: 1868858226}
---- !u!84 &1869753354
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 256
-  m_Height: 256
-  m_AntiAliasing: 1
-  m_DepthFormat: 0
-  m_ColorFormat: 11
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &1870723452 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 13262d540b790ba499b9c88025e3b163,
@@ -31150,7 +31139,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2070412799}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b142c931e4f39c429a012dc68ba0659, type: 3}
   m_Name: 

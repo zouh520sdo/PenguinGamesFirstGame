@@ -27,6 +27,7 @@ public class Note : MonoBehaviour {
 
     public string note;
     public bool isInOption;
+    [TextArea]
     public List<string> paragraph;
     public bool canStartParagraph = true;
     public bool canRepeat;
