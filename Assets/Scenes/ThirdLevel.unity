@@ -887,6 +887,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 224445227960305376, guid: fe370290a88187b45b1bbe35ba008cdb,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe370290a88187b45b1bbe35ba008cdb, type: 2}
   m_IsPrefabAsset: 0
@@ -18773,6 +18778,11 @@ Transform:
   m_Father: {fileID: 185675915}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1562993015 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95143469765556228, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+    type: 2}
+  m_PrefabInternal: {fileID: 1924914893}
 --- !u!1 &1563391228 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 9723911408653ae428b6f6c19f76ca50,
@@ -22166,6 +22176,11 @@ Prefab:
       propertyPath: triggees.Array.data[1]
       value: 
       objectReference: {fileID: 1528041992}
+    - target: {fileID: 114333977036582828, guid: ed8ffc2a07a32d04b8a8301c75b85638,
+        type: 2}
+      propertyPath: frogAnim
+      value: 
+      objectReference: {fileID: 1562993015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed8ffc2a07a32d04b8a8301c75b85638, type: 2}
   m_IsPrefabAsset: 0

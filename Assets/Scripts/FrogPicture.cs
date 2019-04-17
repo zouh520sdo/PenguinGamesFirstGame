@@ -65,6 +65,7 @@ public class FrogPicture : Trigger {
 
                     if (gotExlixirTy == frogNote)
                     {
+                        frogAnim.gameObject.SetActive(false);
                         GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SetHasGua();
                     }
 
