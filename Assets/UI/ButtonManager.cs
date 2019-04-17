@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonManager : MonoBehaviour {
 
-    public GameObject SettingPanel;
+    //public GameObject SettingPanel;
 
 	public void NewGameBtn(string newGameLevel)
     {
@@ -19,17 +19,17 @@ public class ButtonManager : MonoBehaviour {
 
     public void SettingBtn()
     {
-        SettingPanel.SetActive(true);
+        //SettingPanel.SetActive(true);
     }
 
     public void BackBtn()
     {
-        SettingPanel.SetActive(false);
+       //SettingPanel.SetActive(false);
     }
 
-    public void Restart()
+    /*public void Restart()
     {
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
-    }
+    }*/
 }
