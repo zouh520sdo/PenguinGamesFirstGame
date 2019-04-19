@@ -361,25 +361,32 @@ public class Wand : MonoBehaviour {
                         dialogue.enabled = true;
                         dialogue.text = description.note;
 
-                        if (Input.GetButtonDown("Fire1") && description.canStartParagraph && description.paragraph.Count != 0)
+                        if (Input.GetButtonDown("Fire1") && description.canStartParagraph)
                         {
-                            fpc.enabled = false;
-                            note = description;
 
-                            if (typeof(Diary).IsAssignableFrom(note.GetType()))
-                            {
-                                dialoguePanel.gameObject.SetActive(false);
-                                dialogue.text = "";
-                                dialogue.enabled = false;
+                            if (description.paragraph.Count != 0) {
+                                fpc.enabled = false;
+                                note = description;
 
-                                gameManager.UpdateDiaryAmount();
-                                print("Got diary amount " + gameManager.GetDiaryAmount());
-                                diaryPanelObj.SetActive(true);
-                                diaryText.text = note.nextLine();
+                                if (typeof(Diary).IsAssignableFrom(note.GetType()))
+                                {
+                                    dialoguePanel.gameObject.SetActive(false);
+                                    dialogue.text = "";
+                                    dialogue.enabled = false;
+
+                                    gameManager.UpdateDiaryAmount();
+                                    print("Got diary amount " + gameManager.GetDiaryAmount());
+                                    diaryPanelObj.SetActive(true);
+                                    diaryText.text = note.nextLine();
+                                }
+                                else
+                                {
+                                    dialogue.text = note.nextLine();
+                                }
                             }
-                            else
+                            else  // Don't have paragraphs
                             {
-                                dialogue.text = note.nextLine();
+                                description.finished = true;
                             }
                         }
                     }

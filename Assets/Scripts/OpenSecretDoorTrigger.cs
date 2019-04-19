@@ -23,7 +23,6 @@ public class OpenSecretDoorTrigger : MonoBehaviour {
             if (secretNote.finished)
             {
                 isActive = true;
-                SceneManager.LoadScene(6);
             }
         }
 	}
