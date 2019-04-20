@@ -11,8 +11,6 @@ public class GameManager : MonoBehaviour {
     public EndingEveNote endingNote;
     public Wand wand;
     public FirstPersonController fpc;
-    public Diary secretDairy;
-    public GameObject secretScroll;
 
 
     public bool noNeedToTriggerOpeningAndEnding;
@@ -42,29 +40,6 @@ public class GameManager : MonoBehaviour {
             ResetDiaryAmount();
             ResetHasGua();
             ResetFoundThisDiary();
-        }
-
-        if (secretDairy)
-        {
-            if (GetHasDua() == 1) {
-                secretDairy.gameObject.SetActive(true);
-            }
-            else
-            {
-                secretDairy.gameObject.SetActive(false);
-            }
-        }
-
-        if (secretScroll)
-        {
-            if (GetHasDua() == 1)
-            {
-                secretScroll.SetActive(true);
-            }
-            else
-            {
-                secretScroll.SetActive(false);
-            }
         }
 
         if (!wand)
@@ -99,6 +74,7 @@ public class GameManager : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.C))
         {
+            ResetDiaryAmount();
             UpdateDiaryAmount();
             UpdateDiaryAmount();
             UpdateDiaryAmount();
@@ -107,6 +83,9 @@ public class GameManager : MonoBehaviour {
             UpdateDiaryAmount();
             SetFoundThisDiary();
             SetHasGua();
+            print("Diary amount " + GetDiaryAmount());
+            print("Found this diary " + GetFoundThisDiary());
+            print("Has Gua " + GetHasGua());
         }
 
         if (Input.GetKeyDown(KeyCode.V))
@@ -114,6 +93,9 @@ public class GameManager : MonoBehaviour {
             ResetDiaryAmount();
             ResetFoundThisDiary();
             ResetHasGua();
+            print("Diary amount " + GetDiaryAmount());
+            print("Found this diary " + GetFoundThisDiary());
+            print("Has Gua " + GetHasGua());
         }
     }
 
@@ -186,7 +168,7 @@ public class GameManager : MonoBehaviour {
         PlayerPrefs.SetInt("HasGua", 1);
         PlayerPrefs.Save();
     }
-    public int GetHasDua()
+    public int GetHasGua()
     {
         return PlayerPrefs.GetInt("HasGua");
     }

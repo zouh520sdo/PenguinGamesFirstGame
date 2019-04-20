@@ -16,23 +16,36 @@ public class OpenSecretDoorTrigger : MonoBehaviour {
         {
             secretNote = GetComponent<Note>();
         }
-
-        if (secretDoor)
-        {
-            secretDoor.SetActive(isActive);
-        }
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (secretNote && !secretNote.canStartParagraph)
+        if (secretNote)
         {
-            int foundDiaryAmount = PlayerPrefs.GetInt("FoundThisDiary");
+            int foundDiaryAmount = PlayerPrefs.GetInt("DiaryAmount");
 
-            if (foundDiaryAmount >= 6)
+            if (foundDiaryAmount >= 6 && !secretNote.canStartParagraph)
             {
                 secretNote.canStartParagraph = true;
+            }
+            if (foundDiaryAmount < 6 && secretNote.canStartParagraph)
+            {
+                secretNote.canStartParagraph = false;
+            }
+        }
+
+        if (movablePlatform)
+        {
+            int foundDiaryAmount = PlayerPrefs.GetInt("DiaryAmount");
+
+            if (foundDiaryAmount >= 5 && !movablePlatform.activeInHierarchy)
+            {
+                movablePlatform.SetActive(true);
+            }
+            if (foundDiaryAmount < 5 && movablePlatform.activeInHierarchy)
+            {
+                movablePlatform.SetActive(false);
             }
         }
 

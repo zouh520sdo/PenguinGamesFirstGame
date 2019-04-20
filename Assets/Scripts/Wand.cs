@@ -153,7 +153,7 @@ public class Wand : MonoBehaviour {
         {
             gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
             print("Diary amount " + gameManager.GetDiaryAmount());
-            print("Has gua " + gameManager.GetHasDua());
+            print("Has gua " + gameManager.GetHasGua());
             gameManager.ResetFoundThisDiary();
             print("Found this diary " + gameManager.GetFoundThisDiary());
         }

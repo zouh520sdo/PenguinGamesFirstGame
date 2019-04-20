@@ -26,7 +26,7 @@ public class FrogDiaryTrigger : MonoBehaviour {
 	void Update () {
 		if (!isActive)
         {
-            int hasGua = gameManager.GetHasDua();
+            int hasGua = gameManager.GetHasGua();
             if (hasGua != 0 && diary.getIsFinished()) 
             {
                 isActive = true;

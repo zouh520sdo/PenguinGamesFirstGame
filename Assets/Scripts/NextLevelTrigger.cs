@@ -11,6 +11,7 @@ public class NextLevelTrigger : MonoBehaviour {
     public int loadingLvlIndex;
     public GameManager gameManager;
     public FirstPersonController FPC;
+    public bool noNeedToTriggerOpeningAndEnding;
     protected Slider loadingSlider;
     protected AsyncOperation async;
 
@@ -28,14 +29,17 @@ public class NextLevelTrigger : MonoBehaviour {
         FPC.enabled = true;
 
         //StartCoroutine(ShowingLoadScreen());
-        gameManager.StartOpeningNote();
+        if (!noNeedToTriggerOpeningAndEnding)
+        {
+            gameManager.StartOpeningNote();
+        }
     }
 
     // Update is called once per frame
     void Update () {
         if (isActive)
         {
-            if (gameManager.endingNote.getIsFinished())
+            if (gameManager.endingNote.getIsFinished() || noNeedToTriggerOpeningAndEnding)
             {
                 isActive = false;
                 StartCoroutine(LoadingNextLevel(loadingLvlIndex));
@@ -50,7 +54,10 @@ public class NextLevelTrigger : MonoBehaviour {
             if (loadingScreenPanel)
             {
                 //loadingScreenPanel.SetActive(true);
-                gameManager.StartEndingNote();
+                if (!noNeedToTriggerOpeningAndEnding)
+                {
+                    gameManager.StartEndingNote();
+                }
                 isActive = true;
             }
         }
