@@ -17,7 +17,7 @@ public class NextLevelTrigger : MonoBehaviour {
     // Use this for initialization
     void Start () {
         loadingSlider = loadingScreenPanel.transform.Find("LoadingSlider").GetComponent<Slider>();
-        loadingScreenPanel.SetActive(true);
+        loadingScreenPanel.SetActive(false);
 
         // Find game manager
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
@@ -25,14 +25,14 @@ public class NextLevelTrigger : MonoBehaviour {
         {
             FPC = GameObject.FindGameObjectWithTag("Player").GetComponent<FirstPersonController>();
         }
+        FPC.enabled = true;
 
-        async = SceneManager.LoadSceneAsync(loadingLvlIndex);
-        async.allowSceneActivation = false;
-        StartCoroutine(ShowingLoadScreen());
+        //StartCoroutine(ShowingLoadScreen());
+        gameManager.StartOpeningNote();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
         if (isActive)
         {
             if (gameManager.endingNote.getIsFinished())
@@ -45,7 +45,7 @@ public class NextLevelTrigger : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && !isActive)
         {
             if (loadingScreenPanel)
             {
@@ -53,32 +53,33 @@ public class NextLevelTrigger : MonoBehaviour {
                 gameManager.StartEndingNote();
                 isActive = true;
             }
-            else
-            {
-                SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings);
-            }
         }
     }
 
+    /*
     IEnumerator ShowingLoadScreen ()
     {
+        
+    }
+    */
+
+    IEnumerator LoadingNextLevel (int lvl)
+    {
+        loadingScreenPanel.SetActive(true);
+        async = SceneManager.LoadSceneAsync(loadingLvlIndex);
+        async.allowSceneActivation = false;
         FPC.enabled = false;
+
         while (async.progress < 0.9f)
         {
             loadingSlider.value = async.progress;
             yield return null;
         }
-        loadingSlider.value = loadingSlider.maxValue;
-        loadingScreenPanel.SetActive(false);
-        FPC.enabled = true;
-        gameManager.StartOpeningNote();
-    }
 
-    IEnumerator LoadingNextLevel (int lvl)
-    {
+        loadingSlider.value = loadingSlider.maxValue;
+        //loadingScreenPanel.SetActive(false);
         while (!async.isDone)
         {
-            loadingSlider.value = async.progress;
             if (async.progress == 0.9f)
             {
                 loadingSlider.value = loadingSlider.maxValue;

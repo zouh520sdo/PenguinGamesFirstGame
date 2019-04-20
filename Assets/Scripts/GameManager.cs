@@ -66,6 +66,11 @@ public class GameManager : MonoBehaviour {
                 secretScroll.SetActive(false);
             }
         }
+
+        if (!wand)
+        {
+            wand = GameObject.FindGameObjectWithTag("Player").GetComponent<Wand>();
+        }
     }
     // Use this for initialization
     void Start () {
@@ -76,11 +81,6 @@ public class GameManager : MonoBehaviour {
             {
                 Debug.Log("[SaveLoadMenu] Start(): Warning! SaveLoadUtility not assigned!");
             }
-        }
-
-        if (!wand)
-        {
-            wand = GameObject.FindGameObjectWithTag("Player").GetComponent<Wand>();
         }
     }
 	

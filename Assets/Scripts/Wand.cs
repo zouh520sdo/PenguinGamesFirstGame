@@ -540,15 +540,11 @@ public class Wand : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.N))
         {
 
-            if (NLT && NLT.loadingScreenPanel)
+            if (NLT && NLT.loadingScreenPanel && !NLT.isActive)
             {
                 //loadingScreenPanel.SetActive(true);
                 NLT.gameManager.StartEndingNote();
                 NLT.isActive = true;
-            }
-            else
-            {
-                SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings);
             }
         }
     }
