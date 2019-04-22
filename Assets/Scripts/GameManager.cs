@@ -72,10 +72,25 @@ public class GameManager : MonoBehaviour {
             LoadGame();
         }
 
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C))  // Set 6 diary
         {
             ResetDiaryAmount();
             UpdateDiaryAmount();
+            UpdateDiaryAmount();
+            UpdateDiaryAmount();
+            UpdateDiaryAmount();
+            UpdateDiaryAmount();
+            UpdateDiaryAmount();
+            SetFoundThisDiary();
+            SetHasGua();
+            print("Diary amount " + GetDiaryAmount());
+            print("Found this diary " + GetFoundThisDiary());
+            print("Has Gua " + GetHasGua());
+        }
+
+        if (Input.GetKeyDown(KeyCode.X))  // Set 5 diary
+        {
+            ResetDiaryAmount();
             UpdateDiaryAmount();
             UpdateDiaryAmount();
             UpdateDiaryAmount();
