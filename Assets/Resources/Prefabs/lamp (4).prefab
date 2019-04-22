@@ -112,7 +112,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1478101753292002}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.507, z: 0.016}
+  m_LocalPosition: {x: 0, y: 0.4499998, z: 0.016}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4800006281953268}
@@ -125,7 +125,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1055331776500366}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -32.93, y: 7.71, z: 2.12}
+  m_LocalPosition: {x: -12.180003, y: 41.64, z: -11.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4559623830395388}
@@ -227,9 +227,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 0.8490566, g: 0.7149783, b: 0.46057317, a: 1}
-  m_Intensity: 2.71
-  m_Range: 23.39
+  m_Color: {r: 1, g: 0.8451177, b: 0.6933962, a: 1}
+  m_Intensity: 1.2
+  m_Range: 21.4
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -243,7 +243,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -296,9 +296,12 @@ MonoBehaviour:
   fireSources: []
   otherFireSources: []
   invisibleData:
-    isVisible: 0
+    isVisible: 1
   myLight: {fileID: 108028681528451894}
   groudHeight: -4.58
+  lampRenderer: {fileID: 23869959395730274}
+  litMat: {fileID: 2100000, guid: a878485cdc3f03e4e9788936290d20ae, type: 2}
+  unlitMat: {fileID: 2100000, guid: 8697049bda5f0f04d91cd8c4128e82fa, type: 2}
 --- !u!136 &136755630298703664
 CapsuleCollider:
   m_ObjectHideFlags: 1

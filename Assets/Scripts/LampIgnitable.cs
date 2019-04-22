@@ -7,6 +7,11 @@ public class LampIgnitable : Ignitable {
     public Light myLight;
     public float groudHeight;
 
+    // For changing lamp texture
+    public Renderer lampRenderer;
+    public Material litMat;
+    public Material unlitMat;
+
     protected Vector3 targetPos;
     protected bool originalLight;
     protected bool isLightingUp;
@@ -127,12 +132,14 @@ public class LampIgnitable : Ignitable {
                     SetActive(false);
                 }
             }
+            lampRenderer.material = litMat;
         }
         else
         {
             //myLight.enabled = false;
             targetIntensity = lightOffIntensity;
             isOnFire = false;
+            lampRenderer.material = unlitMat;
         }
 
         myLight.intensity = Mathf.Lerp(myLight.intensity, targetIntensity, 1.5f * Time.deltaTime);

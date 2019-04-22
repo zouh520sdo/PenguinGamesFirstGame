@@ -125,7 +125,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1297567004678504}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.94, y: 3.84, z: 6.98}
+  m_LocalPosition: {x: 17.94, y: 6.27, z: 1.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4067463997686750}
@@ -299,6 +299,9 @@ MonoBehaviour:
     isVisible: 1
   myLight: {fileID: 108917930751216922}
   groudHeight: -4.58
+  lampRenderer: {fileID: 23174145099577252}
+  litMat: {fileID: 2100000, guid: a878485cdc3f03e4e9788936290d20ae, type: 2}
+  unlitMat: {fileID: 2100000, guid: 8697049bda5f0f04d91cd8c4128e82fa, type: 2}
 --- !u!136 &136367610097406648
 CapsuleCollider:
   m_ObjectHideFlags: 1

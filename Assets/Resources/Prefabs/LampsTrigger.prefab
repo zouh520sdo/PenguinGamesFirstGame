@@ -515,7 +515,7 @@ Transform:
   - {fileID: 4339094080191468}
   - {fileID: 4592290335683266}
   m_Father: {fileID: 4952116691491318}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4234206219886494
 Transform:
@@ -638,7 +638,7 @@ Transform:
   - {fileID: 4968876502944502}
   - {fileID: 4103880521481584}
   m_Father: {fileID: 4952116691491318}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4584453034974614
 Transform:
@@ -744,13 +744,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1089052334688132}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 5.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4234206219886494}
+  - {fileID: 4989954788530832}
   - {fileID: 4570497300496486}
   - {fileID: 4221497221046902}
-  - {fileID: 4989954788530832}
   - {fileID: 4779534776485322}
   - {fileID: 4592667389844578}
   m_Father: {fileID: 0}
@@ -783,7 +783,7 @@ Transform:
   - {fileID: 4538967144470528}
   - {fileID: 4051031372017674}
   m_Father: {fileID: 4952116691491318}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23115474642856752
 MeshRenderer:
@@ -1298,9 +1298,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.762076, b: 0.21226418, a: 1}
-  m_Intensity: 2.71
-  m_Range: 20.28
+  m_Color: {r: 1, g: 0.8403139, b: 0.6367924, a: 1}
+  m_Intensity: 2.37
+  m_Range: 5.96
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -1314,7 +1314,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1335,9 +1335,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.762076, b: 0.21226418, a: 1}
-  m_Intensity: 2.71
-  m_Range: 20.28
+  m_Color: {r: 1, g: 0.8403139, b: 0.6367924, a: 1}
+  m_Intensity: 2.37
+  m_Range: 5.96
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -1351,7 +1351,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1372,9 +1372,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.762076, b: 0.21226418, a: 1}
-  m_Intensity: 2.71
-  m_Range: 20.28
+  m_Color: {r: 1, g: 0.8403139, b: 0.6367924, a: 1}
+  m_Intensity: 2.37
+  m_Range: 5.96
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -1388,7 +1388,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1409,9 +1409,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.762076, b: 0.21226418, a: 1}
-  m_Intensity: 2.71
-  m_Range: 20.28
+  m_Color: {r: 1, g: 0.8403139, b: 0.6367924, a: 1}
+  m_Intensity: 2.37
+  m_Range: 5.96
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -1425,7 +1425,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1446,9 +1446,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.762076, b: 0.21226418, a: 1}
-  m_Intensity: 2.71
-  m_Range: 20.28
+  m_Color: {r: 1, g: 0.8403139, b: 0.6367924, a: 1}
+  m_Intensity: 2.37
+  m_Range: 5.96
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -1462,7 +1462,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1483,9 +1483,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.762076, b: 0.21226418, a: 1}
-  m_Intensity: 2.71
-  m_Range: 20.28
+  m_Color: {r: 1, g: 0.8403139, b: 0.6367924, a: 1}
+  m_Intensity: 2.37
+  m_Range: 5.96
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -1499,7 +1499,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1623,6 +1623,9 @@ MonoBehaviour:
     isVisible: 0
   myLight: {fileID: 108368038804695780}
   groudHeight: -4.58
+  lampRenderer: {fileID: 23115474642856752}
+  litMat: {fileID: 2100000, guid: a878485cdc3f03e4e9788936290d20ae, type: 2}
+  unlitMat: {fileID: 2100000, guid: 8697049bda5f0f04d91cd8c4128e82fa, type: 2}
 --- !u!114 &114669770127320788
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1650,6 +1653,9 @@ MonoBehaviour:
     isVisible: 0
   myLight: {fileID: 108991194954693312}
   groudHeight: -4.58
+  lampRenderer: {fileID: 23199641652463378}
+  litMat: {fileID: 2100000, guid: a878485cdc3f03e4e9788936290d20ae, type: 2}
+  unlitMat: {fileID: 2100000, guid: 8697049bda5f0f04d91cd8c4128e82fa, type: 2}
 --- !u!114 &114713431875196840
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1677,6 +1683,9 @@ MonoBehaviour:
     isVisible: 0
   myLight: {fileID: 108699284658885400}
   groudHeight: -4.58
+  lampRenderer: {fileID: 23967579868486120}
+  litMat: {fileID: 2100000, guid: a878485cdc3f03e4e9788936290d20ae, type: 2}
+  unlitMat: {fileID: 2100000, guid: 8697049bda5f0f04d91cd8c4128e82fa, type: 2}
 --- !u!114 &114823553678283808
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1740,6 +1749,9 @@ MonoBehaviour:
     isVisible: 0
   myLight: {fileID: 108072953483817904}
   groudHeight: -4.58
+  lampRenderer: {fileID: 23340963770092686}
+  litMat: {fileID: 2100000, guid: a878485cdc3f03e4e9788936290d20ae, type: 2}
+  unlitMat: {fileID: 2100000, guid: 8697049bda5f0f04d91cd8c4128e82fa, type: 2}
 --- !u!114 &114944258155960120
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1784,6 +1796,9 @@ MonoBehaviour:
     isVisible: 0
   myLight: {fileID: 108198926616810164}
   groudHeight: -4.58
+  lampRenderer: {fileID: 23240100136205464}
+  litMat: {fileID: 2100000, guid: a878485cdc3f03e4e9788936290d20ae, type: 2}
+  unlitMat: {fileID: 2100000, guid: 8697049bda5f0f04d91cd8c4128e82fa, type: 2}
 --- !u!114 &114993729065721316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1811,6 +1826,9 @@ MonoBehaviour:
     isVisible: 0
   myLight: {fileID: 108064572600168146}
   groudHeight: -4.58
+  lampRenderer: {fileID: 23207923703566660}
+  litMat: {fileID: 2100000, guid: a878485cdc3f03e4e9788936290d20ae, type: 2}
+  unlitMat: {fileID: 2100000, guid: 8697049bda5f0f04d91cd8c4128e82fa, type: 2}
 --- !u!136 &136035214291784394
 CapsuleCollider:
   m_ObjectHideFlags: 1

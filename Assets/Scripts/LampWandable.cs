@@ -6,6 +6,10 @@ public class LampWandable : Wandable {
 
     public Light myLight;
     public bool isOnLight;
+    public Renderer lampRenderer;
+    public Material unlitMat;
+    public Material litMat;
+    
     protected bool originalIsOnLight;
     protected float lightOnIntensity;
     protected float lightOffIntensity;
@@ -37,6 +41,21 @@ public class LampWandable : Wandable {
         else
         {
             isOnLight = false;
+        }
+
+        if (containingHeat - minHeat > (maxHeat - minHeat) * 0.5f)
+        {
+            if (lampRenderer.material != litMat)
+            {
+                lampRenderer.material = litMat;
+            }
+        }
+        else
+        {
+            if (lampRenderer.material != unlitMat)
+            {
+                lampRenderer.material = unlitMat;
+            }
         }
 
         if (isOnLight)
