@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 64188968308744536}
   - component: {fileID: 114113771015697920}
   - component: {fileID: 114478785819820284}
+  - component: {fileID: 65563399113945398}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -165,7 +166,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1383681219301660}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -29.39, y: -3.4, z: 51.7}
+  m_LocalPosition: {x: -13.07, y: -12.12, z: -20.93}
   m_LocalScale: {x: 2, y: 1, z: 2}
   m_Children:
   - {fileID: 4391225759968476}
@@ -356,6 +357,18 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 609557dfc2d671c4ca1d40c62976d307, type: 3}
+--- !u!65 &65563399113945398
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1471641374712800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.1954545, z: 1.5}
+  m_Center: {x: 0.09, y: 1.24, z: -0.03}
 --- !u!114 &114113771015697920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -389,10 +402,10 @@ MonoBehaviour:
   isPickedUp: 0
   picker: {fileID: 0}
   distanceRatio: 0
-  minDistanceRatio: 0.15
+  minDistanceRatio: 0.25
   isPickable: 1
   rigid: {fileID: 0}
-  floatingHeight: -2.93
+  floatingHeight: -11.19
   hasWater: 0
   Water: {fileID: 1471641374712800}
   isWanding: 0
