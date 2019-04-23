@@ -18838,6 +18838,11 @@ Prefab:
       propertyPath: beam
       value: 
       objectReference: {fileID: 299585209}
+    - target: {fileID: 114891503857854534, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
+      propertyPath: m_MouseLook.MaximumX
+      value: 65
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
   m_IsPrefabAsset: 0

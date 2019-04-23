@@ -661,6 +661,7 @@ MonoBehaviour:
   fpc: {fileID: 0}
   selectionObj: {fileID: 0}
   diaryPanelObj: {fileID: 0}
+  beam: {fileID: 0}
   NLT: {fileID: 0}
 --- !u!114 &114853682700646426
 MonoBehaviour:
@@ -739,7 +740,7 @@ MonoBehaviour:
     YSensitivity: 2
     clampVerticalRotation: 1
     MinimumX: -90
-    MaximumX: 45
+    MaximumX: 65
     smooth: 0
     smoothTime: 5
     lockCursor: 1
