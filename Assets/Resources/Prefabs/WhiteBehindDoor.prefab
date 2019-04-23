@@ -109,13 +109,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4524865542670618}
+  - component: {fileID: 114816211525540678}
   m_Layer: 0
   m_Name: WhiteBehindDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1792125106001608
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,7 +162,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1200579695031226}
   m_LocalRotation: {x: -0.7010577, y: 0.09229585, z: 0.092295736, w: 0.7010572}
-  m_LocalPosition: {x: -1.2, y: 0.73, z: -5.23}
+  m_LocalPosition: {x: -1.17, y: 0.73, z: -5.13}
   m_LocalScale: {x: 6.2447815, y: 0.12799262, z: 6.24}
   m_Children: []
   m_Father: {fileID: 4524865542670618}
@@ -187,7 +188,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1792125106001608}
   m_LocalRotation: {x: -0, y: 0.13052596, z: -0, w: 0.99144495}
-  m_LocalPosition: {x: -1.2, y: -1.4968762, z: -5.23}
+  m_LocalPosition: {x: -1.17, y: -1.4968762, z: -5.13}
   m_LocalScale: {x: 6.2447815, y: 4.86, z: 0.26812}
   m_Children: []
   m_Father: {fileID: 4524865542670618}
@@ -623,6 +624,8 @@ MonoBehaviour:
   loadingLvlIndex: 6
   gameManager: {fileID: 0}
   FPC: {fileID: 0}
+  noNeedToTriggerOpeningAndEnding: 1
+  overridedEndingNote: {fileID: 114816211525540678}
 --- !u!114 &114429922743109650
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -656,3 +659,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46273fc06c47d94599f05044d604991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114816211525540678
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1627976676500760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbcc63b78f608a45bd7d488324fe969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: 
+  isInOption: 0
+  paragraph:
+  - "Eve:\nDon\u2019t go. Examinee Adam Brown - you are forbidden from entering any
+    \u2026"
+  - "Eve:\nNo\u2026 \nNo!!!\r\nCome back! Adam...\r"
+  canStartParagraph: 0
+  canRepeat: 0
+  inThisNote: 0
+  finished: 0
+  audioSource: {fileID: 0}
+  voiceOvers:
+  - {fileID: 8300000, guid: 4951a27571def3d4dbecc6aaa2ddb498, type: 3}
+  - {fileID: 8300000, guid: 622a92b6ac55a494cb19032acf1cd96d, type: 3}
+  diaryAmountToTrigger: 0
+  secretParagraphs: []
+  secretVoiceOvers: []
+  primaryParagraghs: []
+  wand: {fileID: 0}
+  optionIndexMade: 0
