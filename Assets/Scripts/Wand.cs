@@ -65,6 +65,9 @@ public class Wand : MonoBehaviour {
     public GameObject diaryPanelObj;
     protected Text diaryText;
 
+    // For wand effect
+    public Beam beam;
+
     // For debug
     public NextLevelTrigger NLT;
 
@@ -76,6 +79,7 @@ public class Wand : MonoBehaviour {
         handAnimator.ResetTrigger("Show");
         handAnimator.SetTrigger("Hide");
         wandEffect.gameObject.SetActive(false);
+        //beam.gameObject.SetActive(false);
     }
 
     void OnSave()
@@ -131,6 +135,7 @@ public class Wand : MonoBehaviour {
         Marker.sprite = Normal;
         HTUI.SetActive(false);
         wandEffect.gameObject.SetActive(false);
+        //beam.gameObject.SetActive(false);
 
         if (!NLT)
         {
@@ -303,6 +308,7 @@ public class Wand : MonoBehaviour {
                 handAnimator.ResetTrigger("Show");
                 handAnimator.SetTrigger("Hide");
                 wandEffect.gameObject.SetActive(false);
+                //beam.gameObject.SetActive(false);
 
                 pickable.Drop(this);
                 pickable = null;
@@ -450,6 +456,7 @@ public class Wand : MonoBehaviour {
                             // Absorb
                             handAnimator.SetBool("IsCasting", true);
                             wandEffect.gameObject.SetActive(true);
+                            beam.line = hit.collider.gameObject;
 
                             if (wandable)
                             {
@@ -464,6 +471,7 @@ public class Wand : MonoBehaviour {
                             // Release
                             handAnimator.SetBool("IsCasting", true);
                             wandEffect.gameObject.SetActive(true);
+                            beam.line = hit.collider.gameObject;
 
                             if (wandable)
                             {
@@ -477,6 +485,7 @@ public class Wand : MonoBehaviour {
                         {
                             handAnimator.SetBool("IsCasting", false);
                             wandEffect.gameObject.SetActive(false);
+                            //beam.gameObject.SetActive(false);
 
                             holdingTime = 0;
                         }
@@ -495,13 +504,15 @@ public class Wand : MonoBehaviour {
                         if (Input.GetButtonDown("Fire1"))
                         {
                             pickable = hit.collider.GetComponent<Pickable>();
+                            
                             if (pickable && pickable.isPickable)
                             {
+
                                 handAnimator.ResetTrigger("Hide");
                                 handAnimator.SetTrigger("Show");
                                 handAnimator.SetBool("IsCasting", true);
                                 wandEffect.gameObject.SetActive(true);
-
+                                beam.line = hit.collider.gameObject;
                                 pickable.Pick(this);
                             }
                             else
@@ -515,6 +526,7 @@ public class Wand : MonoBehaviour {
                     {
                         wandable.OffAiming();
                         wandable = null;
+                        wandEffect.gameObject.SetActive(false);
                     }
                 }
             }
@@ -523,6 +535,7 @@ public class Wand : MonoBehaviour {
                 Marker.sprite = Normal;
                 HTUI.SetActive(false);
                 holdingTime = 0;
+                wandEffect.gameObject.SetActive(false);
                 if (wandable != null)
                 {
                     wandable.OffAiming();
