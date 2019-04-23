@@ -8616,29 +8616,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 4171140848810676, guid: d307c1fef1c8f824681b19346014b9b0, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4171140848810676, guid: d307c1fef1c8f824681b19346014b9b0, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 54339404475282758, guid: d307c1fef1c8f824681b19346014b9b0,
-        type: 2}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 23761504269270506, guid: d307c1fef1c8f824681b19346014b9b0,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 4a05255a2c2d25d43b3314166fc5dfca, type: 2}
-    - target: {fileID: 23296189185539138, guid: d307c1fef1c8f824681b19346014b9b0,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: c303a5bc42500b548aae13ba3dfec3f0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d307c1fef1c8f824681b19346014b9b0, type: 2}
   m_IsPrefabAsset: 0
@@ -23091,29 +23068,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 4986620260909416, guid: 9d335bf909cb46645b623eb2ea963798, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4986620260909416, guid: 9d335bf909cb46645b623eb2ea963798, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 54540735687630272, guid: 9d335bf909cb46645b623eb2ea963798,
-        type: 2}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 23116756045476090, guid: 9d335bf909cb46645b623eb2ea963798,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 1365a1c9d71b7bc47a8055c10b16e7f6, type: 2}
-    - target: {fileID: 23150159041438402, guid: 9d335bf909cb46645b623eb2ea963798,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 41942a07d58276648903db860197ff43, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d335bf909cb46645b623eb2ea963798, type: 2}
   m_IsPrefabAsset: 0
@@ -59759,7 +59713,7 @@ MonoBehaviour:
   overrideColor: 0
   overridingColor: {r: 0.9999, g: 0.9999, b: 0.9999, a: 0.9999}
   useShadow: 1
-  shadowMapRenderTexture: {fileID: 1909370659}
+  shadowMapRenderTexture: {fileID: 1745833128}
   useCookie: 1
   cookieMapRenderTexture: {fileID: 0}
   enableOutOfPhaseColor: 0
@@ -97899,24 +97853,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a9c7ffdd987f0428e2d32aca622965, type: 3}
   m_IsPrefabAsset: 0
---- !u!1 &1427126030 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1666421335650952, guid: 9d335bf909cb46645b623eb2ea963798,
-    type: 2}
-  m_PrefabInternal: {fileID: 559245582}
---- !u!114 &1427126031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1427126030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57447124bbe21a045b98d5880a000bc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  threshold: 2
 --- !u!1 &1429671029
 GameObject:
   m_ObjectHideFlags: 0
@@ -99199,24 +99135,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &1458509630 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1312803079057780, guid: d307c1fef1c8f824681b19346014b9b0,
-    type: 2}
-  m_PrefabInternal: {fileID: 251919817}
---- !u!114 &1458509631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1458509630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57447124bbe21a045b98d5880a000bc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 1
-  threshold: 2
 --- !u!1 &1465803615
 GameObject:
   m_ObjectHideFlags: 0
@@ -121517,6 +121435,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: fbed67403eb10264ca414b15ad2b30a2,
     type: 3}
   m_PrefabInternal: {fileID: 1743409618}
+--- !u!84 &1745833128
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 256
+  m_Height: 256
+  m_AntiAliasing: 1
+  m_DepthFormat: 0
+  m_ColorFormat: 11
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!114 &1749093134 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114432833520218592, guid: 0771f8c58755eb2489de7c50035fc6ea,
@@ -128292,37 +128241,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 1a7c170fa2e72ec489f11372c75120fb,
     type: 3}
   m_PrefabInternal: {fileID: 763935897}
---- !u!84 &1909370659
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 256
-  m_Height: 256
-  m_AntiAliasing: 1
-  m_DepthFormat: 0
-  m_ColorFormat: 11
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &1909663065 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: 125337c32e7dba7469d2de6a27a1b3bd,

@@ -68,4 +68,16 @@ public class Bucket : Pickable {
             }
         }
     }
+
+    public override void Pick(Wand p)
+    {
+        base.Pick(p);
+        GetComponent<Collider>().isTrigger = true;
+    }
+
+    public override void Drop(Wand p)
+    {
+        base.Drop(p);
+        GetComponent<Collider>().isTrigger = false;
+    }
 }
