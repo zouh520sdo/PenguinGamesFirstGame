@@ -62,6 +62,7 @@ GameObject:
   - component: {fileID: 64350497186549578}
   - component: {fileID: 114512071779057170}
   - component: {fileID: 114445535996175194}
+  - component: {fileID: 114798638971292846}
   m_Layer: 0
   m_Name: smalltriwater
   m_TagString: Untagged
@@ -164,7 +165,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1383681219301660}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.07, y: -12.12, z: -20.93}
+  m_LocalPosition: {x: -29.39, y: -3.4, z: 51.7}
   m_LocalScale: {x: 2, y: 1, z: 2}
   m_Children:
   - {fileID: 4391225759968476}
@@ -369,6 +370,7 @@ MonoBehaviour:
   isPickedUp: 0
   picker: {fileID: 0}
   distanceRatio: 0
+  minDistanceRatio: 0.08
   isPickable: 1
   rigid: {fileID: 0}
   bucket: {fileID: 114327656052991314}
@@ -387,9 +389,10 @@ MonoBehaviour:
   isPickedUp: 0
   picker: {fileID: 0}
   distanceRatio: 0
+  minDistanceRatio: 0.15
   isPickable: 1
   rigid: {fileID: 0}
-  floatingHeight: -11.03
+  floatingHeight: -2.93
   hasWater: 0
   Water: {fileID: 1471641374712800}
   isWanding: 0
@@ -464,6 +467,7 @@ MonoBehaviour:
   isPickedUp: 0
   picker: {fileID: 0}
   distanceRatio: 0
+  minDistanceRatio: 0.08
   isPickable: 1
   rigid: {fileID: 0}
 --- !u!114 &114534996256240860
@@ -483,3 +487,16 @@ MonoBehaviour:
   dontSave: 0
   componentSaveMode: 3
   componentTypesToSave: []
+--- !u!114 &114798638971292846
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1666421335650952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57447124bbe21a045b98d5880a000bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  threshold: 2

@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 64758041153455542}
   - component: {fileID: 114810007254034010}
   - component: {fileID: 114609978967257652}
+  - component: {fileID: 114564867786121074}
   m_Layer: 0
   m_Name: smallsquarewater
   m_TagString: Untagged
@@ -110,7 +111,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1144309964907730}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.5, y: -12.12, z: 20.97}
+  m_LocalPosition: {x: 63.15, y: -1.1, z: -73.93}
   m_LocalScale: {x: 2, y: 1, z: 2}
   m_Children:
   - {fileID: 4670054119322256}
@@ -369,6 +370,7 @@ MonoBehaviour:
   isPickedUp: 0
   picker: {fileID: 0}
   distanceRatio: 0
+  minDistanceRatio: 0.08
   isPickable: 1
   rigid: {fileID: 0}
   bucket: {fileID: 114729273047773290}
@@ -433,6 +435,19 @@ MonoBehaviour:
   refractLayers:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114564867786121074
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1312803079057780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57447124bbe21a045b98d5880a000bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  threshold: 2
 --- !u!114 &114609978967257652
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -460,9 +475,10 @@ MonoBehaviour:
   isPickedUp: 0
   picker: {fileID: 0}
   distanceRatio: 0
+  minDistanceRatio: 0.15
   isPickable: 1
   rigid: {fileID: 0}
-  floatingHeight: -11.03
+  floatingHeight: -2.93
   hasWater: 0
   Water: {fileID: 1316739206703232}
   isWanding: 0
@@ -481,5 +497,6 @@ MonoBehaviour:
   isPickedUp: 0
   picker: {fileID: 0}
   distanceRatio: 0
+  minDistanceRatio: 0.08
   isPickable: 1
   rigid: {fileID: 0}

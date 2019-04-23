@@ -7,6 +7,7 @@ public class Pickable : MonoBehaviour {
     public bool isPickedUp;
     public Wand picker;
     public float distanceRatio;
+    public float minDistanceRatio = 0.08f;
     public bool isPickable = true;
 
     public Rigidbody rigid;
@@ -40,7 +41,7 @@ public class Pickable : MonoBehaviour {
 	public virtual void Update () {
 		if (isPickedUp)
         {
-            distanceRatio = Mathf.Min(1f, Mathf.Max(0.08f, distanceRatio + 0.5f * Input.GetAxis("Mouse ScrollWheel")));
+            distanceRatio = Mathf.Min(1f, Mathf.Max(minDistanceRatio, distanceRatio + 0.5f * Input.GetAxis("Mouse ScrollWheel")));
 
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
             RaycastHit hit;
