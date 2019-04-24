@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6809,37 +6809,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46273fc06c47d94599f05044d604991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!84 &328193066
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 256
-  m_Height: 256
-  m_AntiAliasing: 1
-  m_DepthFormat: 0
-  m_ColorFormat: 11
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &380703807
 Prefab:
   m_ObjectHideFlags: 0
@@ -9872,7 +9841,7 @@ MonoBehaviour:
   overrideColor: 0
   overridingColor: {r: 0.9999, g: 0.9999, b: 0.9999, a: 0.9999}
   useShadow: 1
-  shadowMapRenderTexture: {fileID: 328193066}
+  shadowMapRenderTexture: {fileID: 1703262766}
   useCookie: 1
   cookieMapRenderTexture: {fileID: 0}
   enableOutOfPhaseColor: 0
@@ -11192,40 +11161,40 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4084099843582180, guid: 588a81b4164a0fd42b18c02094709595, type: 2}
+    - target: {fileID: 4872488847090316, guid: c604c63aeed2c8443b8fb97708f49dca, type: 2}
       propertyPath: m_LocalPosition.x
       value: 409.01694
       objectReference: {fileID: 0}
-    - target: {fileID: 4084099843582180, guid: 588a81b4164a0fd42b18c02094709595, type: 2}
+    - target: {fileID: 4872488847090316, guid: c604c63aeed2c8443b8fb97708f49dca, type: 2}
       propertyPath: m_LocalPosition.y
       value: 212.51216
       objectReference: {fileID: 0}
-    - target: {fileID: 4084099843582180, guid: 588a81b4164a0fd42b18c02094709595, type: 2}
+    - target: {fileID: 4872488847090316, guid: c604c63aeed2c8443b8fb97708f49dca, type: 2}
       propertyPath: m_LocalPosition.z
       value: 134.0975
       objectReference: {fileID: 0}
-    - target: {fileID: 4084099843582180, guid: 588a81b4164a0fd42b18c02094709595, type: 2}
+    - target: {fileID: 4872488847090316, guid: c604c63aeed2c8443b8fb97708f49dca, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4084099843582180, guid: 588a81b4164a0fd42b18c02094709595, type: 2}
+    - target: {fileID: 4872488847090316, guid: c604c63aeed2c8443b8fb97708f49dca, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4084099843582180, guid: 588a81b4164a0fd42b18c02094709595, type: 2}
+    - target: {fileID: 4872488847090316, guid: c604c63aeed2c8443b8fb97708f49dca, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4084099843582180, guid: 588a81b4164a0fd42b18c02094709595, type: 2}
+    - target: {fileID: 4872488847090316, guid: c604c63aeed2c8443b8fb97708f49dca, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4084099843582180, guid: 588a81b4164a0fd42b18c02094709595, type: 2}
+    - target: {fileID: 4872488847090316, guid: c604c63aeed2c8443b8fb97708f49dca, type: 2}
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 588a81b4164a0fd42b18c02094709595, type: 2}
+  m_SourcePrefab: {fileID: 100100000, guid: c604c63aeed2c8443b8fb97708f49dca, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &1028900509 stripped
 Transform:
@@ -14947,6 +14916,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4791912415931124, guid: df4f30947b59f0249a672913b2d917b5,
     type: 2}
   m_PrefabInternal: {fileID: 1695541368}
+--- !u!84 &1703262766
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 256
+  m_Height: 256
+  m_AntiAliasing: 1
+  m_DepthFormat: 0
+  m_ColorFormat: 11
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &1703378311
 Prefab:
   m_ObjectHideFlags: 0
