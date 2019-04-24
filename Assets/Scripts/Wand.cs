@@ -31,6 +31,7 @@ public class Wand : MonoBehaviour {
     // For heat UI
     public Text heatText;
     public GameObject HTUI;
+    public Text instruction;
 
     //FOR MARKER
     public Sprite Normal;
@@ -133,6 +134,7 @@ public class Wand : MonoBehaviour {
             }
         }
         Marker.sprite = Normal;
+        instruction.text = "";
         HTUI.SetActive(false);
         wandEffect.gameObject.SetActive(false);
         //beam.gameObject.SetActive(false);
@@ -301,6 +303,7 @@ public class Wand : MonoBehaviour {
         {
             distanceIndicator.transform.position = pickable.transform.position;
             Marker.sprite = Picking;
+            instruction.text = "Click again to DROP\nMousewheel to move";
             HTUI.SetActive(false);
             if (Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown("Fire1") || !pickable.isPickedUp)
             {
@@ -313,6 +316,7 @@ public class Wand : MonoBehaviour {
                 pickable.Drop(this);
                 pickable = null;
                 Marker.sprite = Normal;
+                instruction.text = null;
                 HTUI.SetActive(false);
             }
         }
@@ -428,11 +432,14 @@ public class Wand : MonoBehaviour {
                 if (hit.collider.gameObject.GetComponent<Wandable>() || hit.collider.gameObject.GetComponent<Pickable>())
                 {
                     Marker.sprite = CanInreract;
+                    instruction.text = "Click to Pick\nE to Hitte";
                     HTUI.SetActive(false);
                 }
                 else
                 {
                     Marker.sprite = Normal;
+                    instruction.text = null;
+                    heatText.text = null;
                     HTUI.SetActive(false);
                 }
 
@@ -448,6 +455,7 @@ public class Wand : MonoBehaviour {
                     if (wandable)
                     {
                         Marker.sprite = CanAOrB;
+                        instruction.text = "Click to Hitte";
                         HTUI.SetActive(false);
                         wandable.OnAiming();
                         // 
@@ -464,6 +472,7 @@ public class Wand : MonoBehaviour {
                             }
                             absorbFrom(wandable);
                             Marker.sprite = Aing;
+                            instruction.text = "Absorbing";
                             HTUI.SetActive(true);
                         }
                         else if (Input.GetButton("Fire2"))
@@ -479,6 +488,7 @@ public class Wand : MonoBehaviour {
                             }
                             releaseTo(wandable);
                             Marker.sprite = Ring;
+                            instruction.text = "Releasing";
                             HTUI.SetActive(true);
                         }
                         else
@@ -493,6 +503,7 @@ public class Wand : MonoBehaviour {
                     else
                     {
                         Marker.sprite = CanNotAOrB;
+                        instruction.text = "Cannot Hitte";
                         HTUI.SetActive(false);
                         holdingTime = 0;
                     }
@@ -533,6 +544,7 @@ public class Wand : MonoBehaviour {
             else
             {
                 Marker.sprite = Normal;
+                instruction.text = null;
                 HTUI.SetActive(false);
                 holdingTime = 0;
                 wandEffect.gameObject.SetActive(false);
