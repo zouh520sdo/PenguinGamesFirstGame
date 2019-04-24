@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -27612,27 +27612,27 @@ Prefab:
         type: 2}
       propertyPath: voiceOvers.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: c85fbcbf72ee7004091f6f4e6399b004, type: 3}
+      objectReference: {fileID: 8300000, guid: 8ce7391f9974fbe4997557b2a2eeb3f3, type: 3}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: voiceOvers.Array.data[1]
       value: 
-      objectReference: {fileID: 8300000, guid: eb43440f4913dd049af27f623c0f1abd, type: 3}
+      objectReference: {fileID: 8300000, guid: 4ef9b7c1ad7acad40ac01a2891b3fa03, type: 3}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: voiceOvers.Array.data[2]
       value: 
-      objectReference: {fileID: 8300000, guid: 33f42d4f000c27248b5f63c3d82d3163, type: 3}
+      objectReference: {fileID: 8300000, guid: 4ef9b7c1ad7acad40ac01a2891b3fa03, type: 3}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: voiceOvers.Array.data[3]
       value: 
-      objectReference: {fileID: 8300000, guid: 6887231ae4d08474da1e62b6efd4c29b, type: 3}
+      objectReference: {fileID: 8300000, guid: e30816e749db6b248977254bc4c92605, type: 3}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: voiceOvers.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: caaa0a8d5092dee44a54fec57aefb718, type: 3}
+      objectReference: {fileID: 8300000, guid: dd77aff39b7db564c9aab7cc315181bb, type: 3}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretParagraphs.Array.data[0]
@@ -27668,22 +27668,22 @@ Prefab:
         type: 2}
       propertyPath: secretVoiceOvers.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: c85fbcbf72ee7004091f6f4e6399b004, type: 3}
+      objectReference: {fileID: 8300000, guid: 8ce7391f9974fbe4997557b2a2eeb3f3, type: 3}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretVoiceOvers.Array.data[1]
       value: 
-      objectReference: {fileID: 8300000, guid: eb43440f4913dd049af27f623c0f1abd, type: 3}
+      objectReference: {fileID: 8300000, guid: 4ef9b7c1ad7acad40ac01a2891b3fa03, type: 3}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretVoiceOvers.Array.data[2]
       value: 
-      objectReference: {fileID: 8300000, guid: 33f42d4f000c27248b5f63c3d82d3163, type: 3}
+      objectReference: {fileID: 8300000, guid: 4ef9b7c1ad7acad40ac01a2891b3fa03, type: 3}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretVoiceOvers.Array.data[3]
       value: 
-      objectReference: {fileID: 8300000, guid: b70567ee44965c94b8fb1162a1f86df3, type: 3}
+      objectReference: {fileID: 8300000, guid: e30816e749db6b248977254bc4c92605, type: 3}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: diaryAmountToTrigger
@@ -27693,22 +27693,22 @@ Prefab:
         type: 2}
       propertyPath: secretVoiceOvers.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: caaa0a8d5092dee44a54fec57aefb718, type: 3}
+      objectReference: {fileID: 8300000, guid: dd77aff39b7db564c9aab7cc315181bb, type: 3}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretVoiceOvers.Array.data[1]
       value: 
-      objectReference: {fileID: 8300000, guid: f1d0f1d06387c82438f553443d824b63, type: 3}
+      objectReference: {fileID: 8300000, guid: 4ef9b7c1ad7acad40ac01a2891b3fa03, type: 3}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretVoiceOvers.Array.data[2]
       value: 
-      objectReference: {fileID: 8300000, guid: b26d103b25437d54d8d6b5cca49fcfca, type: 3}
+      objectReference: {fileID: 8300000, guid: 4ef9b7c1ad7acad40ac01a2891b3fa03, type: 3}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretVoiceOvers.Array.data[3]
       value: 
-      objectReference: {fileID: 8300000, guid: 10de8c17db270b4468c53bbfccfad247, type: 3}
+      objectReference: {fileID: 8300000, guid: b621b586bbc1da74db61107827c64707, type: 3}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretParagraphs.Array.data[0]
