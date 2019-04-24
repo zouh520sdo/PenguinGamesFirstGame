@@ -26,6 +26,7 @@ public class Star : Pickable {
     protected InvisibleData originalInvisibleData;
     protected bool originalIsOnWall;
     protected bool originalIsDyingOut;
+    protected Vector3 originalPos;
 
     public void  SetActive(InvisibleData enabled)
     {
@@ -47,6 +48,7 @@ public class Star : Pickable {
         invisibleData = originalInvisibleData;
         isOnWall = originalIsOnWall;
         isDyingOut = originalIsDyingOut;
+        transform.position = originalPos;
         SetActive(invisibleData);
         if (shiningEffect)
         {
@@ -80,6 +82,7 @@ public class Star : Pickable {
         originalInvisibleData = invisibleData;
         originalIsOnWall = isOnWall;
         originalIsDyingOut = isDyingOut;
+        originalPos = transform.position;
         SetActive(invisibleData);
 
         if (shiningEffect)
