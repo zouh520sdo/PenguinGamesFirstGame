@@ -25,6 +25,7 @@ public class Star : Pickable {
     protected float originalLivingDuration;
     protected InvisibleData originalInvisibleData;
     protected bool originalIsOnWall;
+    protected bool originalIsDyingOut;
 
     public void  SetActive(InvisibleData enabled)
     {
@@ -45,6 +46,7 @@ public class Star : Pickable {
         livingDuration = originalLivingDuration;
         invisibleData = originalInvisibleData;
         isOnWall = originalIsOnWall;
+        isDyingOut = originalIsDyingOut;
         SetActive(invisibleData);
         if (shiningEffect)
         {
@@ -77,6 +79,7 @@ public class Star : Pickable {
         originalLivingDuration = livingDuration;
         originalInvisibleData = invisibleData;
         originalIsOnWall = isOnWall;
+        originalIsDyingOut = isDyingOut;
         SetActive(invisibleData);
 
         if (shiningEffect)
