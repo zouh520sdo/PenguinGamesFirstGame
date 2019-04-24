@@ -13,8 +13,11 @@ public class ButtonManager : MonoBehaviour {
 
     public void Start()
     {
-        loadingSlider = loadingScreenPanel.transform.Find("LoadingSlider").GetComponent<Slider>();
-        loadingScreenPanel.SetActive(false);
+        if (loadingScreenPanel)
+        {
+            loadingSlider = loadingScreenPanel.transform.Find("LoadingSlider").GetComponent<Slider>();
+            loadingScreenPanel.SetActive(false);
+        }
     }
 
     IEnumerator LoadingNextLevel(string newGameLevel)
@@ -44,7 +47,14 @@ public class ButtonManager : MonoBehaviour {
 
     public void NewGameBtn(string newGameLevel)
     {
-        StartCoroutine(LoadingNextLevel(newGameLevel));
+        if (loadingScreenPanel)
+        {
+            StartCoroutine(LoadingNextLevel(newGameLevel));
+        }
+        else
+        {
+            SceneManager.LoadScene(newGameLevel);
+        }
     }
 
     public void ExitGameBtn()
