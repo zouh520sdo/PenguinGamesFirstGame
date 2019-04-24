@@ -22,6 +22,7 @@ public class PlayMagic : MonoBehaviour {
     {
         if (Marker.sprite == Aing || Marker.sprite == Ring)
         {
+            //print("YES");
             if (!Magic.isPlaying)
             {
                 Magic.Play();
