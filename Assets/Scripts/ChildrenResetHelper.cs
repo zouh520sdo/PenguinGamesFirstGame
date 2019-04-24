@@ -9,6 +9,7 @@ public class ChildrenResetHelper : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         childrenToReset = new List<ObjectIdentifier>(gameObject.GetComponentsInChildren<ObjectIdentifier>());
+        childrenToReset.Remove(GetComponent<ObjectIdentifier>());
     }
 	
 	// Update is called once per frame
