@@ -77,6 +77,7 @@ public class Note : MonoBehaviour {
         {
             paragraphIndex = -1;
             finished = true;
+            inThisNote = false;
             return "";
         }
         else
