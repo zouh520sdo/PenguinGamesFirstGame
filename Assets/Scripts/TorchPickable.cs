@@ -12,6 +12,8 @@ public class TorchPickable : Pickable {
 
     protected TorchHolder originalHolder;
     protected bool originalIsKinematic;
+    protected Vector3 originalPos;
+    protected Quaternion originalRot;
 
     public override void Start()
     {
@@ -19,6 +21,8 @@ public class TorchPickable : Pickable {
         originalHolder = holder;
         holderRotQua = Quaternion.Euler(holderRot);
         originalIsKinematic = GetComponent<Rigidbody>().isKinematic;
+        originalPos = transform.position;
+        originalRot = transform.rotation;
     }
 
     public override void OnReset()
@@ -26,6 +30,8 @@ public class TorchPickable : Pickable {
         base.OnReset();
         holder = originalHolder;
         GetComponent<Rigidbody>().isKinematic = originalIsKinematic;
+        transform.position = originalPos;
+        transform.rotation = originalRot;
     }
 
     public override void Pick(Wand p)

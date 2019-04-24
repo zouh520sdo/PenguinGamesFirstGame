@@ -98,6 +98,7 @@ public class OpeningEveNote : Note
                     audioSource.clip = null;
                 }
                 finished = true;
+                inThisNote = false;
                 return "";
             }
             else
@@ -143,6 +144,7 @@ public class OpeningEveNote : Note
             {
                 paragraphIndex = -1;
                 finished = true;
+                inThisNote = false;
                 if (audioSource)
                 {
                     audioSource.Stop();

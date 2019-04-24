@@ -2,14 +2,49 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour {
 
     //public GameObject SettingPanel;
+    public GameObject loadingScreenPanel;
+    protected Slider loadingSlider;
+    protected AsyncOperation async;
 
-	public void NewGameBtn(string newGameLevel)
+    public void Start()
     {
-        SceneManager.LoadScene(newGameLevel);
+        loadingSlider = loadingScreenPanel.transform.Find("LoadingSlider").GetComponent<Slider>();
+        loadingScreenPanel.SetActive(false);
+    }
+
+    IEnumerator LoadingNextLevel(string newGameLevel)
+    {
+        loadingScreenPanel.SetActive(true);
+        async = SceneManager.LoadSceneAsync(newGameLevel);
+        async.allowSceneActivation = false;
+
+        while (async.progress < 0.9f)
+        {
+            loadingSlider.value = async.progress;
+            yield return null;
+        }
+
+        loadingSlider.value = loadingSlider.maxValue;
+        //loadingScreenPanel.SetActive(false);
+        while (!async.isDone)
+        {
+            if (async.progress == 0.9f)
+            {
+                loadingSlider.value = loadingSlider.maxValue;
+                async.allowSceneActivation = true;
+            }
+            yield return null;
+        }
+    }
+
+    public void NewGameBtn(string newGameLevel)
+    {
+        StartCoroutine(LoadingNextLevel(newGameLevel));
     }
 
     public void ExitGameBtn()

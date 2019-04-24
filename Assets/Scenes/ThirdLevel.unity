@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -771,6 +771,10 @@ Prefab:
         type: 2}
       propertyPath: m_AnchoredPosition.y
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417043913632272, guid: fe370290a88187b45b1bbe35ba008cdb, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe370290a88187b45b1bbe35ba008cdb, type: 2}
@@ -5946,14 +5950,12 @@ MonoBehaviour:
   isInOption: 0
   paragraph:
   - Let's feed the lovely, poor Mr. Frog!
-  - \*Applause*/
   - First, add Tails of Double-Head Lizard at 120-140 Hitte degrees.
   - Second, add 3 mg of Blue Baby Worms at 60-100 Hitte degrees.
   - Last but not least, as always, add Happy Sweat of Souhait Union at 210-300 Hitte
     degrees~
   - Then, use the spoon to stir, stir, stir...
   - Here we made our Elixir for our lovely, poor, Mr. Frog!
-  - \*Applause*/
   - Come on! Let's invite Mr. Frog to taste it!
   canStartParagraph: 1
   canRepeat: 1
