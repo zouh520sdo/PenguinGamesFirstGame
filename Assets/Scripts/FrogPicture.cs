@@ -9,6 +9,8 @@ public class FrogPicture : Trigger {
     public bool isActive;
     public Wand wand;
     public Note frogNote;
+    public bool noNeedReset;
+    protected Note attachedFrogNote;
     protected bool originalIsActive;
     private Animator frogAnim;
 
@@ -32,16 +34,23 @@ public class FrogPicture : Trigger {
         {
             frogNote = GetComponent<Note>();
         }
+        if (!attachedFrogNote)
+        {
+            attachedFrogNote = GetComponent<Note>();
+        }
     }
 
     public override void OnReset()
     {
         base.OnReset();
-        isActive = originalIsActive;
-        deactivateTriggees();
+        if (!noNeedReset)
+        {
+            isActive = originalIsActive;
+            deactivateTriggees();
 
-        frogAnim.ResetTrigger("sleep");
-        frogAnim.ResetTrigger("openeyes");
+            frogAnim.ResetTrigger("sleep");
+            frogAnim.ResetTrigger("openeyes");
+        }
     }
 
     public override void Update()
@@ -118,6 +127,10 @@ public class FrogPicture : Trigger {
             yield return null;
         }
         frogShining.SetActive(false);
+        attachedFrogNote.setFinished(true);
+        attachedFrogNote.setCanRepeatHard(false);
+        // No need to reset the blue wall and the exit door
+        noNeedReset = true;
         wand.handAnimator.ResetTrigger("Show");
         wand.handAnimator.SetTrigger("Hide");
     }

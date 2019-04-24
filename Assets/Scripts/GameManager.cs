@@ -112,6 +112,13 @@ public class GameManager : MonoBehaviour {
             print("Found this diary " + GetFoundThisDiary());
             print("Has Gua " + GetHasGua());
         }
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            print("Diary amount " + GetDiaryAmount());
+            print("Found this diary " + GetFoundThisDiary());
+            print("Has Gua " + GetHasGua());
+        }
     }
 
     public void SaveGame()

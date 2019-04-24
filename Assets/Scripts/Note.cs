@@ -41,13 +41,18 @@ public class Note : MonoBehaviour {
     protected bool originalFinished;
     protected bool originalCanParagraph;
     protected bool originalCanRepeat;
+    protected bool originalInThisNote;
+    protected bool originalIsInOption;
 
 
     public virtual void OnReset()
     {
+        paragraphIndex = -1;
         finished = originalFinished;
         canStartParagraph = originalCanParagraph;
         canRepeat = originalCanRepeat;
+        inThisNote = originalInThisNote;
+        isInOption = originalIsInOption;
     }
 
     // Use this for initialization
@@ -56,6 +61,8 @@ public class Note : MonoBehaviour {
         originalFinished = finished;
         originalCanParagraph = canStartParagraph;
         originalCanRepeat = canRepeat;
+        originalInThisNote = inThisNote;
+        originalIsInOption = isInOption;
     }
 
     // Update is called once per frame
@@ -82,5 +89,17 @@ public class Note : MonoBehaviour {
     public virtual bool getIsFinished()
     {
         return finished;
+    }
+
+    public virtual void setFinished(bool can)
+    {
+        finished = can;
+        originalFinished = can;
+    }
+
+    public virtual void setCanRepeatHard(bool can)
+    {
+        canRepeat = can;
+        originalCanRepeat = can;
     }
 }
