@@ -11,6 +11,7 @@ public class GuoPot : Wandable {
     public float dampingSpeed = 5f;
     public float roomTemperature = 50f;
     public TextMesh heatTemp;
+    public AudioSource failefect;
 
     protected override void OnStart()
     {
@@ -111,6 +112,7 @@ public class GuoPot : Wandable {
         if (junkMedicinePrefab && originalCount != 0)
         { 
             GameObject temp = Instantiate(junkMedicinePrefab, transform.position, Quaternion.identity);
+            failefect.Play();
             Rigidbody rigidMed = temp.GetComponent<Rigidbody>();
             if (rigidMed)
             {
