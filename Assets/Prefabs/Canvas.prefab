@@ -962,7 +962,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 24
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1293,7 +1293,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 24
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1853,6 +1853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9985b312dcb06c944a97d31f802c994c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadingScreenPanel: {fileID: 0}
 --- !u!114 &114905459430763446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1979,7 +1980,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 24
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -2693,7 +2694,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 15.399902}
+  m_AnchoredPosition: {x: 0, y: 15.400024}
   m_SizeDelta: {x: -34.5, y: 348.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224617633476247310
