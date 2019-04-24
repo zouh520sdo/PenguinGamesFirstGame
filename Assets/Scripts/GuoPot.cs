@@ -106,8 +106,9 @@ public class GuoPot : Wandable {
         }
 
         // Produce junk medicine
+        int originalCount = medicines.Count;
         CleanAllMedicines();
-        if (junkMedicinePrefab)
+        if (junkMedicinePrefab && originalCount != 0)
         { 
             GameObject temp = Instantiate(junkMedicinePrefab, transform.position, Quaternion.identity);
             Rigidbody rigidMed = temp.GetComponent<Rigidbody>();
