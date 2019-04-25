@@ -5,6 +5,7 @@ using UnityEngine;
 public class FrogSecretTrigger : Trigger {
 
     public bool isActive;
+    public bool needHint;
     public OpeningEveNote note;
     public GameManager gameManager;
     public FrogPicture frogPicture;
@@ -82,6 +83,12 @@ public class FrogSecretTrigger : Trigger {
                     gameManager.StartNote(note);
                 }
             }
+        }
+
+        if (note == needExlixir && needExlixir.getIsFinished() && !needHint) 
+        {
+            needHint = true;
+            note = null;
         }
     }
 }

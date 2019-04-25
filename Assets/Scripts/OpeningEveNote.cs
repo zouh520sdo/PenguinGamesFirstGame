@@ -97,6 +97,7 @@ public class OpeningEveNote : Note
                     audioSource.Stop();
                     audioSource.clip = null;
                 }
+                tempParagraph = null;
                 finished = true;
                 inThisNote = false;
                 return "";

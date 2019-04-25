@@ -4787,6 +4787,7 @@ MonoBehaviour:
   canRepeat: 0
   inThisNote: 0
   finished: 0
+  paragraphIndex: 0
 --- !u!1 &609268553
 GameObject:
   m_ObjectHideFlags: 0
@@ -5955,6 +5956,7 @@ MonoBehaviour:
   canRepeat: 1
   inThisNote: 0
   finished: 0
+  paragraphIndex: 0
 --- !u!65 &764359503
 BoxCollider:
   m_ObjectHideFlags: 0

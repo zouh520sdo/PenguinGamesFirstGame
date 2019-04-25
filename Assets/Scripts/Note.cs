@@ -37,7 +37,7 @@ public class Note : MonoBehaviour {
     public bool canRepeat;
     public bool inThisNote;
     public bool finished;
-    protected int paragraphIndex;
+    public int paragraphIndex;
     protected bool originalFinished;
     protected bool originalCanParagraph;
     protected bool originalCanRepeat;

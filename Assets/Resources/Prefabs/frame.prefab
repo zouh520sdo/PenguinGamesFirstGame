@@ -486,6 +486,7 @@ MonoBehaviour:
   canRepeat: 0
   inThisNote: 0
   finished: 0
+  paragraphIndex: 0
   audioSource: {fileID: 0}
   voiceOvers: []
   diaryAmountToTrigger: 0
@@ -587,6 +588,7 @@ MonoBehaviour:
   canRepeat: 0
   inThisNote: 0
   finished: 0
+  paragraphIndex: 0
   audioSource: {fileID: 0}
   voiceOvers: []
   diaryAmountToTrigger: 0
@@ -635,6 +637,7 @@ MonoBehaviour:
   canRepeat: 0
   inThisNote: 0
   finished: 0
+  paragraphIndex: 0
   audioSource: {fileID: 0}
   voiceOvers: []
   diaryAmountToTrigger: 0
@@ -712,6 +715,7 @@ MonoBehaviour:
   canRepeat: 1
   inThisNote: 0
   finished: 0
+  paragraphIndex: 0
 --- !u!114 &114333977036582828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -725,6 +729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggees: []
   isActive: 0
+  needHint: 0
   note: {fileID: 114006161037727560}
   gameManager: {fileID: 0}
   frogPicture: {fileID: 114825691408906222}
@@ -771,6 +776,7 @@ MonoBehaviour:
   canRepeat: 0
   inThisNote: 0
   finished: 0
+  paragraphIndex: 0
   audioSource: {fileID: 0}
   voiceOvers: []
   diaryAmountToTrigger: 0
@@ -812,6 +818,7 @@ MonoBehaviour:
   canRepeat: 0
   inThisNote: 0
   finished: 0
+  paragraphIndex: 0
   audioSource: {fileID: 0}
   voiceOvers: []
   diaryAmountToTrigger: 0
@@ -892,6 +899,7 @@ MonoBehaviour:
   canRepeat: 0
   inThisNote: 0
   finished: 0
+  paragraphIndex: 0
   audioSource: {fileID: 0}
   voiceOvers: []
   diaryAmountToTrigger: 0
@@ -934,9 +942,10 @@ MonoBehaviour:
   isInOption: 0
   paragraph: []
   canStartParagraph: 0
-  canRepeat: 0
+  canRepeat: 1
   inThisNote: 0
   finished: 0
+  paragraphIndex: 0
   audioSource: {fileID: 0}
   voiceOvers: []
   diaryAmountToTrigger: 0
@@ -1029,6 +1038,7 @@ MonoBehaviour:
   canRepeat: 0
   inThisNote: 0
   finished: 0
+  paragraphIndex: 0
   audioSource: {fileID: 0}
   voiceOvers: []
   diaryAmountToTrigger: 0

@@ -68,6 +68,9 @@ public class FrogPicture : Trigger {
                     //frogAnim.SetTrigger("openeyes");
                     StartCoroutine(openEyes());
 
+                    // Found what frog wants, no need for hint
+                    secretTrigger.needHint = false;
+
                     int foundThisDiary = PlayerPrefs.GetInt("FoundThisDiary");
                     if (foundThisDiary != 0)
                     {
@@ -143,6 +146,11 @@ public class FrogPicture : Trigger {
             if (foundThisDiary != 0)
             {
                 secretTrigger.isStart = true;
+            }
+            
+            if (secretTrigger.needHint && !secretTrigger.frogHint.inThisNote && !wand.pickable)
+            {
+                secretTrigger.gameManager.StartNote(secretTrigger.frogHint);
             }
         }
     }
