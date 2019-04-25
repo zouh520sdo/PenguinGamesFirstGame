@@ -60,6 +60,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1369242013968854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4948745347520304}
+  - component: {fileID: 114583228427456966}
+  m_Layer: 0
+  m_Name: Dialogue5_gotElixir
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1574937787516318
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,7 +167,7 @@ GameObject:
   - component: {fileID: 4553958963023790}
   - component: {fileID: 114691923489197546}
   m_Layer: 0
-  m_Name: Dialogue5_gotElixir
+  m_Name: Dialogue6_askGua
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -294,8 +310,9 @@ Transform:
   - {fileID: 4867188200138148}
   - {fileID: 4155291529699056}
   - {fileID: 4674431493843320}
-  - {fileID: 4553958963023790}
+  - {fileID: 4948745347520304}
   - {fileID: 4292698148257982}
+  - {fileID: 4553958963023790}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -310,7 +327,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4528220443634402}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4575844171829926
 Transform:
@@ -364,6 +381,19 @@ Transform:
   - {fileID: 4988368796239048}
   m_Father: {fileID: 4528220443634402}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4948745347520304
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1369242013968854}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4528220443634402}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4988368796239048
 Transform:
@@ -702,7 +732,8 @@ MonoBehaviour:
   normalNote2: {fileID: 114563558990503920}
   doFavorNote: {fileID: 114310577379991870}
   needExlixir: {fileID: 114702276028284112}
-  gotExlixir: {fileID: 114691923489197546}
+  gotExlixir: {fileID: 114583228427456966}
+  frogHint: {fileID: 114691923489197546}
   isStart: 0
   frogAnim: {fileID: 95143469765556228}
 --- !u!114 &114360695117234672
@@ -843,12 +874,12 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   wand: {fileID: 0}
   optionIndexMade: 0
---- !u!114 &114691923489197546
+--- !u!114 &114583228427456966
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1783208496152772}
+  m_GameObject: {fileID: 1369242013968854}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70c1e22dede8829448b5c2a2e04fde24, type: 3}
@@ -888,6 +919,98 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   wand: {fileID: 0}
   optionIndexMade: 0
+--- !u!114 &114691923489197546
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1783208496152772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c1e22dede8829448b5c2a2e04fde24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: 
+  isInOption: 0
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 0
+  inThisNote: 0
+  finished: 0
+  audioSource: {fileID: 0}
+  voiceOvers: []
+  diaryAmountToTrigger: 0
+  secretParagraphs: []
+  secretVoiceOvers: []
+  primaryParagraghs:
+  - noNeedCondition: 1
+    needDiaryAmount: 0
+    hasGua: 0
+    foundThisDiary: 0
+    texts:
+    - "Frog:\nWhat do you want?\r"
+    audioOvers: []
+    options:
+    - content: Tails of Double-Head Lizard.
+      paragraph:
+        noNeedCondition: 1
+        needDiaryAmount: 0
+        hasGua: 0
+        foundThisDiary: 0
+        texts:
+        - "Frog:\nThat must be in a pink heart-shaped bottle.\r\nThey are the basic
+          ingredients for any love potions.\r"
+        - "Frog:\nYou\u2019ll need to put each potion at the written temperature.
+          Or it will become useless.\r\nRemember that in mind.\r"
+        audioOvers: []
+        options: []
+        onComplete:
+          m_PersistentCalls:
+            m_Calls: []
+          m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+    - content: 3 mg of Blue Baby Worms.
+      paragraph:
+        noNeedCondition: 1
+        needDiaryAmount: 0
+        hasGua: 0
+        foundThisDiary: 0
+        texts:
+        - "Frog:\nBlue bottle. Should be on the left shelf.\r\nThere are a lot of
+          baby worms. Don\u2019t be tricked.\r"
+        - "Frog:\nYou\u2019ll need to put each potion at the written temperature.
+          Or it will become useless.\r\nRemember that in mind.\r\n"
+        audioOvers: []
+        options: []
+        onComplete:
+          m_PersistentCalls:
+            m_Calls: []
+          m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+    - content: Happy Sweat of Souhait Union.
+      paragraph:
+        noNeedCondition: 1
+        needDiaryAmount: 0
+        hasGua: 0
+        foundThisDiary: 0
+        texts:
+        - "Frog:\nRight under your eyes.\r\nI hate the smell of that crap.\r"
+        - "Frog:\nYou\u2019ll need to put each potion at the written temperature.
+          Or it will become useless.\r\nRemember that in mind.\r"
+        audioOvers: []
+        options: []
+        onComplete:
+          m_PersistentCalls:
+            m_Calls: []
+          m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  wand: {fileID: 0}
+  optionIndexMade: 0
 --- !u!114 &114702276028284112
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -919,6 +1042,7 @@ MonoBehaviour:
     texts:
     - "Frog:\n\u2026 *sigh* "
     - "Frog:\nYou need to give me that Elixir first. I can\u2019t do anything"
+    - "Frog:\nI\u2019ll help you.\r\nAsk me when you feel lost.\r"
     audioOvers: []
     options: []
     onComplete:
@@ -958,11 +1082,12 @@ MonoBehaviour:
   triggees:
   - {fileID: 0}
   - {fileID: 0}
-  desiredType: 0
+  desiredType: 3
   nearMedicines: []
   isActive: 0
   wand: {fileID: 0}
   frogNote: {fileID: 0}
+  noNeedReset: 0
   gotExlixirTy: {fileID: 114079425509225090}
   secretTrigger: {fileID: 114333977036582828}
   frogShining: {fileID: 1577736730469878}
@@ -1164,7 +1289,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.18206371, g: 1, b: 0.15566039, a: 1}
+      maxColor: {r: 0.34307382, g: 0.8396226, b: 0.22574759, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -5650,7 +5775,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: 501916a131075174dad158b4fd0ea28c, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

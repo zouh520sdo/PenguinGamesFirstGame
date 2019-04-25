@@ -15,6 +15,8 @@ public class FrogSecretTrigger : Trigger {
     public OpeningEveNote needExlixir;
     public OpeningEveNote gotExlixir;
 
+    public OpeningEveNote frogHint;
+
     public bool isStart;
     public Animator frogAnim;
 
