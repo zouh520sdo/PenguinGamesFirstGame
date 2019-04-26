@@ -258,6 +258,18 @@ public class Wand : MonoBehaviour {
         dButton.onClick.RemoveAllListeners();
     }
 
+    public void ShowHand()
+    {
+        handAnimator.ResetTrigger("Hide");
+        handAnimator.SetTrigger("Show");
+    }
+
+    public void HideHand()
+    {
+        handAnimator.ResetTrigger("Show");
+        handAnimator.SetTrigger("Hide");
+    }
+
     // Update is called once per frame
     void Update () {
 

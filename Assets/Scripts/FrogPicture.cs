@@ -136,7 +136,7 @@ public class FrogPicture : Trigger {
         noNeedReset = true;
         wand.handAnimator.ResetTrigger("Show");
         wand.handAnimator.SetTrigger("Hide");
-        wand.SetFrogWand();
+        wand.SetFrogWand(); 
     }
 
     public void OnMouseOver()

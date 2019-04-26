@@ -13032,6 +13032,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9451433, y: 0.05157, z: 0.6212101}
   m_Center: {x: -0.44661352, y: 0.000013046898, z: -0.008129628}
+--- !u!114 &496492160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 496492154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32453e737eeab1f4f94aa459c3c5a76b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggees: []
+  isActive: 0
+  evesIntroduction: {fileID: 2013724367}
+  scrollNote: {fileID: 0}
+  gameManager: {fileID: 0}
+  wand: {fileID: 0}
 --- !u!1001 &502676263
 Prefab:
   m_ObjectHideFlags: 0
@@ -51807,6 +51824,77 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46273fc06c47d94599f05044d604991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2013724365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2013724366}
+  - component: {fileID: 2013724367}
+  m_Layer: 0
+  m_Name: EveScrollNote
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2013724366
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2013724365}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 351484332}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2013724367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2013724365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c1e22dede8829448b5c2a2e04fde24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: 
+  isInOption: 0
+  paragraph:
+  - 'Eve:
+
+    Congratulations. You belong to the red class. Look at your right wrist - '
+  - 'Eve:
+
+    - the red seal proves your legal identity as a resident in Great Souhait Union.
+    It also represents your respectful social class as a red mage.'
+  - "Eve:\nMages in Great Souhait Union are sorted by Covenant Stand in four class:
+    Red, Orange, Yellow and Green. You are lucky for being a red mage, especially
+    - signal red. You don\u2019t want to know what they do to those wretched green
+    mages.\r\nIngredients of most food, soups and even potions come from here. Thus,
+    it is the most important\u2026 and dangerous place in the Union\r\n"
+  - 'Eve:
+
+    Now, try to wake up your Covenant Object.'
+  canStartParagraph: 0
+  canRepeat: 0
+  inThisNote: 0
+  finished: 0
+  paragraphIndex: 0
+  audioSource: {fileID: 0}
+  voiceOvers: []
+  diaryAmountToTrigger: 0
+  secretParagraphs: []
+  secretVoiceOvers: []
+  primaryParagraghs: []
+  wand: {fileID: 0}
+  optionIndexMade: 0
 --- !u!1 &2014671056
 GameObject:
   m_ObjectHideFlags: 0
