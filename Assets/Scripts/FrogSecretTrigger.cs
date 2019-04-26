@@ -78,7 +78,7 @@ public class FrogSecretTrigger : Trigger {
                     frogPicture.TriggerSecretDialogue();
                     gameManager.StartNote(note);
                 }
-                else 
+                else
                 {
                     gameManager.StartNote(note);
                 }
