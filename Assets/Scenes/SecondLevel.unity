@@ -8134,37 +8134,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!84 &180633750
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 256
-  m_Height: 256
-  m_AntiAliasing: 1
-  m_DepthFormat: 0
-  m_ColorFormat: 11
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &181929440
 Prefab:
   m_ObjectHideFlags: 0
@@ -23059,22 +23028,24 @@ Prefab:
     - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
         type: 2}
       propertyPath: paragraph.Array.data[0]
-      value: "     4/26/2256  \t      \n     Yesterday Black Cloak came again. This
-        time Jackie and Kate were executed. And then they are like everyone else -
-        thoughtless, dispirited, like dispassionate dolls.\n     I can\u2019t believe
-        that I\u2019m used to this. \n     Every green mage must be executed in certain
-        time after they are distributed to the workplace. In my case it is one week.
-        Works in greenhouse are always the easiest to learn. "
+      value: "     4/26/2256  \t      \n     Yesterday <color=#870F0F>Black Cloak</color>
+        came again. This time Jackie and Kate were executed. And then they are like
+        everyone else - thoughtless, dispirited, like dispassionate dolls.\n     I
+        can\u2019t believe that I\u2019m used to this. \n     Every green mage must
+        be <color=#870F0F>executed</color> in certain time after they are distributed
+        to the workplace. In my case it is one week. Works in greenhouse are always
+        the easiest to learn. "
       objectReference: {fileID: 0}
     - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
         type: 2}
       propertyPath: paragraph.Array.data[1]
       value: "     But Jackie, he was just 14. He\u2019s so young, so enthusiastic...
         A day ago he was still talking to me about his poet dream. Now the only thing
-        in his head is to plant dragon jasmine. And plant. And plant.\r\n     Who
-        determines this? Must I be a farm manager because I\u2019m a hitte mage? Must
-        green mages be doing the most basic and tedious work just because they have
-        the least powerful magic objects? \r"
+        in his head is to plant dragon jasmine. And plant. And plant.\r\n     <color=#870F0F>Who
+        determines this?</color> Must I be a farm manager because I\u2019m a hitte
+        mage? Must green mages be doing the most basic and tedious work just because
+        they have the least powerful magic objects? \r\n<size=18>Next page is placed
+        in the <color=#870F0F>high</color> place.</size>"
       objectReference: {fileID: 0}
     - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
         type: 2}
@@ -24259,7 +24230,7 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.size
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -24269,7 +24240,7 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: voiceOvers.Array.size
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -24311,41 +24282,39 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[0]
-      value: 'Eve:
-
-        It''s glad to see you again, examinee Adam Brown. '
+      value: "Eve:\nIt's glad to see you again, examinee Adam Brown. \nThe room for
+        this level is a mirror projection of a corner in the <color=#870F0F>Souhait
+        Greenhouse</color>. "
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[1]
-      value: 'Eve:
-
-        The room for this level is a mirror projection of a corner in the Souhait
-        Greenhouse. '
+      value: "Eve:\nOr - <color=#870F0F>\u201CSpirit of Liberty\u201D</color> called
+        by some green mages. "
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[2]
-      value: "Eve:\nOr - \u201CSpirit of Liberty\u201D called by some green mages. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
-        type: 2}
-      propertyPath: paragraph.Array.data[3]
       value: "Eve:\nIngredients of most food, soups and even potions come from here.
         Thus, it is the most important\u2026 and dangerous place in the Union. "
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
-      propertyPath: paragraph.Array.data[4]
+      propertyPath: paragraph.Array.data[3]
       value: "Eve:\nDon\u2019t worry. Everything in this room has been detoxicated
-        with hitte flames. "
+        with Hitte flames. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
+      propertyPath: paragraph.Array.data[4]
+      value: 'Eve:
+
+        So, relax and enjoy your test, examinee Adam Brown. '
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[5]
-      value: 'Eve:
-
-        So, relax and enjoy your test, examinee Adam Brown. '
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -24367,22 +24336,22 @@ Prefab:
         type: 2}
       propertyPath: voiceOvers.Array.data[1]
       value: 
-      objectReference: {fileID: 8300000, guid: 4ef9b7c1ad7acad40ac01a2891b3fa03, type: 3}
+      objectReference: {fileID: 8300000, guid: afabad37918322f40a34b882973d4e8b, type: 3}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: voiceOvers.Array.data[2]
       value: 
-      objectReference: {fileID: 8300000, guid: afabad37918322f40a34b882973d4e8b, type: 3}
+      objectReference: {fileID: 8300000, guid: 4ef9b7c1ad7acad40ac01a2891b3fa03, type: 3}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: voiceOvers.Array.data[3]
       value: 
-      objectReference: {fileID: 8300000, guid: 4ef9b7c1ad7acad40ac01a2891b3fa03, type: 3}
+      objectReference: {fileID: 8300000, guid: d847b1a870388df45a4682411f2197c5, type: 3}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: voiceOvers.Array.data[4]
       value: 
-      objectReference: {fileID: 8300000, guid: d847b1a870388df45a4682411f2197c5, type: 3}
+      objectReference: {fileID: 8300000, guid: 7e11ed6c7185ab54580d88b7ece55503, type: 3}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: voiceOvers.Array.data[5]
@@ -30775,7 +30744,7 @@ Prefab:
       propertyPath: paragraph.Array.data[3]
       value: 'Fig:
 
-        3. Place the buckets and cages symmetrically.'
+        3. Place the buckets and cages <color=#870F0F>symmetrically</color>.'
       objectReference: {fileID: 0}
     - target: {fileID: 114557430662459456, guid: 4a189044738c3294ab69afdc469628bf,
         type: 2}
@@ -30789,7 +30758,7 @@ Prefab:
       propertyPath: paragraph.Array.data[2]
       value: 'Fig:
 
-        2. Freeze them to the ice.'
+        2. <color=#870F0F>Freeze</color> them to the ice.'
       objectReference: {fileID: 0}
     - target: {fileID: 114557430662459456, guid: 4a189044738c3294ab69afdc469628bf,
         type: 2}
@@ -42247,6 +42216,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: e2e4f2ceb3815114a87b5f39c3bab6f4,
     type: 3}
   m_PrefabInternal: {fileID: 799107619}
+--- !u!84 &802064707
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 256
+  m_Height: 256
+  m_AntiAliasing: 1
+  m_DepthFormat: 0
+  m_ColorFormat: 11
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &805409835
 Prefab:
   m_ObjectHideFlags: 0
@@ -61008,7 +61008,7 @@ MonoBehaviour:
   overrideColor: 0
   overridingColor: {r: 0.9999, g: 0.9999, b: 0.9999, a: 0.9999}
   useShadow: 1
-  shadowMapRenderTexture: {fileID: 180633750}
+  shadowMapRenderTexture: {fileID: 802064707}
   useCookie: 1
   cookieMapRenderTexture: {fileID: 0}
   enableOutOfPhaseColor: 0
@@ -61082,6 +61082,11 @@ Prefab:
       propertyPath: triggees.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114018535224552000, guid: 622ee52cb7d1f5d4ab08791669f6c72c,
+        type: 2}
+      propertyPath: paragraph.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4063834010385476, guid: 622ee52cb7d1f5d4ab08791669f6c72c, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -61119,6 +61124,27 @@ Prefab:
       propertyPath: triggees.Array.data[0]
       value: 
       objectReference: {fileID: 1078190190}
+    - target: {fileID: 114018535224552000, guid: 622ee52cb7d1f5d4ab08791669f6c72c,
+        type: 2}
+      propertyPath: paragraph.Array.data[2]
+      value: '"I will <color=#870F0F>loyally</color> support any decision Great Souhait
+        Union has made. "'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114018535224552000, guid: 622ee52cb7d1f5d4ab08791669f6c72c,
+        type: 2}
+      propertyPath: paragraph.Array.data[0]
+      value: '"I, Adam Brown, solemnly swear,
+
+        that till the end of my life,
+
+        I will <color=#870F0F>loyally</color> support any decision Great Souhait Union
+        has made. "'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114018535224552000, guid: 622ee52cb7d1f5d4ab08791669f6c72c,
+        type: 2}
+      propertyPath: paragraph.Array.data[1]
+      value: '"that till the end of my life,'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 622ee52cb7d1f5d4ab08791669f6c72c, type: 2}
   m_IsPrefabAsset: 0
@@ -99965,20 +99991,20 @@ Prefab:
     - target: {fileID: 114256503444826902, guid: c5edf0527a068a54e966d8adf11430d3,
         type: 2}
       propertyPath: paragraph.Array.data[0]
-      value: "Fig:\nRed ibis sits, bow tied on the neck,\n\u201CI want three packs
-        of green fig\u2019s eggs.\u201D"
+      value: "Fig:\n<color=#870F0F>Red ibis</color> sits, bow tied on the neck,\n\u201CI
+        want three packs of green fig\u2019s eggs.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 114256503444826902, guid: c5edf0527a068a54e966d8adf11430d3,
         type: 2}
       propertyPath: paragraph.Array.data[1]
-      value: "Fig:\nOrange weasel stands, whip in its hand, \n\u201CThis is exactly
-        the forest\u2019s demand.\u201D"
+      value: "Fig:\n<color=#870F0F>Orange weasel</color> stands, whip in its hand,
+        \n\u201CThis is exactly the forest\u2019s demand.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 114256503444826902, guid: c5edf0527a068a54e966d8adf11430d3,
         type: 2}
       propertyPath: paragraph.Array.data[2]
-      value: "Fig:\nYellow sparrow runs, chuckling in groups,\n\u201CMaybe they just
-        want a different lunch soup.\u201D"
+      value: "Fig:\n<color=#870F0F>Yellow sparrow</color> runs, chuckling in groups,\n\u201CMaybe
+        they just want a different lunch soup.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 114256503444826902, guid: c5edf0527a068a54e966d8adf11430d3,
         type: 2}
@@ -101689,6 +101715,7 @@ MonoBehaviour:
   canRepeat: 1
   inThisNote: 0
   finished: 0
+  paragraphIndex: 0
 --- !u!82 &1510412903
 AudioSource:
   m_ObjectHideFlags: 0
@@ -131497,7 +131524,8 @@ Prefab:
       propertyPath: paragraph.Array.data[1]
       value: 'Fig:
 
-        I need ice blocks to fill in the molds in time.'
+        I need <color=#870F0F>ice blocks</color> to fill in the <color=#870F0F>molds</color>
+        in time.'
       objectReference: {fileID: 0}
     - target: {fileID: 114472041878752856, guid: d49e3f8cc4b339f4e938bf7da479c85f,
         type: 2}
