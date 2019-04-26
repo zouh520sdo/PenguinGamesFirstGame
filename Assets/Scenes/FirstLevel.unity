@@ -10251,7 +10251,8 @@ Prefab:
     - target: {fileID: 114457232943598064, guid: 08a77b4afefd33e4e86968f9d70cd9d9,
         type: 2}
       propertyPath: paragraph.Array.data[2]
-      value: <size=18>The first page is inside one of the thickest books.</size>
+      value: <size=18>The first page is inside one of <color=#870F0F>the thickest</color>
+        books.</size>
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08a77b4afefd33e4e86968f9d70cd9d9, type: 2}
