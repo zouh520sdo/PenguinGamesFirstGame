@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10051,7 +10051,7 @@ Prefab:
     - target: {fileID: 114457232943598064, guid: 08a77b4afefd33e4e86968f9d70cd9d9,
         type: 2}
       propertyPath: paragraph.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4813832416190438, guid: 08a77b4afefd33e4e86968f9d70cd9d9, type: 2}
       propertyPath: m_LocalPosition.x
@@ -10129,12 +10129,12 @@ Prefab:
     - target: {fileID: 114457232943598064, guid: 08a77b4afefd33e4e86968f9d70cd9d9,
         type: 2}
       propertyPath: paragraph.Array.data[0]
-      value: '"Books are recreations.'
+      value: "\"Books are recreations.\nThey are produced to be destroyed.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 114457232943598064, guid: 08a77b4afefd33e4e86968f9d70cd9d9,
         type: 2}
       propertyPath: paragraph.Array.data[1]
-      value: "\"They are produced to be destroyed.\u201D"
+      value: There is a sentence on the corner of the right page.
       objectReference: {fileID: 0}
     - target: {fileID: 1180179937101840, guid: 08a77b4afefd33e4e86968f9d70cd9d9, type: 2}
       propertyPath: m_IsActive
@@ -10241,12 +10241,17 @@ Prefab:
     - target: {fileID: 114457232943598064, guid: 08a77b4afefd33e4e86968f9d70cd9d9,
         type: 2}
       propertyPath: canRepeat
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198274754789535982, guid: 08a77b4afefd33e4e86968f9d70cd9d9,
         type: 2}
       propertyPath: InitialModule.startSize.scalar
       value: 3.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 114457232943598064, guid: 08a77b4afefd33e4e86968f9d70cd9d9,
+        type: 2}
+      propertyPath: paragraph.Array.data[2]
+      value: <size=18>The first page is inside one of the thickest books.</size>
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08a77b4afefd33e4e86968f9d70cd9d9, type: 2}
@@ -13002,13 +13007,18 @@ MonoBehaviour:
   note: Scroll
   isInOption: 0
   paragraph:
-  - 'Name: Adam Brown'
-  - 'Class: Red Class'
-  - 'Magic Object: Hitte Staff'
+  - '...'
+  - '...'
+  - 'Under the authority of the <color=#870F0F>Souhait Spirit</color>, Mage Adam Brown
+    is distributed to the honorable <color=#870F0F>Red Class</color>.
+
+    He shall control <color=#870F0F>Hitte</color> with his Hitte Staff, and thus devote
+    his all to the Great Souhait Union with this miraculous power.'
   canStartParagraph: 1
   canRepeat: 0
   inThisNote: 0
   finished: 0
+  paragraphIndex: 0
 --- !u!65 &496492158
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16807,26 +16817,28 @@ Prefab:
       propertyPath: paragraph.Array.data[0]
       value: "     11/25/2247\r\n     I visited the library again. No one goes there
         anymore since books have been criticized as \u201Cimpurities from the old
-        century\u201D. So, they called me \u201Cthe Impure\u201D at school too. Honestly,
-        who cares? They\u2019ll never know how beautiful these \u201Cimpure\u201D
-        buildings are\u2026 although most of them do not exist anymore.\r\n     Or
-        not? None of us has been out of the Union anyhow.\r"
+        century\u201D. So, they called me <color=#870F0F>\u201Cthe Impure\u201D</color>
+        at school too. Honestly, who cares? They have no idea how beautiful these
+        \u201Cimpure\u201D buildings are... although most of them do not exist anymore.\r\n
+        \    Or not? None of us has been <color=#870F0F>out of the Union</color> anyhow.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
         type: 2}
       propertyPath: paragraph.Array.data[1]
-      value: "     What happened to that old human-led century? I found nothing in
-        the school library, as if everything before 2096 just vanished into thin air.
-        Maybe the only way to know about that piece of history is to see it with my
-        own eyes, which means I must become the best Architect in the Union to be
-        permitted to approach the Border of this wonderland.\r\n     Thus the Impure
-        will visit the library tomorrow again. I heard in some districts, \r"
+      value: "     What happened to that <color=#870F0F>old human-led century</color>?
+        I found nothing in the school library, as if everything before 2096 just vanished
+        into thin air. Maybe the only way to know about that piece of history is to
+        see it with my own eyes, which means I must become <color=#870F0F>the best
+        Architect</color> in the Union to be permitted to approach <color=#870F0F>the
+        Border</color> of this wonderland.\r\n     Thus the Impure will visit the
+        library tomorrow again. I heard in some districts, \r"
       objectReference: {fileID: 0}
     - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
         type: 2}
       propertyPath: paragraph.Array.data[2]
       value: "burning books had became a trend. Maybe I should keep some books in
-        my own room just in case.\r\n"
+        my own room just in case.\r\n\n\n\n\n\n\n\n\n\n\n<size=18>Next page is buried
+        in the <color=#870F0F>unfrozen water</color>.</size>"
       objectReference: {fileID: 0}
     - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
         type: 2}
@@ -49851,7 +49863,7 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.size
-      value: 13
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -49861,7 +49873,7 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: voiceOvers.Array.size
-      value: 13
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -49905,29 +49917,36 @@ Prefab:
       propertyPath: paragraph.Array.data[0]
       value: 'Secret Voice:
 
-        Welcome to Great Souhait Union.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
-        type: 2}
-      propertyPath: paragraph.Array.data[1]
-      value: 'Secret Voice:
+        Welcome to the <color=#870F0F>Great Souhait Union</color>.
 
         We have read through your application files and approved your qualifications
         being part of us.'
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
+      propertyPath: paragraph.Array.data[1]
+      value: 'Secret Voice:
+
+        Great Souhait Union is <color=#870F0F>the greatest magic union</color> in
+        the world.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
+        type: 2}
       propertyPath: paragraph.Array.data[2]
       value: 'Secret Voice:
 
-        Great Souhait Union is the greatest magic union in the world.'
+        Upon your entrance, you will be eternally protected by <color=#870F0F>the
+        Association</color> and will have the power to use magic with <color=#870F0F>your
+        own magic object</color>.'
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[3]
       value: 'Secret Voice:
 
-        Upon your entrance,'
+        As stipulated by law, all newcomers to the Great Souhait Union are required
+        to take <color=#870F0F>Ability Test</color> before entrance to be fully aware
+        of the basic principles and prove their capabilities of magic. '
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -49952,15 +49971,15 @@ Prefab:
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[3]
-      value: "Eve:\nIt\u2019s all for the future of Great Souhait Union... "
+      value: "Eve:\n<color=#870F0F>It\u2019s all for the future of Great Souhait Union...</color>"
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[4]
       value: 'Secret Voice:
 
-        you will be eternally protected by the Association and will have the power
-        to use magic with your own magic object.'
+        There will be four covenants -- <color=#870F0F>Loyalty, Peace, Sincerity</color>
+        and <color=#870F0F>Love</color>. '
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -49972,16 +49991,15 @@ Prefab:
       propertyPath: paragraph.Array.data[5]
       value: 'Secret Voice:
 
-        As stipulated by law, all newcomers to Great Souhait Union are required to
-        take Ability Test before entrance to be fully aware of the basic principles
-        and prove their capabilities of magic. '
+        These covenants will be finished through your test progress. At the same time,
+        you will be able to enjoy a few remarkable sights in the Union.'
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[6]
-      value: 'Secret Voice:
-
-        There will be four covenants -- '
+      value: "Eve:\nMy name is Eve. I will be your <color=#870F0F>personal test guide</color>
+        to ensure the test is conducted correctly and safely.\nI\u2019m sure we will
+        have a good time, examinee - Adam Brown."
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -49997,17 +50015,17 @@ Prefab:
         type: 2}
       propertyPath: voiceOvers.Array.data[2]
       value: 
-      objectReference: {fileID: 8300000, guid: 4ef9b7c1ad7acad40ac01a2891b3fa03, type: 3}
+      objectReference: {fileID: 8300000, guid: 00e26ecc98f0a3f4aa8b22b8b8203b34, type: 3}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: voiceOvers.Array.data[3]
       value: 
-      objectReference: {fileID: 8300000, guid: 00e26ecc98f0a3f4aa8b22b8b8203b34, type: 3}
+      objectReference: {fileID: 8300000, guid: d8b5f94580215cf47b86a15a4dd249d9, type: 3}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: voiceOvers.Array.data[4]
       value: 
-      objectReference: {fileID: 8300000, guid: 4ef9b7c1ad7acad40ac01a2891b3fa03, type: 3}
+      objectReference: {fileID: 8300000, guid: ca6a78b7e9b3a924a88b78bc12fbb1b0, type: 3}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: voiceOvers.Array.data[5]
@@ -50017,7 +50035,7 @@ Prefab:
         type: 2}
       propertyPath: voiceOvers.Array.data[6]
       value: 
-      objectReference: {fileID: 8300000, guid: ca6a78b7e9b3a924a88b78bc12fbb1b0, type: 3}
+      objectReference: {fileID: 8300000, guid: aa63510e47975f3499ec3178ae48e2d5, type: 3}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: voiceOvers.Array.data[7]
@@ -50061,9 +50079,8 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[7]
-      value: 'Secret Voice:
-
-        There will be four covenants -- Loyalty,'
+      value: "SEve:\nI\u2019m sure we will have a good time, examinee - Adam Brown.
+        ecret Voice:\nThere will be four covenants -- Loyalty,"
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -50082,23 +50099,17 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[10]
-      value: 'Secret Voice:
-
-        These covenants will be finished through your test progress. At the same time,
-        you will be able to enjoy a few remarkable sights in the Union.'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[11]
-      value: 'Eve:
-
-        My name is Eve. I will be your personal test guide to ensure the test is conducted
-        correctly and safely.'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[12]
-      value: "Eve:\nI\u2019m sure we will have a good time, examinee - Adam Brown. "
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -54024,6 +54035,7 @@ MonoBehaviour:
   canRepeat: 0
   inThisNote: 0
   finished: 0
+  paragraphIndex: 0
 --- !u!114 &2134648981
 MonoBehaviour:
   m_ObjectHideFlags: 0
