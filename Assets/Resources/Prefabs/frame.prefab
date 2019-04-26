@@ -199,6 +199,7 @@ GameObject:
   - component: {fileID: 4528220443634402}
   - component: {fileID: 114333977036582828}
   - component: {fileID: 114742345616136078}
+  - component: {fileID: 82017837834810792}
   m_Layer: 0
   m_Name: frame
   m_TagString: Untagged
@@ -450,6 +451,101 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1966185577101260}
   m_Mesh: {fileID: 4300000, guid: 05f26e2e0c08104448491004cd9c3149, type: 3}
+--- !u!82 &82017837834810792
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1920483586507824}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.527
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!95 &95143469765556228
 Animator:
   serializedVersion: 3
@@ -487,7 +583,7 @@ MonoBehaviour:
   inThisNote: 0
   finished: 0
   paragraphIndex: 0
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 82017837834810792}
   voiceOvers: []
   diaryAmountToTrigger: 0
   secretParagraphs: []
@@ -516,7 +612,8 @@ MonoBehaviour:
     - 'Frog:
 
       Who are you? How did you find this? '
-    audioOvers: []
+    audioOvers:
+    - {fileID: 8300000, guid: f29104829509c194ba3f0621d371b4c4, type: 3}
     options:
     - content: Adam Brown
       paragraph:
@@ -589,7 +686,7 @@ MonoBehaviour:
   inThisNote: 0
   finished: 0
   paragraphIndex: 0
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 82017837834810792}
   voiceOvers: []
   diaryAmountToTrigger: 0
   secretParagraphs: []
@@ -610,7 +707,9 @@ MonoBehaviour:
     - 'Frog:
 
       We are on the same side now. Nice to meet you. Hitte mage. '
-    audioOvers: []
+    audioOvers:
+    - {fileID: 0}
+    - {fileID: 8300000, guid: f29104829509c194ba3f0621d371b4c4, type: 3}
     options: []
     onComplete:
       m_PersistentCalls:
@@ -638,7 +737,7 @@ MonoBehaviour:
   inThisNote: 0
   finished: 0
   paragraphIndex: 0
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 82017837834810792}
   voiceOvers: []
   diaryAmountToTrigger: 0
   secretParagraphs: []
@@ -652,7 +751,8 @@ MonoBehaviour:
     - 'Frog:
 
       Just... do me a favor. Will you?'
-    audioOvers: []
+    audioOvers:
+    - {fileID: 8300000, guid: f29104829509c194ba3f0621d371b4c4, type: 3}
     options:
     - content: Alright.
       paragraph:
@@ -777,7 +877,7 @@ MonoBehaviour:
   inThisNote: 0
   finished: 0
   paragraphIndex: 0
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 82017837834810792}
   voiceOvers: []
   diaryAmountToTrigger: 0
   secretParagraphs: []
@@ -791,7 +891,8 @@ MonoBehaviour:
     - 'Frog:
 
       ...K...kwark!'
-    audioOvers: []
+    audioOvers:
+    - {fileID: 8300000, guid: f29104829509c194ba3f0621d371b4c4, type: 3}
     options: []
     onComplete:
       m_PersistentCalls:
@@ -819,7 +920,7 @@ MonoBehaviour:
   inThisNote: 0
   finished: 0
   paragraphIndex: 0
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 82017837834810792}
   voiceOvers: []
   diaryAmountToTrigger: 0
   secretParagraphs: []
@@ -841,7 +942,11 @@ MonoBehaviour:
     - 'Frog:
 
       You bring me with you. And maybe I can show you the way out. '
-    audioOvers: []
+    audioOvers:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 8300000, guid: f29104829509c194ba3f0621d371b4c4, type: 3}
+    - {fileID: 0}
     options:
     - content: Am I allowed to do this?
       paragraph:
@@ -900,7 +1005,7 @@ MonoBehaviour:
   inThisNote: 0
   finished: 0
   paragraphIndex: 0
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 82017837834810792}
   voiceOvers: []
   diaryAmountToTrigger: 0
   secretParagraphs: []
@@ -918,7 +1023,8 @@ MonoBehaviour:
     - 'Frog:
 
       We are on the same side now. Nice to meet you. Hitte mage. '
-    audioOvers: []
+    audioOvers:
+    - {fileID: 8300000, guid: f29104829509c194ba3f0621d371b4c4, type: 3}
     options: []
     onComplete:
       m_PersistentCalls:
@@ -946,7 +1052,7 @@ MonoBehaviour:
   inThisNote: 0
   finished: 0
   paragraphIndex: 0
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 82017837834810792}
   voiceOvers: []
   diaryAmountToTrigger: 0
   secretParagraphs: []
@@ -958,7 +1064,8 @@ MonoBehaviour:
     foundThisDiary: 0
     texts:
     - "Frog:\nWhat do you want?\r"
-    audioOvers: []
+    audioOvers:
+    - {fileID: 8300000, guid: f29104829509c194ba3f0621d371b4c4, type: 3}
     options:
     - content: Tails of Double-Head Lizard.
       paragraph:
@@ -1039,7 +1146,7 @@ MonoBehaviour:
   inThisNote: 0
   finished: 0
   paragraphIndex: 0
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 82017837834810792}
   voiceOvers: []
   diaryAmountToTrigger: 0
   secretParagraphs: []
