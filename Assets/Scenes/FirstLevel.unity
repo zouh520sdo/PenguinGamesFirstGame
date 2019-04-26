@@ -31665,6 +31665,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 9723911408653ae428b6f6c19f76ca50,
     type: 3}
   m_PrefabInternal: {fileID: 1280318750}
+--- !u!1 &1314524561 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1969546279022578, guid: 0771f8c58755eb2489de7c50035fc6ea,
+    type: 2}
+  m_PrefabInternal: {fileID: 1536255320}
 --- !u!1001 &1315045104
 Prefab:
   m_ObjectHideFlags: 0
@@ -35229,8 +35234,18 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1969546279022578, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
+      propertyPath: frogWandObj
+      value: 
+      objectReference: {fileID: 1647485046}
+    - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
+      propertyPath: normalWandObj
+      value: 
+      objectReference: {fileID: 1314524561}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
   m_IsPrefabAsset: 0
@@ -41832,6 +41847,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4216029520990460, guid: 69d995060438d6543b9a157a984b5df0,
     type: 2}
   m_PrefabInternal: {fileID: 627865114}
+--- !u!1 &1647485046 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: 0780cfd06816ddb4abd7bb68d4375b6e,
+    type: 3}
+  m_PrefabInternal: {fileID: 1933243869}
 --- !u!1 &1648490872 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 7b3293ff8e51e2d48a266db42ea1301b,

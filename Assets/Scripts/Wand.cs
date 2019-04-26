@@ -21,6 +21,8 @@ public class Wand : MonoBehaviour {
     public Animator handAnimator;
     public ParticleSystem wandEffect;
     public GameManager gameManager;
+    public GameObject frogWandObj;
+    public GameObject normalWandObj;
 
     private float holdingTime;
 
@@ -176,6 +178,8 @@ public class Wand : MonoBehaviour {
 
             selectionObj.SetActive(false);
         }
+
+        SetWand(PlayerPrefs.GetInt("HasGua"));
     }
 
     public void ShowDialogueSelection(MakeSelectionDelegate onSelection, List<DialogueOption> options)
@@ -608,5 +612,29 @@ public class Wand : MonoBehaviour {
         {
             originalPos = CPRP.resettingPos;
         }
+    }
+
+    public void SetWand(int hasGua)
+    {
+        if (hasGua == 0)
+        {
+            SetNormalWand();
+        }
+        else
+        {
+            SetFrogWand();
+        }
+    }
+
+    public void SetNormalWand()
+    {
+        frogWandObj.SetActive(false);
+        normalWandObj.SetActive(true);
+    }
+
+    public void SetFrogWand()
+    {
+        frogWandObj.SetActive(true);
+        normalWandObj.SetActive(false);
     }
 }
