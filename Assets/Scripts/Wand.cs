@@ -390,7 +390,8 @@ public class Wand : MonoBehaviour {
                         if (Input.GetButtonDown("Fire1") && description.canStartParagraph)
                         {
 
-                            if (description.paragraph.Count != 0) {
+                            if (description.paragraph.Count != 0 || typeof(OpeningEveNote).IsAssignableFrom(description.GetType()) ||
+                                typeof(EndingEveNote).IsAssignableFrom(description.GetType())) {
                                 fpc.enabled = false;
                                 note = description;
 
