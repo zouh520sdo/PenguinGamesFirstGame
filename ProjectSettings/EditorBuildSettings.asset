@@ -29,4 +29,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Secret Ending.unity
     guid: 1f3bff83fdbbfac45a9c72d14e64e840
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 7d0f494f452ce0a4abfbed901e8f6c2c
+  - enabled: 1
+    path: Assets/Scenes/Demo1.unity
+    guid: b3d52e3968c295544ae62d641beacafc
+  - enabled: 1
+    path: Assets/Scenes/Demo_GH.unity
+    guid: 0bf78aa2065f96f45aa124422aab9573
+  - enabled: 1
+    path: Assets/Scenes/Demo_Lab.unity
+    guid: d564ecba9fff5f545bfc5867c7a5d45b
+  - enabled: 1
+    path: Assets/Scenes/Demo_NE.unity
+    guid: 03699e70856d5f24d9b9468b9831795b
+  - enabled: 1
+    path: Assets/Scenes/Demo_TE.unity
+    guid: 95319da45666c2a49a8d88ad7f89dfba
   m_configObjects: {}
