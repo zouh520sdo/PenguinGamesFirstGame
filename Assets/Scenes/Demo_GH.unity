@@ -24340,32 +24340,33 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[0]
-      value: "Eve:\nIt's glad to see you again, examinee Adam Brown. \nThe room for
-        this level is a mirror projection of a corner in the <color=#870F0F>Souhait
-        Greenhouse</color>. "
+      value: "<b><size=28>Eve</size></b>:\nIt's glad to see you again, examinee Adam
+        Brown. \nThe room for this level is a mirror projection of a corner in the
+        <color=#870F0F>Souhait Greenhouse</color>. "
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[1]
-      value: "Eve:\nOr - <color=#870F0F>\u201CSpirit of Liberty\u201D</color> called
-        by some green mages. "
+      value: "<b><size=28>Eve</size></b>:\nOr - <color=#870F0F>\u201CSpirit of Liberty\u201D</color>
+        called by some green mages. "
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[2]
-      value: "Eve:\nIngredients of most food, soups and even potions come from here.
-        Thus, it is the most important\u2026 and dangerous place in the Union. "
+      value: "<b><size=28>Eve</size></b>:\nIngredients of most food, soups and even
+        potions come from here. Thus, it is the most important\u2026 and dangerous
+        place in the Union. "
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[3]
-      value: "Eve:\nDon\u2019t worry. Everything in this room has been detoxicated
-        with Hitte flames. "
+      value: "<b><size=28>Eve</size></b>:\nDon\u2019t worry. Everything in this room
+        has been detoxicated with Hitte flames. "
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[4]
-      value: 'Eve:
+      value: '<b><size=28>Eve</size></b>:
 
         So, relax and enjoy your test, examinee Adam Brown. '
       objectReference: {fileID: 0}
@@ -24379,8 +24380,8 @@ Prefab:
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[0]
-      value: "Eve:\nExcellent work. You\u2019ve proved your loyalty to Great Souhait
-        Union. "
+      value: "<b><size=28>Eve</size></b>:\nExcellent work. You\u2019ve proved your
+        loyalty to Great Souhait Union. "
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}

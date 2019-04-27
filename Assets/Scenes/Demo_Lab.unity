@@ -27930,14 +27930,14 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[0]
-      value: 'Eve:
+      value: '<b><size=28>Eve</size></b>:
 
         Welcome to the <color=#870F0F>Elixir Lab</color>. '
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[1]
-      value: 'Eve:
+      value: '<b><size=28>Eve</size></b>:
 
         The Elixir Lab is a department directly under the Association. Due to the
         level of importance and operation difficulty, only mages with certain magic
@@ -27946,8 +27946,8 @@ Prefab:
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[0]
-      value: "Eve:\nSpectacular. You\u2019ve proved your harmless to Great Souhait
-        Union."
+      value: "<b><size=28>Eve</size></b>:\nSpectacular. You\u2019ve proved your harmless
+        to Great Souhait Union."
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -27962,15 +27962,16 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[2]
-      value: 'Eve:
+      value: '<b><size=28>Eve</size></b>:
 
         Hitte Staff is one of the permitted magic objects. '
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: paragraph.Array.data[3]
-      value: "Eve:\nEnjoy your experience here, examinee Adam Brown. Try not to break
-        anything\u2026 as anything can be something surprising here."
+      value: "<b><size=28>Eve</size></b>:\nEnjoy your experience here, examinee Adam
+        Brown. Try not to break anything\u2026 as anything can be something surprising
+        here."
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -28006,14 +28007,14 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretParagraphs.Array.data[0]
-      value: 'Eve:
+      value: '<b><size=28>Eve</size></b>:
 
         Welcome to the <color=#870F0F>Elixir Lab</color>. '
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretParagraphs.Array.data[1]
-      value: 'Eve:
+      value: '<b><size=28>Eve</size></b>:
 
         The Elixir Lab is a department directly under the Association. Due to the
         level of importance and operation difficulty, only mages with certain magic
@@ -28022,14 +28023,14 @@ Prefab:
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretParagraphs.Array.data[2]
-      value: 'Eve:
+      value: '<b><size=28>Eve</size></b>:
 
         Hitte Staff is one of the permitted magic objects. '
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretParagraphs.Array.data[3]
-      value: 'Eve:
+      value: '<b><size=28>Eve</size></b>:
 
         Enjoy your experience here, examinee Adam Brown. Try not to approach anything
         <color=#870F0F>unrelated</color> to the test. You would not like to get yourself
@@ -28083,18 +28084,20 @@ Prefab:
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretParagraphs.Array.data[0]
-      value: "Eve:\nSpectacular. You\u2019ve proved your harmless to Great Souhait
-        Union. "
+      value: "<b><size=28>Eve</size></b>:\nSpectacular. You\u2019ve proved your harmless
+        to Great Souhait Union. "
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretParagraphs.Array.data[1]
-      value: "Eve:\n\u2026 Seems like you\u2019ve made a new friend. "
+      value: "<b><size=28>Eve</size></b>:\n\u2026 Seems like you\u2019ve made a new
+        friend. "
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: secretParagraphs.Array.data[2]
-      value: "Eve:\nYou can bring it if you would like. It\u2019s not formally restricted. "
+      value: "<b><size=28>Eve</size></b>:\nYou can bring it if you would like. It\u2019s
+        not formally restricted. "
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}

@@ -5964,6 +5964,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!84 &261442920
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 256
+  m_Height: 256
+  m_AntiAliasing: 1
+  m_DepthFormat: 0
+  m_ColorFormat: 11
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &269307995
 Prefab:
   m_ObjectHideFlags: 0
@@ -6836,37 +6867,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46273fc06c47d94599f05044d604991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!84 &410609891
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 256
-  m_Height: 256
-  m_AntiAliasing: 1
-  m_DepthFormat: 0
-  m_ColorFormat: 11
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &413050088
 Prefab:
   m_ObjectHideFlags: 0
@@ -7549,13 +7549,13 @@ MonoBehaviour:
     hasGua: 0
     foundThisDiary: 0
     texts:
-    - '???:
+    - '<b><size=28>???</size></b>:
 
       Welcome to my <color=#870F0F>secret room</color>. Red mage - Adam Brown.'
-    - "???:\nI saw surprises on your face. That\u2019s good.\r\nYou must be wondering
-      which part of your plan went wrong.\r"
-    - "???:\n<color=#870F0F>I can see everything</color>, Adam. Do you think you can
-      play those tricks under my eyes?\r"
+    - "<b><size=28>???</size></b>:\nI saw surprises on your face. That\u2019s good.\r\nYou
+      must be wondering which part of your plan went wrong.\r"
+    - "<b><size=28>???</size></b>:\n<color=#870F0F>I can see everything</color>, Adam.
+      Do you think you can play those tricks under my eyes?\r"
     audioOvers:
     - {fileID: 8300000, guid: 5e8d8e591abec5143851d3ef6d831085, type: 3}
     - {fileID: 8300000, guid: 5f1c723ba5336a94694d174bc4ead5ad, type: 3}
@@ -7568,12 +7568,13 @@ MonoBehaviour:
         hasGua: 0
         foundThisDiary: 0
         texts:
-        - "???:\nWe\u2019ll see.\r\nBut at least, you failed this time.\r"
-        - "???:\nRed mage Adam Brown has been proved to violate Souhait covenant of
-          <color=#870F0F>Loyalty</color> and <color=#870F0F>Sincerity</color> and
-          will be held in captivity forever until the success of <color=#870F0F>rebirth</color>.\r"
-        - "???:\nI\u2019m looking forward to your performance in the test you construct
-          with your own hands.\r\nExaminee Adam Brown.\r"
+        - "<b><size=28>???</size></b>:\nWe\u2019ll see.\r\nBut at least, you failed
+          this time.\r"
+        - "<b><size=28>???</size></b>:\nRed mage Adam Brown has been proved to violate
+          Souhait covenant of <color=#870F0F>Loyalty</color> and <color=#870F0F>Sincerity</color>
+          and will be held in captivity forever until the success of <color=#870F0F>rebirth</color>.\r"
+        - "<b><size=28>???</size></b>:\nI\u2019m looking forward to your performance
+          in the test you construct with your own hands.\r\nExaminee Adam Brown.\r"
         audioOvers:
         - {fileID: 8300000, guid: 291929055c1fcd04f803e36f3dce062f, type: 3}
         - {fileID: 8300000, guid: 20d5cd671d6086b4ca425519f0a3547f, type: 3}
@@ -7591,12 +7592,13 @@ MonoBehaviour:
         hasGua: 0
         foundThisDiary: 0
         texts:
-        - "???:\nWe\u2019ll see.\r\nBut at least, you failed this time.\r"
-        - "???:\nRed mage Adam Brown has been proved to violate Souhait covenant of
-          <color=#870F0F>Loyalty</color> and <color=#870F0F>Sincerity</color> and
-          will be held in captivity forever until the success of <color=#870F0F>rebirth</color>.\r"
-        - "???:\nI\u2019m looking forward to your performance in the test you construct
-          with your own hands.\r\nExaminee Adam Brown.\r"
+        - "<b><size=28>???</size></b>:\nWe\u2019ll see.\r\nBut at least, you failed
+          this time.\r"
+        - "<b><size=28>???</size></b>:\nRed mage Adam Brown has been proved to violate
+          Souhait covenant of <color=#870F0F>Loyalty</color> and <color=#870F0F>Sincerity</color>
+          and will be held in captivity forever until the success of <color=#870F0F>rebirth</color>.\r"
+        - "<b><size=28>???</size></b>:\nI\u2019m looking forward to your performance
+          in the test you construct with your own hands.\r\nExaminee Adam Brown.\r"
         audioOvers:
         - {fileID: 8300000, guid: 291929055c1fcd04f803e36f3dce062f, type: 3}
         - {fileID: 8300000, guid: 20d5cd671d6086b4ca425519f0a3547f, type: 3}
@@ -9907,7 +9909,7 @@ MonoBehaviour:
   overrideColor: 0
   overridingColor: {r: 0.9999, g: 0.9999, b: 0.9999, a: 0.9999}
   useShadow: 1
-  shadowMapRenderTexture: {fileID: 410609891}
+  shadowMapRenderTexture: {fileID: 261442920}
   useCookie: 1
   cookieMapRenderTexture: {fileID: 0}
   enableOutOfPhaseColor: 0
