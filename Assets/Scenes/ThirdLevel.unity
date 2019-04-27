@@ -809,7 +809,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: e38a7f8f5dca2f5428f49133aa6d2779, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.01
+      value: -19.21
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e38a7f8f5dca2f5428f49133aa6d2779, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1658,7 +1658,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: e38a7f8f5dca2f5428f49133aa6d2779, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.670002
+      value: -23.85
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e38a7f8f5dca2f5428f49133aa6d2779, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1849,6 +1849,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 26d83eaea8bc70b45b022f19e1bba1e2,
     type: 3}
   m_PrefabInternal: {fileID: 1083672158}
+--- !u!1 &245012766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1655703352394936, guid: 0cd2499d11a5f104fb44af14d5a274dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 245012767}
+  - component: {fileID: 245012768}
+  m_Layer: 0
+  m_Name: Point Light (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &245012767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4231089586521976, guid: 0cd2499d11a5f104fb44af14d5a274dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 245012766}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -21.47, y: -1.18, z: -1.74}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 285775123}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &245012768
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 108789761381177654, guid: 0cd2499d11a5f104fb44af14d5a274dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 245012766}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 1, g: 0.7129667, b: 0.08018869, a: 1}
+  m_Intensity: 0.89
+  m_Range: 8.22
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1001 &248643550
 Prefab:
   m_ObjectHideFlags: 0
@@ -2130,6 +2199,9 @@ Transform:
   - {fileID: 530272127}
   - {fileID: 1817655805}
   - {fileID: 1359008441}
+  - {fileID: 1900907223}
+  - {fileID: 621417227}
+  - {fileID: 245012767}
   m_Father: {fileID: 758165316}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4780,9 +4852,12 @@ MonoBehaviour:
   note: Covenant Stone
   isInOption: 0
   paragraph:
-  - '"I, Adam Brown, solemnly swear,'
-  - '"that till the end of my life,'
-  - '"I will not harm any mage legally protected by Great Souhait Union. "'
+  - '"I, Adam Brown, solemnly swear,
+
+    that till the end of my life,
+
+    I will <color=#870F0F>not harm</color> any mage legally protected by Great Souhait
+    Union. "'
   canStartParagraph: 1
   canRepeat: 0
   inThisNote: 0
@@ -4975,6 +5050,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 9723911408653ae428b6f6c19f76ca50,
     type: 3}
   m_PrefabInternal: {fileID: 613618454}
+--- !u!1 &621417226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1655703352394936, guid: 0cd2499d11a5f104fb44af14d5a274dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 621417227}
+  - component: {fileID: 621417228}
+  m_Layer: 0
+  m_Name: Point Light (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &621417227
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4231089586521976, guid: 0cd2499d11a5f104fb44af14d5a274dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 621417226}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -21.47, y: 2.52, z: -1.74}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 285775123}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &621417228
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 108789761381177654, guid: 0cd2499d11a5f104fb44af14d5a274dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 621417226}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 1, g: 0.7129667, b: 0.08018869, a: 1}
+  m_Intensity: 0.89
+  m_Range: 8.22
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!4 &624152027 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 26d83eaea8bc70b45b022f19e1bba1e2,
@@ -5945,13 +6089,15 @@ MonoBehaviour:
   isInOption: 0
   paragraph:
   - Let's feed the lovely, poor Mr. Frog!
-  - First, add Tails of Double-Head Lizard at 120-140 Hitte degrees.
-  - Second, add 3 mg of Blue Baby Worms at 60-100 Hitte degrees.
-  - Last but not least, as always, add Happy Sweat of Souhait Union at 210-300 Hitte
-    degrees~
-  - Then, use the spoon to stir, stir, stir...
+  - First, add <color=#870F0F>Tails of Double-Head Lizard</color> at <color=#870F0F>120-140</color>
+    Hitte degrees.
+  - Second, add <color=#870F0F>3 mg of Blue Baby Worms</color> at <color=#870F0F>60-100</color>
+    Hitte degrees.
+  - Last but not least, as always, add <color=#870F0F>Happy Sweat of Souhait Union</color>
+    at <color=#870F0F>210-300</color> Hitte degrees!
+  - Then, use the spoon to <color=#870F0F>stir, stir, stir</color>...
   - Here we made our Elixir for our lovely, poor, Mr. Frog!
-  - Come on! Let's invite Mr. Frog to taste it!
+  - Come on! Let's invite <color=#870F0F>Mr. Frog</color> to taste it!
   canStartParagraph: 1
   canRepeat: 1
   inThisNote: 0
@@ -14098,27 +14244,29 @@ Prefab:
         type: 2}
       propertyPath: paragraph.Array.data[0]
       value: "     7/10/2256\r\n     I went to Black Cloak\u2019s lab again. He still
-        refused to teach me how to make poisons. He thought I was crazy, as crossing
-        the border was not a simple thing. And I may be killed for that. I don\u2019t
-        blame on him. I actually appreciate that he didn\u2019t report me for holding
-        that idea. I also understand what will come to me. But I also can\u2019t stand
-        to witness mages turned to dolls every day, or to be manipulated by "
+        refused to teach me how to make potions. He thought I was crazy, as crossing
+        the Border was not a simple thing. And I may <color=#870F0F>be killed</color>
+        for that. I don\u2019t blame on him. I actually appreciate that he didn\u2019t
+        report me for holding that idea. I understand what will come to me. But I
+        just can\u2019t stand to witness mages turned to dolls every day, or to be
+        <color=#870F0F>manipulated</color> by the Association like fools."
       objectReference: {fileID: 0}
     - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
         type: 2}
       propertyPath: paragraph.Array.data[1]
-      value: "by the Association like fools. I stopped drinking any produced water
-        in the market once I know they\u2019ve added Happy Sweat in it. Yet the soberness
-        makes me struggle even more. I can\u2019t stay here. The Union is not a wonderland.
-        It\u2019s a giant, people-eating flytrap.\r\n     I told him I know the way
-        to escape. I learnt from a book in my old house. But I must need his help.\r
-        No one can finish those poisons except for him."
+      value: "I stopped drinking any produced water in the market once I know they\u2019ve
+        added <color=#870F0F>Happy Sweat</color> in it. Yet the soberness makes me
+        struggle even more. I can\u2019t stay here. The Union is not a wonderland.
+        It\u2019s <color=#870F0F>a giant, people-eating flytrap</color>.\r\n     I
+        told him I know the way to escape. I learnt from a book in my old house. But
+        I must need his help.\r No one can finish those poisons except for him."
       objectReference: {fileID: 0}
     - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
         type: 2}
       propertyPath: paragraph.Array.data[2]
       value: "     7/14/2256\r\n     He wanted to see me on next Thursday.\r\n\r\n
-        \    I\u2019m one step closer to the outside. Finally.\r\n"
+        \    I\u2019m one step closer to the outside. Finally.\r\n\n\n\n\n\n\n<size=18>Next
+        page is pointing to <color=#870F0F>Taurus Wall</color>.</size>"
       objectReference: {fileID: 0}
     - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
         type: 2}
@@ -26607,6 +26755,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46273fc06c47d94599f05044d604991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1900907222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1655703352394936, guid: 0cd2499d11a5f104fb44af14d5a274dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1900907223}
+  - component: {fileID: 1900907224}
+  m_Layer: 0
+  m_Name: Point Light (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1900907223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4231089586521976, guid: 0cd2499d11a5f104fb44af14d5a274dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1900907222}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -21.41, y: 3.78, z: -1.49}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 285775123}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!108 &1900907224
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 108789761381177654, guid: 0cd2499d11a5f104fb44af14d5a274dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1900907222}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 0.5566038, g: 0.26517445, b: 0.5247258, a: 1}
+  m_Intensity: 14.17
+  m_Range: 4.7484202
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1001 &1905817090
 Prefab:
   m_ObjectHideFlags: 0
@@ -27609,7 +27826,7 @@ Prefab:
       propertyPath: paragraph.Array.data[0]
       value: 'Eve:
 
-        Welcome to the Elixir Lab. '
+        Welcome to the <color=#870F0F>Elixir Lab</color>. '
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -27685,7 +27902,7 @@ Prefab:
       propertyPath: secretParagraphs.Array.data[0]
       value: 'Eve:
 
-        Welcome to the Elixir Lab. '
+        Welcome to the <color=#870F0F>Elixir Lab</color>. '
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -27709,7 +27926,8 @@ Prefab:
       value: 'Eve:
 
         Enjoy your experience here, examinee Adam Brown. Try not to approach anything
-        unrelated to the test. You would not like to get yourself in danger. '
+        <color=#870F0F>unrelated</color> to the test. You would not like to get yourself
+        in danger. '
       objectReference: {fileID: 0}
     - target: {fileID: 114812443276694646, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -27795,7 +28013,8 @@ Prefab:
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: primaryParagraghs.Array.data[0].texts.Array.data[0]
-      value: "Spectacular. You\u2019ve proved your harmless to Great Souhait Union."
+      value: "Eve:\nSpectacular. You\u2019ve proved your harmless to Great Souhait
+        Union."
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -27816,7 +28035,8 @@ Prefab:
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: primaryParagraghs.Array.data[1].texts.Array.data[0]
-      value: "Spectacular. You\u2019ve proved your harmless to Great Souhait Union."
+      value: "Eve:\nSpectacular. You\u2019ve proved your harmless to Great Souhait
+        Union."
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
@@ -27836,23 +28056,26 @@ Prefab:
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: primaryParagraghs.Array.data[2].texts.Array.data[0]
-      value: "Spectacular. You\u2019ve proved your harmless to Great Souhait Union. "
+      value: "Eve:\nSpectacular. You\u2019ve proved your harmless to Great Souhait
+        Union. "
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: primaryParagraghs.Array.data[2].texts.Array.data[1]
-      value: "\u2026 Seems like you\u2019ve made a new friend. "
+      value: "Eve:\n\u2026 Seems like you\u2019ve made a new friend. "
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: primaryParagraghs.Array.data[2].texts.Array.data[2]
-      value: "You can bring it if you would like. It\u2019s not formally restricted. "
+      value: "Eve:\nYou can bring it if you would like. It\u2019s not formally restricted. "
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}
       propertyPath: primaryParagraghs.Array.data[2].texts.Array.data[3]
-      value: 'If not, you can also just drop it somewhere. I will deal with it during
-        your transportation. '
+      value: 'Eve:
+
+        If not, you can also just drop it somewhere. I will deal with it during your
+        transportation. '
       objectReference: {fileID: 0}
     - target: {fileID: 114796822880526602, guid: 127c48b93a8d5c4439c5919f22a30c00,
         type: 2}

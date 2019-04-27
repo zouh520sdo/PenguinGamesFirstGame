@@ -608,7 +608,9 @@ MonoBehaviour:
 
       Give me that piece of paper.'
     - (Put that paper into his frame.)
-    - "Frog:\n\u2026 Black Cloak\u2026 "
+    - 'Frog:
+
+      ... <color=#870F0F>Black Cloak</color>... '
     - 'Frog:
 
       Who are you? How did you find this? '
@@ -622,7 +624,9 @@ MonoBehaviour:
         hasGua: 0
         foundThisDiary: 0
         texts:
-        - "Adam Brown\u2026 Another familiar name. "
+        - 'Frog:
+
+          <color=#870F0F>Adam Brown</color>... Another familiar name. '
         audioOvers: []
         options: []
         onComplete:
@@ -637,7 +641,8 @@ MonoBehaviour:
         hasGua: 0
         foundThisDiary: 0
         texts:
-        - "Hints? You mean someone left this for you? That\u2019s interesting. "
+        - "Frog:\nHints? You mean <color=#870F0F>someone</color> left this for you?
+          That\u2019s interesting. "
         audioOvers: []
         options: []
         onComplete:
@@ -652,7 +657,7 @@ MonoBehaviour:
         hasGua: 0
         foundThisDiary: 0
         texts:
-        - "\u2026 Which is fine. Neither is important. "
+        - '... Which is fine. Neither is important. '
         audioOvers: []
         options: []
         onComplete:
@@ -702,8 +707,9 @@ MonoBehaviour:
       Thank you. Now stands still... '
     - 'Frog:
 
-      Kwark. '
-    - "Frog:\nI\u2019m in your wand. I can see what you see. "
+      Kwark...!!'
+    - "Frog:\nI\u2019m <color=#870F0F>in your wand</color> now. I can see what you
+      see. "
     - 'Frog:
 
       We are on the same side now. Nice to meet you. Hitte mage. '
@@ -761,7 +767,9 @@ MonoBehaviour:
         hasGua: 0
         foundThisDiary: 0
         texts:
-        - "Thank you. Now stands still\u2026 "
+        - 'Frog:
+
+          Thank you. Now stands still... '
         audioOvers: []
         options: []
         onComplete:
@@ -776,7 +784,7 @@ MonoBehaviour:
         hasGua: 0
         foundThisDiary: 0
         texts:
-        - "Fine.  I don\u2019t blame you. "
+        - "Frog:\nFine.  I don\u2019t blame you. "
         audioOvers: []
         options: []
         onComplete:
@@ -941,7 +949,8 @@ MonoBehaviour:
     - "Frog:\nHey. Hitte mage. Let\u2019s do a transaction."
     - 'Frog:
 
-      You bring me with you. And maybe I can show you the way out. '
+      You <color=#870F0F>bring me</color> with you. And maybe I can show you the way
+      out. '
     audioOvers:
     - {fileID: 0}
     - {fileID: 0}
@@ -955,7 +964,9 @@ MonoBehaviour:
         hasGua: 0
         foundThisDiary: 0
         texts:
-        - '...  What a good baby. '
+        - 'Frog:
+
+          ...  What a good baby. '
         audioOvers: []
         options: []
         onComplete:
@@ -970,8 +981,9 @@ MonoBehaviour:
         hasGua: 0
         foundThisDiary: 0
         texts:
-        - "...  This maze is not a fun place. You can get lost and stay here forever
-          without help. And I\u2019m here definitely longer than you are. "
+        - "Frog:\n...  This maze is not <color=#870F0F>a fun place</color>. You can
+          get lost and stay here forever without help. And I\u2019m here definitely
+          longer than you are. "
         audioOvers: []
         options: []
         onComplete:
@@ -1019,7 +1031,8 @@ MonoBehaviour:
     - 'Frog:
 
       Kwark. '
-    - "Frog:\nI\u2019m in your wand. I can see what you see. "
+    - "Frog:\nI\u2019m <color=#870F0F>in your wand</color> now. I can see what you
+      see. "
     - 'Frog:
 
       We are on the same side now. Nice to meet you. Hitte mage. '
@@ -1074,10 +1087,10 @@ MonoBehaviour:
         hasGua: 0
         foundThisDiary: 0
         texts:
-        - "Frog:\nThat must be in a pink heart-shaped bottle.\r\nThey are the basic
-          ingredients for any love potions.\r"
-        - "Frog:\nYou\u2019ll need to put each potion at the written temperature.
-          Or it will become useless.\r\nRemember that in mind.\r"
+        - "Frog:\nThat must be in <color=#870F0F>a pink heart-shaped bottle</color>.\r\nThey
+          are the basic ingredients for any love potions.\r"
+        - "Frog:\nYou\u2019ll need to put each potion <color=#870F0F>at the written
+          temperature</color>. Or it will become useless.\r\nRemember that in mind.\r"
         audioOvers: []
         options: []
         onComplete:
@@ -1092,10 +1105,10 @@ MonoBehaviour:
         hasGua: 0
         foundThisDiary: 0
         texts:
-        - "Frog:\nBlue bottle. Should be on the left shelf.\r\nThere are a lot of
-          baby worms. Don\u2019t be tricked.\r"
-        - "Frog:\nYou\u2019ll need to put each potion at the written temperature.
-          Or it will become useless.\r\nRemember that in mind.\r\n"
+        - "Frog:\n<color=#870F0F>Blue bottle</color>. Should be on the <color=#870F0F>left</color>
+          shelf.\r\nThere are a lot of baby worms. Don\u2019t be tricked.\r"
+        - "Frog:\nYou\u2019ll need to put each potion <color=#870F0F>at the written
+          temperature</color>. Or it will become useless.\r\nRemember that in mind.\r\n"
         audioOvers: []
         options: []
         onComplete:
@@ -1110,9 +1123,10 @@ MonoBehaviour:
         hasGua: 0
         foundThisDiary: 0
         texts:
-        - "Frog:\nRight under your eyes.\r\nI hate the smell of that crap.\r"
-        - "Frog:\nYou\u2019ll need to put each potion at the written temperature.
-          Or it will become useless.\r\nRemember that in mind.\r"
+        - "Frog:\nRight <color=#870F0F>under your eyes</color>.\r\nI hate the smell
+          of that crap.\r"
+        - "Frog:\nYou\u2019ll need to put each potion <color=#870F0F>at the written
+          temperature</color>. Or it will become useless.\r\nRemember that in mind.\r"
         audioOvers: []
         options: []
         onComplete:
@@ -1157,9 +1171,12 @@ MonoBehaviour:
     hasGua: 0
     foundThisDiary: 0
     texts:
-    - "Frog:\n\u2026 *sigh* "
-    - "Frog:\nYou need to give me that Elixir first. I can\u2019t do anything"
-    - "Frog:\nI\u2019ll help you.\r\nAsk me when you feel lost.\r"
+    - 'Frog:
+
+      (sigh) '
+    - "Frog:\nYou need to give me <color=#870F0F>that Elixir</color> first. I can\u2019t
+      do anything without it."
+    - "Frog:\nI\u2019ll help you.\r\n<color=#870F0F>Ask me</color> when you feel lost.\r"
     audioOvers: []
     options: []
     onComplete:
