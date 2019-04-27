@@ -27346,6 +27346,100 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b42e93043cb5504c9a27c43b2121c0d, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1948103206 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1944386082701492, guid: 4b42e93043cb5504c9a27c43b2121c0d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1948103205}
+--- !u!114 &1948103207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1948103206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a894a3a7a0d94464abae610c2afe92c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secretEndingIndex: 12
+  normalEndingIndex: 11
+  endingNote: {fileID: 0}
+  gameManager: {fileID: 0}
+  nextTrigger: {fileID: 0}
+  isActive: 0
+  loadingScreenPanel: {fileID: 104538699}
+  FPC: {fileID: 0}
+--- !u!114 &1948103208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1948103206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbcc63b78f608a45bd7d488324fe969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: 
+  isInOption: 0
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 0
+  inThisNote: 0
+  finished: 0
+  paragraphIndex: 0
+  audioSource: {fileID: 0}
+  voiceOvers: []
+  diaryAmountToTrigger: 0
+  secretParagraphs: []
+  secretVoiceOvers: []
+  primaryParagraghs:
+  - noNeedCondition: 1
+    needDiaryAmount: 0
+    hasGua: 0
+    foundThisDiary: 0
+    texts:
+    - "Eve:\nExcellent work. You\u2019ve proved your loyalty to Great Souhait Union. "
+    - It seems like you've got a magic scroll. Do you want to use it now?
+    audioOvers:
+    - {fileID: 8300000, guid: a6baefb30ed57ac478c822a6b917fa37, type: 3}
+    options:
+    - content: Use the scroll.
+      paragraph:
+        noNeedCondition: 0
+        needDiaryAmount: 0
+        hasGua: 0
+        foundThisDiary: 0
+        texts: []
+        audioOvers: []
+        options: []
+        onComplete:
+          m_PersistentCalls:
+            m_Calls: []
+          m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+    - content: It's not time yet.
+      paragraph:
+        noNeedCondition: 0
+        needDiaryAmount: 0
+        hasGua: 0
+        foundThisDiary: 0
+        texts: []
+        audioOvers: []
+        options: []
+        onComplete:
+          m_PersistentCalls:
+            m_Calls: []
+          m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  wand: {fileID: 0}
+  optionIndexMade: 0
 --- !u!1001 &1966050121
 Prefab:
   m_ObjectHideFlags: 0

@@ -16,13 +16,17 @@ public class NextLevelTrigger : MonoBehaviour {
     protected Slider loadingSlider;
     protected AsyncOperation async;
 
+    private void Awake()
+    {
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+    }
+
     // Use this for initialization
     void Start () {
         loadingSlider = loadingScreenPanel.transform.Find("LoadingSlider").GetComponent<Slider>();
         loadingScreenPanel.SetActive(false);
 
         // Find game manager
-        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         if (!FPC)
         {
             FPC = GameObject.FindGameObjectWithTag("Player").GetComponent<FirstPersonController>();

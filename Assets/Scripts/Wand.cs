@@ -73,6 +73,7 @@ public class Wand : MonoBehaviour {
 
     // For debug
     public NextLevelTrigger NLT;
+    public Demo_ScrollUsingController demoNLT;
 
     public void OnReset()
     {
@@ -144,6 +145,10 @@ public class Wand : MonoBehaviour {
         if (!NLT)
         {
             NLT = GameObject.FindGameObjectWithTag("NextLevel").GetComponent<NextLevelTrigger>();
+        }
+        if (!demoNLT)
+        {
+            demoNLT = GameObject.FindGameObjectWithTag("NextLevel").GetComponent<Demo_ScrollUsingController>();
         }
 
         if (!fpc)
@@ -587,6 +592,11 @@ public class Wand : MonoBehaviour {
                 //loadingScreenPanel.SetActive(true);
                 NLT.gameManager.StartEndingNote();
                 NLT.isActive = true;
+            }
+
+            if (demoNLT && demoNLT.loadingScreenPanel && !demoNLT.isActive)
+            {
+                demoNLT.isActive = true;
             }
         }
     }
