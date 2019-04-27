@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -53736,53 +53736,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!1001 &1024499269
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4872488847090316, guid: c604c63aeed2c8443b8fb97708f49dca, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 409.01694
-      objectReference: {fileID: 0}
-    - target: {fileID: 4872488847090316, guid: c604c63aeed2c8443b8fb97708f49dca, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 212.51216
-      objectReference: {fileID: 0}
-    - target: {fileID: 4872488847090316, guid: c604c63aeed2c8443b8fb97708f49dca, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 134.0975
-      objectReference: {fileID: 0}
-    - target: {fileID: 4872488847090316, guid: c604c63aeed2c8443b8fb97708f49dca, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4872488847090316, guid: c604c63aeed2c8443b8fb97708f49dca, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4872488847090316, guid: c604c63aeed2c8443b8fb97708f49dca, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4872488847090316, guid: c604c63aeed2c8443b8fb97708f49dca, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4872488847090316, guid: c604c63aeed2c8443b8fb97708f49dca, type: 2}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 82715385705881280, guid: c604c63aeed2c8443b8fb97708f49dca,
-        type: 2}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c604c63aeed2c8443b8fb97708f49dca, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!4 &1028900509 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 6e0202b1ed4eed74eb830989681480e9,
