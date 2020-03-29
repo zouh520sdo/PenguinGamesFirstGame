@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Wandable : MonoBehaviour {
+    public GameObject indicatorObjPrefab;
 
     public float maxHeat;
     public float minHeat;
@@ -39,6 +40,11 @@ public class Wandable : MonoBehaviour {
 
     protected virtual void OnStart()
     {
+        if (indicatorObjPrefab)
+        {
+            Instantiate(indicatorObjPrefab, transform);
+        }
+
         if (!myRenderer)
         {
             myRenderer = GetComponent<Renderer>();

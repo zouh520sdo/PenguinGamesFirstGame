@@ -6697,6 +6697,12 @@ Prefab:
       propertyPath: failefect
       value: 
       objectReference: {fileID: 845187228}
+    - target: {fileID: 114334223375198414, guid: 8d7deef96eb693441a0aa7135df1842e,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d7deef96eb693441a0aa7135df1842e, type: 2}
   m_IsPrefabAsset: 0
@@ -13239,6 +13245,168 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114174297873205936, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114138926441738776, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114109263782587056, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114363435091047260, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114266179792921516, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114923054064230470, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114999224494084124, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114250156794818616, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114020144302656320, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114842774693038882, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114369511201452534, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114990024762485340, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114733625653143102, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114738526073141198, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114434373515221484, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114050812313699146, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114121608943218766, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114974614975322576, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114240873925663488, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114305172207177256, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114524381566099524, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114613633072274646, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114336342447941624, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114548359682202054, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114889862968989218, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114588261289891730, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
+    - target: {fileID: 114673576263335854, guid: d71e977228109f94b83d1ab78ff9fe58,
+        type: 2}
+      propertyPath: indicatorObjPrefab
+      value: 
+      objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d71e977228109f94b83d1ab78ff9fe58, type: 2}
   m_IsPrefabAsset: 0

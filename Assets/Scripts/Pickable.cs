@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Pickable : MonoBehaviour {
+    public GameObject indicatorObjPrefab;
 
     public bool isPickedUp;
     public Wand picker;
@@ -22,6 +23,11 @@ public class Pickable : MonoBehaviour {
 
 	// Use this for initialization
 	public virtual void Start () {
+        if (indicatorObjPrefab)
+        {
+            Instantiate(indicatorObjPrefab, transform);
+        }
+
         if (gameObject.layer != LayerMask.NameToLayer("Wandable"))
         {
             gameObject.layer = LayerMask.NameToLayer("Pickable");
