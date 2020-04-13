@@ -14270,8 +14270,7 @@ Prefab:
         type: 2}
       propertyPath: paragraph.Array.data[2]
       value: "     7/14/2256\r\n     He wanted to see me on next Thursday.\r\n\r\n
-        \    I\u2019m one step closer to the outside. Finally.\r\n\n\n\n\n\n\n<size=18>Next
-        page is pointing to <color=#870F0F>Taurus Wall</color>.</size>"
+        \    I\u2019m one step closer to the outside. Finally."
       objectReference: {fileID: 0}
     - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
         type: 2}

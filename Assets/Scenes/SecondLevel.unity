@@ -7889,6 +7889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4743fd4bfb2e55408f453f63305d7f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  indicatorObjPrefab: {fileID: 0}
   isPickedUp: 0
   picker: {fileID: 0}
   distanceRatio: 0
@@ -23044,8 +23045,7 @@ Prefab:
         in his head is to plant dragon jasmine. And plant. And plant.\r\n     <color=#870F0F>Who
         determines this?</color> Must I be a farm manager because I\u2019m a hitte
         mage? Must green mages be doing the most basic and tedious work just because
-        they have the least powerful magic objects? \r\n<size=18>Next page is placed
-        in the <color=#870F0F>high</color> place.</size>"
+        they have the least powerful magic objects? \r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
         type: 2}
@@ -54301,6 +54301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f6aad856ca4e044d82502210aed3327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  indicatorObjPrefab: {fileID: 0}
   isPickedUp: 0
   picker: {fileID: 0}
   distanceRatio: 0
@@ -54636,6 +54637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f5e3ec55145e0f48870d65ba6361ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  indicatorObjPrefab: {fileID: 0}
   maxHeat: 50
   minHeat: 0
   containingHeat: 50
@@ -54658,6 +54660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d4034f5d0c0064da8436bfbeb10567, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  indicatorObjPrefab: {fileID: 0}
   isPickedUp: 0
   picker: {fileID: 0}
   distanceRatio: 0
@@ -60977,7 +60980,7 @@ MonoBehaviour:
   overrideColor: 0
   overridingColor: {r: 0.9999, g: 0.9999, b: 0.9999, a: 0.9999}
   useShadow: 1
-  shadowMapRenderTexture: {fileID: 1106723967}
+  shadowMapRenderTexture: {fileID: 1824341679}
   useCookie: 1
   cookieMapRenderTexture: {fileID: 0}
   enableOutOfPhaseColor: 0
@@ -62056,37 +62059,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 0
---- !u!84 &1106723967
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 256
-  m_Height: 256
-  m_AntiAliasing: 1
-  m_DepthFormat: 0
-  m_ColorFormat: 11
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &1110230963
 GameObject:
   m_ObjectHideFlags: 0
@@ -129336,6 +129308,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: 47a9c7ffdd987f0428e2d32aca622965,
     type: 3}
   m_PrefabInternal: {fileID: 1820157326}
+--- !u!84 &1824341679
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 256
+  m_Height: 256
+  m_AntiAliasing: 1
+  m_DepthFormat: 0
+  m_ColorFormat: 11
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &1827508882
 GameObject:
   m_ObjectHideFlags: 0
