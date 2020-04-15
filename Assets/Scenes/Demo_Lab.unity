@@ -781,6 +781,10 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Demo_Lab
       objectReference: {fileID: 0}
+    - target: {fileID: 1744427550225472, guid: fe370290a88187b45b1bbe35ba008cdb, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe370290a88187b45b1bbe35ba008cdb, type: 2}
   m_IsPrefabAsset: 0
@@ -2172,6 +2176,30 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d49e3f8cc4b339f4e938bf7da479c85f, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &284660662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1404636810810498, guid: 8d7deef96eb693441a0aa7135df1842e,
+    type: 2}
+  m_PrefabInternal: {fileID: 845187226}
+--- !u!114 &284660664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 284660662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f48d29f40ee32d4fb8d54ece491cb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: Stirring Spoon
+  isInOption: 0
+  paragraph: []
+  canStartParagraph: 0
+  canRepeat: 0
+  inThisNote: 0
+  finished: 0
+  paragraphIndex: 0
 --- !u!114 &285355524 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114651636055903686, guid: ff70504c0ec66994e916c06b90db9365,
@@ -6708,6 +6736,14 @@ Prefab:
       value: 
       objectReference: {fileID: 1726636115780870, guid: d594bb6fb92dbfc47a5596fda8efe59e,
         type: 2}
+    - target: {fileID: 1256200588867792, guid: 8d7deef96eb693441a0aa7135df1842e, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1047508497800052, guid: 8d7deef96eb693441a0aa7135df1842e, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d7deef96eb693441a0aa7135df1842e, type: 2}
   m_IsPrefabAsset: 0
