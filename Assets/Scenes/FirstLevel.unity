@@ -16782,11 +16782,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 758165316}
     m_Modifications:
-    - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
-        type: 2}
-      propertyPath: paragraph.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4091864963300368, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
       propertyPath: m_LocalPosition.x
       value: -14.84
@@ -16819,59 +16814,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 62
       objectReference: {fileID: 0}
-    - target: {fileID: 4091864963300368, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.42009044
-      objectReference: {fileID: 0}
-    - target: {fileID: 4091864963300368, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.42009044
-      objectReference: {fileID: 0}
-    - target: {fileID: 4091864963300368, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.42009044
-      objectReference: {fileID: 0}
-    - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
-        type: 2}
-      propertyPath: paragraph.Array.data[0]
-      value: "     11/25/2247\r\n     I visited the library again. No one goes there
-        anymore since books have been criticized as \u201Cimpurities from the old
-        century\u201D. So, they called me <color=#870F0F>\u201Cthe Impure\u201D</color>
-        at school too. Honestly, who cares? They have no idea how beautiful these
-        \u201Cimpure\u201D buildings are... although most of them do not exist anymore.\r\n
-        \    Or not? None of us has been <color=#870F0F>out of the Union</color> anyhow.\r"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
-        type: 2}
-      propertyPath: paragraph.Array.data[1]
-      value: "     What happened to that <color=#870F0F>old human-led century</color>?
-        I found nothing in the school library, as if everything before 2096 just vanished
-        into thin air. Maybe the only way to know about that piece of history is to
-        see it with my own eyes, which means I must become <color=#870F0F>the best
-        Architect</color> in the Union to be permitted to approach <color=#870F0F>the
-        Border</color> of this wonderland.\r\n     Thus the Impure will visit the
-        library tomorrow again. I heard in some districts, \r"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
-        type: 2}
-      propertyPath: paragraph.Array.data[2]
-      value: "burning books had became a trend. Maybe I should keep some books in
-        my own room just in case.\r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
-        type: 2}
-      propertyPath: paragraph.Array.data[3]
-      value: Union to be permitted to approach the Border of this wonderland.  Thus
-        the Impure will visit the library tomorrow again. I heard in some districts
-        burning books had became a trend. Maybe I should keep some
-      objectReference: {fileID: 0}
-    - target: {fileID: 114523920534497484, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
-        type: 2}
-      propertyPath: paragraph.Array.data[4]
-      value: ' books in my own room just in case. '
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114679525088437006, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &793954079 stripped

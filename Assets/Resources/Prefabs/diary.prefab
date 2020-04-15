@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 65622489227328504}
   - component: {fileID: 114523920534497484}
   - component: {fileID: 114899252899844972}
+  - component: {fileID: 82124465532446382}
   m_Layer: 0
   m_Name: diary
   m_TagString: Untagged
@@ -54,8 +55,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1236840092431830}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.51, y: 0.019, z: -6.85}
-  m_LocalScale: {x: 0.45373, y: 0.45373, z: 0.45373}
+  m_LocalPosition: {x: -14.84, y: -4.379, z: -24.618}
+  m_LocalScale: {x: 0.42009044, y: 0.42009044, z: 0.42009044}
   m_Children:
   - {fileID: 4494186258879102}
   m_Father: {fileID: 0}
@@ -143,6 +144,119 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.335331, y: 3.587318, z: 0.10881102}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!82 &82124465532446382
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1236840092431830}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6470fdb5a3d56714c94be8f33aa029ee, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 10
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.14
+      value: 1
+      inSlope: -7.145714
+      outSlope: -7.145714
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.17202118
+      value: 0.46540833
+      inSlope: -2.5223305
+      outSlope: -2.5223305
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.3627405
+    - serializedVersion: 3
+      time: 0.46141297
+      value: 0.1600647
+      inSlope: -0.33857396
+      outSlope: -0.33857396
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.8497546
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.14
+      inSlope: -0.14005564
+      outSlope: -0.14005564
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &114523920534497484
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -155,33 +269,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   note: A Diary
+  isInOption: 0
   paragraph:
-  - This is the first page.  There will be more text, but I don't know what I should
-    write, but whatever, it's just a test, content does not matter right now, as long
-    as I can make sure the logic is correct, and it runs without any bugs, it would
-    be OK. You might notice there are a log of grammar error, but that's ok. I don't
-    even how many words I have already written down. I guess it's enough to stop here
-    now. OK, let's stop.
-  - This is the second page.  There will be more text, but I don't know what I should
-    write, but whatever, it's just a test, content does not matter right now, as long
-    as I can make sure the logic is correct, and it runs without any bugs, it would
-    be OK. You might notice there are a log of grammar error, but that's ok. I don't
-    even how many words I have already written down. I guess it's enough to stop here
-    now. OK, let's stop.
-  - This is the third page.  There will be more text, but I don't know what I should
-    write, but whatever, it's just a test, content does not matter right now, as long
-    as I can make sure the logic is correct, and it runs without any bugs, it would
-    be OK. You might notice there are a log of grammar error, but that's ok. I don't
-    even how many words I have already written down. I guess it's enough to stop here
-    now. OK, let's stop.
-  - This is the fourth page.  There will be more text, but I don't know what I should
-    write, but whatever, it's just a test, content does not matter right now, as long
-    as I can make sure the logic is correct, and it runs without any bugs, it would
-    be OK. You might notice there are a log of grammar error, but that's ok. I don't
-    even how many words I have already written down. I guess it's enough to stop here
-    now. OK, let's stop.
+  - "     11/25/2247\r\n     I visited the library again. No one goes there anymore
+    since books have been criticized as \u201Cimpurities from the old century\u201D.
+    So, they called me <color=#870F0F>\u201Cthe Impure\u201D</color> at school too.
+    Honestly, who cares? They have no idea how beautiful these \u201Cimpure\u201D
+    buildings are... although most of them do not exist anymore.\r\n     Or not? None
+    of us has been <color=#870F0F>out of the Union</color> anyhow.\r"
+  - "     What happened to that <color=#870F0F>old human-led century</color>? I found
+    nothing in the school library, as if everything before 2096 just vanished into
+    thin air. Maybe the only way to know about that piece of history is to see it
+    with my own eyes, which means I must become <color=#870F0F>the best Architect</color>
+    in the Union to be permitted to approach <color=#870F0F>the Border</color> of
+    this wonderland.\r\n     Thus the Impure will visit the library tomorrow again.
+    I heard in some districts, \r"
+  - "burning books had became a trend. Maybe I should keep some books in my own room
+    just in case.\r\n"
   canStartParagraph: 1
   canRepeat: 1
+  inThisNote: 0
+  finished: 0
+  paragraphIndex: 0
+  memoryAudioSource: {fileID: 0}
 --- !u!114 &114899252899844972
 MonoBehaviour:
   m_ObjectHideFlags: 1
