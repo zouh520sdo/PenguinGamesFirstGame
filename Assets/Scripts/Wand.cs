@@ -50,6 +50,9 @@ public class Wand : MonoBehaviour {
     public GameObject dialogueObj;
     protected Image dialoguePanel;
     protected Text dialogue;
+    public GameObject itemDetailObj;
+    protected Image itemDetailBacker;
+    protected Text itemDetailText;
     public Note note;
     public FirstPersonController fpc;
 
@@ -112,6 +115,19 @@ public class Wand : MonoBehaviour {
             //dialoguePanel.enabled = false;
             dialoguePanel.gameObject.SetActive(false);
             dialogue.text = "";
+        }
+
+        if (!itemDetailObj)
+        {
+            print("Item detail text needs to be assigned.");
+        }
+        else
+        {
+            itemDetailText = itemDetailObj.GetComponentInChildren<Text>();
+            itemDetailBacker = itemDetailObj.GetComponentInChildren<Image>();
+            itemDetailText.enabled = false;
+            itemDetailBacker.gameObject.SetActive(false);
+            itemDetailText.text = "";
         }
         HTUI.SetActive(false);
     }
@@ -250,8 +266,6 @@ public class Wand : MonoBehaviour {
         }
     }
 
-
-
     public void HideDialogueSelection()
     {
         makeSelectHolder = null;
@@ -388,13 +402,12 @@ public class Wand : MonoBehaviour {
                     Note description = hit.collider.gameObject.GetComponent<Note>();
                     if (description && (!description.getIsFinished() || description.canRepeat))
                     {
-                        dialoguePanel.gameObject.SetActive(true);
-                        dialogue.enabled = true;
-                        dialogue.text = description.note;
+                        itemDetailBacker.gameObject.SetActive(true);
+                        itemDetailText.enabled = true;
+                        itemDetailText.text = description.note;
 
                         if (Input.GetButtonDown("Fire1") && description.canStartParagraph)
                         {
-
                             if (description.paragraph.Count != 0 || typeof(OpeningEveNote).IsAssignableFrom(description.GetType()) ||
                                 typeof(EndingEveNote).IsAssignableFrom(description.GetType())) {
                                 fpc.enabled = false;
@@ -413,6 +426,8 @@ public class Wand : MonoBehaviour {
                                 }
                                 else
                                 {
+                                    dialoguePanel.gameObject.SetActive(true);
+                                    dialogue.enabled = true;
                                     dialogue.text = note.nextLine();
                                 }
                             }
@@ -424,16 +439,16 @@ public class Wand : MonoBehaviour {
                     }
                     else
                     {
-                        dialoguePanel.gameObject.SetActive(false);
-                        dialogue.text = "";
-                        dialogue.enabled = false;
+                        itemDetailBacker.gameObject.SetActive(false);
+                        itemDetailText.text = "";
+                        itemDetailText.enabled = false;
                     }
                 }
                 else
                 {
-                    dialogue.text = "";
-                    dialogue.enabled = false;
-                    dialoguePanel.gameObject.SetActive(false);
+                    itemDetailText.text = "";
+                    itemDetailText.enabled = false;
+                    itemDetailBacker.gameObject.SetActive(false);
                 }
             }
 

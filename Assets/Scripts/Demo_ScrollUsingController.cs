@@ -55,11 +55,12 @@ public class Demo_ScrollUsingController : MonoBehaviour {
         {
             FPC = GameObject.FindGameObjectWithTag("Player").GetComponent<FirstPersonController>();
         }
-        FPC.enabled = true;
+        // Player controller should be disabled when start up
+        // FPC.enabled = true;
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
         if (isActive)
         {
             if (gameManager.endingNote.getIsFinished())

@@ -145,6 +145,7 @@ public class GameManager : MonoBehaviour {
     {
         if (wand.note != openingNote && !noNeedToTriggerOpeningAndEnding)
         {
+            Debug.Log("fpc.enabled = false in StartOpeningNote");
             fpc.enabled = false;
             wand.note = openingNote;
             wand.SetDialogueText(openingNote.nextLine());

@@ -35217,7 +35217,7 @@ Prefab:
         type: 2}
       propertyPath: dialogueObj
       value: 
-      objectReference: {fileID: 1994927527}
+      objectReference: {fileID: 1610765456}
     - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
         type: 2}
       propertyPath: selectionObj
@@ -35228,6 +35228,11 @@ Prefab:
       propertyPath: diaryPanelObj
       value: 
       objectReference: {fileID: 940641650}
+    - target: {fileID: 114724560050559394, guid: 0771f8c58755eb2489de7c50035fc6ea,
+        type: 2}
+      propertyPath: itemDetailObj
+      value: 
+      objectReference: {fileID: 1994927527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0771f8c58755eb2489de7c50035fc6ea, type: 2}
   m_IsPrefabAsset: 0
@@ -41015,6 +41020,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe370290a88187b45b1bbe35ba008cdb, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1610765456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1097429442311604, guid: fe370290a88187b45b1bbe35ba008cdb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1610765455}
 --- !u!1001 &1610882332
 Prefab:
   m_ObjectHideFlags: 0
@@ -48280,6 +48290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dd31f4b0db22984387134b33208d237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  indicatorObjPrefab: {fileID: 0}
   maxHeat: 30
   minHeat: 0
   containingHeat: 0

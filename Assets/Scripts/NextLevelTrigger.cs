@@ -31,7 +31,8 @@ public class NextLevelTrigger : MonoBehaviour {
         {
             FPC = GameObject.FindGameObjectWithTag("Player").GetComponent<FirstPersonController>();
         }
-        FPC.enabled = true;
+        // Player controller should be disabled when start up
+        // FPC.enabled = true;
 
         //StartCoroutine(ShowingLoadScreen());
         if (!noNeedToTriggerOpeningAndEnding)

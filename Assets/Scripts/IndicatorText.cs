@@ -12,19 +12,12 @@ public class IndicatorText : MonoBehaviour {
     protected Vector3 originalScale;
     protected bool inDistance = false;
 
-    public bool isPickable = false;
-    public bool isWandable = false;
-
     GameObject player;
     Wand wand;
 
 	// Use this for initialization
 	void Start () {
         originalScale = transform.localScale;
-
-        isPickable = gameObject.GetComponentInParent<Pickable>();
-
-        isWandable = gameObject.GetComponentInParent<Wandable>();
 
         player = GameObject.FindGameObjectWithTag("Player");
         wand = player.GetComponent<Wand>();
@@ -34,39 +27,12 @@ public class IndicatorText : MonoBehaviour {
 
     IEnumerator CheckDistance()
     {
-        while (isWandable && (!Input.GetKey(KeyCode.E)))
+        while (!Input.GetKeyDown(KeyCode.Q))
         {
             transform.localScale = Vector3.zero;
             yield return null;
         }
-
-        while (isPickable && wand.pickable)
-        {
-            yield return null;
-        }
-
-        transform.localScale = Vector3.zero;
-        float distance = Vector3.Distance(player.transform.position, transform.position);
-        if (inDistance)
-        {
-            while (distance <= triggerDistance)
-            {
-                distance = Vector3.Distance(player.transform.position, transform.position);
-                yield return null;
-            }
-            inDistance = false;
-        }
-
-        if (!inDistance)
-        {
-            while (distance > triggerDistance)
-            {
-                distance = Vector3.Distance(player.transform.position, transform.position);
-                yield return null;
-            }
-            inDistance = true;
-            StartCoroutine(FadeIn());
-        }
+        StartCoroutine(FadeIn());
     }
 
     IEnumerator FadeIn()
@@ -89,15 +55,6 @@ public class IndicatorText : MonoBehaviour {
 
         while (Time.time - startTime < stayTime)
         {
-            if (isPickable && wand.pickable)
-            {
-                break;
-            }
-
-            if (isWandable && (!Input.GetKey(KeyCode.E)))
-            {
-                break;
-            }
             yield return null;
         }
 
@@ -110,7 +67,7 @@ public class IndicatorText : MonoBehaviour {
         while (Time.time - startTime < fadeOutTime)
         {
             transform.localScale = originalScale * (1f - Mathf.Lerp(0f, 1f, (Time.time - startTime) / fadeOutTime));
-           yield return null;
+            yield return null;
         }
 
         transform.localScale = Vector3.zero;
