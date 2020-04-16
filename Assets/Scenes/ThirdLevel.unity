@@ -708,7 +708,7 @@ Prefab:
     - target: {fileID: 224733596207418584, guid: fe370290a88187b45b1bbe35ba008cdb,
         type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 224617633476247310, guid: fe370290a88187b45b1bbe35ba008cdb,
         type: 2}
@@ -760,7 +760,7 @@ Prefab:
     - target: {fileID: 224591618961127274, guid: fe370290a88187b45b1bbe35ba008cdb,
         type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 224445227960305376, guid: fe370290a88187b45b1bbe35ba008cdb,
         type: 2}
@@ -14299,6 +14299,11 @@ Prefab:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 4e72c4f985521c54a85c26ba0fee36d3, type: 3}
+    - target: {fileID: 82124465532446382, guid: e1fe8de2ca5b31a4992291d7b6bd30df,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 13.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1fe8de2ca5b31a4992291d7b6bd30df, type: 2}
   m_IsPrefabAsset: 0
