@@ -56,6 +56,7 @@ public class IcePickable : Pickable {
         newIcePickable.GetComponent<Collider>().enabled = true;
 
         p.pickable = newIcePickable;
+        p.beam.line = newIcePickable.gameObject;
     }
 
     public override void Drop(Wand p)
